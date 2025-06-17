@@ -1,49 +1,49 @@
-# Computer Science - Puzzles, Practice and Plods
+# 컴퓨터 과학 - 퍼즐, 연습 그리고 꾸준한 노력
 
-**Some OSSUnians value sites that allow them to practice coding problems disconnected from a course.**
+**일부 OSSU 학생들은 강의와 별개로 코딩 문제를 연습할 수 있는 사이트를 중요하게 생각합니다.**
 
-> Solving "textbook" problems is easy because we've been prepped for them by the course. Solving a "real world" example is much more difficult because there is no hand-holding.
+> "교과서" 문제를 푸는 것은 강의에서 미리 준비되었기 때문에 쉽습니다. "실제" 예제를 푸는 것은 훨씬 더 어렵습니다. 왜냐하면 아무도 도와주지 않기 때문입니다.
 
-[link](https://github.com/ossu/computer-science/issues/783#issuecomment-694187743)
+[링크](https://github.com/ossu/computer-science/issues/783#issuecomment-694187743)
 
-> So give us a problem where the parameters are laid out in x,y fashion, and we'll be able to code for it. But confront us with another problem, and it might stump us since we're still not practiced with thinking algorithmically or what have you.
+> x, y 방식으로 매개변수가 제시된 문제를 주면 코딩할 수 있을 것입니다. 하지만 다른 문제에 직면하면 알고리즘적으로 생각하거나 하는 연습이 아직 되어 있지 않기 때문에 막힐 수 있습니다.
 
-[link](https://github.com/ossu/computer-science/issues/783#issuecomment-694176898)
+[링크](https://github.com/ossu/computer-science/issues/783#issuecomment-694176898)
 
-**Others feel that its important not to get distracted by anxieties and puzzles.**
+**다른 사람들은 불안감과 퍼즐에 정신이 팔리지 않는 것이 중요하다고 생각합니다.**
 
-> Consider this a love letter to all the beginners out there.
+> 이것을 세상의 모든 초보자들에게 보내는 러브레터라고 생각하십시오.
 
-> I think that when you are still in the beginner stages, it FEELS like you do not have enough competence to contributing to a project.
-  It FEELS like taking classes, doing programming assignments etc. are not good enough in your eyes to be considered worthy of a "project".
-  They feel too small and insignificant. You're not quite satisfied.
-  (Part of the reason might be that early stuff is too easy for you, and you haven't taken a course that kicked your ass and wiped the floor with you yet.)
-  Since this is online learning and there is nobody/nothing holding you back, the natural tendency is to spread wide and try to do many things all at once, get distracted.
-  I'VE BEEN THERE, trust me.
-  And naturally you are in a rush to become competent as fast as possible.
-  You keep thinking, "when will I be ready to do something BIG?" And you don't want to wait.
-  Similar to how children always seem like they are in a hurry to grow up and start imitating adults.
-  The dissatisfaction and the impatience make for an uncomfortable combination.
-  Let's call this: beginner's mind.
+> 초보 단계에 있을 때는 프로젝트에 기여할 만큼의 능력이 부족하다고 느껴질 것입니다.
+  수업을 듣고 프로그래밍 과제를 하는 것 등이 "프로젝트"라고 불릴 만큼 가치 있다고 생각되지 않을 것입니다.
+  너무 작고 하찮게 느껴집니다. 만족스럽지 않습니다.
+  (부분적으로는 초기 내용이 너무 쉽고, 아직 당신을 좌절시키고 바닥을 닦게 만든 과정을 겪지 않았기 때문일 수 있습니다.)
+  이것은 온라인 학습이고 아무도/아무것도 당신을 막지 않기 때문에, 자연스러운 경향은 넓게 퍼져 한 번에 많은 일을 하려고 하고, 산만해지는 것입니다.
+  저도 그랬습니다, 믿어주세요.
+  그리고 당연히 가능한 한 빨리 능숙해지려고 서두릅니다.
+  계속해서 "언제쯤이면 큰일을 할 준비가 될까?"라고 생각합니다. 그리고 기다리고 싶지 않습니다.
+  아이들이 항상 어른이 되기를 서두르고 어른들을 모방하는 것과 비슷합니다.
+  불만족과 조급함은 불편한 조합을 만듭니다.
+  이것을 초심자의 마음이라고 부릅시다.
 
-> The fact is, you have to be patient.
-  I would argue that early on in your studies, arguably, is NOT when it is most critical for you to contribute to a project...
+> 사실, 인내심을 가져야 합니다.
+  저는 여러분의 학습 초기에는 프로젝트에 기여하는 것이 가장 중요하지 않다고 주장하고 싶습니다...
 
-> I would recommend the slow, steady and patient approach of OSSU over the distracted, all over the place style of learning lots of others use, with various uncoordinated resources on the internet.
- Looking for a project? How about THE NEXT COURSE?
+> 저는 인터넷상의 다양한 비조직적인 자료를 사용하여 많은 다른 사람들이 하는 산만하고 여기저기 흩어진 학습 방식보다는 OSSU의 느리고, 꾸준하며, 인내심 있는 접근 방식을 추천합니다.
+ 프로젝트를 찾고 있나요? 다음 과정은 어떻습니까?
 
->  So I think that the problem is not really a problem, but a need to adjust expectations.
-  I would recommend a shift in thinking, away from beginner's mind.
-  Think long term, so that those small, insignificant exercises and programming assignments in each course should feel like they are crucial parts of your biggest, long-term project: YOU
+>  그래서 저는 문제가 실제 문제가 아니라 기대치를 조정할 필요가 있다고 생각합니다.
+  초심자의 마음에서 벗어나 생각의 전환을 추천합니다.
+  장기적으로 생각하여 각 과정의 작고 하찮은 연습 문제와 프로그래밍 과제가 가장 크고 장기적인 프로젝트인 당신의 중요한 부분이라고 느껴야 합니다.
 
-[link](https://github.com/ossu/computer-science/issues/783#issuecomment-690023645)
+[링크](https://github.com/ossu/computer-science/issues/783#issuecomment-690023645)
 
-So OSSUnian, read the above and then consider how much time you wish to put into these resources:
+그러니 OSSU 여러분, 위 내용을 읽고 이러한 자료에 얼마나 많은 시간을 투자하고 싶은지 고려해 보십시오:
 - [Exercism](https://exercism.io/)
 - [LeetCode](https://leetcode.com/)
 - [HackerRank](https://www.hackerrank.com/)
 - [CodeWars](https://www.codewars.com/)
-- [100+ Python Coding Problems with Solutions](https://github.com/ProgrammingHero1/100-plus-python-coding-problems-with-solutions)
+- [100개 이상의 파이썬 코딩 문제와 해답 (100+ Python Coding Problems with Solutions)](https://github.com/ProgrammingHero1/100-plus-python-coding-problems-with-solutions)
 - [Rosalind](http://rosalind.info/problems/locations/)
 - [Advent of Code](https://adventofcode.com/)
-- [GitHub projects for beginners](https://github.com/MunGell/awesome-for-beginners) - Projects that are specifically geared towards beginners to GitHub. Possibly intermediate to advanced coding issues to be solved.
+- [초보자를 위한 GitHub 프로젝트 (GitHub projects for beginners)](https://github.com/MunGell/awesome-for-beginners) - GitHub 초보자를 위해 특별히 고안된 프로젝트입니다. 해결해야 할 중급에서 고급 코딩 문제가 있을 수 있습니다.

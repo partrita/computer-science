@@ -1,331 +1,331 @@
-# Change Log
+# 변경 로그
 
-**Note**: The curriculum is currently undergoing review for v9. This consists largely of checking our recommendations against our [curricular guidelines](CURRICULAR_GUIDELINES.md), adding missing topics and cutting redundant or out of scope courses. As Requests for Comment in this effort are completed, changes are made immediately to the curriculum. When the overall review is complete we will notate the version bump to v9.
+**참고**: 현재 커리큘럼은 v9 검토 중입니다. 이는 주로 [커리큘럼 가이드라인](CURRICULAR_GUIDELINES.md)에 대한 권장 사항을 확인하고, 누락된 주제를 추가하며, 중복되거나 범위를 벗어난 과정을 제외하는 작업으로 구성됩니다. 이 작업에 대한 의견 수렴 요청(RFC)이 완료되면 변경 사항이 즉시 커리큘럼에 적용됩니다. 전체 검토가 완료되면 v9으로 버전 업데이트를 표기할 것입니다.
 
-All notable changes to this project will be documented in this file.
-This project adheres *in spirit* to [Semantic Versioning](http://semver.org/):
-- "MAJOR" updates correspond to changing the topics studied within a subject
-- "MINOR" updates correspond to changing courses without changing the topics
-- "PATCH" updates correspond to aesthetic and non-essential additions/removals or changing order of classes for better progression
+이 프로젝트에 대한 모든 주목할 만한 변경 사항은 이 파일에 문서화됩니다.
+이 프로젝트는 [유의적 버전 명명](http://semver.org/)을 *정신적으로* 따릅니다:
+- "MAJOR" 업데이트는 한 주제 내에서 연구되는 주제 변경에 해당합니다.
+- "MINOR" 업데이트는 주제 변경 없이 과정 변경에 해당합니다.
+- "PATCH" 업데이트는 미적이고 비필수적인 추가/제거 또는 더 나은 진행을 위한 수업 순서 변경에 해당합니다.
 
 ## [8.0.0] 2017-11-01
-### Added
-- extras/readings: "The System Design Primer"
-- extras/readings: "Category Theory for Programmers: The Preface"
-- extras/readings: "Programming Languages: Application and Interpretation"
-- extras/readings: "Programming and Programming Languages"
-- CONTRIBUTING: "Learning Git" section to the contributor guidelines page
-- Core Math: Added "Essence of Linear Algebra" as pre-requisite to "Linear Algebra: Foundations to Frontiers"
+### 추가됨
+- extras/readings: "시스템 설계 입문 (The System Design Primer)"
+- extras/readings: "프로그래머를 위한 범주론: 서문 (Category Theory for Programmers: The Preface)"
+- extras/readings: "프로그래밍 언어: 응용 및 해석 (Programming Languages: Application and Interpretation)"
+- extras/readings: "프로그래밍 및 프로그래밍 언어 (Programming and Programming Languages)"
+- CONTRIBUTING: 기여자 가이드라인 페이지에 "Git 학습 (Learning Git)" 섹션 추가
+- 핵심 수학: "선형 대수학의 본질 (Essence of Linear Algebra)"을 "선형 대수학: 기초부터 최전선까지 (Linear Algebra: Foundations to Frontiers)"의 선수 과목으로 추가
 
-### Updated
-- Moved "Introduction to Mathematical Thinking" to extras/courses
-- Moved "Hack the Kernel" (ops-class) from Advanced Systems to Core Systems
-- Core Systems: "Operating Systems: Three Easy Pieces" is no longer required, but is recommended as companion text to "Hack the Kernel"
-- Core Theory: Replaced Coursera with Lagunita as the host for Stanford Algorithms, since Coursera uses dark patterns to trick users into paying
+### 업데이트됨
+- "수학적 사고 입문 (Introduction to Mathematical Thinking)"을 extras/courses로 이동
+- "커널 해킹 (Hack the Kernel)" (ops-class)을 고급 시스템에서 핵심 시스템으로 이동
+- 핵심 시스템: "운영체제: 세 가지 쉬운 부분 (Operating Systems: Three Easy Pieces)"은 더 이상 필수는 아니지만 "커널 해킹"의 보조 교재로 권장됨
+- 핵심 이론: Coursera가 사용자를 속여 결제하도록 유도하는 다크 패턴을 사용하므로 Stanford Algorithms의 호스트를 Coursera에서 Lagunita로 교체
 
 ## [7.2.2] 2017-07-02
-### Added
-- "Haskell Programming from First Principles" book as a paid alternative to learn Haskell
-- "Think Python" to extras/readings
-- FAQ entries and links under relevant courses
-- "Category Theory: A Gentle Introduction" to extras/readings
+### 추가됨
+- 하스켈 학습을 위한 유료 대안으로 "하스켈 프로그래밍 첫걸음 (Haskell Programming from First Principles)" 책 추가
+- "Think Python"을 extras/readings에 추가
+- 관련 과정 아래에 FAQ 항목 및 링크 추가
+- "범주론: 쉬운 입문 (Category Theory: A Gentle Introduction)"을 extras/readings에 추가
 
 ## [7.2.1] 2017-05-14
-### Updated
-- Networking course should take 8 weeks to complete
-- Fixed spelling error
+### 업데이트됨
+- 네트워킹 과정 완료에 8주 소요
+- 철자 오류 수정
 
-### Added
-- Introduction to Haskell course to [extras/courses](extras/courses.md)
+### 추가됨
+- 하스켈 입문 과정을 [extras/courses](extras/courses.md)에 추가
 
 ## [7.2.0] 2017-04-28
-### Added
-- Software Testing course
-- Link to Stanford Lagunita's Algorithms: Design and Analysis
-- Added link to the section on parametric equations and polar coordinates from MIT's Single Variable Calculus course in order to properly prepare students for Multivariable Calculus
+### 추가됨
+- 소프트웨어 테스팅 과정
+- Stanford Lagunita의 알고리즘: 설계 및 분석 링크
+- 다변수 미적분학을 위한 적절한 준비를 위해 MIT 단일 변수 미적분학 과정의 매개변수 방정식 및 극좌표 섹션 링크 추가
 
 ## [7.1.2] 2017-04-22
-### Updated
-- Add link to Mega Project List in the introduction of the Projects section
+### 업데이트됨
+- 프로젝트 섹션 소개에 메가 프로젝트 목록 링크 추가
 
 ## [7.1.1] 2017-04-11
-### Updated
-- Final touch to release
+### 업데이트됨
+- 출시를 위한 최종 마무리
 
 ## [7.1.0] 2017-04-10
-### Updated
-- Reverted reformat of programming languages course
+### 업데이트됨
+- 프로그래밍 언어 과정 형식 변경 되돌림
 
-### Added
-- Reliable Distributed Algorithms courses
-- New Introduction to CS course
+### 추가됨
+- 신뢰할 수 있는 분산 알고리즘 과정
+- 새로운 CS 입문 과정
 
 ## [7.0.2] 2017-03-30
-### Updated
-- Moved optional online learning courses to extras/courses in a new section
-- Moved alternate computer architecture course to extras/courses
+### 업데이트됨
+- 선택적 온라인 학습 과정을 새 섹션의 extras/courses로 이동
+- 대체 컴퓨터 아키텍처 과정을 extras/courses로 이동
 
-### Added
-- Scala specialization under Advanced applications
+### 추가됨
+- 고급 응용 프로그램 아래에 Scala 전문 과정 추가
 
-### Removed
-- Removed all but one choice for required readings to make the curriculum simpler
+### 제거됨
+- 커리큘럼을 단순화하기 위해 필수 독서 자료 중 하나를 제외한 모든 선택 사항 제거
 
 ## [7.0.1] 2017-03-11
-### Updated
-- Fixed link to Bradfield's DIY computer science page
+### 업데이트됨
+- Bradfield의 DIY 컴퓨터 과학 페이지 링크 수정
 
-### Added
-- Note under Calculus One with links to errata and course progression recommendations
-- Optional courses under extras:
-  - Strang's course on linear algebra
-  - Berkeley's Structure and Interpretation of Computer Programs
-- Optional readings under extras:
-  - Van Roy's advanced programming book
-  - P&H's computer architecture book
-  - Skiena's algorithms book
-  - Strang's linear algebra book
-  - Database Management Systems book
-  - Tarr's book on creating your own Domain-specific language
-  - Readings from various authors on distributed systems
+### 추가됨
+- 정오표 및 과정 진행 권장 사항 링크가 있는 미적분학 1 아래 참고 사항 추가
+- extras 아래 선택 과정:
+  - 스트랭의 선형 대수학 과정
+  - 버클리의 컴퓨터 프로그램의 구조와 해석
+- extras 아래 선택 독서 자료:
+  - Van Roy의 고급 프로그래밍 책
+  - P&H의 컴퓨터 아키텍처 책
+  - 스키에나의 알고리즘 책
+  - 스트랭의 선형 대수학 책
+  - 데이터베이스 관리 시스템 책
+  - Tarr의 자체 도메인 특정 언어 생성 책
+  - 분산 시스템에 대한 다양한 저자의 독서 자료
 
 ## [7.0] 2017-03-09
-Complete overhaul of program structure
+프로그램 구조 전체 개편
 
-### Updated
-- Clarified contributor guidelines and moved them to separated file
-- Switched from many subjects to just four subjects with many topics
-- Consolidated free-books.md and paid-books.md into readings.md
-- Consolidated free-courses.md and paid-courses.md into courses.md
-- Replace old "How to Code" with new "How to Code" (Software Development MicroMasters)
-- Replace Princeton Algorithms (moved to [alternative courses](#extras/courses.md)) with Stanford Algorithms
+### 업데이트됨
+- 기여자 가이드라인 명확화 및 별도 파일로 이동
+- 많은 주제에서 여러 주제를 가진 네 가지 주제로 전환
+- free-books.md와 paid-books.md를 readings.md로 통합
+- free-courses.md와 paid-courses.md를 courses.md로 통합
+- 이전 "코딩 방법 (How to Code)"을 새로운 "코딩 방법 (How to Code)" (소프트웨어 개발 마이크로마스터)으로 교체
+- 프린스턴 알고리즘 (([대체 과정](#extras/courses.md))으로 이동)을 스탠포드 알고리즘으로 교체
 
-### Added
-- Indicate prerequisites for all courses
-- Requirements: subject/topic requirements and project requirements
-- Required readings on Haskell, Prolog, Operating Systems
-- Courses: Dan Grossman's Programming Languages
-- Courses: From Nand to Tetris
-- Elective course: Intro to Parallel Programming
-- Elective course: LAFF: Programming for Correctness
-- Elective course: Introduction to Mathematical Thinking
-- Elective courses: Electricity and Magnetism
-- Elective courses: MIT's Computation Structures
-- Elective course: Multivariable Calculus
-- Elective course: ops-class.org
-- Elective course: Automata Theory
-- Elective course: Introduction to Logic
-- Elective course: Computational Geometry
-- Elective course: Formal Concept Analysis
-- Elective course: Game Theory
-- Elective specializations:
-  - Robotics
-  - Data Mining
-  - Big Data
-  - Internet of Things
-  - Cloud Computing
-  - Full Stack Web Development
-  - Data Science
-- Pro specializations:
-  - Mastering Software Development in R
-  - Artificial Intelligence Engineer
-  - Machine Learning Engineer
-  - Cybersecurity
-  - Android Developer
+### 추가됨
+- 모든 과정에 대한 선수 과목 표시
+- 요구 사항: 주제/토픽 요구 사항 및 프로젝트 요구 사항
+- 하스켈, 프롤로그, 운영 체제에 대한 필수 독서 자료
+- 과정: 댄 그로스만의 프로그래밍 언어
+- 과정: Nand에서 Tetris까지
+- 선택 과정: 병렬 프로그래밍 입문
+- 선택 과정: LAFF: 정확성을 위한 프로그래밍
+- 선택 과정: 수학적 사고 입문
+- 선택 과정: 전기와 자기
+- 선택 과정: MIT의 계산 구조
+- 선택 과정: 다변수 미적분학
+- 선택 과정: ops-class.org
+- 선택 과정: 오토마타 이론
+- 선택 과정: 논리학 입문
+- 선택 과정: 계산 기하학
+- 선택 과정: 형식 개념 분석
+- 선택 과정: 게임 이론
+- 선택 전문 과정:
+  - 로봇 공학
+  - 데이터 마이닝
+  - 빅 데이터
+  - 사물 인터넷
+  - 클라우드 컴퓨팅
+  - 풀 스택 웹 개발
+  - 데이터 과학
+- 프로 전문 과정:
+  - R을 사용한 소프트웨어 개발 마스터하기
+  - 인공 지능 엔지니어
+  - 머신 러닝 엔지니어
+  - 사이버 보안
+  - 안드로이드 개발자
 
-### Removed
-- Removed many dead links and obsolete courses
-- Removed per-course project requirement
-- Course: Object-Oriented Programming in Java
-- Course: Functional Programming in Scala
-- Course: Computer Architecture (but left as a footnote)
-- Course: Intro to Theoretical Computer Science
-- Course: Software Processes and Agile Practices
-- Course: Operating Systems & System Programming
-- Course: Introduction to Cyber Security
-- Course: Parallel Computer Architecture and Programming
-- Course: UX Design for Mobile Developers
+### 제거됨
+- 많은 죽은 링크와 오래된 과정 제거
+- 과정별 프로젝트 요구 사항 제거
+- 과정: 자바 객체 지향 프로그래밍
+- 과정: 스칼라 함수형 프로그래밍
+- 과정: 컴퓨터 아키텍처 (단, 각주로 남겨둠)
+- 과정: 이론 컴퓨터 과학 입문
+- 과정: 소프트웨어 프로세스 및 애자일 실습
+- 과정: 운영 체제 및 시스템 프로그래밍
+- 과정: 사이버 보안 입문
+- 과정: 병렬 컴퓨터 아키텍처 및 프로그래밍
+- 과정: 모바일 개발자를 위한 UX 디자인
 
 ## [6.0] 2016-10-09
-### Updated
-- Put Calculus One before and together with Mathematics for Computer Science
-- Improve text in "Order of the classes"
+### 업데이트됨
+- 미적분학 1을 컴퓨터 과학을 위한 수학 이전 및 함께 배치
+- "수업 순서" 텍스트 개선
 
-### Added
-- Create public Trello board with the new curriculum version
-- Create the section "How to track and show your progress" in "How to use this guide"
-- Add PROJECTS.md file
-- Copy all sections of curriculum to PROJECTS.md
+### 추가됨
+- 새 커리큘럼 버전으로 공개 Trello 보드 생성
+- "이 가이드 사용 방법"에 "진행 상황 추적 및 표시 방법" 섹션 생성
+- PROJECTS.md 파일 생성
+- 커리큘럼의 모든 섹션을 PROJECTS.md에 복사
 
-### Removed
-- Remove "Next Goals" section
-- Remove reference to OSSU web app
+### 제거됨
+- "다음 목표" 섹션 제거
+- OSSU 웹 앱 참조 제거
 
 ## [5.1.0] 2016-08-20
-Update to latest version of Math for Computer Science:
+컴퓨터 과학을 위한 수학 최신 버전으로 업데이트:
 
-### Updated
-- Section: **Math (Discrete Math)**
-  - Mathematics for Computer Science
+### 업데이트됨
+- 섹션: **수학 (이산 수학)**
+  - 컴퓨터 과학을 위한 수학
 
 ## [5.0.0] 2016-08-20
-Due to removed course, we had the following updates:
+제거된 과정으로 인해 다음과 같은 업데이트가 있었습니다:
 
-### Removed
-- Section: **Natural Language Processing**
-  - Natural Language Processing
+### 제거됨
+- 섹션: **자연어 처리**
+  - 자연어 처리
 
-### Added
-- Section: **Natural Language Processing**
-  - Introduction to Natural Language Processing
+### 추가됨
+- 섹션: **자연어 처리**
+  - 자연어 처리 입문
 
 ## [4.1.0] 2016-08-05
-Due to Coursera's platform changes, we had the following updates:
-### Fixed
-- Section: **Big Data**
-  - Introduction to Big Data
+Coursera 플랫폼 변경으로 인해 다음과 같은 업데이트가 있었습니다:
+### 수정됨
+- 섹션: **빅 데이터**
+  - 빅 데이터 입문
 
 ## [4.0.0] 2016-07-30
-Due to Coursera's platform changes, we had the following updates:
+Coursera 플랫폼 변경으로 인해 다음과 같은 업데이트가 있었습니다:
 
-### Removed
-- Section: **Theory**
-  - Automata
-- Section: **Math (Linear Algebra)**
-  - Coding the Matrix: Linear Algebra through Computer Science Applications
-- Section: **Parallel Computing**
-  - Heterogeneous Parallel Programming
-- Section: **Natural Language Processing**
-  - Natural Language Processing
+### 제거됨
+- 섹션: **이론**
+  - 오토마타
+- 섹션: **수학 (선형 대수학)**
+  - 행렬 코딩: 컴퓨터 과학 응용을 통한 선형 대수학
+- 섹션: **병렬 컴퓨팅**
+  - 이기종 병렬 프로그래밍
+- 섹션: **자연어 처리**
+  - 자연어 처리
 
-### Fixed
-- Section: **Computer Networks**
-  - Computer Networks
-- Section: **Compilers**
-  - Compilers
+### 수정됨
+- 섹션: **컴퓨터 네트워크**
+  - 컴퓨터 네트워크
+- 섹션: **컴파일러**
+  - 컴파일러
 
-### Added
-- Section: **Theory**
-  - Intro to Theoretical Computer Science
-- Section: **Math (Linear Algebra)**
-  - Linear Algebra - Foundations to Frontiers
-- Section: **Parallel Computing**
-  - Parallel Computer Architecture and Programming
-- Section: **Natural Language Processing**
-  - Natural Language Processing
+### 추가됨
+- 섹션: **이론**
+  - 이론 컴퓨터 과학 입문
+- 섹션: **수학 (선형 대수학)**
+  - 선형 대수학 - 기초부터 최전선까지
+- 섹션: **병렬 컴퓨팅**
+  - 병렬 컴퓨터 아키텍처 및 프로그래밍
+- 섹션: **자연어 처리**
+  - 자연어 처리
 
 ## [3.0.0] 2016-05-04
-### Removed
-- Section: **Introduction to Computer Science**:
-	- Introduction to Computer Science and Programming Using Python
-	- From Nand to Tetris (Part 1)
+### 제거됨
+- 섹션: **컴퓨터 과학 입문**:
+	- 파이썬을 이용한 컴퓨터 과학 및 프로그래밍 입문
+	- Nand에서 Tetris까지 (1부)
 
-### Added
-- Section: **Introduction to Computer Science**:
-	- Introduction to Computer Science - CS50
+### 추가됨
+- 섹션: **컴퓨터 과학 입문**:
+	- 컴퓨터 과학 입문 - CS50
 
 ## [2.0.1] 2016-04-04
-### Fixed
-- Now students should enroll through our [web app](https://ossu.firebaseapp.com).
+### 수정됨
+- 이제 학생들은 [웹 앱](https://ossu.firebaseapp.com)을 통해 등록해야 합니다.
 
 ## [2.0.0] 2016-03-17
-### Fixed
-- Program Design section course's names and links
+### 수정됨
+- 프로그램 설계 섹션 과정 이름 및 링크
 
-### Removed
-- **Introduction to Computer Science**:
-	- Introduction to Computer Science
-	- Introduction to Computational Thinking and Data Science
-- **Algorithms**
-	- Analysis of Algorithms
-- **Programming Paradigms**
-	- Principles of Reactive Programming
-- **Math (Calculus)**
-	- Multivariable Calculus
-- **Software Architecture**:
-	- Web Application Architectures
-- **Software Engineering**:
-	- Agile Development Using Ruby on Rails - Basics
-	- Agile Development Using Ruby on Rails - Advanced
-	- Startup Engineering
-- **Computer Architecture**:
-	- The Hardware/Software Interface
-- **Operating Systems**:
-	- Operating System Engineering
-- **Computer Networks**:
-	- Introduction to Computer Networking
-- **Cryptography**:
-	- Applied Cryptography
+### 제거됨
+- **컴퓨터 과학 입문**:
+	- 컴퓨터 과학 입문
+	- 계산적 사고와 데이터 과학 입문
+- **알고리즘**
+	- 알고리즘 분석
+- **프로그래밍 패러다임**
+	- 반응형 프로그래밍 원리
+- **수학 (미적분학)**
+	- 다변수 미적분학
+- **소프트웨어 아키텍처**:
+	- 웹 애플리케이션 아키텍처
+- **소프트웨어 공학**:
+	- Ruby on Rails를 사용한 애자일 개발 - 기초
+	- Ruby on Rails를 사용한 애자일 개발 - 고급
+	- 스타트업 공학
+- **컴퓨터 아키텍처**:
+	- 하드웨어/소프트웨어 인터페이스
+- **운영 체제**:
+	- 운영 체제 공학
+- **컴퓨터 네트워크**:
+	- 컴퓨터 네트워킹 입문
+- **암호학**:
+	- 응용 암호학
 
-**ps**: These removed courses are now in the [extras](https://github.com/ossu/computer-science/tree/master/extras) section.
+**추신**: 제거된 이러한 과정은 이제 [extras](https://github.com/ossu/computer-science/tree/master/extras) 섹션에 있습니다.
 
 ## [1.3.12] 2016-03-17
-### Added
-- How to collaborate: send new links to the extras section
+### 추가됨
+- 협업 방법: extras 섹션에 새 링크 보내기
 
 ## [1.3.11] 2016-03-06
-### Fixed
-- Nand to Tetris: change name and url
-- UC Berkeley Agile development: change name and url
-- Direct links to specializations
+### 수정됨
+- Nand에서 Tetris까지: 이름 및 URL 변경
+- UC 버클리 애자일 개발: 이름 및 URL 변경
+- 전문 과정 바로 가기 링크
 
 ## [1.3.10] 2016-03-06
-### Fixed
-- Link from Systematic Program Design Part 2 course
+### 수정됨
+- 체계적인 프로그램 설계 2부 과정 링크
 
 ## [1.3.9] 2015-11-09
-### Fixed
-- Link for the correct Natural Language Processing course
+### 수정됨
+- 올바른 자연어 처리 과정 링크
 
 ## [1.3.8] 2015-11-07
-### Added
-- Add "Project Suggestions" section with more references
+### 추가됨
+- 더 많은 참조가 있는 "프로젝트 제안" 섹션 추가
 
 ## [1.3.7] 2015-11-01
-### Removed
-- Removed project.md file, moved to **help** repo
+### 제거됨
+- project.md 파일 제거, **help** 저장소로 이동
 
 ## [1.3.6] 2015-10-22
-### Added
-- Latest version of CS 162, Operating Systems and System Programming
+### 추가됨
+- CS 162, 운영 체제 및 시스템 프로그래밍 최신 버전
 
 ## [1.2.6] 2015-10-19
-### Added
-- Badge/Link to the Awesome list
+### 추가됨
+- Awesome 목록 배지/링크
 
 ## [1.2.5] 2015-10-16
-### Fixed
-- Fix name of the section and add a hyperlink to it.
+### 수정됨
+- 섹션 이름 수정 및 하이퍼링크 추가
 
 ## [1.2.4] 2015-10-14
-### Removed
-- Removed citation about public commitment
+### 제거됨
+- 공개 약속에 대한 인용 제거
 
 ## [1.2.3] 2015-10-12
-### Changed
-- Updated the prerequisite section for more clarity
+### 변경됨
+- 명확성을 위해 선수 과목 섹션 업데이트
 
 ## [1.2.2] 2015-10-12
-### Fixed
-- New link to issue intended for students' enrollment
+### 수정됨
+- 학생 등록을 위한 이슈 새 링크
 
 ## [1.2.1] 2015-10-11
-### Added
-- Article Git - the simple guide to the prerequisite section
+### 추가됨
+- 선수 과목 섹션에 Git - 간단한 가이드 기사 추가
 
 ##[1.1.1] 2015-10-11
-### Fixed
-- Fix typos
-  - As MOOC is a "Massive Open Online Course" MOOC course is redundant
-  - Elaborated on "real problem"
-  - Fixed a few small grammatical and wording errors
+### 수정됨
+- 오타 수정
+  - MOOC는 "대규모 공개 온라인 강좌(Massive Open Online Course)"이므로 MOOC 과정은 중복됨
+  - "실제 문제"에 대해 자세히 설명
+  - 몇 가지 작은 문법 및 표현 오류 수정
 
 ## [1.1.0] 2015-10-08
-### Added
-- Motivation & Preparation section (optional resources)
-  - Article: MIT Challenge
-  - Course: Learning How to Learn
+### 추가됨
+- 동기 부여 및 준비 섹션 (선택적 자료)
+  - 기사: MIT 챌린지
+  - 과정: 학습 방법 배우기
 
 ## [1.0.0] 2015-10-08
 
-Release of the first **complete** version of the Computer Science curriculum
+컴퓨터 과학 커리큘럼의 첫 번째 **완전한** 버전 출시

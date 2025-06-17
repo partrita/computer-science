@@ -1,35 +1,35 @@
-## Project 1B
+## 프로젝트 1B
 
-### all thanks to [palladian](https://github.com/palladian1)
+### 모든 감사는 [palladian](https://github.com/palladian1)에게
 
-### Linux Installation
+### 리눅스 설치
 
-* Make sure you have a compatible compiler toolchain; if you're on Linux, gcc should work perfectly.
-* Install qemu-system-x86 (may be called qemu-system-i386 or qemu-system-x86_64; note that on some distros, qemu is the wrong package).
-* Install Perl.
-* Install gawk.
-* Install expect.
-* Make a src/ directory in the same directory as the project's test script.
-* Clone xv6 github repo and copy the source code in to your src/ directory.
-* Inside src/, run `make qemu-nox` to test whether xv6 is working. Exit xv6 with `Ctrl-a x`; if you forget this, you can also kill the qemu process. It's worth checking `top` or `htop` to make sure qemu isn't running anymore; sometimes it can keep going after you exit and consume a lot of resources.
-* Modify the Makefile to set `CPUS := 1`.
-* Run `make qemu-nox` again to test that xv6 still works.
+* 호환되는 컴파일러 도구 체인이 있는지 확인하십시오. 리눅스를 사용 중이라면 gcc가 완벽하게 작동합니다.
+* qemu-system-x86을 설치하십시오 (qemu-system-i386 또는 qemu-system-x86_64로 불릴 수 있음. 일부 배포판에서는 qemu가 잘못된 패키지임에 유의하십시오).
+* Perl을 설치하십시오.
+* gawk를 설치하십시오.
+* expect를 설치하십시오.
+* 프로젝트의 테스트 스크립트와 동일한 디렉토리에 src/ 디렉토리를 만드십시오.
+* xv6 github 저장소를 복제하고 소스 코드를 src/ 디렉토리에 복사하십시오.
+* src/ 내부에서 `make qemu-nox`를 실행하여 xv6가 작동하는지 테스트하십시오. `Ctrl-a x`로 xv6를 종료하십시오. 이를 잊어버린 경우 qemu 프로세스를 종료할 수도 있습니다. qemu가 더 이상 실행되지 않는지 확인하기 위해 `top` 또는 `htop`을 확인하는 것이 좋습니다. 때로는 종료 후에도 계속 실행되어 많은 리소스를 소비할 수 있습니다.
+* Makefile을 수정하여 `CPUS := 1`로 설정하십시오.
+* `make qemu-nox`를 다시 실행하여 xv6가 여전히 작동하는지 테스트하십시오.
 
-### Instructions
+### 지침
 
-* Your task is to create a new system call for xv6, `getreadcount()`, that will return the number of `read` syscalls that have previously taken place. Note that the count should be a global count, not a per-process count.
+* 여러분의 작업은 xv6에 새로운 시스템 호출인 `getreadcount()`를 만드는 것입니다. 이 시스템 호출은 이전에 발생한 `read` 시스템 호출의 수를 반환합니다. 이 수는 프로세스별 수가 아닌 전역 수여야 합니다.
 
-### Suggested Approach
+### 제안된 접근 방식
 
-* Download the xv6 source code PDF (it's better organized there than in the code you downloaded). Read the table of contents to understand how sheets, pages, and lines are numbered. Then glance at the cross-references after that so you know how to find parts of the code if you need to.
-* Take a (very) quick look at the portions of the xv6 source code listed under `processes` and `system calls` on the table of contents, as well as `usys.S` in the `user-level` section. Don't worry about understanding it yet; you just need to see where each file is in the PDF so that you can follow along with the discussion video later, since the professor's code has a different directory layout than yours will.
-* Watch the video for discussion 2 on Project P1B, and follow along with your PDF copy of the xv6 code. Annotate it as the professor explains what each part does.
-* Read the background section linked on the project's Github page, annotating the xv6 code PDF.
-* Read through the xv6 PDF one more time, this time to get a general understanding of the `processes` and `system calls` sections, as well as `usys.S` and `user.h` (NOTE: the last one isn't included in the xv6 PDF, so you'll have to look at the actual code you downloaded). Don't worry about understanding every last line of code, just make sure you know where system calls are defined, how they're called, etc.
-* Modify the xv6 source code to add the new `getreadcount()` syscall. You will need to modify several files; I suggest marking your modifications with `// OSTEP project` to make it easy to find them later for debugging.
-* There is one other place you'll have to add code, which isn't included in the xv6 PDF: `user.h`.
-* Once you're done, run the test script. Test 1 runs a function that will make several `read` calls, then calls `getreadcount`. In order for your code to work, you must correctly keep track of the total number of `read` calls made by all processes.
-* If your code passes test 1, congratulations! You're done for now. Don't worry about test 2 until after you've watched the lectures on concurrency.
-* If your code didn't pass test 1, you can compare the expected output in `tests/1.out` with your test's actual output in `tests-out/1.out`. You can also look at `tests-out/1.err` to check for any error messages.
-* You can also test your code by loading up xv6 in your terminal with `make qemu-nox`. Type `ls` to see all files; you should see `test_1` and `test_2`. Run test 1 with `./test_1` to see what it prints out; you can compare that manually with the expected output.
-* Once you've watched the lectures on threads, concurrency, and locks: test 2 checks whether your implementation of `getreadcount` is thread-safe. It probably wasn't before, so in order to fix that, you'll have to add a lock. Then you can run the test script again and check that your code now passes both tests.
+* xv6 소스 코드 PDF를 다운로드하십시오 (다운로드한 코드보다 더 잘 정리되어 있습니다). 목차를 읽고 시트, 페이지 및 줄 번호가 어떻게 매겨지는지 이해하십시오. 그런 다음 필요한 경우 코드의 일부를 찾는 방법을 알 수 있도록 상호 참조를 살펴보십시오.
+* 목차의 `processes` 및 `system calls` 아래에 나열된 xv6 소스 코드 부분과 `user-level` 섹션의 `usys.S`를 (매우) 빠르게 살펴보십시오. 아직 이해하려고 걱정하지 마십시오. 교수의 코드는 여러분의 코드와 디렉토리 레이아웃이 다르므로 나중에 토론 비디오를 따라갈 수 있도록 각 파일이 PDF의 어디에 있는지 확인하기만 하면 됩니다.
+* 프로젝트 P1B에 대한 토론 2 비디오를 시청하고 xv6 코드의 PDF 사본을 따라가십시오. 교수가 각 부분이 무엇을 하는지 설명할 때 주석을 다십시오.
+* 프로젝트의 Github 페이지에 링크된 배경 섹션을 읽고 xv6 코드 PDF에 주석을 다십시오.
+* 이번에는 `processes` 및 `system calls` 섹션과 `usys.S` 및 `user.h`의 일반적인 이해를 얻기 위해 xv6 PDF를 한 번 더 읽으십시오 (참고: 마지막 것은 xv6 PDF에 포함되어 있지 않으므로 다운로드한 실제 코드를 봐야 합니다). 코드의 모든 줄을 이해하려고 걱정하지 말고 시스템 호출이 어디에 정의되어 있는지, 어떻게 호출되는지 등을 확인하십시오.
+* 새로운 `getreadcount()` 시스템 호출을 추가하도록 xv6 소스 코드를 수정하십시오. 여러 파일을 수정해야 합니다. 나중에 디버깅을 위해 쉽게 찾을 수 있도록 수정한 부분에 `// OSTEP project`로 표시하는 것이 좋습니다.
+* xv6 PDF에 포함되지 않은 코드, 즉 `user.h`를 추가해야 하는 곳이 한 군데 더 있습니다.
+* 완료되면 테스트 스크립트를 실행하십시오. 테스트 1은 여러 `read` 호출을 수행한 다음 `getreadcount`를 호출하는 함수를 실행합니다. 코드가 작동하려면 모든 프로세스에서 수행된 총 `read` 호출 수를 올바르게 추적해야 합니다.
+* 코드가 테스트 1을 통과하면 축하합니다! 지금은 끝났습니다. 동시성에 대한 강의를 시청하기 전까지는 테스트 2에 대해 걱정하지 마십시오.
+* 코드가 테스트 1을 통과하지 못한 경우 `tests/1.out`의 예상 출력과 `tests-out/1.out`의 테스트 실제 출력을 비교할 수 있습니다. 오류 메시지가 있는지 확인하기 위해 `tests-out/1.err`를 볼 수도 있습니다.
+* 터미널에서 `make qemu-nox`로 xv6를 로드하여 코드를 테스트할 수도 있습니다. `ls`를 입력하여 모든 파일을 확인하십시오. `test_1`과 `test_2`가 표시되어야 합니다. `./test_1`로 테스트 1을 실행하여 무엇을 출력하는지 확인하십시오. 이를 예상 출력과 수동으로 비교할 수 있습니다.
+* 스레드, 동시성 및 잠금에 대한 강의를 시청한 후: 테스트 2는 `getreadcount` 구현이 스레드로부터 안전한지 확인합니다. 이전에는 그렇지 않았을 것이므로 이를 수정하려면 잠금을 추가해야 합니다. 그런 다음 테스트 스크립트를 다시 실행하고 코드가 이제 두 테스트를 모두 통과하는지 확인하십시오.

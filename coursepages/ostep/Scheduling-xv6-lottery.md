@@ -1,135 +1,135 @@
-## all thanks to [palladian](https://github.com/palladian1)
+## 모든 감사는 [palladian](https://github.com/palladian1)에게
 
-### General Tips
+### 일반적인 팁
 
-* Read chapter 9 in the OSTEP book and watch the video for discussion 5. Lottery ticket schedulers aren't discussed in the lectures, so you really do have to read the book for this one.
+* OSTEP 책의 9장을 읽고 토론 5 비디오를 시청하십시오. 복권 스케줄러는 강의에서 다루지 않으므로 이 부분은 반드시 책을 읽어야 합니다.
 
-* In general, you can't use C standard library functions inside the kernel, because the kernel has to initialize before it can execute library binaries.
+* 일반적으로 커널 내부에서는 C 표준 라이브러리 함수를 사용할 수 없습니다. 커널은 라이브러리 바이너리를 실행하기 전에 초기화되어야 하기 때문입니다.
 
-* The xv6 kernel has a "kernel version" of `printf`; it takes an additional integer argument that tells it whether to print to `stdout` or `stderr`. Note that it can only handle basic format strings like `"%d"` and not more complex ones like `"%6.3g"`; you can deal with this by manually adding spaces instead. It also has another similar function, `cprintf`.
+* xv6 커널에는 `printf`의 "커널 버전"이 있습니다. 이 함수는 `stdout` 또는 `stderr` 중 어디에 출력할지 알려주는 추가 정수 인수를 받습니다. `"%d"`와 같은 기본 형식 문자열만 처리할 수 있고 `"%6.3g"`와 같은 더 복잡한 형식 문자열은 처리할 수 없다는 점에 유의하십시오. 대신 공백을 수동으로 추가하여 이 문제를 해결할 수 있습니다. 또한 유사한 함수인 `cprintf`도 있습니다.
 
-* If you do want to use other library functions that aren't available inside the kernel (pseudo random number generators), you can see how those functions are implemented in P.J. Plauger's book, The Standard C Library, and then implement them yourself.
+* 커널 내부에서 사용할 수 없는 다른 라이브러리 함수(의사 난수 생성기)를 사용하고 싶다면 P.J. Plauger의 책 "The Standard C Library"에서 해당 함수가 어떻게 구현되었는지 확인한 다음 직접 구현할 수 있습니다.
 
-  ### Implementation
+  ### 구현
 
-  * You'll have to modify the same files you did in Project 1b in order to add the two new system calls.
-  * In order to understand how processes are created, remember that they start in the `EMBRYO` state before they become `RUNNABLE`--you'll have to find where that happens.
-  * System calls always have argument type `void`, so take a look at how system calls like `kill` and `read` manage to work around that limitation and get arguments (like integers and pointers) from user space. You might have to back a few steps in the chain that executes them.
-  * Make sure you're including `types.h` and `defs.h` wherever you need to access code from other parts of the kernel.
-  * In order to create the xv6 command `ps`, look at how `cat`, `ls`, and `ln` are implemented. Make sure to modify the Makefile to include the source code for your `ps` command.
+  * 두 개의 새로운 시스템 호출을 추가하려면 프로젝트 1b에서 했던 것과 동일한 파일을 수정해야 합니다.
+  * 프로세스가 어떻게 생성되는지 이해하려면 `RUNNABLE` 상태가 되기 전에 `EMBRYO` 상태에서 시작한다는 것을 기억해야 합니다. 어디에서 발생하는지 찾아야 합니다.
+  * 시스템 호출은 항상 인수 유형이 `void`이므로 `kill` 및 `read`와 같은 시스템 호출이 이러한 제한을 어떻게 해결하고 사용자 공간에서 인수(예: 정수 및 포인터)를 가져오는지 살펴보십시오. 이를 실행하는 체인에서 몇 단계를 되돌아가야 할 수도 있습니다.
+  * 커널의 다른 부분에서 코드에 액세스해야 하는 곳마다 `types.h` 및 `defs.h`를 포함하고 있는지 확인하십시오.
+  * xv6 명령어 `ps`를 만들려면 `cat`, `ls` 및 `ln`이 어떻게 구현되었는지 살펴보십시오. `ps` 명령어의 소스 코드를 포함하도록 Makefile을 수정해야 합니다.
 
 
-## Spoilers below!
+## 스포일러 주의!
 
-### Solution walk through
+### 해결 방법 안내
 
-- Start from a fresh copy of the `xv6` source code.
+- `xv6` 소스 코드의 새 복사본에서 시작합니다.
 
-- `argint` and `argptr` are important functions. So `syscall`s take no arguments, but in reality, in user code you want to pass arguments to them.
+- `argint` 및 `argptr`은 중요한 함수입니다. 따라서 `syscall`은 인수를 받지 않지만 실제로는 사용자 코드에서 인수를 전달하고 싶을 것입니다.
 
-- So the way you do that is the kernel will call the `syscall`, say, `sys_kill()` with no arguments, then `sys_kill` will use `argint()` to get the arguments from the call stack, then pass that to a function `kill(int pid)`.
+- 커널이 `syscall`, 예를 들어 `sys_kill()`을 인수 없이 호출하면 `sys_kill`은 `argint()`를 사용하여 호출 스택에서 인수를 가져온 다음 해당 인수를 `kill(int pid)` 함수에 전달하는 방식으로 수행합니다.
 
-- So you can see there's a bunch of `extern int sys_whatever` function declarations below that; that means that these functions are defined in another file and should be pulled in from there as function pointers.
+- 아래에 `extern int sys_whatever` 함수 선언이 많이 있는 것을 볼 수 있습니다. 이는 이러한 함수가 다른 파일에 정의되어 있으며 함수 포인터로 해당 파일에서 가져와야 함을 의미합니다.
 
-- And these `sys_whatever` functions are basically just wrappers for the real `syscall`, which doesn't have the `sys_` at the beginning. So you need to add `sys_settickets` and `sys_getpinfo` to that list of function declarations.
+- 그리고 이러한 `sys_whatever` 함수는 기본적으로 실제 `syscall`의 래퍼이며, 앞부분에 `sys_`가 없습니다. 따라서 해당 함수 선언 목록에 `sys_settickets`와 `sys_getpinfo`를 추가해야 합니다.
 
-- Then there's an array of function pointers; it's using this old-school C way of initializing arrays where you can do `int arr[] = { [0] 5, [1] 7}`.
+- 그런 다음 함수 포인터 배열이 있습니다. `int arr[] = { [0] 5, [1] 7}`과 같이 배열을 초기화하는 구식 C 방식을 사용하고 있습니다.
 
-- And the names inside the square brackets `SYS_fork`, etc. are defined as preprocessor macros in another header file `syscall.h`.
+- 그리고 대괄호 안의 이름 `SYS_fork` 등은 다른 헤더 파일 `syscall.h`에 전처리기 매크로로 정의되어 있습니다.
 
-- So you need to add two more entries in the array with function pointers to `sys_settickets` and `sys_getpinfo`, and then you need to define `SYS_settickets` and `SYS_getpinfo` in the relevant header file.
+- 따라서 `sys_settickets` 및 `sys_getpinfo`에 대한 함수 포인터가 있는 배열에 두 개의 항목을 더 추가한 다음 관련 헤더 파일에 `SYS_settickets` 및 `SYS_getpinfo`를 정의해야 합니다.
 
-- So then all these `sys_` wrapper functions are defined in `sysproc.c`.
+- 그런 다음 이러한 모든 `sys_` 래퍼 함수는 `sysproc.c`에 정의되어 있습니다.
 
-- So there, you need to create `int sys_settickets(void)` and `int sys_getpinfo(void)`.
+- 따라서 거기에서 `int sys_settickets(void)` 및 `int sys_getpinfo(void)`를 만들어야 합니다.
 
-- The real `settickets` function will need an int argument, so you need to use `argint` there to grab it from the call stack and pass it to `settickets`; similarly, `getpinfo` will need a pointer, so you'll use `argptr`.
+- 실제 `settickets` 함수에는 int 인수가 필요하므로 `argint`를 사용하여 호출 스택에서 가져와 `settickets`에 전달해야 합니다. 마찬가지로 `getpinfo`에는 포인터가 필요하므로 `argptr`을 사용합니다.
 
-- Also, there's an extra condition in the if statement for `sys_settickets`; that's because you're not allowed to use a number of tickets below 1.
+- 또한 `sys_settickets`의 if 문에는 추가 조건이 있습니다. 1 미만의 티켓 수는 사용할 수 없기 때문입니다.
 
-- So then there's some assembly code that needs to run for each of the system calls; luckily, it's just a pre-written macro, so you don't have to write any assembly. that's in `usys.S`.
+- 그런 다음 각 시스템 호출에 대해 실행해야 하는 어셈블리 코드가 있습니다. 다행히 미리 작성된 매크로이므로 어셈블리를 작성할 필요가 없습니다. 이는 `usys.S`에 있습니다.
 
-- So you just add two lines at the bottom to create macros for `SYSCALL(settickets)` and `SYSCALL(getpinfo)`
+- 따라서 `SYSCALL(settickets)` 및 `SYSCALL(getpinfo)`에 대한 매크로를 만들기 위해 맨 아래에 두 줄을 추가하기만 하면 됩니다.
 
-- Last part for the `syscalls`: you need to declare them in a header file for user code to be able to call them. that's in `user.h`.
+- `syscalls`의 마지막 부분: 사용자 코드가 호출할 수 있도록 헤더 파일에 선언해야 합니다. 이는 `user.h`에 있습니다.
 
-- So `struct pstat` will be properly defined in `pstat.h`, but you need to declare it in `user.h` as well so that user code doesn't complain when it sees it.
+- 따라서 `struct pstat`는 `pstat.h`에 제대로 정의되지만 사용자 코드가 이를 볼 때 불평하지 않도록 `user.h`에도 선언해야 합니다.
 
-- Basically, any user code that uses `syscalls` or C (really, `xv6`) standard library functions will have to include `user.h`.
+- 기본적으로 `syscalls` 또는 C (실제로는 `xv6`) 표준 라이브러리 함수를 사용하는 모든 사용자 코드는 `user.h`를 포함해야 합니다.
 
-- So, so far, that's everything for the two system calls as far as the OS is concerned; now we just have to actually implement them with the regular functions `settickets` and `getpinfo`, then implement the scheduler and the `ps` program.
+- 지금까지 OS와 관련된 두 시스템 호출에 대한 모든 것이었습니다. 이제 일반 함수 `settickets` 및 `getpinfo`를 실제로 구현한 다음 스케줄러와 `ps` 프로그램을 구현하기만 하면 됩니다.
 
-- `pstat.h` is not for the scheduler, but for the `ps` program, which will work somewhat like the Linux `ps`. `pstat.h` is just to define the `struct pstat`, but there's no `.c` file to go with it.
+- `pstat.h`는 스케줄러용이 아니라 Linux `ps`와 다소 유사하게 작동하는 `ps` 프로그램용입니다. `pstat.h`는 `struct pstat`를 정의하기 위한 것이지만 함께 제공되는 `.c` 파일은 없습니다.
 
-- So the scheduler will work by assigning 1 ticket by default to each process when it's created; then processes can set their own tickets using the `settickets` system call.
+- 따라서 스케줄러는 생성될 때 각 프로세스에 기본적으로 티켓 1개를 할당한 다음 프로세스가 `settickets` 시스템 호출을 사용하여 자체 티켓을 설정할 수 있도록 작동합니다.
 
-- so first we need to make sure each process tracks its own tickets, then we need to assign a default of 1 ticket when creating them, then we need to write `settickets`.
+- 따라서 먼저 각 프로세스가 자체 티켓을 추적하는지 확인한 다음 생성할 때 기본값으로 티켓 1개를 할당한 다음 `settickets`를 작성해야 합니다.
 
-- the first part is in `proc.h`: processes are represented as a `struct proc`, so we add a new member for `int tickets`.
+- 첫 번째 부분은 `proc.h`에 있습니다. 프로세스는 `struct proc`로 표시되므로 `int tickets`에 대한 새 멤버를 추가합니다.
 
-- the `int ticks` member is for `ps`; I'll come back to that.
+- `int ticks` 멤버는 `ps`용이며 나중에 다시 설명하겠습니다.
 
-- One other thing to note in `proc.h` is the `enum procstate`: you can see all the possible process states there. `EMBRYO` means it's in the process of creation; so what i did was `grep` for `EMBRYO` to find where the process was created in order to set the default tickets to 1. Turns out it's in `proc.c`.
+- `proc.h`에서 주목해야 할 또 다른 사항은 `enum procstate`입니다. 가능한 모든 프로세스 상태를 볼 수 있습니다. `EMBRYO`는 생성 중임을 의미하므로 기본 티켓을 1로 설정하기 위해 프로세스가 생성된 위치를 찾기 위해 `grep`으로 `EMBRYO`를 검색했습니다. `proc.c`에 있다는 것이 밝혀졌습니다.
 
-- Inside `proc.c`, there's a function `allocproc`, which initializes a process.
+- `proc.c` 내부에는 프로세스를 초기화하는 `allocproc` 함수가 있습니다.
 
-- There's a process table called `ptable`, and `allocproc` looks through it to find an unused process.
+- `ptable`이라는 프로세스 테이블이 있으며 `allocproc`은 이를 검색하여 사용되지 않는 프로세스를 찾습니다.
 
-- Then when it does find it, it goes to create it; i added `p->tickets = 1;` there.
+- 그런 다음 찾으면 생성합니다. 거기에 `p->tickets = 1;`을 추가했습니다.
 
-- okay so the next change is to fit one of the requirements: child processes need to inherit the number of tickets from their parent process.
+- 다음 변경 사항은 요구 사항 중 하나를 충족하는 것입니다. 자식 프로세스는 부모 프로세스에서 티켓 수를 상속해야 합니다.
 
-- So child processes are created with `fork`, which is in the same file.
+- 따라서 자식 프로세스는 동일한 파일에 있는 `fork`로 생성됩니다.
 
-- In `fork`, `curproc` is the current process, and `np` is the new process.
+- `fork`에서 `curproc`은 현재 프로세스이고 `np`는 새 프로세스입니다.
 
-- So i set `np->tickets = curproc->tickets`.
+- 그래서 `np->tickets = curproc->tickets`로 설정했습니다.
 
-- So the scheduler needs to generate a pseudo random number, then it should iterate through the process table with a counter initialized to 0, adding the number of tickets for each process to the counter. once the counter is greater than the pseudo random number, it stops and runs that process.
+- 스케줄러는 의사 난수를 생성한 다음 카운터를 0으로 초기화하여 프로세스 테이블을 반복하고 각 프로세스의 티켓 수를 카운터에 추가해야 합니다. 카운터가 의사 난수보다 크면 중지하고 해당 프로세스를 실행합니다.
 
-- So I ended up looking in P.J. Plauger's The Standard C Library, which is just a big book of all the source code for the C library with commentary. It's pretty good; I don't know if it's still written that way though because the book is from the 80s.
+- 결국 P.J. Plauger의 "The Standard C Library"를 살펴보았는데, 이 책은 C 라이브러리의 모든 소스 코드와 주석이 담긴 큰 책입니다. 꽤 괜찮습니다. 하지만 80년대 책이라서 지금도 그런 식으로 쓰여 있는지는 모르겠습니다.
 
-- So i just implemented C's `rand` and `srand` functions. `srand` sets a random seed (not so random, as you'll see later), then `rand` turns it into a pseudo random integer.
+- 그래서 C의 `rand` 및 `srand` 함수를 구현했습니다. `srand`는 난수 시드(나중에 알게 되겠지만 그다지 무작위적이지 않음)를 설정한 다음 `rand`는 이를 의사 난수 정수로 변환합니다.
 
-- There's a bunch of type magic going on there between changes back and forth from integers to unsigned integers; that's to avoid signed integer overflow, which causes undefined behavior. unsigned integer overflow is okay though.
+- 정수와 부호 없는 정수 사이를 오가는 많은 유형 마법이 있습니다. 이는 정의되지 않은 동작을 유발하는 부호 있는 정수 오버플로를 피하기 위한 것입니다. 그러나 부호 없는 정수 오버플로는 괜찮습니다.
 
-- I only made one change to make it faster, which was to write `& 32767` instead of `% 32768`.
+- 더 빠르게 만들기 위해 한 가지 변경 사항만 적용했는데, `% 32768` 대신 `& 32767`을 작성했습니다.
 
-- So you'll see the "random" seed i used: the number of `ticks`, which i think counts the number of timer interrupts so far.
+- 사용한 "무작위" 시드를 볼 수 있습니다. 지금까지의 타이머 인터럽트 수를 계산하는 것으로 생각되는 `ticks` 수입니다.
 
-- Which is totally not random at all, since the first time this program gets run, it'll be 0, then 1, then 2, etc.
+- 이 프로그램이 처음 실행될 때 0이 되고 그 다음에는 1, 2 등이 되므로 전혀 무작위적이지 않습니다.
 
-- So there's some lines about counting `ticks`; that was for `ps`, not the scheduler.
+- `ticks` 계산에 대한 몇 줄이 있는데, 이는 스케줄러가 아닌 `ps`용이었습니다.
 
-- The main change to make it a lottery scheduler is the counter variable.
+- 복권 스케줄러로 만드는 주요 변경 사항은 카운터 변수입니다.
 
-- And adding a for loop to count the total number of tickets that have been distributed.
+- 그리고 분배된 총 티켓 수를 계산하기 위한 for 루프를 추가합니다.
 
-- So then at the very bottom of this file is the implementation of `settickets` and `getpinfo`.
+- 그런 다음 이 파일의 맨 아래에는 `settickets` 및 `getpinfo`의 구현이 있습니다.
 
-- So after initializing `counter` and `totaltickets`, there's for loop that counts the total numbers of tickets that have gone out to processes.
+- `counter`와 `totaltickets`를 초기화한 후 프로세스에 배포된 총 티켓 수를 계산하는 for 루프가 있습니다.
 
-- Then we get the winning ticket.
+- 그런 다음 당첨 티켓을 얻습니다.
 
-- Let's discuss the original source code first. So first you acquire the lock. You'll release it at the very end. But in between, you have a for loop that iterates over all the processes in `ptable`.
+- 먼저 원본 소스 코드를 살펴보겠습니다. 먼저 잠금을 획득합니다. 맨 끝에서 해제합니다. 하지만 그 사이에는 `ptable`의 모든 프로세스를 반복하는 for 루프가 있습니다.
 
-- Specifically, it iterates over only the processes in `RUNNABLE` state; if a process isn't `RUNNABLE`, it just `continue`s on to the next one. (This is for the round-robin scheduling mechanism that's already in the code.)
+- 특히 `RUNNABLE` 상태의 프로세스만 반복합니다. 프로세스가 `RUNNABLE` 상태가 아니면 다음 프로세스로 `continue`합니다. (이는 코드에 이미 있는 라운드 로빈 스케줄링 메커니즘용입니다.)
 
-- So now it's gonna switch to the very first `RUNNABLE` process it finds. Like, switching to executing it.
+- 이제 찾은 첫 번째 `RUNNABLE` 프로세스로 전환합니다. 즉, 실행으로 전환합니다.
 
-- So first, `c` represents the current CPU. so it sets the current CPU to run the process it found with `c->proc = p;`.
+- 먼저 `c`는 현재 CPU를 나타냅니다. 따라서 `c->proc = p;`를 사용하여 찾은 프로세스를 실행하도록 현재 CPU를 설정합니다.
 
-- Then it calls this function, `switchuvm(p)`, which sets up the virtual memory address space for `p`. Then it sets the process's state to `RUNNING`.
+- 그런 다음 `p`에 대한 가상 메모리 주소 공간을 설정하는 `switchuvm(p)` 함수를 호출합니다. 그런 다음 프로세스 상태를 `RUNNING`으로 설정합니다.
 
-- And then `swtch` is where the magic happens: that one swaps out the register contents of the OS and scheduler content with the saved-in-memory register contents of the process `p`.
+- 그리고 `swtch`에서 마법이 일어납니다. OS 및 스케줄러 내용의 레지스터 내용을 메모리에 저장된 프로세스 `p`의 레지스터 내용으로 바꿉니다.
 
-- So as soon as `swtch` executes, the CPU will continue executing instructions, but now they're the process's instructions. So this scheduler function just hangs there.
+- 따라서 `swtch`가 실행되자마자 CPU는 명령을 계속 실행하지만 이제는 프로세스의 명령입니다. 따라서 이 스케줄러 함수는 그냥 중단됩니다.
 
-- Eventually, when a timer interrupt goes off, the processor will use another `swtch` call but with the arguments reversed to swap the scheduler's register contents from memory into the CPU's registers and save the process's register contents. At which point execution will continue at this exact point.
+- 결국 타이머 인터럽트가 발생하면 프로세서는 인수가 반대로 된 다른 `swtch` 호출을 사용하여 스케줄러의 레지스터 내용을 메모리에서 CPU 레지스터로 바꾸고 프로세스의 레지스터 내용을 저장합니다. 이 시점에서 실행은 이 정확한 지점에서 계속됩니다.
 
-- So now `switchkvm` will set up the kernel's virtual memory address space.
+- 이제 `switchkvm`은 커널의 가상 메모리 주소 공간을 설정합니다.
 
-- These 5 lines are the context switch:
+- 다음 5줄은 컨텍스트 전환입니다.
 
   ```c
   c->proc = p;
@@ -140,63 +140,63 @@
   switchkvm();
   ```
 
-- So then we go on to the next iteration of the inner for loop, which finds the next `RUNNABLE` process and repeats.
+- 그런 다음 내부 for 루프의 다음 반복으로 이동하여 다음 `RUNNABLE` 프로세스를 찾고 반복합니다.
 
-- Only once we've executed all the `RUNNABLE` processes do we exit the inner for loop and release the lock.
+- 모든 `RUNNABLE` 프로세스를 실행한 후에만 내부 for 루프를 종료하고 잠금을 해제합니다.
 
-- Original source code is structured like this (this is pseudocode):
-
-  ```python
-  while (1) {
-    iterate over processes:
-      if not runnable:
-        continue
-      run it
-  ```
-
-- New code is structured like this (this is pseudocode):
+- 원본 소스 코드는 다음과 같이 구성됩니다 (의사 코드).
 
   ```python
   while (1) {
-    count the total tickets allotted to all processes // one for loop here
-    get the winning ticket number
-    iterate over processes: // another for loop here
-      if not runnable:
-        continue
-      add its tickets to counter
-      if counter <= winning ticket number:
-        continue
-      run it
+    프로세스 반복:
+      실행 가능하지 않으면:
+        계속
+      실행
   ```
 
-- We ignore the tickets of non-RUNNABLE processes.
+- 새 코드는 다음과 같이 구성됩니다 (의사 코드).
 
-- So the tickets aren't numbered; each process just has a set amount of tickets, and we just count up until we've passed `n` tickets, where `n` is the winner.
+  ```python
+  while (1) {
+    모든 프로세스에 할당된 총 티켓 수 계산 // 여기에 for 루프 하나
+    당첨 티켓 번호 가져오기
+    프로세스 반복: // 여기에 다른 for 루프
+      실행 가능하지 않으면:
+        계속
+      티켓을 카운터에 추가
+      카운터 <= 당첨 티켓 번호이면:
+        계속
+      실행
+  ```
 
-- For example if proc A has 5 tickets and proc B has 7, proc C has 2. if the winning number is 3, then A would run; if it's 8, then B would run; if it's 12, then C would run.
+- 실행 불가능한 프로세스의 티켓은 무시합니다.
 
-- A winner in 0-4 would be A, 5-11 would be B, and 12-13 would be C.
+- 티켓에는 번호가 매겨져 있지 않습니다. 각 프로세스에는 정해진 양의 티켓이 있으며 당첨자 `n`개의 티켓을 통과할 때까지 계산합니다.
 
-- So `settickets` is pretty basic: you just acquire a lock, set the tickets for the process, release the lock.
+- 예를 들어 프로세스 A에 티켓 5개, 프로세스 B에 7개, 프로세스 C에 2개가 있다고 가정합니다. 당첨 번호가 3이면 A가 실행되고, 8이면 B가 실행되고, 12이면 C가 실행됩니다.
 
-- For `getpinfo` basically it works like this:
+- 0-4의 당첨자는 A, 5-11은 B, 12-13은 C입니다.
 
-- `p` is a pointer a `struct pstat`, as defined in `pstat.h`. each of its members is an array, with one entry per process.
+- `settickets`는 매우 기본적입니다. 잠금을 획득하고 프로세스의 티켓을 설정한 다음 잠금을 해제하기만 하면 됩니다.
 
-- Check for a null pointer.
+- `getpinfo`는 기본적으로 다음과 같이 작동합니다.
 
-- Iterate over the process table and set `proc_i` to the i-th process.
+- `p`는 `pstat.h`에 정의된 `struct pstat`에 대한 포인터입니다. 각 멤버는 배열이며 프로세스당 하나의 항목이 있습니다.
 
-- Set the i-th entry of each member of `p` to the value for this process.
+- null 포인터를 확인합니다.
 
-- One last bookkeeping piece: we need to add declarations for `struct pstat` and the `settickets` and `getpinfo` system calls in `defs.h`.
+- 프로세스 테이블을 반복하고 `proc_i`를 i번째 프로세스로 설정합니다.
 
-- And then the last file is `ps.c`, which implements the `ps` program, similar to Linux's `ps`. it just calls `getpinfo` to fill a `struct pstat`, then prints out the info for each process in use.
+- `p`의 각 멤버의 i번째 항목을 이 프로세스의 값으로 설정합니다.
 
-- And then you just modify the Makefile to include `ps.c` in the compilation, and we're done!
+- 마지막 장부 정리: `defs.h`에 `struct pstat` 및 `settickets` 및 `getpinfo` 시스템 호출에 대한 선언을 추가해야 합니다.
 
-- Oh and this is why we needed the ticks in the scheduler: `ps` will print out how long each process has run.
+- 그리고 마지막 파일은 Linux의 `ps`와 유사한 `ps` 프로그램을 구현하는 `ps.c`입니다. `getpinfo`를 호출하여 `struct pstat`를 채운 다음 사용 중인 각 프로세스에 대한 정보를 출력합니다.
 
-- So it needs to time the number of ticks that it actually executed.
+- 그런 다음 Makefile을 수정하여 컴파일에 `ps.c`를 포함하면 끝입니다!
 
-- FINALLY run `make qemu` in the `/src` directory to make sure it's all working.
+- 아, 그리고 이것이 스케줄러에 틱이 필요했던 이유입니다. `ps`는 각 프로세스가 얼마나 오래 실행되었는지 출력합니다.
+
+- 따라서 실제로 실행된 틱 수를 측정해야 합니다.
+
+- 마지막으로 `/src` 디렉토리에서 `make qemu`를 실행하여 모든 것이 작동하는지 확인합니다.

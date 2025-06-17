@@ -1,45 +1,45 @@
-## Project 2A
-### all thanks to [Palladian](https://github.com/palladian1/)
+## 프로젝트 2A
+### 모든 감사는 [Palladian](https://github.com/palladian1/)에게
 
-- [x] Interactive mode
-- [x] Batch mode
+- [x] 대화형 모드
+- [x] 배치 모드
 - [x] exit
 - [x] cd
 - [x] path
-- [x] Redirection
-- [x] Parallel commands
+- [x] 리디렉션
+- [x] 병렬 명령어
 
-### Tips
+### 팁
 
-* Watch the video for discussion 3 on the Unix shell.
-* Read chapter 5 in the OSTEP book.
-* Start by implementing a shell that only does one thing: prints the prompt, then exits when you type `exit`. Then add `cd`, then `path`. Then implement the ability to execute commands with `execv`, then add batch mode, then redirection, and finally parallel commands.
-* All of the test scripts will use batch mode and redirection, so until you've got those done, you'll have to test your shell manually.
-* When you implement the `path` command, make sure you can handle both absolute and relative paths (i.e., `path tests` as well as `path /usr/bin`.
-* It's tricky to get the errors down right, so just add error messages wherever it seems reasonable, then run the test scripts and modify your code until you're reporting errors exactly when you're supposed to. If you're running test `i`, you can check `tests/i.err` and `tests/i.rc` to see how many errors your shell should generate and compare to `tests-out/i.err` and `tests-out/i.rc`.
-* If you run into issues with test 3 where the test expects something like `ls: cannot access ...` and your shell outputs `/bin/ls: cannot access ...` or `/usr/bin/ls: cannot access ...`, try modifying your $PATH environment variable to start with `/bin`. If that doesn't work, just modify `tests/3.err` to match the output your system gives. You can't modify your system's output without messing with the implementation of `ls` and/or `execv`, so it's okay to skip this test as long as it's working in spirit.
-* I had to edit `/tests/3.pre` to use `/bin/ls` due to how it's set up on my system, in order to pass all the tests. Alternatively you can add `export PATH="/bin:$PATH"` to your `.profile` or `.bashrc` file.
+* 유닉스 셸에 대한 토론 3 비디오를 시청하십시오.
+* OSTEP 책의 5장을 읽으십시오.
+* 프롬프트를 출력한 다음 `exit`를 입력하면 종료되는 단일 기능만 수행하는 셸을 구현하는 것부터 시작하십시오. 그런 다음 `cd`를 추가하고 `path`를 추가하십시오. 그런 다음 `execv`로 명령을 실행하는 기능을 구현하고, 배치 모드, 리디렉션, 마지막으로 병렬 명령을 추가하십시오.
+* 모든 테스트 스크립트는 배치 모드와 리디렉션을 사용하므로, 이 기능들을 완료하기 전까지는 셸을 수동으로 테스트해야 합니다.
+* `path` 명령을 구현할 때 절대 경로와 상대 경로를 모두 처리할 수 있는지 확인하십시오 (예: `path tests` 및 `path /usr/bin`).
+* 오류를 올바르게 처리하는 것은 까다로우므로, 합리적으로 보이는 곳마다 오류 메시지를 추가한 다음 테스트 스크립트를 실행하고 오류를 정확히 보고해야 할 때까지 코드를 수정하십시오. 테스트 `i`를 실행 중인 경우 `tests/i.err` 및 `tests/i.rc`를 확인하여 셸에서 생성해야 하는 오류 수를 확인하고 `tests-out/i.err` 및 `tests-out/i.rc`와 비교할 수 있습니다.
+* 테스트 3에서 테스트가 `ls: cannot access ...`와 같은 것을 예상하지만 셸이 `/bin/ls: cannot access ...` 또는 `/usr/bin/ls: cannot access ...`를 출력하는 문제가 발생하는 경우, $PATH 환경 변수를 `/bin`으로 시작하도록 수정해 보십시오. 그래도 작동하지 않으면 시스템에서 제공하는 출력과 일치하도록 `tests/3.err`를 수정하십시오. `ls` 및/또는 `execv`의 구현을 건드리지 않고는 시스템의 출력을 수정할 수 없으므로, 정신적으로 작동하는 한 이 테스트를 건너뛰어도 괜찮습니다.
+* 모든 테스트를 통과하기 위해 시스템 설정 방식 때문에 `/tests/3.pre`를 편집하여 `/bin/ls`를 사용해야 했습니다. 또는 `.profile` 또는 `.bashrc` 파일에 `export PATH="/bin:$PATH"`를 추가할 수 있습니다.
 
-### Memory Management Traps and Pitfalls
+### 메모리 관리 함정과 위험 요소
 
-* This assignment makes it really easy to create pointers to stack variables that will no longer exist once they're out of scope, thus causing a segmentation fault. Make sure that if you set a pointer to point to a string, that string is something you allocated on the heap, and not on the stack.
+* 이 과제는 스택 변수에 대한 포인터를 쉽게 만들 수 있게 하며, 이 변수들은 범위를 벗어나면 더 이상 존재하지 않아 세그멘테이션 오류를 유발합니다. 포인터를 문자열을 가리키도록 설정하는 경우, 해당 문자열이 스택이 아닌 힙에 할당된 것인지 확인하십시오.
 
-* That said, if you do use a string on the stack, you can copy it into a heap-allocated string using `strcpy()`, `strncpy()`, `strcat()`, and `strncat()`.
+* 즉, 스택의 문자열을 사용하는 경우 `strcpy()`, `strncpy()`, `strcat()` 및 `strncat()`를 사용하여 힙에 할당된 문자열로 복사할 수 있습니다.
 
-* Only use `strcpy()` and `strcat()` for fixed-size strings and make sure the buffer you're copying into has enough space to hold the string, plus an extra character for `\0`.
+* 고정 크기 문자열에만 `strcpy()` 및 `strcat()`를 사용하고 복사 대상 버퍼에 문자열과 `\0`을 위한 추가 문자를 담을 충분한 공간이 있는지 확인하십시오.
 
-* For `strncpy()` and `strncat()`, make sure `n` is large enough to fit the `\0` terminator, or add it manually.
+* `strncpy()` 및 `strncat()`의 경우 `n`이 `\0` 종결자를 포함할 만큼 충분히 큰지 확인하거나 수동으로 추가하십시오.
 
-* Watch out for use-after-frees, especially in the implementation of `path`.
+* 특히 `path` 구현에서 해제 후 사용(use-after-free)에 주의하십시오.
 
-* Make sure you free any strings from `getline()` and `strdup()`, but watch out for double-frees, e.g. don't free a substring of a string you already freed.
+* `getline()` 및 `strdup()`의 문자열을 모두 해제해야 하지만, 이중 해제(double-free)에 주의하십시오. 예를 들어 이미 해제한 문자열의 하위 문자열을 해제하지 마십시오.
 
-* Avoid the C library function `strtok()`; it's not thread-safe. Use `strsep()` instead.
+* C 라이브러리 함수 `strtok()`는 스레드로부터 안전하지 않으므로 사용하지 마십시오. 대신 `strsep()`를 사용하십시오.
 
-* When you use `strsep()`, make sure you keep a copy of the original pointer to the string around so that you can free it later, because `strsep()` will modify the pointer, so if you free that later on, you'll corrupt the page table.
+* `strsep()`를 사용할 때 문자열에 대한 원래 포인터의 복사본을 유지하여 나중에 해제할 수 있도록 하십시오. `strsep()`는 포인터를 수정하므로 나중에 해제하면 페이지 테이블이 손상될 수 있습니다.
 
-* After calling `strsep(&buf, delim)`, check whether `buf` is `NULL` before dereferencing it.
-* General C coding practice: if you allocate memory for a data structure inside a function, you should free it in the same function. If you allocate memory in a dedicated `create_xxx` function, you should have a corresponding `destroy_xxx` function. That way, you always allocate and free memory at the same function depth, which makes it easier to avoid memory errors.
-* After every call to `malloc`, `calloc`, or `realloc`, check whether the result is `NULL`.
-* Use `calloc` instead of `malloc` if you're creating an array of pointers to avoid creating pointers to garbage values.
-* in `update_path` I had to fix that issue where most of the tests do `path /bin /usr/bin`, but one of them did `path tests`. So i just assumed that if your path starts with a slash, it's an absolute path and you should copy it in as is; if it doesn't, it's a relative path and you should add a ./ at the beginning.
+* `strsep(&buf, delim)`를 호출한 후 역참조하기 전에 `buf`가 `NULL`인지 확인하십시오.
+* 일반적인 C 코딩 관행: 함수 내에서 데이터 구조에 대한 메모리를 할당하는 경우 동일한 함수 내에서 해제해야 합니다. 전용 `create_xxx` 함수에서 메모리를 할당하는 경우 해당 `destroy_xxx` 함수가 있어야 합니다. 이렇게 하면 항상 동일한 함수 깊이에서 메모리를 할당하고 해제하므로 메모리 오류를 피하기가 더 쉬워집니다.
+* `malloc`, `calloc` 또는 `realloc`을 호출할 때마다 결과가 `NULL`인지 확인하십시오.
+* 포인터 배열을 만드는 경우 가비지 값에 대한 포인터를 만들지 않도록 `malloc` 대신 `calloc`을 사용하십시오.
+* `update_path`에서 대부분의 테스트는 `path /bin /usr/bin`을 수행하지만 그중 하나는 `path tests`를 수행하는 문제를 수정해야 했습니다. 그래서 경로가 슬래시로 시작하면 절대 경로로 간주하고 그대로 복사해야 한다고 가정했습니다. 그렇지 않으면 상대 경로이므로 시작 부분에 ./를 추가해야 합니다.
