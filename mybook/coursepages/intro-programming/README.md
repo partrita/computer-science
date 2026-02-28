@@ -77,7 +77,7 @@
 
 1. BeautifulSoup4 과제를 진행하고 있을 무렵 만약 파이썬 버전을 3.10+ 에 놓고 작업 중이라면 Collections 라이브러리 참조 구문이 거부되는 골치 아픈 에러 현상이 터질 것입니다. 이때 당면한 해결책을 전달해 드립니다. 억지로 이해하려 들지 마시고 그냥 프로그램 맨 꼭대기 불러오기 (imports block) 공간에 다음 줄을 몰래 복사해 집어넣으십시오:
 
-```{python}
+```python
 import collections
 collections.Callable = collections.abc.Callable
 
