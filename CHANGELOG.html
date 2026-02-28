@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>변경 이력 (Change Log) – computer-science</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./CONTRIBUTING.html" rel="next">
+<link href="./extras/readings.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CHANGELOG.html">부록</a></li><li class="breadcrumb-item"><a href="./CHANGELOG.html"><span class="chapter-title">변경 이력 (Change Log)</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">computer-science</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오픈 소스 소사이어티 대학교 (OSSU)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">General Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./FAQ.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">자주 묻는 질문 (FAQ)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./HELP.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">도움받기</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CURRICULAR_GUIDELINES.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">커리큘럼 가이드라인</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Course Pages</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coursepages/intro-cs/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬을 활용한 컴퓨터 과학 및 프로그래밍 입문</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coursepages/intro-programming/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로그래밍 입문 (Introduction to Programming)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coursepages/ostep/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">운영 체제: 세 가지의 쉬운 측면 (Operating Systems: Three Easy Pieces)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coursepages/ostep/Project-1B-initial-xv6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로젝트 1B (Project 1B)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coursepages/ostep/Project-2A-processes-shell.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로젝트 2A (Project 2A)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coursepages/ostep/Scheduling-xv6-lottery.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">모든 감사를 </span></a><a href="https://github.com/palladian1">palladian</a> 님께 전합니다
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coursepages/ostep/vm-xv6-intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">xv6 가상 메모리의 공포 속으로 (Intro To xv6 Virtual Memory)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coursepages/spd/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">체계적인 프로그램 설계 (Systematic Program Design)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Extras</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./extras/courses.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./extras/other_curricula.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">타 커리큘럼 소개 (Other curricula)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./extras/puzzles-practice-plods.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컴퓨터 공학 - 퍼즐 조각 풀기, 실전 연습기 (Computer Science - Puzzles, Practice and Plods)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./extras/readings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">부록</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CHANGELOG.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">변경 이력 (Change Log)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CONTRIBUTING.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">커리큘럼 변경하기 (Changing the curriculum)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">[8.0.0] 2017-11-01</a>
+  <ul class="collapse">
+  <li><a href="#추가됨" id="toc-추가됨" class="nav-link" data-scroll-target="#추가됨">추가됨</a></li>
+  <li><a href="#변경됨" id="toc-변경됨" class="nav-link" data-scroll-target="#변경됨">변경됨</a></li>
+  </ul></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">[7.2.2] 2017-07-02</a>
+  <ul class="collapse">
+  <li><a href="#추가됨-1" id="toc-추가됨-1" class="nav-link" data-scroll-target="#추가됨-1">추가됨</a></li>
+  </ul></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">[7.2.1] 2017-05-14</a>
+  <ul class="collapse">
+  <li><a href="#변경됨-1" id="toc-변경됨-1" class="nav-link" data-scroll-target="#변경됨-1">변경됨</a></li>
+  <li><a href="#추가됨-2" id="toc-추가됨-2" class="nav-link" data-scroll-target="#추가됨-2">추가됨</a></li>
+  </ul></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">[7.2.0] 2017-04-28</a>
+  <ul class="collapse">
+  <li><a href="#추가됨-3" id="toc-추가됨-3" class="nav-link" data-scroll-target="#추가됨-3">추가됨</a></li>
+  </ul></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">[7.1.2] 2017-04-22</a>
+  <ul class="collapse">
+  <li><a href="#변경됨-2" id="toc-변경됨-2" class="nav-link" data-scroll-target="#변경됨-2">변경됨</a></li>
+  </ul></li>
+  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">[7.1.1] 2017-04-11</a>
+  <ul class="collapse">
+  <li><a href="#변경됨-3" id="toc-변경됨-3" class="nav-link" data-scroll-target="#변경됨-3">변경됨</a></li>
+  </ul></li>
+  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6">[7.1.0] 2017-04-10</a>
+  <ul class="collapse">
+  <li><a href="#변경됨-4" id="toc-변경됨-4" class="nav-link" data-scroll-target="#변경됨-4">변경됨</a></li>
+  <li><a href="#추가됨-4" id="toc-추가됨-4" class="nav-link" data-scroll-target="#추가됨-4">추가됨</a></li>
+  </ul></li>
+  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7">[7.0.2] 2017-03-30</a>
+  <ul class="collapse">
+  <li><a href="#변경됨-5" id="toc-변경됨-5" class="nav-link" data-scroll-target="#변경됨-5">변경됨</a></li>
+  <li><a href="#추가됨-5" id="toc-추가됨-5" class="nav-link" data-scroll-target="#추가됨-5">추가됨</a></li>
+  <li><a href="#삭제됨" id="toc-삭제됨" class="nav-link" data-scroll-target="#삭제됨">삭제됨</a></li>
+  </ul></li>
+  <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8">[7.0.1] 2017-03-11</a>
+  <ul class="collapse">
+  <li><a href="#변경됨-6" id="toc-변경됨-6" class="nav-link" data-scroll-target="#변경됨-6">변경됨</a></li>
+  <li><a href="#추가됨-6" id="toc-추가됨-6" class="nav-link" data-scroll-target="#추가됨-6">추가됨</a></li>
+  </ul></li>
+  <li><a href="#section-9" id="toc-section-9" class="nav-link" data-scroll-target="#section-9">[7.0] 2017-03-09</a>
+  <ul class="collapse">
+  <li><a href="#변경됨-7" id="toc-변경됨-7" class="nav-link" data-scroll-target="#변경됨-7">변경됨</a></li>
+  <li><a href="#추가됨-7" id="toc-추가됨-7" class="nav-link" data-scroll-target="#추가됨-7">추가됨</a></li>
+  <li><a href="#삭제됨-1" id="toc-삭제됨-1" class="nav-link" data-scroll-target="#삭제됨-1">삭제됨</a></li>
+  </ul></li>
+  <li><a href="#section-10" id="toc-section-10" class="nav-link" data-scroll-target="#section-10">[6.0] 2016-10-09</a>
+  <ul class="collapse">
+  <li><a href="#변경됨-8" id="toc-변경됨-8" class="nav-link" data-scroll-target="#변경됨-8">변경됨</a></li>
+  <li><a href="#추가됨-8" id="toc-추가됨-8" class="nav-link" data-scroll-target="#추가됨-8">추가됨</a></li>
+  <li><a href="#삭제됨-2" id="toc-삭제됨-2" class="nav-link" data-scroll-target="#삭제됨-2">삭제됨</a></li>
+  </ul></li>
+  <li><a href="#section-11" id="toc-section-11" class="nav-link" data-scroll-target="#section-11">[5.1.0] 2016-08-20</a>
+  <ul class="collapse">
+  <li><a href="#변경됨-9" id="toc-변경됨-9" class="nav-link" data-scroll-target="#변경됨-9">변경됨</a></li>
+  </ul></li>
+  <li><a href="#section-12" id="toc-section-12" class="nav-link" data-scroll-target="#section-12">[5.0.0] 2016-08-20</a>
+  <ul class="collapse">
+  <li><a href="#삭제됨-3" id="toc-삭제됨-3" class="nav-link" data-scroll-target="#삭제됨-3">삭제됨</a></li>
+  <li><a href="#추가됨-9" id="toc-추가됨-9" class="nav-link" data-scroll-target="#추가됨-9">추가됨</a></li>
+  </ul></li>
+  <li><a href="#section-13" id="toc-section-13" class="nav-link" data-scroll-target="#section-13">[4.1.0] 2016-08-05</a></li>
+  <li><a href="#section-14" id="toc-section-14" class="nav-link" data-scroll-target="#section-14">[4.0.0] 2016-07-30</a>
+  <ul class="collapse">
+  <li><a href="#삭제됨-4" id="toc-삭제됨-4" class="nav-link" data-scroll-target="#삭제됨-4">삭제됨</a></li>
+  <li><a href="#해결됨" id="toc-해결됨" class="nav-link" data-scroll-target="#해결됨">해결됨</a></li>
+  <li><a href="#추가됨-10" id="toc-추가됨-10" class="nav-link" data-scroll-target="#추가됨-10">추가됨</a></li>
+  </ul></li>
+  <li><a href="#section-15" id="toc-section-15" class="nav-link" data-scroll-target="#section-15">[3.0.0] 2016-05-04</a>
+  <ul class="collapse">
+  <li><a href="#삭제됨-5" id="toc-삭제됨-5" class="nav-link" data-scroll-target="#삭제됨-5">삭제됨</a></li>
+  <li><a href="#추가됨-11" id="toc-추가됨-11" class="nav-link" data-scroll-target="#추가됨-11">추가됨</a></li>
+  </ul></li>
+  <li><a href="#section-16" id="toc-section-16" class="nav-link" data-scroll-target="#section-16">[2.0.1] 2016-04-04</a>
+  <ul class="collapse">
+  <li><a href="#해결됨-1" id="toc-해결됨-1" class="nav-link" data-scroll-target="#해결됨-1">해결됨</a></li>
+  </ul></li>
+  <li><a href="#section-17" id="toc-section-17" class="nav-link" data-scroll-target="#section-17">[2.0.0] 2016-03-17</a>
+  <ul class="collapse">
+  <li><a href="#해결됨-2" id="toc-해결됨-2" class="nav-link" data-scroll-target="#해결됨-2">해결됨</a></li>
+  <li><a href="#삭제됨-6" id="toc-삭제됨-6" class="nav-link" data-scroll-target="#삭제됨-6">삭제됨</a></li>
+  </ul></li>
+  <li><a href="#section-18" id="toc-section-18" class="nav-link" data-scroll-target="#section-18">[1.3.12] 2016-03-17</a>
+  <ul class="collapse">
+  <li><a href="#추가됨-12" id="toc-추가됨-12" class="nav-link" data-scroll-target="#추가됨-12">추가됨</a></li>
+  </ul></li>
+  <li><a href="#section-19" id="toc-section-19" class="nav-link" data-scroll-target="#section-19">[1.3.11] 2016-03-06</a>
+  <ul class="collapse">
+  <li><a href="#해결됨-3" id="toc-해결됨-3" class="nav-link" data-scroll-target="#해결됨-3">해결됨</a></li>
+  </ul></li>
+  <li><a href="#section-20" id="toc-section-20" class="nav-link" data-scroll-target="#section-20">[1.3.10] 2016-03-06</a>
+  <ul class="collapse">
+  <li><a href="#해결됨-4" id="toc-해결됨-4" class="nav-link" data-scroll-target="#해결됨-4">해결됨</a></li>
+  </ul></li>
+  <li><a href="#section-21" id="toc-section-21" class="nav-link" data-scroll-target="#section-21">[1.3.9] 2015-11-09</a>
+  <ul class="collapse">
+  <li><a href="#해결됨-5" id="toc-해결됨-5" class="nav-link" data-scroll-target="#해결됨-5">해결됨</a></li>
+  </ul></li>
+  <li><a href="#section-22" id="toc-section-22" class="nav-link" data-scroll-target="#section-22">[1.3.8] 2015-11-07</a>
+  <ul class="collapse">
+  <li><a href="#추가됨-13" id="toc-추가됨-13" class="nav-link" data-scroll-target="#추가됨-13">추가됨</a></li>
+  </ul></li>
+  <li><a href="#section-23" id="toc-section-23" class="nav-link" data-scroll-target="#section-23">[1.3.7] 2015-11-01</a>
+  <ul class="collapse">
+  <li><a href="#삭제됨-7" id="toc-삭제됨-7" class="nav-link" data-scroll-target="#삭제됨-7">삭제됨</a></li>
+  </ul></li>
+  <li><a href="#section-24" id="toc-section-24" class="nav-link" data-scroll-target="#section-24">[1.3.6] 2015-10-22</a>
+  <ul class="collapse">
+  <li><a href="#추가됨-14" id="toc-추가됨-14" class="nav-link" data-scroll-target="#추가됨-14">추가됨</a></li>
+  </ul></li>
+  <li><a href="#section-25" id="toc-section-25" class="nav-link" data-scroll-target="#section-25">[1.2.6] 2015-10-19</a>
+  <ul class="collapse">
+  <li><a href="#추가됨-15" id="toc-추가됨-15" class="nav-link" data-scroll-target="#추가됨-15">추가됨</a></li>
+  </ul></li>
+  <li><a href="#section-26" id="toc-section-26" class="nav-link" data-scroll-target="#section-26">[1.2.5] 2015-10-16</a>
+  <ul class="collapse">
+  <li><a href="#해결됨-6" id="toc-해결됨-6" class="nav-link" data-scroll-target="#해결됨-6">해결됨</a></li>
+  </ul></li>
+  <li><a href="#section-27" id="toc-section-27" class="nav-link" data-scroll-target="#section-27">[1.2.4] 2015-10-14</a>
+  <ul class="collapse">
+  <li><a href="#삭제됨-8" id="toc-삭제됨-8" class="nav-link" data-scroll-target="#삭제됨-8">삭제됨</a></li>
+  </ul></li>
+  <li><a href="#section-28" id="toc-section-28" class="nav-link" data-scroll-target="#section-28">[1.2.3] 2015-10-12</a>
+  <ul class="collapse">
+  <li><a href="#변경됨-10" id="toc-변경됨-10" class="nav-link" data-scroll-target="#변경됨-10">변경됨</a></li>
+  </ul></li>
+  <li><a href="#section-29" id="toc-section-29" class="nav-link" data-scroll-target="#section-29">[1.2.2] 2015-10-12</a>
+  <ul class="collapse">
+  <li><a href="#해결됨-7" id="toc-해결됨-7" class="nav-link" data-scroll-target="#해결됨-7">해결됨</a></li>
+  </ul></li>
+  <li><a href="#section-30" id="toc-section-30" class="nav-link" data-scroll-target="#section-30">[1.2.1] 2015-10-11</a>
+  <ul class="collapse">
+  <li><a href="#추가됨-16" id="toc-추가됨-16" class="nav-link" data-scroll-target="#추가됨-16">추가됨</a></li>
+  </ul></li>
+  <li><a href="#section-31" id="toc-section-31" class="nav-link" data-scroll-target="#section-31">[1.1.1] 2015-10-11</a>
+  <ul class="collapse">
+  <li><a href="#해결됨-8" id="toc-해결됨-8" class="nav-link" data-scroll-target="#해결됨-8">해결됨</a></li>
+  </ul></li>
+  <li><a href="#section-32" id="toc-section-32" class="nav-link" data-scroll-target="#section-32">[1.1.0] 2015-10-08</a>
+  <ul class="collapse">
+  <li><a href="#추가됨-17" id="toc-추가됨-17" class="nav-link" data-scroll-target="#추가됨-17">추가됨</a></li>
+  </ul></li>
+  <li><a href="#section-33" id="toc-section-33" class="nav-link" data-scroll-target="#section-33">[1.0.0] 2015-10-08</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CHANGELOG.html">부록</a></li><li class="breadcrumb-item"><a href="./CHANGELOG.html"><span class="chapter-title">변경 이력 (Change Log)</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">변경 이력 (Change Log)</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>참고</strong>: 현재 커리큘럼은 v9 버전으로 넘어가기 위한 대대적인 검토를 진행 중입니다. 주요 작업은 우리의 추천 강좌들이 <a href="./CURRICULAR_GUIDELINES.html">커리큘럼 가이드라인(curricular guidelines)</a>에 미달하지 않는지 빡빡하게 검수하고, 누락된 주제들을 신규 발굴해 채워 넣으며, 쓸데없이 내용이 겹치거나 범위가 산으로 가는 잉여 강좌들을 모조리 쳐내는 작업들입니다. 이러한 노력의 일환으로 여러분의 코멘트 요청(Requests for Comment)이 완수될 때마다, 커리큘럼 상에 해당 내용은 즉시즉시 변경 및 반영처리 되고 있습니다. 이 길고 지루한 전면 재검토 작업의 마침표가 찍히는 날, 당당히 v9 이라는 이름으로 판올림 버전을 공표할 것입니다.</p>
+<p>이 프로젝트의 역사에 기록될 만한 모든 스펙타클한 변동 사항들은 바로 이 파일에 박제될 것입니다. 본 프로젝트는 암묵적으로 다음의 <a href="http://semver.org/">유의적 버전(Semantic Versioning)</a> 철학을 엄수합니다: - “MAJOR (주 버전)” 판올림 업데이트: 특정 과목 코어 내의 주제를 통째로 갈아엎고 변경할 때. - “MINOR (부 버전)” 판올림 업데이트: 가르치는 코어 주제 자체는 동일하지만, 그것을 가르치는 ’강좌(courses)’만 다른 옵션으로 갈아치울 때. - “PATCH (수정 버전)” 업데이트: 미관상, 미학적 변경이나 커리큘럼상 치명적이지 않은 기타 추가/삭제 조치, 혹은 진도 흐름을 더 매끄럽게 만들기 위해 강좌들의 수강 순서를 재배치할 때.</p>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section">[8.0.0] 2017-11-01</h2>
+<section id="추가됨" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨">추가됨</h3>
+<ul>
+<li>부록(extras/readings): “시스템 디자인 입문서 (The System Design Primer)” 추가</li>
+<li>부록(extras/readings): “프로그래머를 위한 카테고리 이론: 서문 (Category Theory for Programmers: The Preface)” 추가</li>
+<li>부록(extras/readings): “프로그래밍 언어: 응용과 해석 (Programming Languages: Application and Interpretation)” 추가</li>
+<li>부록(extras/readings): “프로그래밍 및 프로그래밍 언어 (Programming and Programming Languages)” 추가</li>
+<li>기여자 가이드(CONTRIBUTING): 기여자 지침 안내처에 “Git 배우기 (Learning Git)” 카테고리 추가</li>
+<li>코어 수학 파트: “선형대수의 본질 (Essence of Linear Algebra)” 영상을 기존 필수 과목이던 “선형대수: 기초부터 최전선까지 (Linear Algebra: Foundations to Frontiers)”에 진입하기 전 찍고 넘어가야 할 선수 강의로 지정해 추가</li>
+</ul>
+</section>
+<section id="변경됨" class="level3">
+<h3 class="anchored" data-anchor-id="변경됨">변경됨</h3>
+<ul>
+<li>“수학적 사고 입문 (Introduction to Mathematical Thinking)” 녀석을 정규 트랙에서 쫓아내 부록방(extras/courses)으로 귀양 보냄</li>
+<li>“해킹 더 커널 (Hack the Kernel: ops-class)” 과정을 너무 어려워 보여서 처박아 뒀던 심화 시스템(Advanced Systems) 구역에서 다시 끌고 나와 정규 코어 시스템(Core Systems) 구역으로 멱살 잡고 편입시킴</li>
+<li>코어 시스템 파트: 기존 괴물 교본 “운영체제: 3가지 쉬운 측면 (Operating Systems: Three Easy Pieces)”의 절대 필수 시청 강제 규정을 해제함. 대신 방금 편입된 “해킹 더 커널” 과정을 돌파할 때 곁들여 읽으면 피가 되고 살이 될 최적의 지원군 교재로서의 지위로 하향 조정</li>
+<li>코어 이론 파트: 극악무도한 Coursera 플랫폼이 돈을 뜯어내려 다크 패턴을 교묘하게 쓴다는 발칙함을 포착, 이에 분노하여 스탠퍼드 알고리즘(Stanford Algorithms) 과정의 수강 플랫폼 호스트 링크를 모조리 Coursera에서 Lagunita 쪽으로 갈아치움</li>
+</ul>
+</section>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1">[7.2.2] 2017-07-02</h2>
+<section id="추가됨-1" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-1">추가됨</h3>
+<ul>
+<li>Haskell 을 편하게 돈으로 바르고 싶어 하는 분들을 위해 유료 대안 도서로 “첫 원리부터 배우는 하스켈 프로그래밍 (Haskell Programming from First Principles)” 서적판을 추가</li>
+<li>“씽크 파이썬 (Think Python)” 도서를 부록(extras/readings) 목록표에 추가</li>
+<li>일부 강좌 내용 중 FAQ 엔트리 항목과 관련 도움 링크들 꼼꼼히 추가 기입</li>
+<li>“카테고리 이론: 부드러운 입문서 (Category Theory: A Gentle Introduction)” 도서를 부록(extras/readings) 목록표에 병합</li>
+</ul>
+</section>
+</section>
+<section id="section-2" class="level2">
+<h2 class="anchored" data-anchor-id="section-2">[7.2.1] 2017-05-14</h2>
+<section id="변경됨-1" class="level3">
+<h3 class="anchored" data-anchor-id="변경됨-1">변경됨</h3>
+<ul>
+<li>네트워킹(Networking) 코스의 예상 완주 소요 일자를 8주(8 weeks)로 대폭 조정</li>
+<li>짜증을 유발하는 철자 오류 버그 패치 완료</li>
+</ul>
+</section>
+<section id="추가됨-2" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-2">추가됨</h3>
+<ul>
+<li>부록방(<a href="./extras/courses.html">extras/courses</a>) 라인업에 Haskell 프로그래밍 입문 과정 신규 스카웃 입사</li>
+</ul>
+</section>
+</section>
+<section id="section-3" class="level2">
+<h2 class="anchored" data-anchor-id="section-3">[7.2.0] 2017-04-28</h2>
+<section id="추가됨-3" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-3">추가됨</h3>
+<ul>
+<li>소프트웨어 테스팅 (Software Testing) 과정 화려하게 데뷔</li>
+<li>스탠퍼드 라구니타 출신의 알고리즘 과정(Algorithms: Design and Analysis) 직행 링크선 설치 완료</li>
+<li>다변수 미적분학(Multivariable Calculus) 코스에 덤비다 박살 날 학생들의 등짝을 밀어주기 위해, MIT의 단일변수 미적분학 과정 중 ‘매개변수 방정식(parametric equations)’과 ’극좌표계(polar coordinates)’ 챕터 직통 링크를 추가로 발라주어 목숨 생존율 증대 도모</li>
+</ul>
+</section>
+</section>
+<section id="section-4" class="level2">
+<h2 class="anchored" data-anchor-id="section-4">[7.1.2] 2017-04-22</h2>
+<section id="변경됨-2" class="level3">
+<h3 class="anchored" data-anchor-id="변경됨-2">변경됨</h3>
+<ul>
+<li>프로젝트(Projects) 대문 마당에 메가 프로젝트 리스트(Mega Project List)로 통하는 차원문 링크 설치</li>
+</ul>
+</section>
+</section>
+<section id="section-5" class="level2">
+<h2 class="anchored" data-anchor-id="section-5">[7.1.1] 2017-04-11</h2>
+<section id="변경됨-3" class="level3">
+<h3 class="anchored" data-anchor-id="변경됨-3">변경됨</h3>
+<ul>
+<li>대규모 릴리스 출격을 위한 최종 와꾸 터치업 진행</li>
+</ul>
+</section>
+</section>
+<section id="section-6" class="level2">
+<h2 class="anchored" data-anchor-id="section-6">[7.1.0] 2017-04-10</h2>
+<section id="변경됨-4" class="level3">
+<h3 class="anchored" data-anchor-id="변경됨-4">변경됨</h3>
+<ul>
+<li>엉망으로 꼬였던 프로그래밍 언어(programming languages) 과목의 포맷 재구성본을 롤백(회군) 조치</li>
+</ul>
+</section>
+<section id="추가됨-4" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-4">추가됨</h3>
+<ul>
+<li>견고한 분산 알고리즘 (Reliable Distributed Algorithms) 강좌들 전격 채용</li>
+<li>기가 맥힌 새로운 CS 입문 신규 강좌 코스 개장</li>
+</ul>
+</section>
+</section>
+<section id="section-7" class="level2">
+<h2 class="anchored" data-anchor-id="section-7">[7.0.2] 2017-03-30</h2>
+<section id="변경됨-5" class="level3">
+<h3 class="anchored" data-anchor-id="변경됨-5">변경됨</h3>
+<ul>
+<li>해도 그만 안 해도 그만인 선택 옵션형 학습 코스들을 분리 수거하여 부록방(extras/courses)의 새로운 찌그러진 공간으로 몽땅 유배 보냄</li>
+<li>다른 컴퓨터 아키텍처 예비 코스 녀석 또한 부록방(extras/courses)으로 귀양 보냄</li>
+</ul>
+</section>
+<section id="추가됨-5" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-5">추가됨</h3>
+<ul>
+<li>심화 어플리케이션(Advanced applications) 구역에 스칼라(Scala) 특화 전문화(specialization) 코스를 신규 스카웃</li>
+</ul>
+</section>
+<section id="삭제됨" class="level3">
+<h3 class="anchored" data-anchor-id="삭제됨">삭제됨</h3>
+<ul>
+<li>머리통 터지는 커리큘럼을 심플하게 다이어트 시키기 위해 ‘필수 지정 독서물(required readings)’ 들 중 단 하나만 남기고 나머진 무자비하게 청소 삭제해 버림</li>
+</ul>
+</section>
+</section>
+<section id="section-8" class="level2">
+<h2 class="anchored" data-anchor-id="section-8">[7.0.1] 2017-03-11</h2>
+<section id="변경됨-6" class="level3">
+<h3 class="anchored" data-anchor-id="변경됨-6">변경됨</h3>
+<ul>
+<li>죽어버린 브래드필드(Bradfield) 사제 컴퓨터 공학 가이드 웹페이지의 연결 링크 파이프 수리 패치 완료</li>
+</ul>
+</section>
+<section id="추가됨-6" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-6">추가됨</h3>
+<ul>
+<li>미적분학(Calculus One) 코스 하단에 수많은 에러타(오류들) 수정표 보고서와 코스 공략 진도 권장 가이드 링크들의 노트 구문 투척</li>
+<li>부록(extras) 영역에 선택적 엑스트라 강좌들 구겨 넣기:
+<ul>
+<li>길버트 스트랭의 선형대수 렉처</li>
+<li>UC 버클리 출신의 ‘컴퓨터 프로그램의 구조와 해석 (Structure and Interpretation of Computer Programs)’</li>
+</ul></li>
+<li>부록(extras) 영역에 선택적 엑스트라 독서본 책 구겨 넣기:
+<ul>
+<li>밴 로이(Van Roy)의 역작 ‘고급 프로그래밍 (advanced programming)’ 개론서</li>
+<li>P&amp;H 님의 컴퓨터 구조학 (computer architecture) 서적</li>
+<li>스키에나(Skiena)의 무서운 알고리즘(algorithms) 해설서</li>
+<li>길버트 스트랭(Strang) 성님의 선형대수학 교본</li>
+<li>데이터베이스 매니지먼트 시스템(Database Management Systems) 책자</li>
+<li>타르(Tarr)가 지은 나만의 ‘도메인 특화 언어(Domain-specific language)’ 창조 비법서</li>
+<li>수많은 구루 저자들이 쓴 분산 시스템(distributed systems) 성서 파편 모음집들</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="section-9" class="level2">
+<h2 class="anchored" data-anchor-id="section-9">[7.0] 2017-03-09</h2>
+<p>프로그램 아키텍처 전반의 지각 변동 및 완벽 오버홀(Complete overhaul) 가동</p>
+<section id="변경됨-7" class="level3">
+<h3 class="anchored" data-anchor-id="변경됨-7">변경됨</h3>
+<ul>
+<li>산만하던 기여자들의 행동 수칙 지침(contributor guidelines) 가이드를 보기 좋게 청소해 별도의 파일로 완벽히 떼어 내 격리시킴</li>
+<li>수십 개로 난도질해 흩뿌려져 있던 과목 카테고리들을, 무수히 많은 주제를 포용하는 단 4개의 거대한 기둥(4개 과목 풀) 체재로 대통합 흡수 통폐합 시행</li>
+<li>사방에 널렸던 free-books.md와 paid-books.md 종이 쪼가리들을 하나의 거대한 readings.md 책자로 묶어 물리적 컴파일 결합</li>
+<li>free-courses.md와 paid-courses.md 파편 쪼가리들을 courses.md 본체 합체 통폐합 달성</li>
+<li>구닥다리 쓸모없던 “How to Code” 놈을 처형하고 새롭고 강렬한 “How to Code” (소프트웨어 개발 마이크로 마스터즈 과정 코스)로 위대한 세대교체 달성</li>
+<li>프린스턴 알고리즘(Princeton Algorithms) 형님을 대체 과정 부록방(<a href="#extras/courses.md">alternative courses</a>)으로 퇴출시키고, 스탠퍼드 알고리즘(Stanford Algorithms) 놈을 메인 무대로 끌고 옴</li>
+</ul>
+</section>
+<section id="추가됨-7" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-7">추가됨</h3>
+<ul>
+<li>모든 코스 수강생들이 피를 보지 않게끔 각 과목 앞치마에 선수 과목 (prerequisites) 필수 요건 꼬리표 강력 부착 명시 지시</li>
+<li>학구열 불태우기: 코스/주제별 필수 요구 조건과 프로젝트 과제 필수 달성 목표 사항(Requirements) 기준 확립 통지</li>
+<li>하스켈(Haskell), 프롤로그(Prolog), 운영체제(Operating Systems) 필수 독서 지정 지침서 추가</li>
+<li>코스 신설: Dan Grossman 형님의 프로그래밍 언어들 (Programming Languages)</li>
+<li>코스 신설: 맨땅 헤딩 창조물 ‘낸드에서 테트리스까지(From Nand to Tetris)’ 투입</li>
+<li>선택 과목 개방: 병렬 프로그래밍 입문 (Intro to Parallel Programming)</li>
+<li>선택 과목 개방: 완벽을 위한 LAFF 프로그래밍 (LAFF: Programming for Correctness)</li>
+<li>선택 과목 개방: 수학적 사고 입문 (Introduction to Mathematical Thinking)</li>
+<li>선택 과목 개방: 공포의 전자기학 (Electricity and Magnetism)</li>
+<li>선택 과목 개방: MIT발 연산 기초 논리 망치 (MIT’s Computation Structures)</li>
+<li>선택 과목 개방: 악몽의 다변수 미적분학 (Multivariable Calculus)</li>
+<li>선택 과목 개방: 운영체제 갈아 넣기 (ops-class.org)</li>
+<li>선택 과목 개방: 오토마타 기계 이론 (Automata Theory)</li>
+<li>선택 과목 개방: 논리학 입문 (Introduction to Logic)</li>
+<li>선택 과목 개방: 연산 기하학 (Computational Geometry)</li>
+<li>선택 과목 개방: 정형 개념 분석 (Formal Concept Analysis)</li>
+<li>선택 과목 개방: 인간의 게임 이론 (Game Theory)</li>
+<li>선택 전문화 심화 루트 (Elective specializations) 테크트리 추가 신설:
+<ul>
+<li>로보틱스 (Robotics)</li>
+<li>데이터 씹어먹기 (Data Mining)</li>
+<li>거대한 빅 데이터 (Big Data)</li>
+<li>사물 지능 인터넷 (Internet of Things)</li>
+<li>클라우드 컴퓨팅 (Cloud Computing)</li>
+<li>풀스택 웹 대마왕 (Full Stack Web Development)</li>
+<li>데이터 사이언스 (Data Science)</li>
+</ul></li>
+<li>구루 프로급(Pro spec) 전문화 강제 훈련 코스들 신설:
+<ul>
+<li>R로 소프트웨어 마스터링하기 (Mastering Software Development in R)</li>
+<li>인공지능 엔지니어 조기 육성 (Artificial Intelligence Engineer)</li>
+<li>머신 러닝 장인 육성 (Machine Learning Engineer)</li>
+<li>사이버보안 특공대 (Cybersecurity)</li>
+<li>안드로이드 노예 개발자 (Android Developer)</li>
+</ul></li>
+</ul>
+</section>
+<section id="삭제됨-1" class="level3">
+<h3 class="anchored" data-anchor-id="삭제됨-1">삭제됨</h3>
+<ul>
+<li>폐허가 된 시체 링크들(dead links)과 트렌드에 폐기된 고기능 쓰레기 강좌들 전면 소각 청소</li>
+<li>피로도만 올리던 과목당 개별 미니 프로젝트 억지 필수 요구 조항 (per-course project requirement) 족쇄 파기</li>
+<li>처형 대상 강좌: Java로 객체 지향 프로그래밍 하기 (Object-Oriented Programming in Java)</li>
+<li>처형 대상 강좌: 스칼라(Scala)로 짓는 함수형 프로그래밍 (Functional Programming in Scala)</li>
+<li>처형 대상 강좌: 컴퓨터 구조학 (Computer Architecture) (다만 추모의 의미로 하단 주석 footnotes 한 줄로는 목숨 유지시킴)</li>
+<li>처형 대상 강좌: 이론 컴퓨터 수학 입문 (Intro to Theoretical Computer Science)</li>
+<li>처형 대상 강좌: 소프트웨어 설계 공정과 애자일 신앙 (Software Processes and Agile Practices)</li>
+<li>처형 대상 강좌: 운영 체제 깎고 시스템 프로그래밍하기 (Operating Systems &amp; System Programming)</li>
+<li>처형 대상 강좌: 사이버보안 세상 입문 (Introduction to Cyber Security)</li>
+<li>처형 대상 강좌: 병렬 컴퓨터 구조론 및 프로그래밍 (Parallel Computer Architecture and Programming)</li>
+<li>처형 대상 강좌: 모바일쟁이를 위한 UX 디자인 기초 (UX Design for Mobile Developers)</li>
+</ul>
+</section>
+</section>
+<section id="section-10" class="level2">
+<h2 class="anchored" data-anchor-id="section-10">[6.0] 2016-10-09</h2>
+<section id="변경됨-8" class="level3">
+<h3 class="anchored" data-anchor-id="변경됨-8">변경됨</h3>
+<ul>
+<li>그 미친 ‘미적분학 1(Calculus One)’ 지뢰밭을 ‘컴퓨터 논리 수학 입문(Mathematics for Computer Science)’ 보다 아예 앞단이자 교차 병행 과목으로 멱살 잡아다 끌어올려 배치시켜 버림</li>
+<li>“과목들 수강 순서 규정 (Order of the classes)” 단락의 설명을 사람이 읽을 수 있도록 세련되게 치장 재건축함</li>
+</ul>
+</section>
+<section id="추가됨-8" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-8">추가됨</h3>
+<ul>
+<li>새로운 OSSU 제국 버전에 맞춘 삐까번쩍한 대문 Trello 투명 보드 개국 선포</li>
+<li>초심자용 “이 미친 가이드를 조종하는 법(How to use this guide)” 매뉴얼 어귀 안에 “어떻게 내 학습 노하우 진행도를 증명할 것인가(How to track and show your progress)” 가이드 단락 전격 신설 추가</li>
+<li>대망의 거대 과제 모음 <code>PROJECTS.md</code> 선언문 파일 탄생</li>
+<li>커리큘럼 곳곳의 찢어져 있던 잔여 프로젝트 섹션 내용물들을 이 신생 <code>PROJECTS.md</code> 몸통 안으로 모두 영혼 복제 이식 완료</li>
+</ul>
+</section>
+<section id="삭제됨-2" class="level3">
+<h3 class="anchored" data-anchor-id="삭제됨-2">삭제됨</h3>
+<ul>
+<li>더 이상 쓸 데 없어진 “다음 나아갈 목표치 (Next Goals)” 오지라퍼 단락 강제 삭제형 집행</li>
+<li>버려져 썩어가던 원조 OSSU 웹 앱 링크(OSSU web app)의 흔적조차 모조리 지워버림</li>
+</ul>
+</section>
+</section>
+<section id="section-11" class="level2">
+<h2 class="anchored" data-anchor-id="section-11">[5.1.0] 2016-08-20</h2>
+<p>컴퓨터 논리 과학 이과 수학의 끝판왕 코스를 최신 기통으로 엔진 업그레이드 조치:</p>
+<section id="변경됨-9" class="level3">
+<h3 class="anchored" data-anchor-id="변경됨-9">변경됨</h3>
+<ul>
+<li>타깃 섹션: <strong>수학 코어 (이산 수학 - Discrete Math)</strong>
+<ul>
+<li>‘컴퓨터 과학도를 위한 수학 (Mathematics for Computer Science)’ 폼체인지</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="section-12" class="level2">
+<h2 class="anchored" data-anchor-id="section-12">[5.0.0] 2016-08-20</h2>
+<p>썩은 코어 하나를 도려낸 탓에 아래 연쇄 업데이트 파동 발생:</p>
+<section id="삭제됨-3" class="level3">
+<h3 class="anchored" data-anchor-id="삭제됨-3">삭제됨</h3>
+<ul>
+<li>타깃 섹션: <strong>자연어 유린기 (Natural Language Processing)</strong>
+<ul>
+<li>‘자연어 처리기 본체 (Natural Language Processing)’ 적폐 코스 폭파 삭제</li>
+</ul></li>
+</ul>
+</section>
+<section id="추가됨-9" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-9">추가됨</h3>
+<ul>
+<li>타깃 섹션: <strong>자연어 유린기 (Natural Language Processing)</strong>
+<ul>
+<li>그 자리에 대체재인 ‘자연어 처리의 세계 입문 (Introduction to Natural Language Processing)’ 신규 엔진 부품 탑재</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="section-13" class="level2">
+<h2 class="anchored" data-anchor-id="section-13">[4.1.0] 2016-08-05</h2>
+<p>Coursera 저 악랄한 돈벌레 플랫폼의 지형도 개편 도발로 인해, 아래와 같이 보수 공사 강제 진행: ### 해결됨 - 타깃 섹션: <strong>거대 데이터 판 엎기 (Big Data)</strong> - ‘빅 데이터 입문 (Introduction to Big Data)’ 주소선 추적 복구 완료</p>
+</section>
+<section id="section-14" class="level2">
+<h2 class="anchored" data-anchor-id="section-14">[4.0.0] 2016-07-30</h2>
+<p>Coursera의 2차 플랫폼 구조 개편 학살로 인해 당사가 입은 피해 보수 내역:</p>
+<section id="삭제됨-4" class="level3">
+<h3 class="anchored" data-anchor-id="삭제됨-4">삭제됨</h3>
+<ul>
+<li>타깃 섹션: <strong>이론 수학 증명 (Theory)</strong>
+<ul>
+<li>‘오토마타 (Automata)’ 학살당함</li>
+</ul></li>
+<li>타깃 섹션: <strong>수학 (선형 대수 결계 - Linear Algebra)</strong>
+<ul>
+<li>‘매트릭스 찢어발기기: 컴퓨터를 조종하는 선형 대수 (Coding the Matrix: Linear Algebra through Computer Science Applications)’ 학살당함</li>
+</ul></li>
+<li>타깃 섹션: <strong>병렬 연산 가동기 (Parallel Computing)</strong>
+<ul>
+<li>‘이종 잡종 병렬 프로그래밍 (Heterogeneous Parallel Programming)’ 학살당함</li>
+</ul></li>
+<li>타깃 섹션: <strong>자연어 뜯어먹기 (Natural Language Processing)</strong>
+<ul>
+<li>‘자연어 본체 (Natural Language Processing)’ 학살당함</li>
+</ul></li>
+</ul>
+</section>
+<section id="해결됨" class="level3">
+<h3 class="anchored" data-anchor-id="해결됨">해결됨</h3>
+<ul>
+<li>타깃 섹션: <strong>컴퓨터 거미줄 네트워킹 (Computer Networks)</strong>
+<ul>
+<li>‘컴퓨터 네트워크 망 (Computer Networks)’ 고아된 링크 복원</li>
+</ul></li>
+<li>타깃 섹션: <strong>코드 번역기 컴파일러 (Compilers)</strong>
+<ul>
+<li>‘컴파일러 본체 (Compilers)’ 고아된 링크 복원</li>
+</ul></li>
+</ul>
+</section>
+<section id="추가됨-10" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-10">추가됨</h3>
+<ul>
+<li>타깃 섹션: <strong>이론 수학 증명 (Theory)</strong>
+<ul>
+<li>‘이론 컴퓨터 시스템 과학 입문로 (Intro to Theoretical Computer Science)’ 신규 파이프 개통</li>
+</ul></li>
+<li>타깃 섹션: <strong>수학 (선형 대수 결계 - Linear Algebra)</strong>
+<ul>
+<li>‘선형 대수 지옥 - 베이스캠프부터 프론티어 최전선까지 (Linear Algebra - Foundations to Frontiers)’ 신규 개통</li>
+</ul></li>
+<li>타깃 섹션: <strong>병렬 연산 가동기 (Parallel Computing)</strong>
+<ul>
+<li>‘병렬 컴퓨터 코어 구조론과 프로그래밍 삽질 (Parallel Computer Architecture and Programming)’ 신규 개통</li>
+</ul></li>
+<li>타깃 섹션: <strong>자연어 뜯어먹기 (Natural Language Processing)</strong>
+<ul>
+<li>‘자연 언어 해체 머신 프로세싱 (Natural Language Processing)’ 새로운 주소지로 입주 세팅 완</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="section-15" class="level2">
+<h2 class="anchored" data-anchor-id="section-15">[3.0.0] 2016-05-04</h2>
+<section id="삭제됨-5" class="level3">
+<h3 class="anchored" data-anchor-id="삭제됨-5">삭제됨</h3>
+<ul>
+<li>타깃 섹션: <strong>컴퓨터 공학 신병 입문 (Introduction to Computer Science)</strong>:
+<ul>
+<li>‘파이썬을 휘두르는 컴퓨터 공학과 프로그래밍 찍먹 (Introduction to Computer Science and Programming Using Python)’ 방출</li>
+<li>‘초초 밑바닥 낸드 소자부터 고상한 테트리스까지 (From Nand to Tetris - Part 1)’ 방출</li>
+</ul></li>
+</ul>
+</section>
+<section id="추가됨-11" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-11">추가됨</h3>
+<ul>
+<li>타깃 섹션: <strong>컴퓨터 공학 신병 입문 (Introduction to Computer Science)</strong>:
+<ul>
+<li>하버드발 자존심 ‘에센스 컴퓨터 입문 - CS50 (Introduction to Computer Science - CS50)’ 황제 스카웃 등극</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="section-16" class="level2">
+<h2 class="anchored" data-anchor-id="section-16">[2.0.1] 2016-04-04</h2>
+<section id="해결됨-1" class="level3">
+<h3 class="anchored" data-anchor-id="해결됨-1">해결됨</h3>
+<ul>
+<li>이제 오합지졸 수강생분들은 저희가 손수 다이아몬드급으로 직조해 놓은 OSSU <a href="https://ossu.firebaseapp.com">커스텀 웹 앱 포털(web app)</a>에 로그인해 수강 증명을 등록하시기 바랍니다.</li>
+</ul>
+</section>
+</section>
+<section id="section-17" class="level2">
+<h2 class="anchored" data-anchor-id="section-17">[2.0.0] 2016-03-17</h2>
+<section id="해결됨-2" class="level3">
+<h3 class="anchored" data-anchor-id="해결됨-2">해결됨</h3>
+<ul>
+<li>프로그램 아키텍처 디자인 섹션(Program Design section) 밑에 널브러져 있던 이질적 코스들의 촌스러운 이름 장부와 불량 링크들을 무자비하게 교정 타격함</li>
+</ul>
+</section>
+<section id="삭제됨-6" class="level3">
+<h3 class="anchored" data-anchor-id="삭제됨-6">삭제됨</h3>
+<ul>
+<li>극대노 대규모 학살 방출 리스트:</li>
+<li><strong>컴퓨터 신병 기초 (Introduction to Computer Science)</strong>:
+<ul>
+<li>‘컴퓨터 베이직 입문 (Introduction to Computer Science)’</li>
+<li>‘컴퓨터적 알고리즘 마인드 탑재와 데이터 과학 훑기 (Introduction to Computational Thinking and Data Science)’</li>
+</ul></li>
+<li><strong>알고리즘 (Algorithms)</strong>
+<ul>
+<li>‘알고리즘 분해 분석론 (Analysis of Algorithms)’</li>
+</ul></li>
+<li><strong>프로그래밍 관념 철학 (Programming Paradigms)</strong>
+<ul>
+<li>‘리액티브 역동적 프로그래밍의 실체 (Principles of Reactive Programming)’</li>
+</ul></li>
+<li><strong>미적분학 (Math - Calculus)</strong>
+<ul>
+<li>‘초절정 다변수 미적분 계산기 (Multivariable Calculus)’</li>
+</ul></li>
+<li><strong>소프트웨어 뼈대 조립 아키텍처 (Software Architecture)</strong>:
+<ul>
+<li>‘웹 구사 어플리케이션 아키텍처 본질들 (Web Application Architectures)’</li>
+</ul></li>
+<li><strong>소프트웨어 공장 엔지니어링 (Software Engineering)</strong>:
+<ul>
+<li>‘루비 온 레일즈 찍먹과 애자일 숭배론 - 기초편 (Agile Development Using Ruby on Rails - Basics)’</li>
+<li>‘루비 온 레일즈 뼛속까지 파먹고 애자일 숭배론 - 심화편 (Agile Development Using Ruby on Rails - Advanced)’</li>
+<li>‘스타트업 영웅 엔지니어링 짓 (Startup Engineering)’</li>
+</ul></li>
+<li><strong>컴퓨터 하드웨어 아키텍처 (Computer Architecture)</strong>:
+<ul>
+<li>‘하드웨어와 소프트웨어가 만나는 중간 계층 다리 (The Hardware/Software Interface)’</li>
+</ul></li>
+<li><strong>운영 뇌 체제 (Operating Systems)</strong>:
+<ul>
+<li>‘운영 체제 갈아 넣는 엔지니어링 짓 (Operating System Engineering)’</li>
+</ul></li>
+<li><strong>컴퓨터 거미줄 망 네트워킹 (Computer Networks)</strong>:
+<ul>
+<li>‘컴퓨터 전산 망 네트워킹 도화선 입문 (Introduction to Computer Networking)’</li>
+</ul></li>
+<li><strong>암호화 매직 (Cryptography)</strong>:
+<ul>
+<li>‘응용 실전 스텔스 암호학 (Applied Cryptography)’</li>
+</ul></li>
+</ul>
+<p><strong>은밀한 알림(ps)</strong>: 이렇게 빗자루질당한 쓸모없어진 강좌 귀신들은 모조리 부록방에 포장되어 <a href="https://github.com/ossu/computer-science/tree/master/extras">엑스트라 부록관 링크(extras)</a> 묘지에 매장 조치되었습니다.</p>
+</section>
+</section>
+<section id="section-18" class="level2">
+<h2 class="anchored" data-anchor-id="section-18">[1.3.12] 2016-03-17</h2>
+<section id="추가됨-12" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-12">추가됨</h3>
+<ul>
+<li>협동 안내 지침(How to collaborate): 여분 강좌 링크 조공품들을 부록방(extras section)에 던져넣는 예법 헌장 조문 추가</li>
+</ul>
+</section>
+</section>
+<section id="section-19" class="level2">
+<h2 class="anchored" data-anchor-id="section-19">[1.3.11] 2016-03-06</h2>
+<section id="해결됨-3" class="level3">
+<h3 class="anchored" data-anchor-id="해결됨-3">해결됨</h3>
+<ul>
+<li>낸드부터 테트리스 지옥(Nand to Tetris) 강의: 구질구질한 네이밍과 url 세탁</li>
+<li>UC 버클리표 애자일 숭배론 개발기(UC Berkeley Agile development): 네이밍과 url 세탁</li>
+<li>스페셜라이제이션(특화 강좌 묶음) 심연으로 통하는 단축 터널 다이렉트 링크 공사 완</li>
+</ul>
+</section>
+</section>
+<section id="section-20" class="level2">
+<h2 class="anchored" data-anchor-id="section-20">[1.3.10] 2016-03-06</h2>
+<section id="해결됨-4" class="level3">
+<h3 class="anchored" data-anchor-id="해결됨-4">해결됨</h3>
+<ul>
+<li>’체계적 프로그램 설계 마스터리 2부 (Systematic Program Design Part 2)’로 향하는 썩은 나루터 링크 선로 교체 보수공사</li>
+</ul>
+</section>
+</section>
+<section id="section-21" class="level2">
+<h2 class="anchored" data-anchor-id="section-21">[1.3.9] 2015-11-09</h2>
+<section id="해결됨-5" class="level3">
+<h3 class="anchored" data-anchor-id="해결됨-5">해결됨</h3>
+<ul>
+<li>자연어 해체 처리반 (Natural Language Processing) 강좌로 가는 진짜 오리지널 정석 주소 링크망으로 추적 수정</li>
+</ul>
+</section>
+</section>
+<section id="section-22" class="level2">
+<h2 class="anchored" data-anchor-id="section-22">[1.3.8] 2015-11-07</h2>
+<section id="추가됨-13" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-13">추가됨</h3>
+<ul>
+<li>이리 치이고 저리 치일 동지들을 위해 무한한 레퍼런스가 창고처럼 쌓인 “프로젝트 제안/추천 목록 (Project Suggestions)” 구조선 섹션 거점 추가 파밍 완료</li>
+</ul>
+</section>
+</section>
+<section id="section-23" class="level2">
+<h2 class="anchored" data-anchor-id="section-23">[1.3.7] 2015-11-01</h2>
+<section id="삭제됨-7" class="level3">
+<h3 class="anchored" data-anchor-id="삭제됨-7">삭제됨</h3>
+<ul>
+<li>더럽혀지던 project.md 파일을 부숴버리고, 온전하게 짐을 싸서 통째로 <strong>help(지원용 부속)</strong> 리포지토리 망으로 격리 이주 추방 시킴</li>
+</ul>
+</section>
+</section>
+<section id="section-24" class="level2">
+<h2 class="anchored" data-anchor-id="section-24">[1.3.6] 2015-10-22</h2>
+<section id="추가됨-14" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-14">추가됨</h3>
+<ul>
+<li>따끈따끈하게 포장된 따끈한 최신 엔진 버전의 “CS 162 지옥, 운영 체제 및 뇌 시스템 프로그래밍 파먹기(Operating Systems and System Programming)” 코스 납품 입고 완료</li>
+</ul>
+</section>
+</section>
+<section id="section-25" class="level2">
+<h2 class="anchored" data-anchor-id="section-25">[1.2.6] 2015-10-19</h2>
+<section id="추가됨-15" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-15">추가됨</h3>
+<ul>
+<li>Awesome 영웅들 리스트 보드 직행 고속 배지/단축 포털 하이퍼링크 문신 새김</li>
+</ul>
+</section>
+</section>
+<section id="section-26" class="level2">
+<h2 class="anchored" data-anchor-id="section-26">[1.2.5] 2015-10-16</h2>
+<section id="해결됨-6" class="level3">
+<h3 class="anchored" data-anchor-id="해결됨-6">해결됨</h3>
+<ul>
+<li>명패 이름이 병신 같던 불량 섹션 네이밍들의 각을 바로잡고 이쁘장하게 광택 나는 하이퍼링크 초칠 교정 마감</li>
+</ul>
+</section>
+</section>
+<section id="section-27" class="level2">
+<h2 class="anchored" data-anchor-id="section-27">[1.2.4] 2015-10-14</h2>
+<section id="삭제됨-8" class="level3">
+<h3 class="anchored" data-anchor-id="삭제됨-8">삭제됨</h3>
+<ul>
+<li>거슬리는 ‘대중적 약속 서약 (public commitment)’ 웅앵웅 인용구 문구 오글거려서 찢어버림</li>
+</ul>
+</section>
+</section>
+<section id="section-28" class="level2">
+<h2 class="anchored" data-anchor-id="section-28">[1.2.3] 2015-10-12</h2>
+<section id="변경됨-10" class="level3">
+<h3 class="anchored" data-anchor-id="변경됨-10">변경됨</h3>
+<ul>
+<li>선수 과목 무기고 (prerequisite section)를 똥 멍청이도 단박에 이해할 수 있게끔 크리스탈 클리어한 텍스트로 무지막지하게 해체 및 재조립 패치함</li>
+</ul>
+</section>
+</section>
+<section id="section-29" class="level2">
+<h2 class="anchored" data-anchor-id="section-29">[1.2.2] 2015-10-12</h2>
+<section id="해결됨-7" class="level3">
+<h3 class="anchored" data-anchor-id="해결됨-7">해결됨</h3>
+<ul>
+<li>호구 학생들의 코스 수강 등록 이슈 창구를 위한, 튼튼하고 어여쁜 핫라인 신규 파이프 링크 배관 설치 공사 완</li>
+</ul>
+</section>
+</section>
+<section id="section-30" class="level2">
+<h2 class="anchored" data-anchor-id="section-30">[1.2.1] 2015-10-11</h2>
+<section id="추가됨-16" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-16">추가됨</h3>
+<ul>
+<li>선수 필수 지식 감옥방(prerequisite section) 안에 전 세계의 근간인 “Git - 개초보를 위한 옹알이 단순 바이블 가이드 (Git - the simple guide)” 구원 아티클 전격 이식</li>
+</ul>
+</section>
+</section>
+<section id="section-31" class="level2">
+<h2 class="anchored" data-anchor-id="section-31">[1.1.1] 2015-10-11</h2>
+<section id="해결됨-8" class="level3">
+<h3 class="anchored" data-anchor-id="해결됨-8">해결됨</h3>
+<ul>
+<li>치명적 타이핑 어그로 버그타파 (Fix typos):
+<ul>
+<li>무식하게스리 MOOC이란 말 자체가 뒤에 Course(C)가 붙은 “거대 공개 온라인 코스(Massive Open Online Course)”라는 뜻인데 거기에 또 ‘MOOC 강좌’ 따위로 역겹게 중복해서 쓰던 문법 파괴 첩어들 싹 다 도려냄</li>
+<li>“레알 현실 문제(real problem)” 란게 도대체 뭔지 애매했던 문맥을 상세하게 늘려 풀어 설명함</li>
+<li>작지만 개빡치는 미세 문법 및 워딩 어색충 버그들 일망타진</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="section-32" class="level2">
+<h2 class="anchored" data-anchor-id="section-32">[1.1.0] 2015-10-08</h2>
+<section id="추가됨-17" class="level3">
+<h3 class="anchored" data-anchor-id="추가됨-17">추가됨</h3>
+<ul>
+<li>당신의 차가운 뇌를 달구기 위한 뇌 예열 동기 부여 &amp; 맨몸 육체 가동 준비 운동장 섹션 (의무 아님 선택형 자원 optional resources) 개장
+<ul>
+<li>자극 포르노 아티클판: 당신의 한계 돌파를 위한 MIT 챌린지 썰 (Article: MIT Challenge)</li>
+<li>코스 도장 깨기판: 멍청한 뇌를 학습형 뇌로 바꾸는 “학습법 자체를 학습하는 스킬 (Learning How to Learn)” 코스 유치</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="section-33" class="level2">
+<h2 class="anchored" data-anchor-id="section-33">[1.0.0] 2015-10-08</h2>
+<p>대망의 전 세계 구원을 위한 완벽무결 마그나 카르타 1.0 컴공 마스터 커리큘럼 성서 버전 천하 제1 배포 <strong>(Release of the first complete version)</strong></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./extras/readings.html" class="pagination-link" aria-label="컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./CONTRIBUTING.html" class="pagination-link" aria-label="커리큘럼 변경하기 (Changing the curriculum)">
+        <span class="nav-page-text"><span class="chapter-title">커리큘럼 변경하기 (Changing the curriculum)</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

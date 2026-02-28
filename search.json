@@ -1,0 +1,973 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "computer-science",
+    "section": "",
+    "text": "목차",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>오픈 소스 소사이어티 대학교 (OSSU)</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#선수-지식",
+    "href": "index.html#선수-지식",
+    "title": "computer-science",
+    "section": "선수 지식",
+    "text": "선수 지식\n\nCore CS는 대수학, 기하학, 미적분학의 기초(pre-calculus)를 포함하여 학생이 이미 고등학교 수학 과정을 수강했다고 가정합니다.\nAdvanced CS는 학생이 이미 Core CS 전체를 수강했고, 어떤 선택 과목을 들을지 스스로 결정할 수 있을 만큼 충분한 지식이 있다고 가정합니다.\n참고로 고급 시스템(Advanced systems)은 고등학교 AP 물리학 수준의 기초 물리학 강의를 수강했다고 가정합니다.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>오픈 소스 소사이어티 대학교 (OSSU)</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#intro-cs-cs-입문",
+    "href": "index.html#intro-cs-cs-입문",
+    "title": "computer-science",
+    "section": "Intro CS (CS 입문)",
+    "text": "Intro CS (CS 입문)\n이 과정은 여러분을 컴퓨터 과학과 프로그래밍이라는 세계로 안내할 것입니다. 앞으로 배우게 될 학문에 대한 첫인상을 제공합니다. 강의를 다 듣고 더 깊이 파고들고 싶다면 컴퓨터 과학이 여러분의 적성에 딱 맞을 것입니다!\n주요 내용: 연산(computation) 명령형 프로그래밍(imperative programming) 기본 자료구조와 알고리즘 그 외\n\n\n\n강좌\n기간\n학습량\n선수 지식\n토론 시간\n\n\n\n\n파이썬을 활용한 컴퓨터 과학 및 프로그래밍 입문\n14주\n주 6-10시간\n고등학교 대수학\n채팅방",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>오픈 소스 소사이어티 대학교 (OSSU)</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#core-cs-cs-핵심",
+    "href": "index.html#core-cs-cs-핵심",
+    "title": "computer-science",
+    "section": "Core CS (CS 핵심)",
+    "text": "Core CS (CS 핵심)\n별도로 표기된 경우를 제외하고는 Core CS 아래의 모든 공고된 강의 내용은 필수 과정입니다.\n\n핵심 프로그래밍\n주요 내용: 함수형 프로그래밍 테스트를 고려한 설계 프로그램 요구사항 공통 디자인 패턴 단위 테스트 객체 지향 설계 정적 타입 지정 동적 타입 지정 ML 계열 언어 (Standard ML을 통해) Lisp 계열 언어 (Racket을 통해) Ruby 그 외\n\n\n\n강좌\n기간\n학습량\n선수 지식\n토론 시간\n\n\n\n\n체계적인 프로그램 설계(Systematic Program Design)\n13주\n주 8-10시간\n없음\n채팅: 파트 1 / 파트 2\n\n\n클래스 기반 프로그램 설계(Class-based Program Design)\n13주\n주 5-10시간\nSystematic Program Design, 고등학교 수학\n채팅방\n\n\n프로그래밍 언어(Programming Languages)\n11주\n주 4-8시간\nSystematic Program Design\n채팅방\n\n\n객체 지향 설계(Object-Oriented Design)\n13주\n주 5-10시간\nClass Based Program Design\n채팅방\n\n\n소프트웨어 아키텍처(Software Architecture)\n4주\n주 2-5시간\nObject Oriented Design\n채팅방\n\n\n\n\n\n핵심 수학\n이산 수학(CS 수학)은 사전 필수 지식이자 알고리즘 및 자료 구조 연구와 밀접하게 연관되어 있습니다. 미적분학은 이산 수학을 준비할 수 있게 도우며 수학적 성숙도를 향상시킬 수 있도록 도와줍니다.\n주요 내용: 이산 수학 수학적 증명 기초 통계학 빅오(O) 표기법 이산 확률 그 외\n\n\n\n강좌\n기간\n학습량\n비고\n선수 지식\n토론 시간\n\n\n\n\n미적분학 1A: 미분(Calculus 1A: Differentiation) (대체)\n13주\n주 6-10시간\n대체 강의는 이 강의와 이어서 진행할 2개의 강의를 포함합니다.\n고등학교 수학\n채팅방\n\n\n미적분학 1B: 적분(Calculus 1B: Integration)\n13주\n주 5-10시간\n-\nCalculus 1A\n채팅방\n\n\n미적분학 1C: 좌표계 및 무한급수(Calculus 1C: Coordinate Systems & Infinite Series)\n6주\n주 5-10시간\n-\nCalculus 1B\n채팅방\n\n\n컴퓨터 과학을 위한 수학(Mathematics for Computer Science) (대체)\n13주\n주 5시간\n2015/2019 문제풀이 2010 문제풀이 2005 문제풀이.\nCalculus 1C\n채팅방\n\n\n\n\n\nCS 도구\n이론에 대한 이해도 중요하지만 결국 프로그램을 만들어야 합니다. 프로그래밍 과정을 더 쉽게 만들어주는 다양한 도구들이 널리 쓰이고 있습니다. 이 과정을 이수하여 향후 프로그램 작성을 더욱 원활하게 진행하세요.\n주요 내용: 터미널 및 셸 스크립팅 vim 명령줄 통합 환경 버전 관리 그 외\n\n\n\n강좌\n기간\n학습량\n선수 지식\n토론 시간\n\n\n\n\nCS 교육에서 놓친 한 학기(The Missing Semester of Your CS Education)\n2주\n주 12시간\n-\n채팅방\n\n\n\n\n\n핵심 시스템\n주요 내용: 절차적 프로그래밍 수동 메모리 관리 불 대수 논리 게이트 메모리 컴퓨터 아키텍처 어셈블리 기계어 가상 머신 고급 언어 컴파일러 운영 체제 네트워크 프로토콜 그 외\n\n\n\n강좌\n기간\n학습량\n부가 자료/과제\n선수 지식\n토론 시간\n\n\n\n\n기초부터 현대 컴퓨터 구축하기: 낸드에서 테트리스까지 (Nand to Tetris Part 1) (대체)\n6주\n주 7-13시간\n-\nC 유사 프로그래밍 언어\n채팅방\n\n\n기초부터 현대 컴퓨터 구축하기: 낸드에서 테트리스까지 파트 2(Nand to Tetris Part II )\n6주\n주 12-18시간\n-\n이 프로그래밍 언어 중 하나, Nand to Tetris Part 1\n채팅방\n\n\n운영 체제: 세 가지 쉬운 조각(Operating Systems: Three Easy Pieces)\n10-12주\n주 6-10시간\n-\nNand to Tetris Part II\n채팅방\n\n\n컴퓨터 네트워킹: 하향식 접근(Computer Networking: a Top-Down Approach)\n8주\n주 4–12시간\nWireshark 연구소\n대수학, 확률, 기본 CS\n채팅방\n\n\n\n\n\n핵심 이론\n주요 내용: 분할 정복 정렬 및 탐색 무작위 알고리즘 그래프 탐색 최단 경로 자료 구조 탐욕 알고리즘 최소 신장 트리 동적 프로그래밍 NP 완전성 그 외\n\n\n\n강좌\n기간\n학습량\n선수 지식\n토론 시간\n\n\n\n\n알고리즘: 설계 및 분석 파트 1 (대체)\n8주\n주 4-8시간\n프로그래밍 언어 1가지 이상, Mathematics for Computer Science\n채팅방\n\n\n알고리즘: 설계 및 분석 파트 2\n8주\n주 4-8시간\n알고리즘 파트 1\n채팅방\n\n\n\n\n\n핵심 보안\n주요 내용 기밀성, 무결성, 가용성 (CIA 삼원칙) 보안 설계 방어적 프로그래밍 위협 및 공격 네트워크 보안 암호학 그 외\n\n\n\n강좌\n기간\n학습량\n선수 지식\n토론 시간\n\n\n\n\n사이버보안 기초(Cybersecurity Fundamentals)\n8주\n주 10-12시간\n-\n채팅방\n\n\n안전한 코딩의 원칙(Principles of Secure Coding)\n4주\n주 4시간\n-\n채팅방\n\n\n보안 취약점 식별(Identifying Security Vulnerabilities)\n4주\n주 4시간\n-\n채팅방\n\n\n\n다음 중 하나를 선택하세요:\n\n\n\n강좌\n기간\n학습량\n선수 지식\n토론 시간\n\n\n\n\nC/C++ 프로그래밍에서 보안 취약점 식별\n4주\n주 5시간\n-\n채팅방\n\n\nJava 애플리케이션 보안 취약점 식별 및 보안\n4주\n주 5시간\n-\n채팅방\n\n\n\n\n\n핵심 애플리케이션\n주요 내용: 애자일(Agile) 방법론 REST 소프트웨어 사양(specifications) 리팩토링(refactoring) 관계형 데이터베이스 트랜잭션(transaction) 처리 데이터 모델링 인경 신경망 지도 학습(supervised learning) 비지도 학습(unsupervised learning) OpenGL 레이 트레이싱(ray tracing) 그 외\n\n\n\n강좌\n기간\n학습량\n선수 지식\n토론 시간\n\n\n\n\n데이터베이스: 모델링 및 이론\n2주\n주 10시간\n핵심 프로그래밍\n채팅방\n\n\n데이터베이스: 관계형 데이터베이스 및 SQL\n2주\n주 10시간\n핵심 프로그래밍\n채팅방\n\n\n데이터베이스: 반정형(Semistructured) 데이터\n2주\n주 10시간\n핵심 프로그래밍\n채팅방\n\n\n기계 학습(Machine Learning)\n11주\n주 9시간\n기초 프로그래밍\n채팅방\n\n\n컴퓨터 그래픽스(Computer Graphics) (대체)\n6주\n주 12시간\nC++ 또는 Java, 기초 선형대수학\n채팅방\n\n\n소프트웨어 엔지니어링 개론(Software Engineering: Introduction) (대체)\n6주\n주 8-10시간\n핵심 프로그래밍 및 규모 있는 프로젝트 경험\n채팅방\n\n\n\n\n\n핵심 윤리\n주요 내용: 사회적 맥락(Social Context) 분석 도구(Analytical Tools) 직업 윤리(Professional Ethics) 지식재산권(Intellectual Property) 프라이버시와 시민의 자유(Privacy and Civil Liberties) 그 외\n\n\n\n강좌\n기간\n학습량\n선수 지식\n토론 시간\n\n\n\n\n기술과 엔지니어링의 윤리(Ethics, Technology and Engineering)\n9주\n주 2시간\n없음\n채팅방\n\n\n지식 재산권 개론(Introduction to Intellectual Property)\n4주\n주 2시간\n없음\n채팅방\n\n\n데이터 프라이버시 기초(Data Privacy Fundamentals)\n3주\n주 3시간\n없음\n채팅방",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>오픈 소스 소사이어티 대학교 (OSSU)</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#advanced-cs-cs-심화",
+    "href": "index.html#advanced-cs-cs-심화",
+    "title": "computer-science",
+    "section": "Advanced CS (CS 심화)",
+    "text": "Advanced CS (CS 심화)\nCore CS의 모든 필수 과정을 마친 후, 관심사에 따라 Advanced CS에서 원하는 과정을 수강할 수 있습니다. 한 세부 항목의 모든 과정을 이수해야 하는 것은 아닙니다. 다만 자신이 희망하는 특정 분야와 관련된 강의는 전부 수강할 것을 권장합니다.\n\n고급 프로그래밍\n주요 내용: 디버깅 이론 및 실습 목표 지향형 프로그래밍 병렬 컴퓨팅 객체 지향 분석 및 설계 UML 대규모 소프트웨어 아키텍처 및 설계 그 외\n\n\n\n강좌\n기간\n학습량\n선수 지식\n\n\n\n\n병렬 프로그래밍(Parallel Programming)\n4주\n주 6-8시간\nScala 프로그래밍\n\n\n컴파일러(Compilers)\n9주\n주 6-8시간\n없음\n\n\n하스켈 입문(Introduction to Haskell)\n14주\n-\n-\n\n\n프롤로그 완전 정복!(Learn Prolog Now!) (대체)*\n12주\n-\n-\n\n\n소프트웨어 디버깅(Software Debugging)\n8주\n주 6시간\n파이썬, 객체지향 프로그래밍\n\n\n소프트웨어 테스팅(Software Testing)\n4주\n주 6시간\n파이썬, 기본적인 프로그래밍 경험\n\n\n\n(*) Blackburn, Bos, Striegnitz 저서 (저작물 출처, CC 라이선스로 배포됨)\n\n\n고급 시스템\n주요 내용: 디지털 신호(digital signaling) 조합 논리회로(combinational logic) CMOS 기술 순차 논리회로(sequential logic) 상태 머신(finite state machines) 프로세서 명령어 집합 캐시(caches) 파이프라이닝(pipelining) 가상화(virtualization) 병렬 처리(parallel processing) 가상 메모리 동기화 프리미티브(synchronization primitives) 시스템 호출 인터페이스 그 외\n\n\n\n강좌\n기간\n학습량\n선수 지식\n비고\n\n\n\n\n계산 구조 1: 디지털 회로(Computation Structures 1: Digital Circuits) 대체 1 대체 2\n10주\n주 6시간\nNand2Tetris II\n대체 링크는 전체 3과목을 포함합니다.\n\n\n계산 구조 2: 컴퓨터 아키텍처(Computation Structures 2: Computer Architecture)\n10주\n주 6시간\n계산 구조 1\n-\n\n\n계산 구조 3: 컴퓨터 구조(Computation Structures 3: Computer Organization)\n10주\n주 6시간\n계산 구조 2\n-\n\n\n\n\n\n고급 이론\n주요 내용: 형식 언어(formal languages) 튜링 머신(Turing machines) 계산 가능성(computability) 이벤트 중심 동시성(event-driven concurrency) 오토마타(automata) 분산 공유 메모리(distributed shared memory) 합의 알고리즘(consensus algorithms) 상태 기계 복제(state machine replication) 계산 기하학 이론(computational geometry theory) 명제 논리(propositional logic) 관계 논리(relational logic) 허브랜드 논리(Herbrand logic) 게임 트리(game trees) 그 외\n\n\n\n강좌\n기간\n학습량\n선수 지식\n\n\n\n\n계산 이론(Theory of Computation) (대체)\n13주\n주 10시간\nMathematics for Computer Science, 논리고학, 알고리즘\n\n\n계산 기하학(Computational Geometry)\n16주\n주 8시간\n알고리즘, C++\n\n\n게임 이론(Game Theory)\n8주\n주 3시간\n수학적 사고, 확률, 미적분학\n\n\n\n\n\n고급 정보 보안\n\n\n\n강좌\n기간\n학습량\n선수 지식\n\n\n\n\n웹 보안 입문(Web Security Fundamentals)\n5주\n주 4-6시간\n기본 웹 기술 이해\n\n\n보안 거버넌스 및 규정 준수(Security Governance & Compliance)\n3주\n주 3시간\n-\n\n\n디지털 포렌식 개념(Digital Forensics Concepts)\n3주\n주 2-3시간\n핵심 보안\n\n\n안전한 소프트웨어 개발: 요구사항, 설계 및 재사용(Secure Software Development)\n7주\n주 1-2시간\n핵심 프로그래밍 및 핵심 보안\n\n\n안전한 소프트웨어 개발: 구현(Secure Software Development: Implementation)\n7주\n주 1-2시간\n안전한 소프트웨어 개발: 요구사항, 설계 및 재사용\n\n\n안전한 소프트웨어 개발: 검증 및 세부 주제(Secure Software Development: Verification and More Specialized Topics)\n7주\n주 1-2시간\n안전한 소프트웨어 개발: 구현\n\n\n\n\n\n고급 수학\n\n\n\n강좌\n기간\n학습량\n선수 지식\n토론 시간\n\n\n\n\n선형 대수학의 본질(Essence of Linear Algebra)\n-\n-\n고등학교 수학\n채팅방\n\n\n선형 대수학(Linear Algebra)\n14주\n주 12시간\n동시 수강 권장: 선형 대수학의 본질\n채팅방\n\n\n수치 계산 입문(Introduction to Numerical Methods)\n14주\n주 12시간\n선형 대수학\n채팅방\n\n\n형식 논리학 서론(Introduction to Formal Logic)\n10주\n주 4-8시간\n집합론 (Set Theory)\n채팅방\n\n\n확률론(Probability)\n15주\n주 5-10시간\n미적분학 1B (Differentiation and Integration)\n채팅방",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>오픈 소스 소사이어티 대학교 (OSSU)</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#최종-프로젝트",
+    "href": "index.html#최종-프로젝트",
+    "title": "computer-science",
+    "section": "최종 프로젝트",
+    "text": "최종 프로젝트\n무언가를 배우는 과정에는 반드시 실행이 필요합니다. 학습했던 모든 과정의 과제와 실습은 실생활의 문제들을 해결하는 방법을 터득하기 위해 주어졌을 뿐입니다.\nCore CS와 여러분의 관심 분야에 맞춘 Advanced CS 과정들을 마쳤다면 여러분이 배운 지식으로 어떤 문제들을 해결할 수 있는지 파악하고 응용해 보세요. 완전하게 새로운 프로젝트를 만들거나 기존에 있던 다른 프로그램/도구의 코드를 개선하셔도 좋습니다.\n프로젝트 구상에 도움이 필요하시다면 다음 소개된 프로젝트 실습/가이드라인 강좌를 권장합니다. (수강 과정을 무사히 통과하신 분이라면 다음 소개된 목록 중에 자신의 흥미와 관련된 것이 무엇인지 찾으실 수 있을 것입니다):\n\n\n\n강좌\n기간\n학습량\n선수 지식\n\n\n\n\n풀스택 오픈(Fullstack Open)\n12주\n주 15시간\n프로그래밍\n\n\n현대 로봇 공학(Modern Robotics)\n26주\n주 2-5시간\n1학년 수준 기초 물리학, 선형대수학, 미적분학, 선형 상미분방정식\n\n\n데이터 마이닝 (Data Mining Specialization)\n30주\n주 2-5시간\n기계 학습 (Machine Learning)\n\n\n빅 데이터 (Big Data Specialization)\n30주\n주 3-5시간\n-\n\n\n사물 인터넷 (Internet of Things Specialization)\n30주\n주 1-5시간\n심화 프로그래밍 (Strong programming)\n\n\n클라우드 컴퓨팅 (Cloud Computing Specialization)\n30주\n주 2-6시간\nC++ 프로그래밍\n\n\n데이터 과학 (Data Science Specialization)\n43주\n주 1-6시간\n-\n\n\n스칼라 함수형 프로그래밍 (Functional Programming in Scala)\n29주\n주 4-5시간\n코딩 경력 1년 이상\n\n\n유니티 게임 설계 및 개발 (Game Design and Development with Unity 2020)\n6개월\n주 5시간\n프로그래밍, 인터랙티브(interactive) 설계 지식",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>오픈 소스 소사이어티 대학교 (OSSU)</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#축하합니다",
+    "href": "index.html#축하합니다",
+    "title": "computer-science",
+    "section": "축하합니다",
+    "text": "축하합니다\n여태까지 배운 커리큘럼 과정을 완수한 여러분은, 컴퓨터 과학 학사 학위 수준의 지식을 모두 습득하셨습니다. 진심으로 축하합니다!\n이제 배운 것들을 활용해 볼 시간입니다. 아래 나열된 가능성 모두에 도전하셔도 좋습니다:\n\n소프트웨어 개발자 취업 준비!\n더 많은 실력을 갈고닦고 싶다면 개발자를 위한 고전 필독서 목록을 확인해 보세요.\n지역 개발자 모임에 참석해 보세요. (예: meetup.com)\n세계적으로 떠오르는 새로운 소프트웨어 기술 동향을 파악해 보세요:\n\n얼랭(Erlang) 가상 머신에 기반해 탄생한 웹 함수형 프로그래밍 언어 엘릭서(Elixir)를 통해 행위자 모델(actor model)을 탐구해 보세요!\n가비지 컬렉터 없이 멀티 스레드 제어와 메모리 주소값 할당의 안전을 제공하는 시스템 프로그래밍 언어 러스트(Rust)를 통해 소유권 차용 및 수명(borrowing and lifetimes)을 탐구해 보세요!\n타입 기반 개발을 완벽하게 지원하는 하스켈(Haskell)에서 영감을 받은 언어 이드리스(Idris)를 통해 종속성 타입 시스템(dependent type systems)을 탐구해 보세요.\n\n\n\n\n\nkeep learning",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>오픈 소스 소사이어티 대학교 (OSSU)</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#진행-상황을-공유하는-방법",
+    "href": "index.html#진행-상황을-공유하는-방법",
+    "title": "computer-science",
+    "section": "진행 상황을 공유하는 방법",
+    "text": "진행 상황을 공유하는 방법\n이 GitHub 저장소를 여러분의 계정으로 포크(Fork)하고 진도에 맞춰 완료한 내용은 ✅로 표기해 보세요. 이것이 여러분만의 작고 소중한 칸반(Kanban) 보드가 되리라 믿습니다. 동시에 어떤 다른 방법보다 직관적이고 시간을 절약해 줄 것입니다. (절약된 시간을 모두 강의를 듣는데 집중하세요!)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>오픈 소스 소사이어티 대학교 (OSSU)</span>"
+    ]
+  },
+  {
+    "objectID": "FAQ.html",
+    "href": "FAQ.html",
+    "title": "자주 묻는 질문 (FAQ)",
+    "section": "",
+    "text": "목차\n이 페이지는 커리큘럼에 대해 자주 접수되는 질문들에 대한 답변을 제공합니다. 여기에 나와 있지 않은 질문이 있으시면 커뮤니티 채널을 통해 문의해 보세요. 제안이 충분히 중요해 보이거나 질문을 많이 받게 된다면 아마 여기에 추가하게 될 것입니다.\n원하신다면 스스로 기여자가 되어 답변을 직접 추가하실 수도 있습니다.",
+    "crumbs": [
+      "General Information",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>자주 묻는 질문 (FAQ)</span>"
+    ]
+  },
+  {
+    "objectID": "FAQ.html#목차",
+    "href": "FAQ.html#목차",
+    "title": "자주 묻는 질문 (FAQ)",
+    "section": "",
+    "text": "OSSU에서 학위를 받을 수 있나요?\n수학 사전 지식을 어떻게 복습할 수 있나요?\n특정 언어(C++, Rust, Java 등)를 배우기 좋은 강좌는 무엇이 있나요?\nFirebase OSSU 앱이 다르거나 동작하지 않는 이유는 무엇인가요?\n어떤 순서로 강좌를 수강해야 하나요?\n메인 커리큘럼의 모든 자료는 무료여야 하나요?\nCoursera 강좌는 무료로 수강할 수 있나요?\nedX 강좌의 인증(Verified) 업그레이드를 꼭 구매해야 하나요?\n대체(alt) 링크는 무엇인가요?\n커리큘럼에서 특정 주제 X를 다루지 않거나 무시하는 이유는 무엇인가요?\n커리큘럼에 특정 선수 과목들이 빠져 있는 이유는 무엇인가요?\n소프트웨어 엔지니어링 과정을 듣기 전에 규모 있는 프로젝트 경험을 요구하는 이유는 무엇인가요?\n특정 주제에 관한 강좌를 어떻게 찾을 수 있나요?",
+    "crumbs": [
+      "General Information",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>자주 묻는 질문 (FAQ)</span>"
+    ]
+  },
+  {
+    "objectID": "FAQ.html#질문들",
+    "href": "FAQ.html#질문들",
+    "title": "자주 묻는 질문 (FAQ)",
+    "section": "질문들",
+    "text": "질문들\n\nOSSU에서 학위를 받을 수 있나요?\n아니요. OSSU는 학사 학위 수준의 지식을 학습할 수 있도록 리소스를 안내하는 가이드를 제공합니다. 과거 OSSU에 참여했던 개인이 다른 조직과 협력하여 학위를 제공할 수는 있지만, 오픈 소스 소사이어티 대학교 자체는 그러한 노력과 무관합니다.\n\n\n수학 사전 지식을 어떻게 복습할 수 있나요?\n수학 선수 강의를 복습할 자료를 찾고 계신다면 대학 이전 (Pre-College) 수학 커리큘럼을 참고하세요.\n\n\n특정 언어를 배우기 좋은 강좌는 무엇이 있나요?\nOSSU는 컴퓨터 과학의 주제를 학습할 수 있는 최고의 강좌를 찾는 데 중점을 두며, 특정 프로그래밍 언어의 강좌를 찾는 것에는 중점을 두지 않습니다. 만약 특정 언어나 프레임워크를 배우고자 하신다면 아래의 훌륭한 두 가지 리소스를 확인해 보세요. 1. Hackr.io는 파이썬이나 Java Spring 프레임워크 등 다양한 주제에 대해 사용자들이 학습 리소스를 추천하고 투표할 수 있습니다. 2. 거의 모든 프로그래밍 언어는 Reddit 커뮤니티가 있습니다. 커뮤니티 페이지를 찾으셨다면, 위키나 사이드바에 유용한 자료가 있는지 확인해 보세요. 파이썬의 경우 /r/python을 확인해 보세요. 단, www.reddit.com과 old.reddit.com에 따라 표시되는 사이드바 내용이 다를 수 있습니다.\n\n\nFirebase OSSU 앱이 다르거나 동작하지 않는 이유는 무엇인가요?\nOSSU 커리큘럼과 생태계는 여러 개인의 협업을 통해 만들어졌으며, Firebase 앱도 그중 하나의 기여였습니다. 처음 앱이 작성될 당시에는 미래의 OSSU 학생들을 도우려는 좋은 목적이었습니다.\n하지만 안타깝게도 해당 앱은 수년 동안 업데이트되지 않았습니다. 최신 커리큘럼 변경 사항을 반영하지 않으며, 더 이상 존재하지 않는 과정으로 연결되는 링크가 포함되어 있고 로그인 불가능한 알려진 버그까지 존재합니다.\n그렇기 때문에 저희는 이 Firebase 앱의 원작자가 앱을 업데이트해 주기를 여전히 바라고 있습니다. 그때 전까지 Firebase 앱은 더 이상 지원되지 않으며 중단된 (deprecated) 서비스로 간주해 주시기 바랍니다.\n\n\n어떤 순서로 강좌를 수강해야 하나요?\n다음과 같은 다양한 옵션이 존재합니다: - 페이지 위에서 아래로 정해진 선형 구조에 따라 진행 - 개별 섹션별로는 선형적으로 진행하면서, 한 번에 여러 섹션을 병행해서 다루는 방식 - 커리큘럼의 권장 선수 과목에 맞춰 오직 본인만의 맞춤화된 자신만의 일정을 구성\n해당 커리큘럼은 어떤 학습 방식을 택하든지 무리가 없도록 설계되었습니다.\n\n\n메인 커리큘럼의 모든 자료는 무료여야 하나요?\n네, 이는 OSSU의 핵심 목표입니다.\n동시에, 교육이 장기적으로 지속되려면 강사들에게 지불할 비용이 필요하다는 사실 또한 인지하고 있습니다. 따라서 공식 자격증 발급이나 강사와의 개별적인 피드백처럼 유료 부가 기능은 있지만, 강의 자체의 자료는 무료로 개방하는 edX와 같은 웹사이트들의 비즈니스 모델을 존중합니다.\n그러므로 어떤 자료라도 학습 목적으로 접근하는 학습 자료에 한해서만 무료여야 하며, 모든 유료 부가 기능을 금지하는 것은 아닙니다. 만약 채점 평가 또한 무료라면 더할 나위 없겠지만, 평가 시스템 이용이 불가능한 과정의 경우 대안 평가 방식이 제공되는 강의를 함께 찾아서 제시할 예정입니다.\n\n\nCoursera 강좌는 무료로 수강할 수 있나요?\n결제를 완료해야만 들을 수 있는 강의도 Coursera에 있을 수 있지만, 그런 과정은 저희 커리큘럼에 포함되지 않습니다. 커리큘럼에 올라온 모든 Coursera 강좌는 기본적으로 강좌 미리보기 (청강 - audit) 모드가 필수로 제공되어야 합니다. 어떤 강의는 강좌의 핵심과 부가 기능을 전부 무료로 제공할 수도 있고, 다른 어떤 강의(특히 전문 과정의 일부인 경우)는 오직 동영상 강좌 시청만 무료로 허용되기도 합니다. (만약 저희 커리큘럼에 등재된 과정 중 수강 규정이 변경된 과정이 있다면 꼭 알려주세요!)\n그러나, 일부 Coursera 인터페이스는 사용자에게 결제를 매우 공격적으로 설득하려는 경향이 있습니다.\n강의 페이지에서 다음과 같은 화면을 볼 수 있습니다:\n\n이러한 강의에 등록하려면: - 파란색 “Enroll(등록)” 또는 “Enroll Now(지금 등록)” 버튼을 클릭하세요. - 팝업이 나타납니다. - 유료 결제를 원하지 않으시면 절대로 “Start Free Trial(무료 체험 시작)”을 클릭하지 마세요. - 하단에 “Audit this course(이 강의 청강하기)”라는 텍스트를 찾으세요. - Audit(청강)을 클릭합니다.\n\n\n\nAudit this course\n\n\n\n\nedX 강좌의 인증(Verified) 업그레이드를 꼭 구매해야 하나요?\n만약 동영상 시청만 원하신다면, 모든 edX 과정에서 필수 요소는 아닙니다. 다만 상당수의 edX 과정이 학습해야 하는 기간을 대략 예측하여 정해진 기간 동안만 무료 청강을 허용한다는 사실을 잊지 마세요. 강좌를 시작하기 전 확실하게 마칠 준비가 되지 않으셨다면, 과정을 수강하지 않는 편이 현명합니다.\n\n\n대체(alt) 링크는 무엇인가요?\n가끔 여러 플랫폼에서 비슷한 퀄리티의 똑같은 내용의 코스를 올려놓거나 번갈아가며 강의가 제공될 때가 있습니다. 기본 제공되는 강의 링크를 사용할 수 없는 경우를 대비해 대체 가능한 코스의 링크 한두 개가 제공되며, 두 쪽 다 동일하므로 여러분이 선호하거나 그때그때 이용 가능한 플랫폼의 과정을 사용하시면 됩니다.\n\n\n커리큘럼에서 특정 주제 X를 다루지 않거나 무시하는 이유는 무엇인가요?\n커리큘럼 가이드라인 및 해당 가이드라인 작성자의 자격 증명에 대해 여기서 자세히 알아볼 수 있습니다. 만약 가이드라인에서 필수로 다루고 있으나 저희 커리큘럼에서 빠져 있는 주제를 발견하신다면 수정 사항을 반영해야 합니다! 커리큘럼 변경과 관련된 내용은 다음에서 더 읽어보세요.\n\n\n커리큘럼에 특정 선수 과목들이 빠져 있는 이유는 무엇인가요?\n저희 커리큘럼은 수강생이 다음 두 가지 기준을 이미 만족하고 있다고 가정합니다: - 영어가 합당하게 숙달되어 유창할 것 - 정규 고등학교 교육 수준을 수료하여 기본적으로 물리, 그리고 사전 미적분 지식이 있을 것.\n이 두 가지를 만족하지 않는 상황까지 커리큘럼을 대비해 놓는다면 과정은 기하급수적으로 통제 불능이 되어버릴 것이기 때문입니다.\n\n만약 수학 선수 과목들을 개인적으로 보충하길 원하신다면, 위쪽의 수학 선수 과목 보충 방법 단락을 읽어보세요.\n\n물론, 정규 고등학교 커리큘럼상 보통 누락이 되곤 하여 필수인데도 빠져 있는 강좌나 선수 과정이 있다면 지체 없이 신고해 편하게 말씀해 주시기를 바랍니다!\n\n\n소프트웨어 엔지니어링 과정을 듣기 전에 규모 있는 프로젝트 경험을 요구하는 이유는 무엇인가요?\n소프트웨어 엔지니어링(SE)은 방대하게 커진 프로그램의 취급에 의해 발생하는 난제들을 해결하려 시도하는 분야입니다. 이 과정을 앞두고, 부피가 아주 커다란 프로그램을 먼저 제작해 보면 SE 과정이 왜 이러한 방법으로 문제를 돌파하려는지에 대해 피부로 와닿게 될 것입니다. 이를 위해 Nand2tetris 과정에서 다뤘던 백엔드의 Jack-to-VM 코어 콤파일러를 첫 시작으로 제작해 보는 것을 무척 권장해 드리는 바입니다 (그 과정을 수강하는 것이 왜 SE와 연관되는지 가치가 증명될 만큼 가장 복잡하고 골치 아픈 프로젝트였을 것입니다). 그렇긴 하지만 다른 어떠한 외부 프로젝트라도 충분한 규모만 된다면 무방합니다. 어떤 거대 프로젝트 안에서 부속품들이 손쓸 수 없고 관리할 수 없게 되어버린 순간을 뼈저리게 느껴보라는 뜻에서입니다. 오직 이러한 고통의 순간의 쓴 경험만이, 더 확실하고 나은 방법으로 가는 열쇠인 SE를 습득하기 위한 최고의 동기부여가 될 것입니다.\n\n\n특정 주제에 관한 강좌를 어떻게 찾을 수 있나요?\nCore CS(핵심 과정)가 모두 끝나고 나면, 학생들은 자신들이 여태까지 품고 있던 흥미로운 다양한 주제나 목표 분야를 직접 선택하여 자율적으로 컴퓨터 세계를 탐험할 준비를 모두 마친 것입니다. 자신이 관심 있어 하는 특정 주제 강좌를 어떻게 찾을까요? 가장 탁월한 리소스는 단연 Class Central 플랫폼입니다. 만약 MOOC 내에 통합되지 않고 독자적인 인터페이스를 갖춘 대학 강좌들을 찾으신다면 awesome-courses 및 그와 동일한 선상에 놓인 cs-video-courses를 추천드립니다. 교재를 위해선 독자 평가와 생생한 리뷰를 확인해 볼 수 있는 Goodreads라는 아주 훌륭한 리뷰 플랫폼이 있습니다. 선호하는 프로그래밍 언어나 특정 프레임워크 학습을 희망하신다면 특수 언어 추천에 관한 단락 답변을 참고하세요.",
+    "crumbs": [
+      "General Information",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>자주 묻는 질문 (FAQ)</span>"
+    ]
+  },
+  {
+    "objectID": "HELP.html",
+    "href": "HELP.html",
+    "title": "도움받기",
+    "section": "",
+    "text": "FAQ를 먼저 확인하세요!\n질문이 이미 답변되었는지 저희 자주 묻는 질문(FAQ)을 확인해 주세요.",
+    "crumbs": [
+      "General Information",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>도움받기</span>"
+    ]
+  },
+  {
+    "objectID": "HELP.html#채팅방에-질문하기",
+    "href": "HELP.html#채팅방에-질문하기",
+    "title": "도움받기",
+    "section": "채팅방에 질문하기",
+    "text": "채팅방에 질문하기\n OSSU Discord 서버에 가입하세요! Discord는 Slack이나 IRC와 유사한 온라인 채팅 서비스로, 다른 학생들과 대화하고 도움을 받을 수 있습니다.\n\n구체적인 문제\n강의 내용을 성공적으로 완료하는 데 도움이 필요하거나 일반적인 기술적 어려움을 겪고 있다면, 먼저 해당 강의에서 제공하는 리소스(예: Coursera, edX 등의 강의 포럼)를 활용해 보세요. 그 후에도 추가적인 도움이 필요하다면 Discord에 게시하세요. 질문을 올릴 때 문제를 해결하기 위해 시도했던 단계들을 함께 적어주시면 좋습니다.\n\n\n일반적인 문제\nMOOC보다 교재 기반의 학습을 선호하는 등 특정 강의에 국한되지 않은 프로그램 전체에 대한 일반적인 문제가 있다면, 훌륭한 제안을 해줄 수 있는 사람들과 소통하기 좋은 곳이 바로 Discord입니다. OSSU CS의 다음 개선을 이끌어낼 워킹 그룹을 결성할 수도 있습니다! 기여에 대한 자세한 내용은 여기에서 확인하세요.",
+    "crumbs": [
+      "General Information",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>도움받기</span>"
+    ]
+  },
+  {
+    "objectID": "CURRICULAR_GUIDELINES.html",
+    "href": "CURRICULAR_GUIDELINES.html",
+    "title": "커리큘럼 가이드라인",
+    "section": "",
+    "text": "가이드라인 발행 기관:\n학부 컴퓨터 과학 프로그램을 위한 커리큘럼 가이드라인 (CS2013)\n저희 커리큘럼 가이드라인은 계산 기계 학회(ACM)와 전기 전자 기술자 협회(IEEE)의 2013년 보고서를 따르고 있습니다. 이 보고서는 컴퓨터 과학 학부 학위에 요구되는 기대치를 요약한 일련의 보고서 중 가장 최신 버전입니다. 보고서는 핵심 지식 영역과 그 안의 주제들을 간략히 설명합니다. 또한 구체적인 학습 목표를 상세히 분류하여, 학생이 설명할 수 있어야 하는 개념과 실제 실습에서 활용하고 시연할 수 있어야 하는 개념을 명확히 구분하여 제시합니다.\nCS2023 가이드라인은 현재 개발 중입니다. 출시 진행 상황은 여기에서 확인할 수 있습니다.",
+    "crumbs": [
+      "General Information",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>커리큘럼 가이드라인</span>"
+    ]
+  },
+  {
+    "objectID": "CURRICULAR_GUIDELINES.html#가이드라인-발행-기관",
+    "href": "CURRICULAR_GUIDELINES.html#가이드라인-발행-기관",
+    "title": "커리큘럼 가이드라인",
+    "section": "",
+    "text": "계산 기계 학회 (ACM)\n계산 기계 학회(Association for Computing Machinery, ACM)는 컴퓨팅 분야의 국제 학술 단체입니다. 1947년에 설립되었으며 세계에서 가장 큰 과학 및 교육 목적의 컴퓨팅 단체입니다. ACM은 비영리 전문가 회원 단체로, 2011년 기준 10만 명 이상의 회원을 보유하고 있습니다.\n\n\n전기 전자 기술자 협회 (IEEE)\n전기 전자 기술자 협회(Institute of Electrical and Electronics Engineers, IEEE)는 미국 전기 기술자 협회(AIEE)와 무선 기술자 협회(IRE)가 1963년에 통합하여 형성된 전문 협회입니다. 2018년 현재 전 세계 160개국 이상에서 42만 3천 명 이상의 회원을 보유하고 있는 세계 최대의 기술 전문가 협회입니다. 전기 및 전자 공학, 원격 통신, 컴퓨터 공학 및 관련 분야의 교육적, 기술적 발전을 목표로 합니다.",
+    "crumbs": [
+      "General Information",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>커리큘럼 가이드라인</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/intro-cs/README.html",
+    "href": "coursepages/intro-cs/README.html",
+    "title": "파이썬을 활용한 컴퓨터 과학 및 프로그래밍 입문",
+    "section": "",
+    "text": "⚠️ 검토 중\n이 과정은 여러분을 컴퓨터 과학과 프로그래밍이라는 세계로 안내할 것이며, 앞으로 배우게 될 학문에 대한 첫인상을 제공합니다. 강의를 다 듣고 더 깊이 파고들고 싶다면 컴퓨터 과학이 여러분의 적성에 딱 맞을 것입니다!\n이 강좌는 MIT에서 개발되었으며, MIT OCW 플랫폼에서 무료로 수강할 수 있습니다.\n강의 링크: https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/pages/material-by-lecture/\n이 강좌는 현재 리뷰/검토 중입니다. 프로그래밍을 아예 처음 접하는 왕초보들이 수강하기에 가장 알맞게 설계되었습니다. 하지만 혹여 너무 이해하기 어렵다 느껴지거나 잘 따라가기 벅차다면, 선수 과목인 짧은 프로그래밍 입문 과정들을 먼저 수행해보고 나서 이 과정으로 다시 되돌아오는 것을 추천합니다. 과정 피드백이나 프로그래밍 입문 과정들의 필요성에 대해 피드백을 주고자 한다면 아래의 RFC 링크에 댓글을 달아 알려주십시오: https://github.com/ossu/computer-science/issues/1266.",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>파이썬을 활용한 컴퓨터 과학 및 프로그래밍 입문</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/intro-cs/README.html#안내-사항",
+    "href": "coursepages/intro-cs/README.html#안내-사항",
+    "title": "파이썬을 활용한 컴퓨터 과학 및 프로그래밍 입문",
+    "section": "안내 사항",
+    "text": "안내 사항\n\n위쪽의 접속 링크를 여십시오. 한 학기간 배울 강의 리스트가 나열될 것입니다.\n특정 주차의 강의 링크를 누르시면 한 회차에 배울 과정 자료들이 한꺼번에 보입니다.\n링크에서 제시하는 모든 강의 지시에 따라주십시오. 영상을 시청하고, 손가락 풀기(Finger exercises) 연습 문제를 풀어본 뒤, 본 과제 세트 (Problem sets)를 해결하시면 됩니다.\n강의 페이지에 노출되자마자 과제를 무조건 즉각 완료하실 필요는 없습니다. 과제 노출 시점부터 천천히 생각해 보기 시작하면 됩니다. 실제 마감일은 강의 일정 캘린더 (course calendar)를 기준으로 다음과 같습니다:\n\nPSET 0 - 1회차 강의 시청 전까지\nPSET 1 - 9회차 강의 시청 전까지\nPSET 2 - 12회차 강의 시청 전까지\nPSET 3 - 16회차 강의 시청 전까지\nPSET 4 - 20회차 강의 시청 전까지\nPSET 5 - 25회차 강의 시청 전까지\n\n각 강의 페이지마다 연습 문제들의 정답 링크가 존재합니다. 올바른 해답과 여러분의 코드 작성본을 비교하여 자체적인 평가를 내리시면 됩니다.\n각각의 문제 세트(Problem set)는 풀이 결과물 코드의 정답 유무를 파악하기 위한 스크립트 코드들과 매뉴얼이 제공되니 이를 활용해 점수를 매겨보세요.\n코스를 밟기 위해 그 거대한 구성을 다 가진 완전한 아나콘다(Anaconda) 배포판을 설치할 필요는 없습니다. 세밀한 내용은 다음 아래 노트 사항을 살펴보십시오.\n막히거나 궁금한 사항이 있다면 참지 말고 언제든 남기십시오. 과정 전용 OSSU 채팅 서버에 언제든 합류해 질문하셔도 됩니다: https://discord.gg/jvchSm9.",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>파이썬을 활용한 컴퓨터 과학 및 프로그래밍 입문</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/intro-cs/README.html#노트",
+    "href": "coursepages/intro-cs/README.html#노트",
+    "title": "파이썬을 활용한 컴퓨터 과학 및 프로그래밍 입문",
+    "section": "노트",
+    "text": "노트\n\n커리큘럼 이수를 위해 거대한 몸집을 지닌 아나콘다(Anaconda) 풀 패키지 인스톨이라는 불필요한 고생을 하실 필요가 없습니다. https://github.com/spyder-ide/spyder/releases/latest에서 Spyder IDE를 단순히 가볍게 내려받아 활용하십시오. 파이썬 언어 자체와 더불어 흔히 유명한 과학용 파이썬 라이브러리 (해당 과정에서 활용하는 라이브러리 전체 분량 포함) 등이 번들 형태로 기본 빌트인 되어 있기 때문입니다. 그럼에도 무겁지 않기에, 파이썬을 번거롭게 수동으로 연동시키고 라이브러리를 하나씩 설정할 필요가 전혀 없습니다.\n만약 VS Code나 본인이 애용해 오던 다른 에디터나 환경을 고집하고 싶다면 당연히 그렇게 적용하셔도 무방합니다. Spyder 외의 다른 툴 이용자가 반드시 알아둘 것은, 이 코스 수업에서 특정 파이썬 코드(.py) 파일을 실행시킨 직후 별도 추가 연산 구문 등을 종종 입력하도록 테스트한다는 것입니다. 이것이 호환되게 하려면 터미널 창에서 파이썬을 돌릴 때 -i 옵션을 붙여서 python -i file.py 명령어 포맷으로 실행시키면 파이썬 인터렉티브 쉘 화면으로 전환되며 지시된 구문들을 처리할 수 있게 됩니다.\n아쉽게도 이 과정을 이수했다고 수료증을 받진 않습니다. 정 수료증이라는 결과물을 원하신다면, 강사가 직접 진도 관리를 리딩하는 조금 빡빡한 호흡인 Edx판 6.00.1x 강좌 버전을 권해드립니다. 그러나 이런 입문 초급 단계에서의 공식 발급 수료증은 크게 가치를 지니거나 대단한 성과로 쳐주지 않으므로, 그게 아니시라면 위쪽의 편안한 6.100L 강좌를 이어서 계속 들으시면 됩니다. 스스로 해방된 코스가 제일 좋기 때문입니다.\n어떤 이유에서건 OCW 판인 원래의 초 단기 집중 6.0001 과정을 수강하고 싶다면 여기서 수강하실 수 있습니다: https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/.\n과정 소개를 살피다 보면 필수로 지정된 강좌 도서로 연산 및 파이썬 프로그래밍 입문 제 3판(Introduction to Computation and Programming Using Python, third edition)을 지정하고 있는 대목이 있을 것입니다. OSSU 등재 강좌의 기본 규칙대로, 별도의 돈 지불을 요구하는 도서 구매 등의 조건은 선택사항으로 간주합니다. 이 입문 도서를 구매하거나 독파하지 않았다고 해서 낙제가 벌어지진 않으니 걱정하지 않으셔도 좋습니다. “책과 강좌의 내용 구조는 똑같게 평행을 이루며 흘러가고, 다만 도서는 글로 작성된 만큼 강좌에선 생략했던 이런저런 디테일한 설명이 나름 포함되어 있는” 정도입니다. 굳이 책 없이 인강으로도 부족함 전혀 없이 충분한 지식 파악이 가능한 양이므로 편안히 수강하십시오.",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>파이썬을 활용한 컴퓨터 과학 및 프로그래밍 입문</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/intro-cs/README.html#추가-연습-과정",
+    "href": "coursepages/intro-cs/README.html#추가-연습-과정",
+    "title": "파이썬을 활용한 컴퓨터 과학 및 프로그래밍 입문",
+    "section": "추가 연습 과정",
+    "text": "추가 연습 과정\n\nhttps://introcomp.mit.edu/spring25/practice",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>파이썬을 활용한 컴퓨터 과학 및 프로그래밍 입문</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/intro-programming/README.html",
+    "href": "coursepages/intro-programming/README.html",
+    "title": "프로그래밍 입문 (Introduction to Programming)",
+    "section": "",
+    "text": "CS50P: 파이썬을 활용한 프로그래밍 입문\n만약 CS 입문 과정(Intro CS course)을 따라가기 어렵다고 느끼신다면 여기서부터 시작하세요. 이 강좌들은 자기 주도형(self-paced)이므로 매주 투자할 시간을 여러분의 필요에 맞게 스스로 조절할 수 있습니다.\n아래의 강좌 중 딱 하나만 선택해서 수강하시면 됩니다.\n이 과정은 하버드 대학교(Harvard University)의 CS50 팀에서 개발했습니다.\n링크: https://cs50.harvard.edu/python/\n참고: 이 강좌는 CS50 또는 CS50x 과정과는 다릅니다. 원조 CS50은 OSSU 커리큘럼에 속해 있지 않습니다. 다만 여러분이 예전에 이미 CS50을 수료한 적이 있다면 이 과정을 무시하고 바로 다음 커리큘럼으로 넘어가셔도 좋습니다.",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>프로그래밍 입문 (Introduction to Programming)</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/intro-programming/README.html#cs50p-파이썬을-활용한-프로그래밍-입문",
+    "href": "coursepages/intro-programming/README.html#cs50p-파이썬을-활용한-프로그래밍-입문",
+    "title": "프로그래밍 입문 (Introduction to Programming)",
+    "section": "",
+    "text": "파이썬(Python)이라는 언어를 사용한 프로그래밍 입문 과정입니다. 코드를 읽고 쓰는 방법뿐만 아니라 테스트하고 “디버깅(debug)”하는 방법도 배웁니다. 파이썬을 특별히 배우고자 하는, 프로그래밍 경험 유무와 상관없이 모든 학생들을 위해 고안되었습니다. 함수, 인수, 반환값부터 시작해 변수, 자료형, 조건문과 불리언 식, 반복문에 대해 알아봅니다. 나아가 예외 처리 방법, 버그를 찾고 고치는 방법, 단위 테스트(unit test) 작성 방법을 배우며; 서드파티 라이브러리를 활용하고 정규 표현식을 이용해 데이터를 검증 및 추출하는 법; 클래스, 객체, 메서드, 속성(property)을 통해 현실 세계의 개체들을 모델링하는 방법, 그리고 파일을 읽고 쓰는 법까지 다룹니다. 풍부한 실습 기회가 주어지며, 연습 문제들은 현실 세계의 프로그래밍 문제들에서 영감을 받았습니다. 웹 브라우저 외에 별도의 소프트웨어가 필요하지 않지만, 각자의 개인 PC나 Mac에서 코드를 짤 수도 있습니다.\n\n\n\n\n안내 사항\n\n강사의 진도를 동일하게 따라 하고 싶으시다면 CS50 “코드스페이스(codespace)”에 로그인해 이 비디오를 시청하여 세팅을 시작하세요.\n각 주차의 강의를 시청하고 관련된 연습 문제 세트 (Problem set)를 해결하세요. 필요한 사항은 강의 노트(Notes)를 읽고 복습하십시오.\n막히는 부분이 생기면 주저하지 말고 질문하십시오. 해당 코스를 위한 전용 OSSU 채팅방이 준비되어 있습니다: https://discord.gg/cBkssaJy5g.\n또한 CS50의 공식 디스코드 서버에 참여하여 질문하실 수도 있습니다 (https://discord.gg/cs50). 하지만 그곳은 OSSU가 직접 제휴하거나 운영하는 서버는 아닙니다.\n\n\n\n강좌 자료\n\n함수, 변수 (Functions, Variables) — 노트 — 문제 세트\n조건문 (Conditionals) — 노트 — 문제 세트\n반복문 (Loops) — 노트 — 문제 세트\n예외 처리 (Exceptions) — 노트 — 문제 세트\n라이브러리 (Libraries) — 노트 — 문제 세트\n단위 테스트 (Unit Tests) — 노트 — 문제 세트\n파일 I/O (File I/O) — 노트 — 문제 세트\n정규 표현식 (Regular Expressions) — 노트 — 문제 세트\n객체 지향 프로그래밍 (Object-Oriented Programming) — 노트 — 문제 세트\n기타 등등 (Et Cetera) — 노트 — 최종 프로젝트",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>프로그래밍 입문 (Introduction to Programming)</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/intro-programming/README.html#비전공자를-위한-파이썬-python-for-everybody",
+    "href": "coursepages/intro-programming/README.html#비전공자를-위한-파이썬-python-for-everybody",
+    "title": "프로그래밍 입문 (Introduction to Programming)",
+    "section": "비전공자를 위한 파이썬 (Python for Everybody)",
+    "text": "비전공자를 위한 파이썬 (Python for Everybody)\n이 과정은 미시간 대학교(University of Michigan)의 찰스 세브런스(Charles Severance) 교수가 제작했습니다. &gt; 파이썬을 활용해 프로그램을 만들고 데이터를 분석하는 방법을 배웁니다. 데이터를 수집하고, 정제하며, 분석하고, 시각화하는 프로그램을 개발해 보세요.\n링크: https://www.py4e.com/lessons\n교재: PDF / EPUB / HTML / 하드카피 구매\n참고: 이 과정은 Coursera와 Edx에서도 개설되어 있습니다. 다만 해당 플랫폼의 버전들은 완전한 코스를 밟기 위해 비용 결제를 요구합니다. 전면 완전 무료로 개방되어 있는 공식 사이트에서 직접 수강하는 것을 강력히 권장합니다.\n\n안내 사항\n\n과제에 접근하기 위해서는 구글 계정으로 강좌 홈페이지에 로그인해야 합니다.\n각 레슨의 전체 비디오 영상을 시청한 후 해당 과제를 해결하십시오.\n코딩보다는 직접 책을 읽는 편안함을 추구하신다면, 강좌 사이트에 연결된 HTML 웹 교재 버전으로 주차별 내용을 공부하셔도 되고, 다른 다양한 포맷(PDF 등)으로 제작된 서적본 풀 버전을 이 링크에서 다운로드 받으실 수도 있습니다.\n막히는 난관에 봉착 시엔 지체 없이 질문 커뮤니티에 합류하십시오. 여길 위한 OSSU 코스 파트 채팅 채널 링크가 준비되어 있습니다: https://discord.gg/syA242Z.\n12강 정규 표현식 (Regular Expressions) 파트까지만 마무리하시면 더는 의무가 아닙니다. 그 후방 과정들은 온전히 자기 계발 용도일 뿐 필수가 아닙니다.\n\n\n\n강좌 자료\n\n파이썬 설치\n프로그래밍은 왜 할까?\n변수, 표현식 및 구문\n조건문 실행\n함수\n루프 (반복) 와 순회\n문자열 (Strings)\n파일 처리\n리스트 (Lists)\n딕셔너리 (Dictionaries)\n튜플 (Tuples)\n정규 표현식\n네트워크 프로그래밍 (선택 사항)\n웹 서비스 이용하기 (선택 사항)\n객체 지향 프로그래밍 (선택 사항)\n데이터베이스 (선택 사항)\n데이터 시각화 (선택 사항)\n\n\n\n문제 해결 패치안 (Fixes)\n\nBeautifulSoup4 과제를 진행하고 있을 무렵 만약 파이썬 버전을 3.10+ 에 놓고 작업 중이라면 Collections 라이브러리 참조 구문이 거부되는 골치 아픈 에러 현상이 터질 것입니다. 이때 당면한 해결책을 전달해 드립니다. 억지로 이해하려 들지 마시고 그냥 프로그램 맨 꼭대기 불러오기 (imports block) 공간에 다음 줄을 몰래 복사해 집어넣으십시오:\n\nimport collections\ncollections.Callable = collections.abc.Callable\n\nfrom bs4 import BeautifulSoup \n이렇게 하면 꼬여있던 콜러블 (Callable) 인터페이스 호환성 문제가 말끔히 치유되어 무사히 프로그래밍이 정상 작동할 것입니다.",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>프로그래밍 입문 (Introduction to Programming)</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/ostep/README.html",
+    "href": "coursepages/ostep/README.html",
+    "title": "운영 체제: 세 가지의 쉬운 측면 (Operating Systems: Three Easy Pieces)",
+    "section": "",
+    "text": "소개\n크레딧은 palladian 님께 있습니다\n미리 솔직하게 말씀드리자면, 운영체제(OS) 분야에서 깔끔하고 독립적인 완벽한 온라인 강좌를 찾기란 하늘의 별 따기처럼 어렵습니다. 현시점에서 OSTEP은 저희가 발굴해 낸 최고의 코스입니다. 아래에 이 코스에 임하는 두 가지 길을 소개합니다. 대부분의 평범한 학생들에게 어울리는 비교적 쉬운 “기본(Base)” 접근 방식과, 뼛속까지 시스템 프로그래머의 길을 걷고 싶은 야심가들을 위해 마련된 “심화(Extended)” 접근 방식이 있습니다.\n“기본” 코스만 이수해도 저희가 요구하는 운영체제 커리큘럼 기준을 너끈히 충족하며, 약 80시간 정도 소요됩니다.\n반면 “심화” 접근 방식은 이 기본 과정을 베이스로 탑재한 위에 한층 더 무서운 내용들이 얹어집니다. 굉장히 딱딱하고 무거운 C 언어 사용과 x86 어셈블리 언어를 익히고 커널 깊숙한 프로그래밍 계층까지 다이빙해야 합니다. 최소 200시간 이상이라는 무지막지한 시간이 체력과 멘탈과 함께 소모됩니다. 하지만 이 밑바닥 세계를 사랑하는 자들에겐 달콤하기 짝이 없는 최고의 보상을 안겨줄 것입니다.",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>운영 체제: 세 가지의 쉬운 측면 (Operating Systems: Three Easy Pieces)</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/ostep/README.html#기본-접근-방식-base-approach",
+    "href": "coursepages/ostep/README.html#기본-접근-방식-base-approach",
+    "title": "운영 체제: 세 가지의 쉬운 측면 (Operating Systems: Three Easy Pieces)",
+    "section": "기본 접근 방식 (Base Approach)",
+    "text": "기본 접근 방식 (Base Approach)\n\n완전 무료인 온라인 교재 Operating Systems: Three Easy Pieces 전체를 정독하십시오.\n각 챕터 끄트머리에 구비된 모든 숙제용 연습 문제들을 클리어 돌파하십시오. (미리 분리된 전용 숙제 연동 Github 저장소가 있습니다.)\n\n주당 최소 10시간 이상 투자 기준 약 8주 만에 마칠 수 있습니다. 기본 단계는 이게 전부입니다!\n여러분에겐 오직 유닉스/리눅스 체제의 시스템과 기본적인 터미널 커맨드 제어 기술, 그리고 C 컴파일러(GCC 또는 Clang 등) 환경 구축만이 필요합니다. 윈도우 환경이라면 가상 머신에 우분투(Ubuntu)를 올리거나 윈도우 서브시스템 리눅스(WSL)를 가동하십시오. Mac OS는 애초에 태생이 유닉스와 동일한 핏줄이므로 그냥 터미널 켜서 쓰시면 아무 제재 없이 작동합니다.\n\n강좌 링크\n\n온라인 교재\n숙제 목록\n숙제 소스 코드용 깃허브 공간\n숙제 모범 답안 파일\n\n\n\nC\n궁금증: 교재를 뒤적이다 보니 C 코드가 종종 등장하는데, 이참에 C를 얼마나 피를 토할 정도로 파고들어야 하나요?\n답변: 그냥 교재 안의 C 코드가 뭔 소리를 하는 건지 읽고 고개만 끄덕일 정도로만 이해하시면 됩니다. 배열(Arrays), 포인터(Pointers), 프린트(Print) 포맷팅 구조라는 기초 상식만 알고 있다면 문제없습니다. 공인 무료 서적인 시스템 다이빙하기(Dive into Systems): 챕터 1 및 2를 곁들여 슬쩍 살펴보는 것을 추천합니다. 또 막히는 함수가 있다면 CS50 매뉴얼 페이지에서 검색해 도움을 받으실 수 있습니다. C 언어 문법 자체를 꿰뚫기 위해 목숨 걸지 마십시오.\n책에서 당신이 마주칠 코드들은 기껏해야 아주 작은 파편 조각처럼 짤막하고 귀여운 심플 그 자체입니다. 책이 너무나도 친절해 프로세스 API, 쓰레드 API 등 다수의 C 전용 라이브러리 인터페이스를 하나하나 일일이 해설합니다. 그 짧은 C 코드 덩어리들을 직접 따라 타자 쳐 보고 컴파일을 굴린 뒤 그 결과물을 구경만 하면 되기 때문에 이 책의 재미있고 유쾌한 해설 스타일 덕에 술술 읽히는 지식을 뽐낼 것입니다.\n물론 약간의 C 타이핑도 쳐야 할 순간이 다가오기도 합니다. 약 50여 개의 챕터 중 고작 10여 개 남짓의 챕터에만 이 귀여운 숙제가 깔려 있을 뿐이며 (나머진 코드만 실행시키고 지문만 읽으면 끝), 이마저도 챕터에서 친절히 보여주었던 예시 코드를 아주 귀엽게 변형해서 짜서 실행해 보는 조촐한 미니 프로그램들일 뿐입니다. 마음의 준비를 마쳤다면 숙제 과제를 시작해 보세요. 최초의 reverse(리버스) 프로젝트 단계를 밟으며 뒤이을 메인 과정들을 버텨낼 수 있는지 테스트해 보는 것을 첫 단추로 하십시오. 이후 코스 링크 하단의 숙제 전용 프로젝트 링크를 따라 계속 나아가면 됩니다.\n만약 하다 막혀서 너무 시간을 하수구에 버리며 헤맬 때는 오기로 매달려 시간 낭비하지 마십시오. 멋진 모범 해답 묶음이 여기 정갈하게 준비되어 있습니다. 명예 코드나 성적 반영 따윈 안 하니 양심 덜고 솔루션을 보십시오. 솔루션 해답지조차 막힐 땐 시간 쏟지 말고 해설지 코드를 그냥 읽고 이해하는 길을 택하시란 뜻입니다. 당신이 지금 여기서 목숨을 갈아 넣어야 할 메인 퀘스트 1순위는 ’OS (운영체제) 작동 논리 마스터하기’이지 C 언어 타자 연습이 아니기 때문입니다.",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>운영 체제: 세 가지의 쉬운 측면 (Operating Systems: Three Easy Pieces)</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/ostep/README.html#심화-접근-방식-extended-approach",
+    "href": "coursepages/ostep/README.html#심화-접근-방식-extended-approach",
+    "title": "운영 체제: 세 가지의 쉬운 측면 (Operating Systems: Three Easy Pieces)",
+    "section": "심화 접근 방식 (Extended Approach)",
+    "text": "심화 접근 방식 (Extended Approach)\n진심으로 피의 길을 걷기로 맹세했다면 우선 환영합니다. এই 코스는 OSSU 커리큘럼상 정규 과정을 밟기 위해 여러분이 스스로 선수 공부를 먼저 미세하게 헤쳐 나가야 할 최초의 과정입니다. 테스트 솔루션을 굴리고 숙제 데모 시연을 준비하다가 스크립트 에러 버그에 얻어터질 일도 허다할 것입니다 (물론 지금까지 쌓아온 노력으로 어지간한 구멍들은 전부 도려내 고쳐 놓았지만요).\n어찌 되었든, 선수 지식 충전에 기약 없이 처박을 끈기와 시간 여유가 있으시다면, 그 눈물겨운 대가에 따르는 완벽한 쾌감, 그 보상이 확실하다고 저희는 자부합니다: 이 코스는 무섭도록 짜릿하고, 극적으로 흥미롭고, 타 프로그래밍 및 컴퓨터 분야 전체에서 언제든 뽑아다 쓸 수 있는 방대한 활용성을 입증하기 때문입니다. 운영체제의 디자인 설계 결정 사항, 개념들 전부를 머리로 흡수하는 것을 넘어서 유닉스를 흉내 낸 작고 완벽한 자급자족형 운영체제가 밑바닥부터 굴러가는 톱니바퀴 메커니즘을 두 눈으로 생생히 관통해 볼 최고의 희열을 보장합니다.\n강의 비디오를 눈이 빠지게 정주행하거나 교재 1부터 47챕터 텍스트북 모조리 독파하는 것 중 하나를 선택하시고 (두려워하지 마세요, 한 챕터당 기껏해야 서너 페이지에 불과합니다), 아래쪽에 나열된 살인적인 프로젝트 목록들을 깨부숴야 합니다. Coursera, edX 따위에서 영상 말미에나 귀엽게 튀어나오는 흔한 오지선다 객관식 따위완 차원이 다른, 진정한 실력을 감별하는 과정 내 제공되는 모든 확인 질문 및 수련 과제를 단 한 개도 건너뛰지 말고 모조리 갈아버릴 것을 대단히 권장해 드립니다.\n\n선수 지식\n이 무시무시한 광기의 트랙에 오르기 전 C 언어에 미친 듯이 적응해야 합니다. 아래 리소스(resources) 단락에 숨겨놓은 C 코딩 바이블 책들 중 최소 한 권은 모조리 파먹은 이후에 진입하십시오. 과정 입소 전 C 언어가 안 되어 있어 진도와 함께 병행하겠다는 얄팍한 수는 그야말로 머리가 터져 버릴 듯한 재앙의 연속을 맛보게 할 뿐일 것입니다. C를 안 해본 초심자의 입장에서, 주당 8~10시간 투입 기준 약 3~5주가량이 C 문법 체득에 박살 날 것으로 아주 러프하게 견적이 잡힙니다. 타 OSSU 커리큘럼을 들으며 C로 된 코드를 짜보며 실습하거나 타 과정 과제로 수련하는 모든 것들이 전부 C 경험치를 불려줄 자양분이 됩니다.\n이 지옥문에 들어오기 전 이미 Nand2Tetris 과정 2개의 전 부문 수료는 마쳐두었어야 합니다. OSTEP은 현실 세계의 피비린내 나는 x86 기반 아키텍처 위주로만 공격해 들어옵니다. 그전에 배웠던 아키텍처 이론들을 새 칩셋 판에 복사 이동시키며 생긴 괴리감과 구멍들을 착실히 때워야 할 것입니다. 그건 친절하게 제공해 둔 아래의 x86 리소스로 땜방하면 됩니다. 물론 그 땜방 지침서도 온통 C로만 떠들고 있으니 제일 우선순위는 C 섭렵일 것입니다. 대략 6에서 8시간 정도가 땜질에 뭉텅이로 소요될 것입니다..\n\n\n강좌 링크\n\n코스 공식 웹사이트\n온라인 교재\n녹화된 강의 비디오\n숙제\n숙제 소스 코드용 깃허브 공간\n숙제 모범 답안 파일\n프로젝트\nxv6 리포지토리\n\n\n\n학습 경로 (Roadmap)\n이 강좌의 태생은 위스콘신(UWisconsin) 대학교에서 OSTEP 저자 본인이 가르치던 CS 537 수업이 원조입니다. 따라서 프로젝트 목록 역시 특정 시기 대학원생 및 캠퍼스의 조교 면담 일정(Office hours) 등의 지리적 조건과 밀접히 연동되어 할당되었습니다. 즉 교재의 챕터 진행 속도 및 동영상 강의 분량 진도로만 완벽하게 1대 1 매칭 되어 매끄럽게 연결되는 것은 아닐 수도 있다는 뜻입니다. 혼동 방지를 위해 하단의 루트대로 무자비하게 진행하십시오.\n권장 독서 순서\n\n텍스트북 챕터 1~2를 완독하고 강의 1편 도입부 절반 시청\n워밍업 테스터 initial-utilities 프로젝트 격파; C 언어로 이 잔혹한 코스를 버텨낼 최소 조건에 올랐는지 마지막으로 자신을 시험하는 통곡의 벽 역할입니다. 막히면 언제든 1주 차 영상 참조가 권장됩니다. 만일 디버깅 타임을 싹 차치하고서도 단지 이 코딩 설계 자체에 코딩 타임 2시간 초과가 찍힌다면 얌전히 코스를 던지고 C 언어 수련의 길로 다시 회귀하는 게 멘탈 건강에 좋습니다. (심심하면 여분 과제 initial-reverse 도 깨부수셔도 좋은데 필수는 아닙니다.)\n강의 영상 1~5 시청 개시 및 교재 챕터 3~24 독파! 캘린더 일정과 독파 챕터에 따라 매일 쏟아지는 숙제들의 파도 또한 빠짐없이 섭렵해 치울 것을 절대 권장합니다.\n리뷰 영상 3편 청강, 교재 챕터 5 재정독, 이후 processes-shell 프로젝트 박살 내기.\n안내 지침이 발라진 xv6 리소스(하단 링크 참조) 정독해 나가기, 단 System Calls: Processes 파트에서 깔끔히 스톱.\n리뷰 영상 2편 청강, 대망의 initial-xv6 프로젝트 첫 경험 맛보기.\n리뷰 영상 5편 청강, 스케줄링 scheduling-xv6-lottery 돌파.\n리뷰 영상 7편 청강, 버추얼 메모리 vm-xv6-intro 입문 클리어.\n다시 강의 6~9편(리뷰 영상 옵션 청강 권장), 교재 챕터 25~34 독파; 잊지 않고 숙제도 부수기.\n리뷰 영상 10편 청강, 스레딩 극복 concurrency-xv6-threads 프로젝트 강타.\n리뷰 영상 11, 12편 청강 및 병행 병렬 연산 concurrency-mapreduce 프로젝트 클리어.\n마지막 강의비디오 10~14편(2차 리뷰 영상 옵션 자유), 교재 챕터 35~47 마무리 독파; 언제나 그랬듯 관련 숙제는 끝내주기.\n대미를 장식할 파일 시스템 체커 filesystems-checker 프로젝트 강제 종료.\n\n\n\n프로젝트 실행 및 구동 환경 (Running the Projects)\n이미 언급한 대로 원조 CS 537 위스콘신 출신 코스인 덕에 해당 교수님은 자신들 대학 연구소 컴퓨터 사양(소프트웨어 특정 버전 등)의 노예가 되게끔 숙제 빌드 환경 타깃을 잡아두셨습니다. 저희는 여러분이 집 방구석 PC 아무 환경에서나 구동이 되게끔 그 지저분한 연결고리를 다 세탁해 놓았지만, 지상의 모든 PC에서 모조리 통제 테스트를 다 해볼 순 없는 법이었습니다. 어딘가의 억울한 에러로 피눈물을 흘리신다면 당장 Discord 채널에 신고부터 해주시면 구호팀이 파견되어 드릴 겁니다.\nmacOS 혹은 Linux 환경에서 프로젝트와 숙제를 가동하기 위해 귀하의 컴퓨터에 설치되어 있어야 할 도구들은 다음과 같습니다:\n\ngcc\ngas\nld\ngdb\nmake\nobjcopy\nobjdump\ndd\npython\nperl\ngawk\nexpect\ngit\n\n에뮬 구동을 지원할 qemu 패키지 설치도 당연히 곁들여져야 합니다. 제일 권장하는 것은 원작자 xv6 저자들이 배포해 둔 해당 공식 패치본 (링크)을 쾌적하게 사용하는 것입니다.\n만약 macOS 사용자라면, x86 ELF 바이너리 생성이 완벽 호환되는 무서운 gcc 크로스 컴파일 세트를 다운로드하십시오. 마찬가지로 윗줄 링크에서 그 가혹한 내용과 가이드가 열려 있을 겁니다.\n윈도우 환경이라면? 그저 조용히 리눅스 가상 머신(Virtual machine)을 준비해 돌려 막으면 됩니다. 다만 M1 계열 등의 신형 애플 실리콘에서는 아직 가상 머신 소프트웨어 최적화나 아키텍처 지원이 끊겨 이래저래 미쳐버릴 노릇일 것입니다. 이럴 땐 몇몇 스마트한 학생들처럼 얌전히 클라우드 기반 VPS 임대형 서버 우회로를 뚫는 것이 최고로 시간 절약에 우월합니다.\n환경 구축이 완료되면 ostep-homework 및 ostep-projects 리포지토리를 무자비하게 클론 해 버리십시오:\ngit clone https://github.com/remzi-arpacidusseau/ostep-homework/\ngit clone https://github.com/remzi-arpacidusseau/ostep-projects/\ncd ostep-projects\n여러분은 이제 대대로 그 피비린내 나는 xv6-public 리포지토리를 각 관련 프로젝트 찌꺼기 파일들과 공존하도록 디렉토리 내에 복사/클론 해야만 합니다. 똑같은 파일 통째로 뭉텅이로 하나만 받아서 편하게 돌려쓰다 보면 후반부에 과거 잔재 버그에 얽혀 전부 프로젝트가 시커멓게 뒤엉켜버릴 참사가 자명합니다. 그러니 다음의 모든 프로젝트 폴더 (initial-xv6, scheduling-xv6-lottery, vm-xv6-intro, concurrency-xv6-threads, filesystems-checker) 각각 마다 1회차씩 클론 작업을 철저히 독립적으로 수행하십시오.\nmkdir src\ngit clone https://github.com/mit-pdos/xv6-public src\n\n\n프로젝트용 치트 힌트 모음 (Hints and tips)\n\ninitial-reverse: 경고합니다. 이놈의 테스트를 패스하기 위해 필수였던 일부 에러 메시지는 쓰레기였습니다! 제공된 교재 내용 상 \"error: ...\" 라는 식이었으나 빌어먹을 테스트 기계의 눈은 \"reverse: ...\" 을 갈구하므로 테스트 시스템의 요구 조건 기호를 정확히 읽어내 당신의 코드를 맞춰주어야 합니다!\n힌트 팁 - 프로세스 쉘 편 processes-shell\n힌트 팁 - 최초 진입로 initial-xv6\n힌트 팁 - 스케줄 조작 scheduling-xv6-lottery\n힌트 팁 - 메모리 조작 vm-xv6-intro\n\n\n\n추가 무기 지원 (Resources)\n\nC 언어 지원 병기\n제발 쓸데없이 GeeksforGeeks, TutorialsPoint 나 Hackr.io 따위를 뒤지며 목숨을 날리지 마십시오 (링크조차 달아주지 않을 것입니다). 이들이 타 언어 공부엔 천국이겠지만 C 만큼은 살인적인 실수가 넘치고, 부실한 치명타와 지뢰로 도배되어 코딩 습관을 망치는 C 생존 교본 튜토리얼들로 썩어문드러져 있습니다. 저희의 까다로운 눈과 잣대를 통해 걸러낸 유일무이한 최고의 병기들만을 추천해 두었으니 여기서만 고르십시오!\n가장 만장일치 최우선으로 권장되는 바이블인 옌스 구스태트(Jens Gustedt)의 현대 C 언어 바이블 Modern C 를 그 끝판왕까지 독파해 버리시길 명령합니다. 친절하게도 위대한 저자께서 무료 온라인 (공식 본 PDF 링크) 개방의 성은을 베풀어 두셨습니다. 책이 심플하고 가볍다 보니 언어 기본 상식뿐만 아니라 요즘 현업 개발 트렌딩 방식의 C를 단기간에 몸속에 쑤셔 넣기 최고입니다. 깨알 같은 하단 각주들의 연습조차 피해 가지 말고 전부 소화하세요!\n위 1순위에 견줄만한 최고의 두 번째 초보자용 대안 옵션, K.N. King의 무서운 저서 C Programming: A Modern Approach 역시 미친 듯이 추천합니다. 몇 가지 가벼운 결점이 따르긴 합니다: 길이만 장장 850페이지라는 미친 흉상급 덩치에, 돈을 줘야 하는 상용본(복사본 구하기의 하늘의 별 따기)에, 시대성마저 Modern C 뒤에 뒤처짐의 향연들. 하지만 이런 결함 따윈 코웃음 치게 할 독보적 장점: 피가 되고 살이 되는 미친듯한 분량의 연습 문제량과 보급, 챕터가 마무리될 때마다 Q&A를 통해 뼈를 때리는 엄청난 C언어 특제 지식 해설에 심장마저 뛰게 될 겁니다. 이 괴물 서적 하나만으로 C 표준 전 부문을 모두 아작내주므로 이 자체로도 영원불멸의 C 마스터 교본이나 다름없습니다.\nCS 50 과정으론 OSTEP 강좌의 C 진입 요건 턱걸이에도 한참 못 미치므로 만약 굴려봤다면 즉시 이 교본들을 약용하십시오.\n추가(부상병 전용 완전 선택 사항 옵션) 장비 세트: * CS 50 매뉴얼: 막히는 C 함수를 구출해 낼 지옥의 백과사전; 편안한 “덜 무서운(초보자용)” 옵션을 제공하지만 초심자들을 위한 그 자비로움의 버전은 string 타입의 얼버무림(원형 char *)을 지녔음을 명심하시오. * cdecl: 읽어봐도 이게 C 코드인지 외계어인지 구분이 안 가는 마법 암호들을 순수 평민의 영어체로 자동 해독 번역기. * C 트랙 훈련소 exercism.org: 추가 C 훈련 문제 지원 사격용 전초 기지. * C, C++의 보안 코딩 (Secure Coding Practices): 인터넷 잡탕 튜토리얼의 C 코딩 방식들이 왜 미친 짓이며 당장 파기되어야 하는 악의 축인지 증명하는 최고의 저서. * The C Programming Language: 그 이름도 무서운 C를 직접 탄생시킨 신들의 최초 바이블 저어 서. 구식 냄새를 뿜어 이 강좌의 트렌드완 살짝 결이 엇나가도, 당신의 인벤토리에 이 책을 구겨 넣는다면 그저 소장 가치만으로 당신의 영혼에 자부심을 심어줄 숭고한 도서.\n\n\nx86 아키텍처 (x86 Architecture and Assembly Language)\n이전 선수 과목인 Nand2Tetris 과제에서 아키텍처 개념을 전부 조각내 배에 쑤셔 넣었다면 그걸 토대로 현존하는 피비린내 나는 (32비트) x86 전장 지대로 포팅 변환 이식만 가해주면 그만입니다.\n가장 단순 폭력적인 방법은 그 유명한 Computer Systems: A Programmer’s Perspective 과정의 극비 렉쳐 비디오를 시청(또는 괴물 저서판 책자 챕터 독파)하는 것입니다. 무조건 주입받아 마셔야 할 필수 비디오 코스는 이러합니다:\n\n기계 단계 프로그래밍(Machine-Level Programming) I: 기초\n기계 단계 프로그래밍(Machine-Level Programming) II: 제어\n기계 단계 프로그래밍(Machine-Level Programming) III: 절차 설계\n기계 단계 프로그래밍(Machine-Level Programming) IV: 데이터 관할\n기계 단계 프로그래밍(Machine-Level Programming) V: 고급 통달 과정\n링킹 조작(Linking)\n\n추가로 진정한 상남자라면 하단 무자비한 실험실(LABS) 강도 훈련 미션 둘을 무조건 박살 내십시오. 어셈블리 조작을 신의 경지로 뚫게 될 것입니다: * 폭탄 실험 (Bomb Lab): 지령서, 과제 투하품. &gt; 소스 따윈 안 주고 생 오브젝트 바이너리 프로그램만 당신에게 무자비하게 투하됩니다. 시작하는 즉시 무언가를 6줄 치라고 시스템이 협박합니다. 단 한 톨이라도 잘못된 문자를 치면 즉각 터져 박살이 나버리며(explodes) 처참한 실패 에러 자국과 점수 테러가 강타합니다. 오직 폭탄 해체 기회를 얻는 길은 리버스 엔지니어링 생으로 디스어셈블링을 뚫어 도대체 어떤 암호 조합 6줄이 숨어있는지 소생을 캐내 맞춰나가는 길뿐입니다. 더럽고 잔혹하지만 뼛속까지 어셈블리어를 새기고 강제로 디버거나 후벼 파게 만드는 악마적 교육 퀄리티 탓에 지금껏 카네기 멜런 대학교(CMU) 학부 전공생들에게 눈물과 즐거움의 전설적인 통과 관문 랩으로 알려져 있습니다. * 해킹 타격 실험 (Attack Lab): 작전명, 기밀문서 파일. &gt; 엄청난 치명타인 버퍼 오버플로우 보안 버그가 내장된, 커스텀 자체 주문 제작 x86-64 처형 타깃 바이너리를 하나씩 지급받습니다. 하나는 대놓고 외부 코드 직접 주사-주입 공격 버그에 무력하며, 다른 녀석은 극악의 꼼수인 리턴-지향 프로그램 테러 공격 버그로 숭숭 뚫립니다. 둘 중 하나의 수단으로 강제로 이 미끼물 타깃을 완벽하게 외부에서 조종 지배하여 박살 내 버리는 강제 파괴 공작이 랩의 목표 과제입니다. 스택 영역 메모리의 통제 지배법의 훈련, 그리고 버퍼 통제가 깨졌을 시 터지는 대재앙 코딩 버그의 위험성을 피눈물 나게 깨우칠 것입니다. 비밀 공작 꿀팁: 괜히 채점 서버로 접속 연결한다고 시간을 소모하지 못하도록 명령어에 무조건 -q 옵션 깃발을 박으십시요.\n살아남기 위한(생존을 원치 않으면 안 읽어도 무방한 생 야금 선택 사항옵션) 추가 리소스 뭉치들: * PC CPU x86 아키텍처 레지스터 목록표: 레지스터 지식 찾기의 교본. * PC 마이크로조립 (Assembly) 랭귀지 해설: 짧고 간결한 x86 어셈블리 바이블 지침서 파일. * C 언어 인벤토리 안의 야만인(GCC 인라인 어셈블리 삽입) 조작서: 우아한 C 소스 코드 안에 원초적인 어셈블리 코드를 박아 넣는 이식 수술 백과사전. * 인텔 80386 설계자 레퍼런스 공식 설명서: 그 유명한 인텔 칩셋이 직접 배포한 미친 방대한 분량의 원전 스펙서.\n\n\nxv6 구조\n이 무서운 OSTEP 과정에 손발을 담그기도 전에 미리 xv6 개념 따위를 잡으려고 발품 팔 필요는 절대로 없습니다; 오히려 OSTEP의 메모리 가상화 가상 통제 과정을 무사히 돌파하고 그 무간도로 떨어지기 전까지 xv6 코스에 손을 대지 않는 것을 매우 극구 말립니다. 다 무사히 치렀다면, 커널 소스 코드 내벽을 미로처럼 투어해 줄 가이드가 하나쯤 필요하게 될 것입니다.\nxv6의 훌륭한 창시자께서 코드 해설이 달린 공식 친절한 안내서 책 링크를 준비해 두셨습니다. 덤으로 저 미친듯한 엉킨 소스 코드의 위치를 핀셋으로 집어낼 줄 라인 번호가 달린 PDF 해부도 링크 역시 환상적으로 활용도가 높습니다.\n하지만 이 자비로운 공식 책자조차 너무나 당연하게 작동할 것이라고 여겨 그냥 휙 건너뛰어버리는 C의 기이한 심화 문법적 마력술이나 특정 하드웨어 전속 명령 조작, 동시성 병렬 통제술(당신이 OSTEP 코스의 관련 파트를 패스하지 않고 여기로 먼저 덤볐을 최악의 경우!)과 같은 미세한 세부 구멍들이 무수히 널브러져 있습니다. 이 비극을 사전에 제거하고자 완전한 해설이 가미된 미친 퀄리티의 xv6 전면 해부도 주석 가이드를 발간해 두었습니다. xv6 전 코드를 첫 줄부터 끝줄까지 철저히 난도질 해부하여 C의 비밀 기능, 하드웨어 작동 체계, 심지어 x86 호환 규격까지 탈탈 털어놓은 가이드입니다. 공식 책보다 부피가 커지는 단점 덕에 필수는 아니니 선택적으로 뽑아 쓰시되(특히 디바이스 드라이버 파트는 스킵해도 생존 가능), 코드 뭉탱이 속에서 원인을 못 찾고 머리칼을 쥘 땐 언제나 찾으실 위로의 친구입니다.\n혹여 다른 맛 해설본을 원하신다면 여기에도 또 다른 깊이를 지닌 또 다른 해부본이 나열되어 있습니다.\n추가로 미치게 돌아가는 코드 속 세상을 시청각 영상물로 구경하고 싶으시다면 여기의 미친 설명의 영상 풀세트에 가보시면 됩니다.\n\n\n잡다한 지식 저장소 (Miscellaneous)\nxv6를 박살 내러 떠나기 전 밥 먹듯 쥐어 패 댈 그 유명한 Makefile의 문법 메커니즘 흐름 정도의 기초는 소화해 놓아야 할 것입니다. 이 잡다한 튜토리얼 문서표엔 당신의 수명에 필요한 지식에 수백 배는 높은 오버 스펙의 정보가 나열되어 있으니, 앞 파트인 “Getting Started(시작 초보 지침)” 및 “Targets(명령어 구동 규칙점 타깃)” 파트만 슬쩍 훑어본 후 볼일 다 마쳤으면 두 번 다신 돌아갈 일 없을 것입니다.\n추가 생존 도구 백서 목록(완전 부가 옵션 선택): * GCC 커맨드 조작 옵션 메뉴얼 백서: 컴파일러 gcc 구동 시 챙겨갈 조작 깃발-파라미터들 취급 명세. * 지휘관 링커 대본 지시서 스크립트 (Linker Scripts): GNU 최상위 연산 링크 타설용 ld 스크립트 작성 공식 문서서. * OSDev 정보 위키 백서: OS 설계 조작 체제와 각종 정보가 총망라된 전무후무 최고의 성지. * 살아 움직이는 Linux 리눅스 커널 제작서 (Linux Kernel Development): 만약 xv6 학대를 마치고 나서도 미련을 못 버려 기어코 실체화된 Linux 커널 제작에 수혈 헌신하고 싶다는 지독한 병이 도지면 OSTEP 졸업 파티 용도로 쓸 최강의 수련 서적본.",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>운영 체제: 세 가지의 쉬운 측면 (Operating Systems: Three Easy Pieces)</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/ostep/Project-1B-initial-xv6.html",
+    "href": "coursepages/ostep/Project-1B-initial-xv6.html",
+    "title": "프로젝트 1B (Project 1B)",
+    "section": "",
+    "text": "모든 감사를 palladian 님께 전합니다\n\n\n리눅스 설치 (Linux Installation)\n\n호환되는 컴파일러 툴체인이 있는지 확인하세요. 리눅스 환경이라면 gcc가 완벽하게 작동할 것입니다.\nqemu-system-x86를 설치하세요 (시스템에 따라 qemu-system-i386 또는 qemu-system-x86_64로 불릴 수 있습니다. 일부 배포판에서는 qemu 자체가 잘못된 패키지일 수 있으니 주의하세요).\nPerl을 설치하세요.\ngawk를 설치하세요.\nexpect를 설치하세요.\n프로젝트의 테스트 스크립트와 동일한 디렉토리에 src/ 디렉토리를 만드세요.\nxv6 깃허브 저장소를 클론하고 소스 코드를 src/ 디렉토리에 복사하세요.\nsrc/ 디렉토리 안에서 make qemu-nox를 실행하여 xv6가 정상적으로 작동하는지 테스트하세요. Ctrl-a 누른 후 x를 눌러 xv6를 종료할 수 있습니다. 이를 깜빡했다면 qemu 프로세스를 강제로 종료해도 됩니다. top이나 htop을 확인하여 qemu가 확실히 종료되었는지 점검하는 편이 좋습니다. 가끔 종료 후에도 백그라운드에서 계속 실행되며 시스템 자원을 소모할 수도 있기 때문입니다.\nMakefile을 수정하여 CPUS := 1로 설정하세요.\n다시 make qemu-nox를 실행하여 xv6가 여전히 잘 돌아가는지 테스트하세요.\n\n\n\n지시 사항 (Instructions)\n\n여러분의 임무는 xv6에 새로운 시스템 콜인 getreadcount()를 생성하는 것입니다. 이 시스템 콜은 이전에 발생했던 총 read 시스템 콜의 호출 횟수를 반환해야 합니다. 주의할 점은 이 카운트가 개별 프로세스의 카운트가 아니라 시스템 전체의 전역적(global)인 카운트여야 한다는 것입니다.\n\n\n\n권장되는 접근 방식 (Suggested Approach)\n\nxv6 소스 코드 PDF를 다운로드하세요 (다운로드한 실제 소스 파일들보다 PDF 상에서 훨씬 정리가 잘 되어 있습니다). 목차를 읽어보고 시트, 페이지 및 줄 번호가 어떻게 매겨져 있는지 파악하세요. 그 후 뒤쪽에 나오는 상호 참조(cross-references) 목록을 훑어보아 나중에 코드의 특정 부분을 찾아야 할 때 어떻게 탐색할 수 있는지 알아두세요.\n목차에서 processes와 system calls 영역, 그리고 user-level 섹션 아래의 usys.S 파일에 해당하는 xv6 소스 코드 부분들을 (매우) 빠르게 훑어보세요. 아직 완벽히 이해하려 들지 않아도 됩니다. 나중에 교수님의 해설 비디오와 여러분의 환경 구조상 디렉토리 배치가 다를 것이기 때문에, 그저 각 파일이 PDF의 어느 위치쯤에 존재하는지 눈으로 찍어두는 용도일 뿐입니다.\n프로젝트 P1B를 다룬 2번 토론(discussion) 비디오를 시청하면서, 다운로드한 xv6 코드 PDF 사본을 눈으로 쫓아가세요. 교수님이 각 파트의 기능을 설명할 때 PDF 위에 직접 주석을 달거나 필기해 두는 것이 좋습니다.\n프로젝트의 깃허브 페이지에 링크된 배경 지식 섹션을 읽고, 역시 xv6 코드 PDF에 메모를 남기세요.\n다시 한번 xv6 PDF를 끝까지 통독하세요. 이번에는 processes와 system calls 섹션들, 그리고 usys.S 및 user.h 파일의 전반적인 개념을 이해하는 데 집중하세요 (참고: user.h 파일은 xv6 PDF에 포함되어 있지 않으므로, 여러분이 실제로 다운로드받은 코드를 열어서 확인해야 합니다). 이 역시 코드 한 줄 한 줄을 전부 완벽하게 분석하려 얽매이지 말고, 시스템 콜이 어디서 정의되고 어떤 방식으로 호출되는지 등의 큰 뼈대를 파악하는 것으로 충분합니다.\nxv6 소스 코드를 수정하여 새로운 getreadcount() 시스템 콜을 추가하세요. 필연적으로 여러 개의 파일들을 건드려야 할 것입니다. 나중에 디버깅할 때 수정 지점을 한눈에 찾기 쉽도록 모든 변경 사항 옆에 // OSTEP project라는 주석 표식을 달아두기를 강력히 추천합니다.\n여태 본론으로 말하지 않았던 한 곳, xv6 PDF에는 누락되어 있으나 반드시 코드를 손봐야 할 부분이 바로 user.h 파일입니다.\n코딩을 마쳤다면 테스트 스크립트를 실행시켜 보세요. 테스트 1번은 read 콜을 여러 번 발생시키는 함수를 먼저 돌린 뒤, getreadcount를 호출합니다. 여러분의 시스템 콜이 제대로 설계되었다면, 모든 프로세스 전체에서 발생한 read 콜의 누적 합계를 완벽히 추적해 내야만 합니다.\n만일 여러분의 코드가 테스트 1번을 통과했다면 진심으로 축하합니다! 일단 여기까진 목표 달성입니다. 테스트 2번에 대한 건 동시성(concurrency) 렉처를 모두 수강한 후에 고민해도 늦지 않으니 지금은 무시하세요.\n만약 테스트 1번에서 막혔다면 tests/1.out 파일의 기댓값과 여러분이 출력한 실제 결과값인 tests-out/1.out을 서로 대조하고 추적하십시오. 덤으로 tests-out/1.err 파일을 들여다보아 에러 로그가 남지 않았는지도 조사해 보아야 할 것입니다.\n여러분 스스로가 프롬프트 터미널 창에서 직접 make qemu-nox를 입력하고 xv6 환경 안에 진입해 테스트해 볼 수도 있습니다. 시스템 진입 후 ls 명령어로 파일들을 조회하면 test_1과 test_2라는 실행 파일이 보일 겁니다. ./test_1을 타이핑해 테스트 1번을 수동으로 작동시킨 후 직접 눈으로 튀어나오는 출력물을 확인하여 기댓값과 맞춰볼 수도 있습니다.\n마침내 스레드(threads), 동시성(concurrency), 락(locks)에 관한 렉처를 모두 시청하셨다면: 이제 테스트 2번 차례입니다. 테스트 2번은 여러분이 짜놓은 getreadcount가 스레드 안전성(thread-safe)을 보장하는지 검사합니다. 아마 락 처리 기능을 추가하기 전까진 안전하지 않은 상태일 테니 락(lock) 구문을 집어넣고 코드를 수정해야만 합니다. 그런 다음, 다시 테스트 스크립트를 가동하여 코드가 1번 2번 테스트 모두를 완벽히 통과하는지 확인하십시오.",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>프로젝트 1B (Project 1B)</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/ostep/Project-2A-processes-shell.html",
+    "href": "coursepages/ostep/Project-2A-processes-shell.html",
+    "title": "프로젝트 2A (Project 2A)",
+    "section": "",
+    "text": "모든 감사를 Palladian 님께 전합니다\n\n상호작용성 모드 (Interactive mode)\n일괄 처리 모드 (Batch mode)\nexit (종료 커맨드)\ncd (경로 이동 커맨드)\npath (환경 경로 조회/설정 커맨드)\n리다이렉션 (Redirection)\n병렬 처리 커맨드 (Parallel commands)\n\n\n\n치트 팁 (Tips)\n\n유닉스 셸과 관련된 토론 3번 비디오를 꼭 시청하십시오.\nOSTEP 교재의 챕터 5를 정독하십시오.\n첫 시작은 아주 초라하게 구현하세요: 프롬프트를 띄우고 사용자가 exit를 입력하면 얌전히 종료되는, 오직 한 가지 기능만 가진 껍데기 셸부터 짜는 겁니다. 그다음 cd 기능을 덧붙이고, 그 뒤 path 기능을 얹으세요. 그다음에야 비로소 execv를 통한 일반 커맨드 실행 로직을 넣고, 이어서 일괄 처리(batch) 모드, 리다이렉션, 마지막으로 병렬 처리 로직 순으로 하나하나 층을 쌓아 올리며 접근하세요.\n테스트 스크립트 봇들은 대부분 일괄 처리 모드와 리다이렉션 방식을 통해 점검을 수행할 테니, 여러분이 이 기능들을 구현해내기 전까지는 여러분 스스로가 셸을 수동으로 두들겨보며 눈으로 테스트해야만 합니다.\npath 커맨드를 짤 때는, 시스템의 절대 경로와 상대 경로 모두를 포용할 수 있게 설계해야만 합니다 (예: path tests와 같이 상대적인 것이든 path /usr/bin같이 절대적인 것이든 다 소화해야 합니다).\n에러 로그들을 정교하게 타이밍 맞춰 뿌리는 작업은 꽤나 골치 아픕니다. 초기엔 일단 합당해 보이는 모든 틈새마다 닥치는 대로 대충 에러 메시지를 발사하게 짠 뒤, 테스트 스크립트를 돌려 피드백을 맞아가며 정답 에러 로그가 터져야 할 바로 그 정확한 임계점에만 에러 코드가 나오도록 코드를 깎아내가시면 됩니다. 만일 i번 테스트를 돌리는 중이라면, tests/i.err와 tests/i.rc를 까보면 셸이 몇 번의 에러를 뱉어내야 하는지 정답이 다 적혀 있습니다. 이를 눈으로 여러분의 산출물인 tests-out/i.err, tests-out/i.rc와 쉴 새 없이 스캔하며 대조해 보면 됩니다.\n테스트 3번을 돌리던 중, 테스트 봇은 ls: cannot access ... 꼴을 간절히 바라마지 않는데 여러분의 셸은 영양가 없이 길게 /bin/ls: cannot access ... 나 /usr/bin/ls: cannot access ... 같이 지저분하게 출력해서 퇴짜를 맞는다면, 여러분의 냅킨만 한 $PATH 환경 변수의 선두 자리에 억지로 /bin 을 처박아 보세요. 그래도 약발이 안 먹힌다면, 그냥 쿨하게 tests/3.err 원본 정답 파일 텍스트 자체를 여러분 시스템이 내뿜는 로그 모양새와 일치되도록 뜯어고쳐 버리세요. 애초에 시스템 구동부의 출력 모양새는 ls 나 execv 자체 시스템 소스를 갈아엎지 않는 이상 제어가 안 되는 불가항력이므로, 기능의 정신만 제대로 동작하고 있다면 이런 자질구레한 텍스트 따위로 인한 불합격은 그냥 조작해 무시하고 지나가도 대세에 전혀 지장 없습니다.\n저 역시도 시스템 세팅 덕에 테스트 통과를 위해서 /tests/3.pre 내용 안에 강제로 /bin/ls 경로 사용을 지시하도록 파일을 뜯어고쳐야만 했습니다. 이게 영 찝찝하시다면 아예 시스템 셸 .profile 이나 .bashrc 자체에 export PATH=\"/bin:$PATH\" 구문 한 줄을 처박아 두시면 만사형통입니다.\n\n\n\n메모리 장난질의 치명적 함정과 지뢰들 (Memory Management Traps and Pitfalls)\n\n이 미션은 아주 손금 보듯 투명하게 뻔한 삽질을 유도합니다. 생명주기가 끝나면 아스라지게 사라져버릴 스택(stack) 메모리 안의 변수를 가리키는 위험천만한 포인터를 무심결에 만들도록 유혹하며, 그 즉시 무자비한 자비 없는 세그먼테이션 폴트(segmentation fault) 크래시로 당신을 응징할 것입니다. 포인터로 어떤 문자열을 건들고 싶다면 그 문자열 덩어리가 스택 따위가 아니라 반드시 든든한 힙(heap) 공간에 이쁘게 할당된 놈인지 목숨 걸고 확인하십시오.\n이 피의 조언에도 불구하고 기어코 스택에 있는 문자열 따위를 당겨 써야겠다면, 반드시 힙 공간에 새롭게 할당한 문자열 방앗간을 마련하고 거기로 strcpy(), strncpy(), strcat(), strncat() 일꾼들을 시켜 안전하게 알맹이만 복사해 넘겨 써야 합니다.\n오직 크기가 견고하게 명확히 확정된 문자열 조합에 대해서만 strcpy()와 strcat() 을 쓰도록 허락합니다. 이때 복사를 받을 그릇 공간 사이즈가 원본 문자열을 모두 토해내고도 마감재 역할인 \\0 하나가 들어갈 여유 공간 한 칸을 더 남겨둘 크기인지 반드시 셈하십시오.\nstrncpy()와 strncat() 에 한해, 파라미터 n 값이 \\0 문자가 탑승하기에 충분히 큰 크기를 보장하는지 두 번 보고, 아니면 수동으로 강제로 끄트머리에 구겨 넣으십시오.\n쥐도 새도 모르게 쓰고 또 쓰는 좀비, 즉 ‘해제 후 사용 (use-after-frees)’ 버그 사태를 경계하십시오, 이 악마는 특히 path 개발 중 지독하게 엿을 먹일 것입니다.\ngetline()이나 strdup() 등을 거쳐 만들어진 문자열 잔해물들은 전부 깨끗하게 해제(free)하여 치우십시오. 다만 한 번 해제한 놈을 또 날려 보내려 드는 이중-해제(double-frees)의 바보짓은 경계하십시오, 예컨대 이미 저세상으로 증발시킨 문자열 부스러기 파편들을 한 번 더 증발시키려는 미치광이 짓 말입니다.\nC 라이브러리의 함수 중 strtok() 같은 함정 픽은 무조건 기피하십시오; 애초에 스레드 세이프(thread-safe)라고는 눈 씻고도 찾아볼 수 없는 악마입니다. 대타로 무조건 strsep()을 기용하십시오.\nstrsep()을 꺼내 든 순간, 조각나기 전의 원본 문자열 포인터 사본을 따로 주머니에 고이 보관해야만 나중에 메모리 해제(free)가 가능해집니다. 왜냐하면 strsep() 이놈은 자르면서 원본 포인터 위치를 마구 변형시키고 파괴해 놓기 때문입니다. 그 오염된 포인터를 들고 메모리를 해제하려 들면 귀하의 페이지 테이블 뚝배기가 깨져버릴 것입니다.\n당연하게도 strsep(&buf, delim)을 때린 직후엔, buf 놈이 NULL 빈 껍데기가 되어있는 건 아닌지 확인 전까진 절대 해제시켜 작동하려 들지 마십시오.\nC를 짜는 일반론적 진리: 당신이 혹여 특정 함수 지붕 아래서 데이터를 위해 메모리를 할당(allocate)받아 냈다면, 쓴 뒤 해제(free)하는 짓 역시 무조건 그 함수 지붕 아래서 책임을 져야 합니다. 만약 코드를 예쁘게 만든답시고 특정 create_xxx 같은 껍데기 함수에서 메모리를 띄웠다면 반드시 짝꿍으로 그 오물들을 치울 destroy_xxx 해제 전담 함수도 구비시켜야 합니다. 즉 띄움과 던짐의 층위 격차는 항상 평행해야 하며, 이 철칙이 메모리 지뢰를 안 밟을 가장 핵심 방탄복이라는 뜻입니다.\nmalloc, calloc, 혹은 realloc 부류들을 호출해 냈을 땐 뒤이어 반드시 반환값이 재수없게 NULL은 아닌지 색출하십시오.\n포인터 나열이 들어간 배열체 따위를 생산할 심산이라면 빈 찌꺼기 포인터 값이 침범하는 걸 차단하기 위해 malloc 대신 calloc을 쓰는 걸 추천합니다.\n여담으로 update_path 로직 안에서 골치 아팠던 일을 전해보자면: 수많은 테스트 스크립트들이 path /bin /usr/bin 요딴 식으로 멀쩡하게 들어오는데 갑자기 튀는 놈 딱 하나가 path tests 이따위로 경로를 박아 넣는 패악질을 쳤습니다. 그래서 전 화끈하게 꼼수를 부려: 텍스트 시작 꼬리말이 무조건 슬래시(/)부터 시작하면 ‘그래 넌 절대경로구나’ 치고 원본 그대로 밀어 넣어 복사해 버리고, 그게 아니라면 ‘어 이놈 상대경로구나’ 판단하여 문자열 앞대가리에 무조건 ./ 두 마디를 때려 박아 강제로 정돈해 버렸습니다.",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>프로젝트 2A (Project 2A)</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/ostep/Scheduling-xv6-lottery.html",
+    "href": "coursepages/ostep/Scheduling-xv6-lottery.html",
+    "title": "모든 감사를 palladian 님께 전합니다",
+    "section": "",
+    "text": "일반적인 팁 (General Tips)",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>모든 감사를 [palladian](https://github.com/palladian1) 님께 전합니다</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/ostep/Scheduling-xv6-lottery.html#스포일러-주의-아래부터-정답-폭격-시작",
+    "href": "coursepages/ostep/Scheduling-xv6-lottery.html#스포일러-주의-아래부터-정답-폭격-시작",
+    "title": "모든 감사를 palladian 님께 전합니다",
+    "section": "스포일러 주의! (아래부터 정답 폭격 시작)",
+    "text": "스포일러 주의! (아래부터 정답 폭격 시작)\n\n해결 전략 해부 워크스루 (Solution walk through)\n\n오염 안 된 갓 퍼 올린 날 것의 xv6 소스 코드를 준비하고 출발합니다.\nargint와 argptr은 아주 생명줄 같은 필수 함수 무기입니다. 알다시피 syscall은 인자를 못 받는 맹탕입니다만, 그럼에도 불구하고 유저 입장에선 어떻게든 그 안에 인잣값을 꾸역꾸역 집어넣길 간절히 바랄 것입니다.\n이를 해결하는 꼼수는 이스케이프 마술입니다. 커널이 일단 깡통으로 sys_kill() 같은 걸 호출해놓고, 그놈 안에서 슬쩍 argint() 손아귀를 뻗어 콜 스택(call stack)에 얹혀있는 유저의 인잣값들을 은밀하게 집어 훔쳐냅니다. 그 뒤 진짜 처리기인 kill(int pid) 같은 진짜 내장 함수에게 슬쩍 넘겨주는 겁니다.\n코드를 구석구석 쓸다 보면 무수히 터져 나오는 extern int sys_whatever 같은 외부 지시 함수 선언들을 마주할 겁니다; 이는 저 함수 껍데기 메커니즘이 저기 다른 방에 틀어박혀 있으니 함수 포인터 끈으로 엮어서 당겨 오라는 뜻입니다.\n이 sys_whatever 꼴의 함수들은 결국엔 머리에 sys_가 붙지 않은 코어 syscall 함수의 진짜 본체를 감싼 단순한 보자기 껍데기들(wrappers)에 불과합니다. 따라서 여러분은 sys_settickets와 sys_getpinfo 두 놈을 이 선언 리스트 대열에 억지로 줄 세워 놓아야 합니다.\n그다음 함수 포인터들이 주르륵 달린 배열 뭉텅이가 나타날 텐데; int arr[] = { [0] 5, [1] 7} 이따위 꼴의 아주 올드 스쿨 냄새가 폴폴 풍기는 구닥다리 C 배열 초기화 테크닉이 구사되어 있을 겁니다.\n저 대괄호 안에 들어앉은 SYS_fork 따위의 괴상한 네이밍들은 모조리 다른 방인 syscall.h 헤더 파일 안에서 전처리기(preprocessor) 매크로로 조작되어 있는 매직 넘버들입니다.\n고로 여러분도 이 포인터 배열 장부에 두 개의 빈자리를 강제로 찢어 넣고 sys_settickets와 sys_getpinfo를 박아 넣어야 할 것이며, 그에 맞춰 SYS_settickets와 SYS_getpinfo 매크로 이름표 또한 헤더에 새려 박아 주어야 합니다.\n그리하여 이 모든 껍데기 래퍼(wrapper) sys_ 녀석들은 sysproc.c 라는 방 안에 오밀조밀 모여 살게 됩니다.\n이제 그 방 안에 int sys_settickets(void)와 int sys_getpinfo(void) 껍데기를 드디어 직접 손으로 창조해 주면 됩니다.\n여기서 심장부 처리기인 실제 settickets 함수는 티켓 갯수라는 넘버(int) 하나를 원할 것이니 argint의 손을 빌려 콜 스택에 쌓인 값을 훔쳐 와 던져주어야 하고; 짝꿍인 getpinfo는 거대 데이터 수거함인 포인터(pointer) 주소값을 원할 것이니 똑같이 argptr 도구를 써서 훔쳐 와 던져 주어야 할 것입니다.\n깨알 팁을 주자면, sys_settickets 구문 속엔 에러 체킹을 위한 방어 if문 하나를 설치해야 합니다. 티켓 발급 개수를 1 미만의 음수나 0 따위로 후려치려 드는 나쁜 행동을 제재해야 하기 때문입니다.\n그다음 시스템 콜마다 뒷배로 작동하며 굴러가야 할 귀찮은 어셈블리(assembly) 매직 장치들이 기르고 있지만요; 천만다행히도 미리 세팅 완료된 선배들의 매크로 마술이 존재하므로 직접 어셈블리어를 짤 일은 추호도 없습니다. 이 녀석들은 usys.S 파일 안에 서식하고 있습니다.\n고로 그 파일 맨 끄트머리에 SYSCALL(settickets)와 SYSCALL(getpinfo)라는 이름의 매크로 생성 주문 단 두 줄만 써 넣으면 끝납니다.\n이제 이 지옥 같은 시스템 콜(syscalls) 셋업의 마지막 퍼즐입니다: 유저 코드가 이 힘을 빌려 콜을 마음대로 써먹을 수 있도록 사용자 세상 쪽 헤더 파일에 전파하여 선언해 주어야 합니다. 바로 user.h 녀석입니다.\n참고로 과정에 언급된 struct pstat 구조체 몸뚱아리는 pstat.h 속에 얌전히 정의될 것이지만, 이걸 유저 세상이 알 턱이 없기 때문에 user.h 파일 속에도 똑같이 “이런 놈이 존재함”이라고 선언해 줘야 유저 코드가 이 녀석을 보고 미쳤냐는 에러를 안 내뿜습니다.\n기본 원칙: 시스템 콜들이나 (사실상 xv6의 부속물에 불과한) C 표준 라이브러리를 써먹으려는 유저 세상의 모든 코드들은 닥치고 이 user.h 놈을 include 해야만 살아갈 수 있습니다.\n장황했지만 여기까지가 이 두 개의 시스템 콜을 가동하도록 OS에게 길을 터준 모든 전초 과정이었으며; 이제 진짜 남은 일은 이들의 알맹이인 순수 로직 settickets와 getpinfo 함수 본체를 짜는 것, 그리고 드디어 스케줄러와 빌어먹을 ps 프로그램을 창조하는 일입니다.\npstat.h는 스케줄러 로직을 위한 것이 아니라, 리눅스 세상의 ps처럼 동작할 저 ps 프로그램을 위한 보급품입니다. 그저 struct pstat 구조체를 틀로 잡아주기 위한 용도일 뿐이며 심지어 이를 짝지어줄 .c C 파일조차 없습니다.\n본론으로 들어가 스케줄러의 미션 설계도입니다: 우선 모든 프로세스들이 창조될 때 기본 지원금으로 무조건 1장의 티켓을 품고 태어나게 만듭니다; 그리고 나서 그들은 아까 뚫어놓은 settickets 콜을 써서 자신들의 티켓 장수를 맘대로 변경할 수 있게 합니다.\n그러기 위한 제 1 관문: 각 프로세스가 자신만의 티켓 장부를 따로 들고 다니게 판을 짜기; 2관문: 태어날 때 기본 1장 쥐여주기; 3관문: settickets 로직 본체 작성.\n1관문을 위한 희생양은 proc.h입니다: 프로세스의 육체는 struct proc에 기거합니다. 거침없이 그 안에 int tickets 멤버 한 줄을 끼워 넣어 공간을 창조하십시오.\nint ticks라는 멤버도 눈에 보일 텐데 이건 나중에 만들 ps 녀석을 위한 것이니 뒤편에서 썰어버리겠습니다.\nproc.h에서 또 재밌는 볼거리는 enum procstate 녀석들입니다: 프로세스의 인생 주기 모드 상태 값들이 담겨 있습니다. 아까 말한 EMBRYO는 막 뱃속에서 생명이 잉태되는 과정임을 뜻합니다; 제가 노린 잔혹한 방법은 그냥 무식하게 전체 파일에서 EMBRYO 를 grep 검색 조져버리는 것이었습니다. 기본 지원금 1을 꽂아줄 프로세스의 탯줄을 찾는 가장 빠른 방법이니까요. 알고 보니 거기는 바로 proc.c 라는 파일이었습니다.\nproc.c 속으로 진입하면 프로세스에 숨결을 불어 넣는 창조 함수 allocproc을 발견할 수 있습니다.\n그것은 ptable이라는 썩어가는 시체실 같은 방대한 프로세스 테이블 장부를 뒤적이며 텅 비어 주인 없는 고철 프로세스 하나를 발굴해 냅니다.\n마침내 비어있는 녀석을 찾아 잉태를 시작하려는 그 빈틈에, 전 사악하게 p-&gt;tickets = 1; 이 한 줄을 박아 넣었습니다. 자 이제 기본 지원금 미션 끝입니다.\n이제 다음 지령: “자식 프로세스들은 태어날 때 무조건 부모의 티켓 장수 유전자를 물려받아야 한다.”는 기막힌 요구사항에 봉착했습니다.\n자식 프로세스라는 새끼를 까는 행위는 방금 보았던 그 파일 안에 서식하는 fork 복제 생성 술 안에 구현되어 있습니다.\nfork 로직 안을 보면 curproc은 현재 몸집을 굴리는 부모 프로세스 본체이고, np 녀석이 태어날 새끼 프로세스 육체입니다.\n너무도 간단하게 저는 그냥 np-&gt;tickets = curproc-&gt;tickets 한 줄을 그들 사이에 그어버려 피를 잇게 만들었습니다.\n이제 그 유명한 복권 추첨 시간입니다: 스케줄러 로직은 무작위 가짜 난수(pseudo random number)를 뽑습니다. 그리고 카운터 역할을 할 변수(0으로 초기화)를 들고 프로세스 테이블 전체를 쭉 산책 돌기 시작합니다. 만나는 녀석들의 티켓 장수를 털어 카운터에 계속 흡수 산술합을 때립니다. 그러다 누적된 카운터의 액수가 앞서 뽑았던 무작위 당첨 난수 볼을 뚫고 오버를 치는 바로 그 비극적인 순간, 산책을 강제 종료하고 그 해당 놈의 프로세스에게 시스템 통제권을 하사하여 깨워버리는 겁니다.\n앞단의 힌트에서 언급한 P.J. Plauger 성님의 ’The Standard C Library’라는 바이블을 뒤지는 짓을 했습니다. 그건 C 라이브러리의 창세기가 적힌 수천 장의 소스 해설 백서인데 꽤 죽여줍니다; 80년대에 뿌려진 책이라 아직도 그 틀딱체를 유지하는진 모르겠지만요.\n하여튼 그 속에서 깨달음을 얻고 C의 rand 번호 뽑기와 srand 기계 켜기 함수를 손수 짝퉁으로 구현해 넣었습니다. srand는 시작점인 랜덤 시드(seed)라는 알을 심어주고 (후술하겠지만 이 시드란 건 사실 하나도 안 랜덤 합니다), rand 이놈은 그걸 토대로 굴리고 굴려 가짜 랜덤 숫자라는 괴물을 토해내는 방식입니다.\n그 안에는 부호 있는 정수(int)와 순수 부호 없는 정수(unsigned)를 이리저리 바꿔치기하며 춤추게 하는 마술이 난무합니다; 다 이유가 있는데 부호 있는 정수가 대가리가 깨져 넘치는 오버플로우 사태가 뜨면 미제 사건(undefined behavior)으로 빠지며 온 우주를 파괴하기 때문입니다. 다행히 부호 없는 무식한 정수들은 넘쳐 깨져도 그냥 안전하게 0부터 돌며 살아가게 냅두거든요.\n이 기계장치에 저는 유일한 마개조를 가했습니다: 더 극한의 스피드 광기를 원했기에 모듈로 연산인 % 32768 대신 무식한 비트 커팅인 & 32767을 쑤셔 박아버렸습니다.\n자 그럼 이 시드라는 놈을 처음 심어주기 위한 “랜덤(이라고 부르는 사기)” 값을 어떤 걸 썼는지 자백하겠습니다: 그것은 바로 앞서 말한 타이머가 울릴 때마다 무식하게 누적해서 카운트 기록을 쌓아 올린 ticks 숫자입니다.\n말인즉슨 당연하게도 완벽하게 예측 가능하고 하나도 랜덤치 않은 쓰레기 사기 시드값이란 소립니다. 처음 OS가 부팅되고 이 짓을 할 땐 영락없이 0, 그다음 1, 또 2… 아주 규칙적으로 쌓이니까요.\n아, 소스 어딘가 코딩을 하다 보면 저 빌어먹을 ticks 숫자를 올리는 구문이 보일 텐데; 저건 이 스케줄러 미션을 위한 게 아니라 나중에 다가올 ps 프로그램 미션을 위한 것이니 무시하십시오.\n이제 이 복권 스케줄러 조작의 꽃, 핵심 부품 카운터를 만들 차례입니다.\n거기에 총 우주상에 흩뿌려진 모든 프로세스의 티켓 총합수 전체를 끝까지 세아리는 무식한 For 반복문 하나가 투입되어야 합니다.\n자 그리고 대망의 settickets와 getpinfo의 실제 몸뚱어리 로직은 이 살인적인 코드 파일의 꼬리 맨 밑바닥 어귀에 배치될 것입니다.\n아까의 상황을 이어가서, counter와 totaltickets의 숫자를 초기화시키고 나면 바로 For 뺑뺑이가 돌며 우주의 모든 티켓의 총합 액수를 긁어 집계합니다.\n집계가 끝나면 드디어 우승 당첨 볼을 뽑을 차례입니다.\n여기서 코드 파산의 실체를 들여다봅시다: 이 원래 돌아가던 바닐라 스케줄 소스 코드는 이렇습니다. 먼저 락(lock) 자물쇠를 걸어 잠가버립니다. 그리고 맨 뒤 끝물에 다 가서야 놔버리죠. 그 중간 숨 막히는 기간 동안 ptable 테이블 속의 모든 프로세스를 뒤지며 산책하는 For 루프 지옥이 작동합니다.\n더 노골적으론, 상태가 생존 모드인 RUNNABLE 에 속하는 녀석들에게만 멈춥니다; 만약 상태 불량인 비 RUNNABLE 징후를 보이면 가차 없이 continue를 때려 패스해 버리며 다음 놈에게 넘어갑니다. (이건 본래 이 세계관에 탑재돼 있던 지겨운 라운드-로빈(round-robin) 순서 맞추기 뺑뺑이를 돌리기 위해 존재했던 짓입니다.)\n그래서 이런 식으로 무식하게 돌다 제일 먼저 눈에 얻어걸리는 최초의 RUNNABLE 한 프로세스에게 다가가서 그놈에게 스위치, 실행 통제권을 강제로 부여해 버리는 거죠.\n구체적으로 뜯어보면, 저기 보이는 저 c라는 알파벳 파편이 지금 돌아가고 있는 현재의 CPU 심장입니다. 그래서 c-&gt;proc = p; 와 같은 짓거리로, 앞서 발견한 그 불쌍한 프로세스를 CPU의 주인으로 앉혀버립니다.\n그다음에 작동하는 switchuvm(p) 이 주문은 그 프로세스 p를 위한 방 크기인 가상 메모리(virtual memory) 맵의 시야를 세팅해 줍니다. 그리고 나서 대망의 상태표를 RUNNING(달리는 중) 으로 쾅 찍어 도장을 박습니다.\n그다음 모든 마법과 저주가 터져 나오는 기점인 swtch 구문이 발동합니다: 이건 진짜 레지스터 뇌 속 데이터 스위치를 억지로 내리는 짓입니다. 오퍼레이팅 OS와 스케줄러 본체의 현재 레지스터 기록을 통째로 메모리에 욱여넣어 잠재우고, 이미 아까부터 잠자고 있던 구출 대상 프로세스 p의 레지스터 상태 파편을 꺼내 와 그 자리에 올려 끼워 넣는 수술입니다.\n자, 이제 이 미친 수술 swtch가 끝나면 CPU 심장은 다시 명령어 맥박을 뛰기 시작하지만, 이제부터 튀어나오는 모든 지시와 명령들은 스케줄러의 것이 아니라 강제로 덮어씌워 진 그 프로세스 놈의 독단적 명령들뿐입니다. 즉, 불쌍한 우리의 이 거대한 스케줄러 함수는 바로 이 구문에서 동결, 우주의 미아가 된 채 허공에 떠서 그냥 뻗어 멈춰있게 되는 것입니다.\n무한한 우주의 시간 속에 뻗어있다, 언젠가 바깥에서 타이머 알람 인터럽트가 울리며 뒤통수를 후려치게 되면 그제야 CPU의 레지스터 뇌 속의 그 프로세스의 뇌파 조각들을 다시 메모리로 포장해 구겨 넣고, 허공에 얼어있던 우리의 스케줄러 레지스터 파편을 다시 끼워 맞춰 부활시켜 주는 인버스 역행 swtch 짓거리를 또 벌이게 됩니다. 그럼 이제야, 아까 얼어버렸던 그 위치, 정확히 그 지점부터 다시 스케줄러의 혈액이 순환하기 시작하는 겁니다.\n이렇게 드디어 정신을 차리면 뒤이어 대기 중인 switchkvm 명령이 가동되며 이번엔 커널 본체의 거대한 가상 메모리 맵 지형도를 다시 되돌려 복원시킵니다.\n이게 바로 그 위대하신, 총 5줄짜리 컨텍스트 스위치(문맥 교체 수술) 파편입니다:\nc-&gt;proc = p;\nswitchuvm(p);\np-&gt;state = RUNNING;\n\nswtch(&(c-&gt;scheduler), p-&gt;context);\nswitchkvm();\n이 처참한 수술이 모두 끝나면 드디어 숨을 돌리고 스케줄러 산책의 내부 For 루프는 다음 타깃, 또 다른 쌩쌩한 RUNNABLE 프로세스를 수배하기 위한 여정을 다음 바퀴로 넘겨 반복합니다.\n끔찍하게도 존재하는 우주의 모든 RUNNABLE 프로세스의 수술 뺑뺑이 루프가 모두 완파된 후에야 비로소 자물쇠 락(lock)의 봉인이 해제되며 해방됩니다.\n앞서 봤던 이 바닐라 오리지널의 구조를 해부하면 이런 뼈대입니다 (구조적 슈도코드):\nwhile (1) {\n  프로세스들을 쥐잡듯 뒤짐:\n    이놈이 runnable이 아니라고?:\n      그럼 패스해 (continue)\n    맞으면 이놈을 구동해\n그리고 여러분이 피 칠갑하여 뜯어고쳐 끼워 넣을 마개조된 복권 코드의 골자는 이렇습니다 (마찬가지로 슈도코드):\nwhile (1) {\n  현존하는 프로세스들에게 뿌려진 티켓들을 전부 쓸어 모아 총합 장수를 기입함 // 여기에 일단 For 루프 하나 투입\n  그리고 랜덤 당첨 볼을 하나 굴려 우승 티켓 번호를 캐냄\n  프로세스들을 쥐잡듯 뒤짐: // 여기에 두 번째 For 루프 투입\n    이놈이 runnable이 아니라고?:\n      그럼 패스해 (continue)\n    맞으면 이놈 티켓 장수를 카운터에 더해 누적함\n    아직 카운터 누적 수치가 우승 번호 볼 스코어를 못 넘겼다고?:\n      그럼 패스하고 다음 놈 더하러 가 (continue)\n    번호를 뚫었다면 이놈을 강제 구동해\n당연하지만 이미 송장이나 다름없는 비-RUNNABLE 노인네들의 티켓 따윈 개나 줘버리고 모조리 무시합니다.\n티켓에는 고유 일련번호가 찍히는 게 아닙니다. 각 놈들이 들고 있는 다발의 장수 뭉텅이들일 뿐입니다. 우리는 그 뭉텅이들을 합산해 나가다가 어느 순간 마침내 우승 볼 번호 n을 돌파해버리는 그 놈의 뭉텅이를 잡아내는 겁니다.\n초등학생 수준의 예시로 프로세스 A 놈은 비굴하게 5장을, B 놈은 7장을, C 놈은 빈곤하게 2장을 가졌다고 칩시다. 굴린 볼 우승 번호가 3이면 5장 바운더리 안이니 A가 구동될 테고; 번호가 8이라면 A 바운더리를 넘은 누적 12구간(A+B)에 걸리니 B가 구동, 번호가 12라면 14구간이니 드디어 C가 터질 차례입니다.\n승리 구간 영토 분배를 보면 0-4 영토는 온전히 A의 것, 5-11 구간의 제왕은 B, 그리고 12-13 끄트머리는 찌꺼기 C의 차지인 셈입니다.\n이제 뒤로 넘어가 settickets 이건 그저 웃음벨 급입니다: 락 잠그고, 티켓 장수 기입 갱신 쳐 주고, 락 놔주고. 그냥 끝입니다.\n그에 반해 미지의 영역 getpinfo의 가동 원칙은 이렇습니다:\n파라미터로 떨어지는 p는 pstat.h에서 설계해 둔 struct pstat 구조체의 몸통을 가리키는 뼛조각 포인터입니다. 까보면 그놈 뱃속에 들어있는 멤버들은 전부 배열 덩어리로, 우주에 존재하는 각 프로세스당 하나씩 할당될 좌석들이 박혀 있습니다.\n이 뼛조각 포인터가 속이 빈 NULL 깡통은 아닌지 찌르는 방어 로직을 넣으십시오.\n깡통이 아니라면 그 뼛조각을 들고 프로세스 테이블 전체를 빙글빙글 돌며 i-번째 프로세스를 만날 때마다 좌석 번호 proc_i 로 도장 찍어 색인하십시오.\n만날 때마다 그 프로세스의 정보를 탈취하여 방금 받은 p의 멤버 배열들 속의 i-번째 좌석 칸칸마다 데이터들을 알뜰살뜰히 채워 기입하십시오.\n거의 끝나갑니다. 잊지 말고 회계 장부 정리를 해야 합니다: 저 멀리 defs.h 헤더 무덤까지 쫓아가 struct pstat 구조체 껍데기와 settickets, getpinfo 시스템 콜 존재에 대해 외부에 알리는 장부 기록(선언)을 남기는 걸 까먹지 마십시오.\n정점인 마지막 타깃 파일 ps.c입니다. 이곳은 리눅스의 ps 프로그램 조상을 강령시켜 재현할 프로그램 본체 사당입니다. 그저 내부에서 방금 짠 getpinfo를 외쳐 공 빈 깡통 struct pstat을 데이터 쓰레기로 배부르게 가득 채워오게 시킨 뒤, 그 더미 속을 뒤져 현재 목숨줄이 붙어 사용 중인 프로세스 놈들의 더티한 신상 정보만 골라 우아하게 화면에 타이핑해 뿌려주면 됩니다.\n이제 그 사당을 짓기 위해 수장 급인 Makefile 컴파일 지시서 장부에 이 ps.c를 억지로 끼워 맞추어 엮어버리면 마침내 모든 수술과 공작은 끝이 납니다!\n아 잠깐, 앞서 왜 굳이 스케줄 안에 타이머로 울리는 ticks 시계 장치를 달아 놨나 의문이셨죠? 이 대미를 장식할 프로그램 ps 가 화면에 문자를 뿌려줄 때, 그 더러운 프로세스들이 과연 세상에 잉태되어 얼마나 오랜 시간을 갉아먹으며 살았는지 수명을 조리돌림하기 위해 폭로해 주어야 하기 때문입니다.\n그래서 그 살아 움직이며 실 구동에 사용했던 그 실제 클락 틱(ticks)의 숫자를 미친 듯이 스토킹하고 세아릴 시계 장치가 필요했던 셈이죠.\n이 지난한 수술 강좌가 다 끝났다면 제발 마침내 터미널 창을 열고 /src 아지트 깊숙한 곳에서 make qemu 버튼을 부숴버린 뒤 그 안의 참상을 직접 두 눈으로 감상하며 성공의 축배를 드십시오.",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>모든 감사를 [palladian](https://github.com/palladian1) 님께 전합니다</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/ostep/vm-xv6-intro.html",
+    "href": "coursepages/ostep/vm-xv6-intro.html",
+    "title": "xv6 가상 메모리의 공포 속으로 (Intro To xv6 Virtual Memory)",
+    "section": "",
+    "text": "크레딧은 palladian 님께 있습니다\n\n경고 (WARNING):\n이 프로젝트 템플릿의 내용과 현재 저희가 제공하는 xv6 소스 코드 사이에는 치명적인 미스매치가 존재합니다. 이미 최신 배포 소스에는 이 프로젝트가 완료된 상태로 모조리 흡수 구현되어 버린 끔찍한 상태입니다!\n이를 수습하기 위해 palladian 님이 필사적으로 위스콘신 대학 모 학생의 깃허브 하수구까지 파고들어 전혀 훼손되지 않은 또 다른 원시 xv6 소셜 코드를 발굴해 냈습니다. 이놈을 구동시키기 위해 억지로 Makefile 배을 갈라서 QEMU 실행 파일 구동 경로가 어긋나지 않도록 짜깁기를 가해야만 했습니다. 살인적인 메모리 무방비 상태(lack of memory safety)의 공포를 피부에 각인시키기 위해, 유저 세상(user 폴더) 안에 미끼용 파일 null.c를 은밀히 박아넣고 (추가로 그 안에 서식하는 makefile.mk 지시서도 손을 댔습니다) 모든 함정을 팠습니다.\n모든 여정을 start.zip 라는 보급품 덩어리를 압축 해제하며 시작하십시오. 덩어리가 풀리면 터미널을 열고 폭풍처럼 make clean 과 make qemu-nox 를 차례로 때려 박으세요. 마침내 시스템 안에 영혼이 갇히게 되면 null 이란 문자를 갈겨보며 그 메모리 지뢰밭의 공포를 눈으로 영접하십시오! 만약 당신이 진짜 변태여서 이 망가진 null 덩어리와 실제 기계어 파편의 조각을 현미경으로 대조해 뜯어보고 싶다면, 자비 없이 objdump -d user/null.o 를 찍어 누르면 그 처참한 내부 시체가 전부 열거될 것입니다.\n참고로 뼛골 아프게도, 당신이 이 저주받은 코드 쪼가리들을 한 줄 한 줄 교정해 나갈 때마다 멍청한 기계는 그걸 자동으로 인지하지 못합니다. 매번 미친 사람처럼 수동으로 지겹게 make clean 과 make qemu-nox 를 반복하며 부활 의식을 치러야만 할 것입니다.",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>xv6 가상 메모리의 공포 속으로 (Intro To xv6 Virtual Memory)</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/spd/README.html",
+    "href": "coursepages/spd/README.html",
+    "title": "체계적인 프로그램 설계 (Systematic Program Design)",
+    "section": "",
+    "text": "지시 사항\n이 과정은 UBC에서 개발하였으며 Edx를 통해 이용할 수 있습니다. Edx에 아카이브된 버전을 이수하는 것을 권장합니다.\n강좌 링크 (권장):\n대체 링크:\n다양한 코스 버전에 대한 설명은 아래 FAQ를 참조해 주세요.\n참고: 이 지시 사항들은 저희가 가장 권장하는 Edx 아카이브 버전에 최적화되어 있습니다. 타 버전에는 완벽히 부합하지 않을 수 있습니다.",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>체계적인 프로그램 설계 (Systematic Program Design)</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/spd/README.html#지시-사항",
+    "href": "coursepages/spd/README.html#지시-사항",
+    "title": "체계적인 프로그램 설계 (Systematic Program Design)",
+    "section": "",
+    "text": "이 강좌는 Edx에 별도의 공식 홈페이지가 마련되어 있지 않지만 걱정할 필요 없습니다. 위의 링크를 열고 로그인한 뒤 해당 강의 수강 신청(enroll) 버튼을 누르면 그만입니다.\n강의 개요에 따라 Week 1A부터 Week 6A까지 착실히 진도를 나가십시오. 영상을 보고 문제들을 처리한 후 문제은행(problem bank)에 돌입해 전부 해치워보세요.\nWeek 6A 이수가 완료되었다면 드디어 스페이스 인베이더(space invaders) 미션을 완수하십시오. 미션 디테일 지침은 다음 링크에 정리되어 있습니다: 스페이스 인베이더 지시 사항. 완성되어 돌아가는 게임 예시본은 이곳에서 시청 가능합니다.\n그리고 Week 6B 이후부터의 후방 학습을 이어 나갑니다. 마찬가지로 영상 시청 후 연습 문제를 해결, 문제은행을 풀이하시면 됩니다.\n그 뒤에 이 재생목록에 있는 추가 부록 영상들을 모조리 섭렵하십시오.\n코스의 모든 모듈을 끝마쳤다면 대망의 TA solver 미션을 풀어보세요. 해결 단서는 시작 파일 안에 모두 내재되어 있습니다.\n문제은행 탭에는 무수히 쏟아지는 난도 높은 예제들이 준비되어 있으니 모두 소화해 이해도를 대폭 키워보는 것을 강력 권장합니다.\n예전 강의다 보니 군데군데 끊어진 깨진 시작 파일 링크들이 있을 수 있으니 당황하지 마시고 이 깃허브 저장소를 찾으시면 됩니다: https://github.com/ossu/spd-starters. 귀찮다면 이 링크 한 방으로 압축 zip 파일로 모든 걸 한번에 받을 수 있습니다.\n온라인 채점 방식처럼 작성 파일을 제출할 곳은 닫혀 없으나, “Show Answer”란 버튼을 통해 해답 코드를 곧장 조회할 수 있습니다. 스스로 양심껏 비교하며 채점하십시오.\n문제은행 역시 제출구는 없지만 예시 정답 모범 코드를 지원하니 자신의 답안이 올바른 방향으로 나아갔는지 대조할 수 있습니다.\n타 IDE를 고집할 길도 없진 않지만 제발 Dr. Racket을 이용하십시오. 다른 툴에 프로젝트 세팅하느라 헛힘 쓸 시간에 Dr. Racket으로 곧바로 강의를 편안히 한 편 더 보는 게 이득입니다.\n정 안 풀려서 곤혹스럽다면 다음과 같은 OSSU 구조선 커뮤니티 채팅방에 합류하세요:\n\nWeek 6A 이전 범위 관련 채널: https://discord.gg/RfqAmGJ\nWeek 6B 이후 후반 범위 관련 채널: https://discord.gg/kczJzpm",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>체계적인 프로그램 설계 (Systematic Program Design)</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/spd/README.html#노트",
+    "href": "coursepages/spd/README.html#노트",
+    "title": "체계적인 프로그램 설계 (Systematic Program Design)",
+    "section": "노트",
+    "text": "노트\n\nDr. Racket의 최신 표기법은 #true #false '()가 디폴트로 되어 있습니다. 강좌의 구 방식 표기법인 true false empty로 전환하고 싶다면 상단 메뉴에서 Language &gt; Choose Language를 누르세요. 그리고 해당 언어 조건(BSL, ISL 등)을 찾은 후 창 왼쪽 구석에 박힌 “Show details” 버튼을 눌러 Constant Style 필드를 true false empty 로 재적용시키고 실행해 주면 변경 내역이 완벽히 고정됩니다.\n\n\n\n귀찮은 괄호의 짝이 저절로 닫히게 하는 마법, Edit &gt; Preferences &gt; Editing 탭 &gt; General Editing 서브 메뉴 순으로 타고 들어가 “Enable automatic parentheses, square brackets, and quotes” 항목만 체크해 주면 끝입니다.\n\n\n\nCtrl + I 핫키 입력 하나로 더러운 코드 인덴트(들여쓰기)를 싹 다 아름답게 일직선으로 재졍렬할 수 있습니다.\n윈도우/리눅스 유저라면 Alt + Backspace 스킬을 구사하여 단어 뭉텅이를 통째로 썰어낼 수 있습니다.\n만약 모종의 오류로 인해 Edx 영상이 죽고 재생이 먹통이라면 당황하지 않고 이 공식 유튜브 피난처에서 전 강의를 이어 볼 수 있습니다.",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>체계적인 프로그램 설계 (Systematic Program Design)</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/spd/README.html#faq",
+    "href": "coursepages/spd/README.html#faq",
+    "title": "체계적인 프로그램 설계 (Systematic Program Design)",
+    "section": "FAQ",
+    "text": "FAQ\n\n이 코스는 너무 지루해요. 건너뛰면 안 되나요?\n안 됩니다. 초반에는 졸음이 쏟아질 정도로 단조롭게 다가올 수 있습니다. 하지만 이 강좌는 당신이 사고하는 뇌 구조 자체를 뜯어고쳐버릴 대단한 파급력을 지녔습니다. 처음에 투덜거리던 많은 학생들이 과정의 대단원이 막을 내릴 무렵엔 극단적 찬양론자로 둔갑하는 현상이 수없이 목격되어 왔습니다. 특히 극초반 파트 (평가 규칙이 돌아가는 원리 등)를 가볍게 여겼다간 두고두고 큰 화를 면치 못할 것입니다. 바로 코드가 본질적으로 어찌 돌아가는지 메커니즘을 뚫어볼 핵심 교본이기 때문입니다.\n\n\n왜 하필 업계 밖의 언어인 BSL(Lisp 계열)로 강의를 진행하나요?\n다분히 악의적이고도 의도적인 배분이며 그 이유는 다음과 같습니다:\n\nLisp은 컴퓨터 과학계(PhD 논문 연구원 등)의 절대 공용어나 다름없습니다. 어쭙잖은 변명이 아닌 팩트입니다. 미래에 전문적인 알고리즘 논문 한 편이라도 읽으려면 Lisp의 무덤을 무조건 기어 다녀야만 합니다. BSL은 끔찍한 그 괄호 모양새 지옥을 이겨내고 Lisp 계열 언어 구사에 면역력을 키워줄 최고의 백신입니다.\n프로그래밍 특화 기술(특정 언어 구사 등)을 목표로 하지 않는 최초의 수업이 될 것입니다. 컴퓨터 과학의 핵심은 C++이니 자바니 따위의 언어 학습 따위가 아닙니다. 풀스택 개발자의 수명이 목표가 아닙니다. 결국 컴퓨터 사이언스의 심연을 파헤치다 남는 건 오직 ’수학’이라는 학문 그 자체입니다. 그리고 수학 법칙에는 특정 플랫폼 종속성 따위가 없습니다.\n\n이 코스에선 오직 코드가 얼마나 논리적으로 더 훌륭하게 축조되었는지만 관찰합니다. Java나 Python의 고유 개성이 아닌 소프트웨어 그 자체의 공통 법칙을 쫓는 것입니다. 때문에, 학생들을 귀찮은 문법, 빌드, 오타, 복잡한 런타임 셋업 등 외부 환경에서 완전히 격리시켜 본질에만 미칠 듯이 다가갈 수 있게 해줄 언어가 바로 이 BSL이란 작은 학생용 언어인 것입니다. 디자인 패턴 숙지 하나만으로도 충분히 힘드니 이 귀중한 백지상태라는 선물을 달게 받으십시오.\n\n\n왜 이름도 다르고, 종류도 다른 여러 개의 코스 버전들 (HTC, SPD)이 나돌고 있으며 왜 그중 아카이브 버전을 추천하나요?\n사람들은 오직 두 가지 목적 중 하나로 움직입니다:\n\n순수 지식(The Knowledge)\n종이 쪼가리 자격증(The Certificate)\n\nOSSU를 밟고 있는 동지라면 오롯이 전자(지식)에 미쳐있는 자라 판단해 무조건 전자의 코스를 제공합니다. 지식을 갈구한다면 굳이 시간 낭비하며 남에게 채점을 받을 숙제를 내고 기다릴 게 아니라 스스로 흡수하고 터득하면 그만이기 때문이죠.\n만약 여러분이 굳이 “나 이거 들었다!”라는 공인 문서 종이가 받고 싶다면 그건 무료로 이뤄질 수 없습니다. 자격증을 노린다면 지금 즉시 돈을 내고 ‘How To Code (HTC)’ 코스 페이지로 도망가시면 됩니다.\nOSSU 커리큘럼에서 한 푼의 돈도 내지 마십시오. 이미 기간 만료된 비활성화 버전인 ‘SPD’ 버전의 접근성이 훨씬 뛰어나며, 무엇보다도 무료로 지식을 취하기엔 완벽한 뷔페나 다름없기 때문입니다.\n요약:\n돈 한 푼 없이 최고의 지식만 빼오고 싶다 → SPD 듣기 (무료인데 만료된 버전)\n공인 인증서가 무조건 필요하다 → 돈 내고 How To Code 듣기 (현재 진행형 정식 버전)\n\n\n제 평소 애용하던 편한 언어로 이 강좌를 따라가면 안 되나요?\n극구 만류합니다. 이 강의의 철학은 해당 언어(BSL/Racket)와 말도 안 되게 깊게 맞물려 들어가 돌아갑니다. 개념은 타 언어와 호환되지만, 과정 자체를 억지로 타 언어에 이식해보려는 시도는 결국 엄청난 시간과 효율만 하수구에 버리는 자살 행위나 다름없기 때문입니다.\n\n\n진짜 제발 내가 좋아하는 IDE 조금만 쓰면 안 되나요? Dr. Racket UI가 맘에 안 들어요.\n이 과정에 쓰인 모든 프로그램 소스 코드들은 그림(사진)과 이상한 블록 문법 파일들로 처절하게 범벅이 되어 있습니다. 다른 에디터론 애초에 열리지도 않는 이상 형상을 가졌다는 소리입니다. 어찌어찌 꼼수로 타 IDE 환경으로 파일들을 전부 완벽히 컨버팅 이식 시킬 수도야 있겠지만 그딴 짓에 버릴 시간을 모아 차라리 강좌 진도나 한 회 더 빼는 게 이득이 아닙니까? 정답은 그냥 가르쳐 준 Dr. Racket 쓰는 겁니다.\n\n\n출력값이 랜덤이어야 하는 함수는 도대체 어떻게 테스트하나요?\ncheck-random을 이용하여 해결하면 됩니다. 자세한 지침과 메커니즘은 여기에 정리되어 있으니 참고하세요. 이후 다가올 최후의 스페이스 인베이더 미션 통과를 위해 무조건 알고 넘어가야 할 문구입니다.",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>체계적인 프로그램 설계 (Systematic Program Design)</span>"
+    ]
+  },
+  {
+    "objectID": "coursepages/spd/README.html#출처-credits",
+    "href": "coursepages/spd/README.html#출처-credits",
+    "title": "체계적인 프로그램 설계 (Systematic Program Design)",
+    "section": "출처 (Credits)",
+    "text": "출처 (Credits)\n해당 강좌 내 제공되는 각 문제 시작 파일(스타터)들과 스페이스 인베이더 지침 데이터 등은 Edx 내 제공되었던 “Systematic Program Design” 본 페이지의 지적 저작물 일부를 차용했으며, 모든 것은 CC BY-NC-SA 라이선스 지침을 엄중히 준수하여 보호받고 있습니다.",
+    "crumbs": [
+      "Course Pages",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>체계적인 프로그램 설계 (Systematic Program Design)</span>"
+    ]
+  },
+  {
+    "objectID": "extras/courses.html",
+    "href": "extras/courses.html",
+    "title": "컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)",
+    "section": "",
+    "text": "프로그래밍 (Programming)\n아래는 여러 가지 이유로 정규 커리큘럼에 편성되진 못했으나 퀄리티가 우수한 고품질 강좌들의 목록입니다. 편성되지 못한 가장 흔한 이유는 해당 강좌가 열리는 주기가 너무 길어 접근성이 떨어지거나, 정규 커리큘럼의 흐름에 훨씬 더 잘 녹아드는 다른 대안 강좌가 존재했기 때문입니다.",
+    "crumbs": [
+      "Extras",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)</span>"
+    ]
+  },
+  {
+    "objectID": "extras/courses.html#프로그래밍-programming",
+    "href": "extras/courses.html#프로그래밍-programming",
+    "title": "컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)",
+    "section": "",
+    "text": "강좌명\n기간\n소요 노력\n\n\n\n\n컴퓨터적 사고와 데이터 사이언스 입문(Introduction to Computational Thinking and Data Science)(대안 링크)\n10주\n주당 15시간\n\n\n컴퓨터 과학 입문 - CS50 (Introduction to Computer Science - CS50) (대안 링크)\n12주\n주당 10-20시간\n\n\n컴퓨터 과학 입문 (Udacity버전)\n7주\n주당 10-20시간\n\n\n파이썬 대화형 프로그래밍 입문 1부\n5주\n-\n\n\n파이썬 대화형 프로그래밍 입문 2부\n-\n-\n\n\n파이썬 컴퓨팅 I: 기초 및 절차적 프로그래밍\n5주\n주당 10시간\n\n\n파이썬 컴퓨팅 II: 제어 구조\n5주\n주당 10시간\n\n\n파이썬 컴퓨팅 III: 자료구조\n5주\n주당 10시간\n\n\n파이썬 컴퓨팅 IV: 객체 & 알고리즘\n5주\n주당 10시간\n\n\n프로그래밍 기초 (Programming Basics)\n9주\n주당 8시간\n\n\nJava 기반 객체 지향 프로그래밍\n14주\n주당 10시간\n\n\nMATLAB 프로그래밍 입문\n-\n-\n\n\n함수형 프로그래밍 입문\n7주\n주당 4-6시간 \n\n\n컴퓨터 프로그램의 구조와 해석 - 파이썬판 (SICP 2022)\n-\n-\n\n\n컴퓨터 프로그램의 구조와 해석 - Scheme판 (SICP 2011)\n-\n-\n\n\nHaskell 입문\n14주\n주당 4시간",
+    "crumbs": [
+      "Extras",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)</span>"
+    ]
+  },
+  {
+    "objectID": "extras/courses.html#수학-math",
+    "href": "extras/courses.html#수학-math",
+    "title": "컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)",
+    "section": "수학 (Math)",
+    "text": "수학 (Math)\n\n\n\n강좌명\n기간\n소요 노력\n\n\n\n\n수학을 통한 효율적 사고 (Effective Thinking Through Mathematics)\n4주\n주당 2시간\n\n\n수학적 사고 입문 (Introduction to Mathematical Thinking)\n10주\n주당 10시간\n\n\n고교 수학 (High School Math)\n-\n-\n\n\n미적분학 기초 (Precalculus)\n5주\n주당 6시간\n\n\n고급 미적분학 기초 (Advanced Precalculus)\n4주\n주당 5시간\n\n\n실전 미적분학! (Calculus Applied!)\n10주\n주당 6시간\n\n\n확률론 및 데이터 입문\n-\n-\n\n\n길버트 스트랭의 선형대수 (Linear Algebra)\n-\n-\n\n\n컴퓨팅 사고 입문\n-\n-\n\n\n다변수 미적분학 (Multivariable Calculus)\n13주\n주당 12시간\n\n\n확률론 입문 - 불확실성의 과학 (Probability - The Science of Uncertainty)\n18주\n주당 12시간\n\n\n데이터 분석, 신호 처리, 머신 러닝을 위한 행렬 기법\n-\n-",
+    "crumbs": [
+      "Extras",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)</span>"
+    ]
+  },
+  {
+    "objectID": "extras/courses.html#시스템-systems",
+    "href": "extras/courses.html#시스템-systems",
+    "title": "컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)",
+    "section": "시스템 (Systems)",
+    "text": "시스템 (Systems)\n\n\n\n강좌명\n기간\n소요 노력\n\n\n\n\n클라우드 컴퓨팅 / 분산 프로그래밍\n5주\n주당 5-10시간\n\n\n병렬 프로그래밍 입문 (대안 영상) (숙제 파일)\n12주\n주당 8-10시간\n\n\n컴퓨터 시스템 입문 (실습 랩)\n15주\n주당 12시간\n\n\n위대한 컴퓨터 아키텍처 아이디어 (기계 구조) (렉쳐 영상)\n15주\n주당 12시간\n\n\n컴퓨터 아키텍처 (Computer Architecture)\n-\n주당 5-8시간\n\n\n운영체제 엔지니어링 (Operating System Engineering)\n-\n-\n\n\n운영체제 입문\n8주\n주당 5-8시간\n\n\n고급 운영체제\n5주\n주당 5-8시간\n\n\n웹 개발자를 위한 네트워킹\n12주\n주당 5-8시간\n\n\n분산 시스템 (Distributed Systems) - 영상 모음, 강좌 사이트, 6.824 독학 가이드, 질의응답용 6.824 디스코드\n-\n-",
+    "crumbs": [
+      "Extras",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)</span>"
+    ]
+  },
+  {
+    "objectID": "extras/courses.html#이론-theory",
+    "href": "extras/courses.html#이론-theory",
+    "title": "컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)",
+    "section": "이론 (Theory)",
+    "text": "이론 (Theory)\n\n\n\n강좌명\n기간\n소요 노력\n\n\n\n\n알고리즘 1부\n6주\n주당 6-12시간\n\n\n알고리즘 2부\n6주\n주당 6-12시간\n\n\n알고리즘 분석 (Sedgewick 저)\n6주\n주당 6-8시간\n\n\n알고리즘 분석 (Skiena 저)\n15주\n주당 6-8시간\n\n\n프로그래밍 챌린지 (Skiena 저)\n14주\n주당 6-8시간\n\n\n자료구조 및 알고리즘 (통합본)\n25주\n주당 3-10시간\n\n\n알고리즘적 사고 1부\n-\n-\n\n\n알고리즘적 사고 2부\n-\n-\n\n\n통계 역학: 알고리즘과 계산\n-\n-\n\n\n근사 알고리즘 1부 (Approximation Algorithms)\n-\n-\n\n\n근사 알고리즘 2부\n-\n-\n\n\n알고리즘 설계 및 분석 (Design And Analysis Of Algorithms)\n-\n-",
+    "crumbs": [
+      "Extras",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)</span>"
+    ]
+  },
+  {
+    "objectID": "extras/courses.html#응용-분야-applications",
+    "href": "extras/courses.html#응용-분야-applications",
+    "title": "컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)",
+    "section": "응용 분야 (Applications)",
+    "text": "응용 분야 (Applications)\n\n\n\n강좌명\n기간\n소요 노력\n\n\n\n\n파이썬을 활용한 데이터베이스 이용 (Using Databases with Python)\n5주\n주당 2-3시간\n\n\n데이터베이스 시스템 (Database Systems)\n15주\n주당 12시간\n\n\n데이터베이스 관리 에센셜\n7주\n주당 4-6시간\n\n\n인공지능 입문\n16주\n주당 6-10시간\n\n\n머신 러닝 입문\n10주\n주당 6-10시간\n\n\nBD2K-LINCS 센터와 함께하는 빅 데이터 사이언스\n7주\n주당 4-5시간",
+    "crumbs": [
+      "Extras",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)</span>"
+    ]
+  },
+  {
+    "objectID": "extras/courses.html#도구-모음-tools",
+    "href": "extras/courses.html#도구-모음-tools",
+    "title": "컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)",
+    "section": "도구 모음 (Tools)",
+    "text": "도구 모음 (Tools)\n\n\n\n강좌명\n기간\n소요 노력\n\n\n\n\nGit 및 GitHub 사용법\n3주\n주당 2-3시간\n\n\n쿠버네티스 공인 어플리케이션 개발자 과정 (KCAD)\n5주\n주당 2시간",
+    "crumbs": [
+      "Extras",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)</span>"
+    ]
+  },
+  {
+    "objectID": "extras/other_curricula.html",
+    "href": "extras/other_curricula.html",
+    "title": "타 커리큘럼 소개 (Other curricula)",
+    "section": "",
+    "text": "저희 OSSU는 오로지 학습자 본인이 주도하여 어떻게 컴퓨터 과학을 완전하게 독학해 나갈 수 있는지에 대한 길을 비춰주는 등대와도 같은 여러 시도들 중 하나입니다. 아래 목록은 OSSU와 맥락을 같이 하는, 이 세상의 다른 훌륭한 독학 설계 노력들의 명단입니다.\n\n구글 - 테크니컬 개발 가이드 (Google - Guide for Technical Development)\n스스로 배우는 CS (Teach Yourself Computer Science)\n온라인으로 CS 백그라운드 완벽히 타파하기 (Obtaining a Thorough CS Background Online)\nP1xt 로드맵\n함수형 베이스 CS (Functional CS)\n\n그렇다면 위 목록들과 비교하여 OSSU 커리큘럼만이 가지는 무기는 무엇일까요? OSSU는 완벽히 ’학부 전공 수준 (undergraduate)’의 정규 컴퓨터 과학 커리큘럼을 개인이 혼자서 어떻게 체득할 수 있는지 그 정확한 규격화에 매진하고 있습니다. 이런 고집 때문에 저희는 컴퓨터 공학 분야의 가장 저명하고 위대한 두 단체 연맹의 합동 지침서인 CS2013 표준 가이드라인을 기어코 채택하여 근간으로 삼은 것입니다.\n이런 정통 학부 중심적 접근법을 취하게 되면, 향후 타인이나 회사에 자신이 얼마나 깊고 방대한 수준의 학업 역량을 일구어냈는지 지표로 증명하기가 압도적으로 유리해집니다. 실제로 무수히 많은 현역 학생들이 이 OSSU 트리만 이수하고도 직접 테크 IT 산업계에 사원으로 뿌리내리거나, 명문대 컴퓨터 공학 대학원의 연구실로 진학하는 기적을 꾸준히 입증해 냈습니다. 저희는 여러분 역시 그들과 동일한 구원의 영광을 누리게 되길 간절히 바라고 돕고 있습니다.",
+    "crumbs": [
+      "Extras",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>타 커리큘럼 소개 (Other curricula)</span>"
+    ]
+  },
+  {
+    "objectID": "extras/puzzles-practice-plods.html",
+    "href": "extras/puzzles-practice-plods.html",
+    "title": "컴퓨터 공학 - 퍼즐 조각 풀기, 실전 연습기 (Computer Science - Puzzles, Practice and Plods)",
+    "section": "",
+    "text": "수많은 OSSU인들은 뻔한 정규 강좌 수강 압박에서 벗어나, 생 코딩 실전 문제들을 마구 두들길 수 있는 테스트형 아레나 사이트들을 아주 소중히 여깁니다.\n\n“교과서”에 박힌 예제 문제들을 부수는 건 쉽다. 강좌가 입에 떠먹여 주듯 세팅을 다 해놨기 때문이다. 그러나 “실제 현실 세계”의 생 날것 모델을 당장 설계해 보라는 것은 엄청나게 가혹한 일이다. 누구도 내 손을 붙잡아 주지 않기 때문이다.\n\n참고 의견 링크\n\n즉 파라미터가 x, y 따위로 이쁘장하게 깔려 들어오는 문제는 기가 막히게 풀어내 코딩할 수 있다 치자. 하지만 또 다른 생뚱맞은 환경의 문제를 갑자기 내 앞에 처박아버리면 우리는 속수무책 벙어리가 될 확률이 높다. 왜냐하면 아직 “알고리즘 적 사고관” 그 자체나 이런 현상에 대한 철학적인 훈련이 몸에 배지 않았기 때문이다.\n\n참고 의견 링크\n하지만 이와 정반대로 이런 조각 퍼즐 강박이나 코딩 문제풀이 병에 함몰되어 시간과 집중력을 분산시키면 안 된다고 외치는 목소리도 높습니다.\n\n부디 저의 이 말을 이 바닥에서 허우적대는 수많은 초음속 초심자들에게 바치는 러브레터 정도로 여겨주기를.\n\n\n내 생각에, 여러분들이 아직 ‘초심자(beginner)’의 굴레를 맴돌 무렵엔 무언가 여러분 스스로가 당장 번듯한 프로젝트 하나를 던져 짤 능력치나 ’스펙’이 부족하다고 ’스스로 격하하게 느끼는(FEELS)’ 병에 걸려있다. 강좌를 순수하게 듣고, 거기서 주는 뻔한 프로그래밍 숙제 따위를 치워 내는 정도만으론 당신들 눈에 영 이건 대단한 ‘프로젝트’라고 불리기엔 너무 조잡하다고 ’느껴지는’ 것이다. 그 조막만 한 결과물들이 너무 보잘것없어서 당신의 눈에 안 차는 것이다. 불만족에 빠진 거다. (아마 이런 불만의 저변엔 가장 초입부 극초반 강좌들이 당신 수준엔 은근히 쉬워 보여 얕잡아본 이유도 클 것이고, 아직 진짜로 당신의 대가리를 깨버리고 멘탈을 가루로 분쇄할 진정한 지옥불 난이도 과정을 못 만났기에 아직 치기 어린 거만함이 남아있는 덕이다.) 게다가 이 짓거리는 언제 무단 이탈해도 아무도 채찍으로 때리지 않는 방목형 온라인 독학이다 보니, 가장 최악이자 자연스러운 궤도는 얕고 넓게 문어발로 온갖 것에 찔러보다 눈을 획획 돌리며 산만해지는 짓거리다. 절 믿어라, 나 역시 정확히 그 방황을 ‘미친 듯이 겪었었으니’. 자연적으로 당신은 1초라도 빨리 ‘유능해지기 위해’ 온몸이 달아오른다. 계속 당신은 뇌까린다, “아 그래서 언제쯤 나도 이딴 장난감 코드 말고 진짜 뭔가 ‘거대하고 쩌는(BIG)’ 작품을 만들 수 있는데?” 그리고 한순간도 기다리기 싫어한다. 애새끼들이 항상 빨리 늙어서 어른 흉내를 내고 싶어 떼를 쓰는 것과 다를 바 없다. 이런 역겨운 불만족과 초조함의 조합이 최악의 기폭제가 된다. 이 끔찍한 현상을 우린 대충 ’초심자들의 병(beginner’s mind)’이라 칭하자.\n\n\n팩트를 꽂자면, 당신은 그냥 닥치고 인내해야 한다. 초반부 학습 궤도야말로 가장 궤도를 벗어나 헛짓거리 (새 프로젝트 창설 따위)를 하면 “가장 안 되는 독약 같은 시기” 라고 난 감히 단언한다…\n\n\n나는 인터넷상에 마구잡이로 떠도는 조잡한 쓰레기 정보들과 잡다한 유혹에 산만하게 흔들거리며 이리저리 다 찔러보는 유행들 보다, OSSU가 고집하는 그 무식하고, 답답할 만큼 뚝심 있고 느리고 철저한 우보천리의 방식을 무조건 권장한다. 진짜 그놈의 프로젝트 병을 못 버리겠는가? 그럼 당장 당신을 찢어 발길 당신의 다음 퀘스트, ’다음 과목 수강(THE NEXT COURSE)’이나 착실히 눌러 깨라.\n\n\n따라서 도대체 이것의 근원적인 문제는 핑곗거리가 아니라 그냥 당신 마음대로 높아져 있던 그놈의 기대치를 쳐 꺾어 분쇄해야 할 필요성이다. 초심자의 병, 오만함의 늪으로부터 제발 사고관을 뜯어 옮길 것을 권장한다. 멀리, 아주 거시적인 관점으로 바라보라. 그 보잘것없어 보이던 미니 숙제들과 하찮아 보이던 코드 찌꺼기들, 귀찮은 모든 것들이 사실 당신 인생이라는 가장 웅장하고 거대하며 장기적인 메인 프로젝트인 ‘당신 지능 그 자체(YOU)’ 를 쌓아 올릴 콘크리트 부품임을 명심하라.\n\n참고 의견 링크\n그러므로 모든 OSSU 후학 동지들이여, 위 충고를 두 번 새겨읽고 당신의 피와 땀 같은 시간을 아래의 무한한 시험장 리소스 사이트들에 하루에 도대체 얼마만큼만 배분하고 소비할지 통제하고 심사숙고하십시오. - Exercism - LeetCode (릿코드) - HackerRank (해커랭크) - CodeWars (코드워즈) - 100+ 파이썬 코딩 과제 및 모범 답변 묶음표 - Rosalind (로잘린드) - Advent of Code (어드벤트 오브 코드) - 생초보 뉴비용 구휼 깃허브 프로젝트 모음 - 깃허브 세상에 내던져진 늅들을 구원하기 위해 파인 맞춤형 성지입니다. 중급부터 극고급 알고리즘 난이도에 아우르는 온갖 이슈 타파 난제들이 버무려져 있습니다.",
+    "crumbs": [
+      "Extras",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>컴퓨터 공학 - 퍼즐 조각 풀기, 실전 연습기 (Computer Science - Puzzles, Practice and Plods)</span>"
+    ]
+  },
+  {
+    "objectID": "extras/readings.html",
+    "href": "extras/readings.html",
+    "title": "컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)",
+    "section": "",
+    "text": "프로그래밍 (Programming)\n이 문서는 컴퓨터 과학 분야의 역사에 길이 남을 명저들과 주옥같은 아티클들의 목차를 담고 있습니다. 여기 기재된 책들 중 일부는 정규 강좌들이 직접 교재로써 내용을 다루기 때문에 수록되었고; 나머지 일부는 그저 여러분이 컴퓨터 공학자로서의 커리어를 살아가는 동안 언젠가 한 번쯤은 반드시 펼쳐보아야 할, 경이롭고 위대한 바이블이기에 수록되었습니다.\n여러분이 커리큘럼의 상당 부분을 소화하며 내공을 쌓았다면, 어떤 책이 과연 내 귀중한 시간을 투자할 가치가 있을지 판별해 내는 안목도 훨씬 매끄러워졌을 것입니다. 혹은 정규 코스 중 특정한 어떤 과목의 난이도에 치여 피눈물을 흘리며 허우적댄다면, 역으로 그 분야에 쓰인 이 위대한 명저들을 곁들여 읽는 것이 꽉 막힌 길을 뚫어줄 돌파구가 되어줄 수 있습니다.",
+    "crumbs": [
+      "Extras",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)</span>"
+    ]
+  },
+  {
+    "objectID": "extras/readings.html#프로그래밍-programming",
+    "href": "extras/readings.html#프로그래밍-programming",
+    "title": "컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)",
+    "section": "",
+    "text": "서적명\n저자\n\n\n\n\n파이썬을 활용한 연산 및 프로그래밍 입문 3판 (Introduction to Computation and Programming Using Python 3e)\nJohn V. Guttag\n\n\n씽크 파이썬 2판 (Think Python 2e)\nAllen B. Downey\n\n\n프로그램 디자인 방법 2판 (How to Design Programs 2e)\nMatthias Felleisen, Robert Bruce Findler, Matthew Flatt, Shriram Krishnamurthi\n\n\n컴퓨터 프로그램의 구조와 해석 2판 (Structure and Interpretation of Computer Programs 2e)\nHal Abelson, Jerry Sussman, Julie Sussman\n\n\n컴퓨터 프로그램의 구조와 해석 자바스크립트판 (SICP JS 2021)\nHarold Abelson, Gerald Jay Sussman, Julie Sussman, Martin Henz, Tobias Wrigstad and Samuel Fang\n\n\n컴퓨터 프로그래밍의 개념, 기법, 모델 (Concepts, Techniques, and Models of Computer Programming)\nPeter Van Roy, Seif Haridi\n\n\n디자인 패턴 (Design Patterns: Elements of Reusable Object-Oriented Software)\nErich Gamma, Richard Helm, Ralph Johnson, John Vlissides\n\n\n리팩터링 (Refactoring)\nMartin Fowler\n\n\n클린 코드 (Clean Code)\nRobert Martin\n\n\n코드 컴플리트 2판 (Code Complete 2e)\nSteve McConnell\n\n\n실용주의 프로그래머 20주년 기념판 (The Pragmatic Programmer 2e)\nAndrew Hunt, David Thomas\n\n\n프로그래밍 언어: 응용과 해석 (Programming Languages: Application and Interpretation)\nShriram Krishnamurthi\n\n\n프로그래밍 및 프로그래밍 언어 (Programming and Programming Languages)\nShriram Krishnamurthi, Benjamin S. Lerner, Joe Gibbs Politz\n\n\n경쟁 프로그래밍 알고리즘 (Competitive Programming)\nSteven Halim, Felix Halim\n\n\n자바 컴퓨팅 입문 (Introduction to computing in Java)\nRobert Sedgewick, Kevin Wayne",
+    "crumbs": [
+      "Extras",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)</span>"
+    ]
+  },
+  {
+    "objectID": "extras/readings.html#수학-math",
+    "href": "extras/readings.html#수학-math",
+    "title": "컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)",
+    "section": "수학 (Math)",
+    "text": "수학 (Math)\n\n\n\n서적명\n저자\n\n\n\n\n수식 없이 읽는 미적분학 (Calculus Made Easy)\nSilvanus P. Thompson\n\n\nXimera: 반응형 인터랙티브 미적분 교재\nXimera 팀\n\n\n응용 이산수학 4판 (Discrete Mathematics with Applications 4th Edition)\nSusanna S. Epp\n\n\n이산수학 공개 입문서 (Discrete Mathematics: An Open Introduction)\nOscar Levin\n\n\n응용 이산 구조 (Applied Discrete Structures)\nAlan Doerr, Ken Levasseur\n\n\n그린스테드와 스넬의 확률론 입문 (Grinstead and Snell’s Introduction to Probability)\nCharles M. Grinstead, J. Laurie Snell\n\n\n모두를 위한 선형대수 (Linear Algebra for Everyone)\nGilbert Strang\n\n\n선형대수의 예술 (The Art of Linear Algebra)\nKenji Hiranabe, Gilbert Strang",
+    "crumbs": [
+      "Extras",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)</span>"
+    ]
+  },
+  {
+    "objectID": "extras/readings.html#시스템-systems",
+    "href": "extras/readings.html#시스템-systems",
+    "title": "컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)",
+    "section": "시스템 (Systems)",
+    "text": "시스템 (Systems)\n\n\n\n서적명\n저자\n\n\n\n\n컴퓨터는 어떻게 작동하는가? (But How Do It Know?)\nJ. Clark Scott\n\n\n컴퓨터 시스템: 프로그래머의 관점 3판 (Computer Systems: A Programmer’s Perspective)\nRandal E. Bryant, David R. O’Hallaron\n\n\n현대 운영체제 4판 (Modern Operating Systems)\nAndrew S. Tanenbaum, Herbert Bos\n\n\n컴퓨터 구조 및 설계: 하드웨어/소프트웨어 인터페이스 6판 (Computer Organization and Design)\nDavid Patternson, John Hennessy\n\n\n컴퓨터 네트워크 5판 (Computer Networks)\nAndrew S. Tanenbaum, David J. Wetherall\n\n\n컴퓨터 네트워킹: 하향식 접근 8판 (Computer Networking: A Top-Down Approach)\nJames F Kurose, Keith W Ross\n\n\n컴퓨터 네트워크: 시스템 접근 (Computer Networks: A Systems Approach)\nLarry Peterson and Bruce Davie\n\n\n분산 시스템: 원리와 패러다임 (Distributed Systems: Principles and Paradigms)\nAndrew Tanenbaum\n\n\n운영체제 설계 및 구현 3판 (Operating Systems Design and Implementation)\nAndrew S. Tanenbaum, Albert S. Woodhull\n\n\n인터프리터 제작 (Crafting Interpreters)\nRobert Nystrom\n\n\n컴파일러 설계 원리 (Principles of Compiler Design)\nAlfred Aho, Jeffrey Ullman\n\n\n분산 시스템 독서 모임 논문 모음 (Distributed Systems Reading Group)\n저자 다수\n\n\n대규모 시스템 설계 원리 (System Design: Design large-scale systems)\n저자 다수",
+    "crumbs": [
+      "Extras",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)</span>"
+    ]
+  },
+  {
+    "objectID": "extras/readings.html#이론-theory",
+    "href": "extras/readings.html#이론-theory",
+    "title": "컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)",
+    "section": "이론 (Theory)",
+    "text": "이론 (Theory)\n\n\n\n서적명\n저자\n\n\n\n\n컴퓨팅 입문: 언어, 논리, 기계의 탐구 (Introduction to Computing)\nDavid Evans\n\n\n계산 이론 입문 3판 (Introduction to the Theory of Computation)\nMichael Sipser\n\n\n알고리즘 입문 3판 (Introduction to Algorithms 3e)\nThomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein\n\n\n알고리즘 디자인 매뉴얼 3판 (The Algorithm Design Manual)\nSteven Skiena\n\n\n알고리즘 4판 (Algorithms 4e)\nRobert Sedgewick\n\n\n알고리즘 일루미네이티드 (Algorithms Illuminated)\nTim Roughgarden\n\n\n카테고리 이론: 부드러운 입문서 (Category Theory: A Gentle Introduction)\nPeter Smith\n\n\n프로그래머를 위한 카테고리 이론 (Category Theory for Programmers)\nBartosz Milewski\n\n\n정보 검색 입문 (An Introduction to Information Retrieval)\nChristopher D. Manning, Prabhakar Raghavan, Hinrich Schütze\n\n\n컴퓨터 과학: 융합적 접근 (Computer Science: An interdisciplinary approach)\nRobert Sedgewick, Kevin Wayne\n\n\nDSA CS3: 자료구조 & 알고리즘 (Data Structures & Algorithms) (노트본 - 슬라이드본)\nThe OpenDSA Project (미국 국립과학재단 지원)",
+    "crumbs": [
+      "Extras",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)</span>"
+    ]
+  },
+  {
+    "objectID": "extras/readings.html#응용-분야-applications",
+    "href": "extras/readings.html#응용-분야-applications",
+    "title": "컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)",
+    "section": "응용 분야 (Applications)",
+    "text": "응용 분야 (Applications)\n\n\n\n서적명\n저자\n\n\n\n\n데이터베이스 시스템 아키텍처 (Architecture of a Database System)\nJoseph M. Hellerstein, Michael Stonebraker, James Hamilton\n\n\n데이터베이스 시스템 논문선집 5판 (Readings in Database Systems)\nPeter Bailis, Joseph M. Hellerstein, Michael Stonebraker, editors\n\n\n데이터베이스 관리 시스템 3판 (Database Management Systems)\nRaghu Ramakrishnan, Johannes Gehrke\n\n\n트랜잭션 처리: 개념 및 기법 (Transaction Processing: Concepts and Techniques)\nJim Gray, Andreas Reuter\n\n\n데이터와 현실: 우리들의 불완전한 세계 속의 정보 인식에 대한 타임리스 고찰 (Data and Reality)\nWilliam Kent\n\n\n오픈소스 어플리케이션 아키텍처 (The Architecture of Open Source Applications)\nMichael DiBernardo (editor)\n\n\n통계적 학습 입문 (An Introduction to Statistical Learning)\nGareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani\n\n\n딥 러닝 (Deep Learning)\nIan Goodfellow, Yoshua Bengio and Aaron Courville\n\n\n베이지안 추론 및 머신 러닝 (Bayesian Reasoning and Machine Learning)\nDavid Barber\n\n\n언어 구현 패턴 (Language Implementation Patterns)\nTerence Parr\n\n\n컴파일러: 원리, 기법 및 도구 2판 (Compilers: Principles, Techniques, and Tools - 일명 드래곤북)\nAlfred V. Aho, Monica S. Lam, Ravi Sethi, Jeffrey D. Ullman\n\n\n컴파일러 구조 (Compiler Construction)\nNiklaus Wirth\n\n\n맨먼스 미신 (The Mythical Man-Month)\nFred Brooks, Jr.\n\n\n물리 기반 렌더링: 이론부터 구현까지 (Physically Based Rendering: From Theory To Implementation)\nMatt Pharr, Wenzel Jakob, and Greg Humphreys",
+    "crumbs": [
+      "Extras",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)</span>"
+    ]
+  },
+  {
+    "objectID": "extras/readings.html#도구-모음-tools",
+    "href": "extras/readings.html#도구-모음-tools",
+    "title": "컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)",
+    "section": "도구 모음 (Tools)",
+    "text": "도구 모음 (Tools)\n\n\n\n서적명\n저자\n\n\n\n\n리눅스 커맨드 라인 (The Linux Command Line)\nWilliam Shotts",
+    "crumbs": [
+      "Extras",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html",
+    "href": "CHANGELOG.html",
+    "title": "변경 이력 (Change Log)",
+    "section": "",
+    "text": "[8.0.0] 2017-11-01\n참고: 현재 커리큘럼은 v9 버전으로 넘어가기 위한 대대적인 검토를 진행 중입니다. 주요 작업은 우리의 추천 강좌들이 커리큘럼 가이드라인(curricular guidelines)에 미달하지 않는지 빡빡하게 검수하고, 누락된 주제들을 신규 발굴해 채워 넣으며, 쓸데없이 내용이 겹치거나 범위가 산으로 가는 잉여 강좌들을 모조리 쳐내는 작업들입니다. 이러한 노력의 일환으로 여러분의 코멘트 요청(Requests for Comment)이 완수될 때마다, 커리큘럼 상에 해당 내용은 즉시즉시 변경 및 반영처리 되고 있습니다. 이 길고 지루한 전면 재검토 작업의 마침표가 찍히는 날, 당당히 v9 이라는 이름으로 판올림 버전을 공표할 것입니다.\n이 프로젝트의 역사에 기록될 만한 모든 스펙타클한 변동 사항들은 바로 이 파일에 박제될 것입니다. 본 프로젝트는 암묵적으로 다음의 유의적 버전(Semantic Versioning) 철학을 엄수합니다: - “MAJOR (주 버전)” 판올림 업데이트: 특정 과목 코어 내의 주제를 통째로 갈아엎고 변경할 때. - “MINOR (부 버전)” 판올림 업데이트: 가르치는 코어 주제 자체는 동일하지만, 그것을 가르치는 ’강좌(courses)’만 다른 옵션으로 갈아치울 때. - “PATCH (수정 버전)” 업데이트: 미관상, 미학적 변경이나 커리큘럼상 치명적이지 않은 기타 추가/삭제 조치, 혹은 진도 흐름을 더 매끄럽게 만들기 위해 강좌들의 수강 순서를 재배치할 때.",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section",
+    "href": "CHANGELOG.html#section",
+    "title": "변경 이력 (Change Log)",
+    "section": "",
+    "text": "추가됨\n\n부록(extras/readings): “시스템 디자인 입문서 (The System Design Primer)” 추가\n부록(extras/readings): “프로그래머를 위한 카테고리 이론: 서문 (Category Theory for Programmers: The Preface)” 추가\n부록(extras/readings): “프로그래밍 언어: 응용과 해석 (Programming Languages: Application and Interpretation)” 추가\n부록(extras/readings): “프로그래밍 및 프로그래밍 언어 (Programming and Programming Languages)” 추가\n기여자 가이드(CONTRIBUTING): 기여자 지침 안내처에 “Git 배우기 (Learning Git)” 카테고리 추가\n코어 수학 파트: “선형대수의 본질 (Essence of Linear Algebra)” 영상을 기존 필수 과목이던 “선형대수: 기초부터 최전선까지 (Linear Algebra: Foundations to Frontiers)”에 진입하기 전 찍고 넘어가야 할 선수 강의로 지정해 추가\n\n\n\n변경됨\n\n“수학적 사고 입문 (Introduction to Mathematical Thinking)” 녀석을 정규 트랙에서 쫓아내 부록방(extras/courses)으로 귀양 보냄\n“해킹 더 커널 (Hack the Kernel: ops-class)” 과정을 너무 어려워 보여서 처박아 뒀던 심화 시스템(Advanced Systems) 구역에서 다시 끌고 나와 정규 코어 시스템(Core Systems) 구역으로 멱살 잡고 편입시킴\n코어 시스템 파트: 기존 괴물 교본 “운영체제: 3가지 쉬운 측면 (Operating Systems: Three Easy Pieces)”의 절대 필수 시청 강제 규정을 해제함. 대신 방금 편입된 “해킹 더 커널” 과정을 돌파할 때 곁들여 읽으면 피가 되고 살이 될 최적의 지원군 교재로서의 지위로 하향 조정\n코어 이론 파트: 극악무도한 Coursera 플랫폼이 돈을 뜯어내려 다크 패턴을 교묘하게 쓴다는 발칙함을 포착, 이에 분노하여 스탠퍼드 알고리즘(Stanford Algorithms) 과정의 수강 플랫폼 호스트 링크를 모조리 Coursera에서 Lagunita 쪽으로 갈아치움",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-1",
+    "href": "CHANGELOG.html#section-1",
+    "title": "변경 이력 (Change Log)",
+    "section": "[7.2.2] 2017-07-02",
+    "text": "[7.2.2] 2017-07-02\n\n추가됨\n\nHaskell 을 편하게 돈으로 바르고 싶어 하는 분들을 위해 유료 대안 도서로 “첫 원리부터 배우는 하스켈 프로그래밍 (Haskell Programming from First Principles)” 서적판을 추가\n“씽크 파이썬 (Think Python)” 도서를 부록(extras/readings) 목록표에 추가\n일부 강좌 내용 중 FAQ 엔트리 항목과 관련 도움 링크들 꼼꼼히 추가 기입\n“카테고리 이론: 부드러운 입문서 (Category Theory: A Gentle Introduction)” 도서를 부록(extras/readings) 목록표에 병합",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-2",
+    "href": "CHANGELOG.html#section-2",
+    "title": "변경 이력 (Change Log)",
+    "section": "[7.2.1] 2017-05-14",
+    "text": "[7.2.1] 2017-05-14\n\n변경됨\n\n네트워킹(Networking) 코스의 예상 완주 소요 일자를 8주(8 weeks)로 대폭 조정\n짜증을 유발하는 철자 오류 버그 패치 완료\n\n\n\n추가됨\n\n부록방(extras/courses) 라인업에 Haskell 프로그래밍 입문 과정 신규 스카웃 입사",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-3",
+    "href": "CHANGELOG.html#section-3",
+    "title": "변경 이력 (Change Log)",
+    "section": "[7.2.0] 2017-04-28",
+    "text": "[7.2.0] 2017-04-28\n\n추가됨\n\n소프트웨어 테스팅 (Software Testing) 과정 화려하게 데뷔\n스탠퍼드 라구니타 출신의 알고리즘 과정(Algorithms: Design and Analysis) 직행 링크선 설치 완료\n다변수 미적분학(Multivariable Calculus) 코스에 덤비다 박살 날 학생들의 등짝을 밀어주기 위해, MIT의 단일변수 미적분학 과정 중 ‘매개변수 방정식(parametric equations)’과 ’극좌표계(polar coordinates)’ 챕터 직통 링크를 추가로 발라주어 목숨 생존율 증대 도모",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-4",
+    "href": "CHANGELOG.html#section-4",
+    "title": "변경 이력 (Change Log)",
+    "section": "[7.1.2] 2017-04-22",
+    "text": "[7.1.2] 2017-04-22\n\n변경됨\n\n프로젝트(Projects) 대문 마당에 메가 프로젝트 리스트(Mega Project List)로 통하는 차원문 링크 설치",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-5",
+    "href": "CHANGELOG.html#section-5",
+    "title": "변경 이력 (Change Log)",
+    "section": "[7.1.1] 2017-04-11",
+    "text": "[7.1.1] 2017-04-11\n\n변경됨\n\n대규모 릴리스 출격을 위한 최종 와꾸 터치업 진행",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-6",
+    "href": "CHANGELOG.html#section-6",
+    "title": "변경 이력 (Change Log)",
+    "section": "[7.1.0] 2017-04-10",
+    "text": "[7.1.0] 2017-04-10\n\n변경됨\n\n엉망으로 꼬였던 프로그래밍 언어(programming languages) 과목의 포맷 재구성본을 롤백(회군) 조치\n\n\n\n추가됨\n\n견고한 분산 알고리즘 (Reliable Distributed Algorithms) 강좌들 전격 채용\n기가 맥힌 새로운 CS 입문 신규 강좌 코스 개장",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-7",
+    "href": "CHANGELOG.html#section-7",
+    "title": "변경 이력 (Change Log)",
+    "section": "[7.0.2] 2017-03-30",
+    "text": "[7.0.2] 2017-03-30\n\n변경됨\n\n해도 그만 안 해도 그만인 선택 옵션형 학습 코스들을 분리 수거하여 부록방(extras/courses)의 새로운 찌그러진 공간으로 몽땅 유배 보냄\n다른 컴퓨터 아키텍처 예비 코스 녀석 또한 부록방(extras/courses)으로 귀양 보냄\n\n\n\n추가됨\n\n심화 어플리케이션(Advanced applications) 구역에 스칼라(Scala) 특화 전문화(specialization) 코스를 신규 스카웃\n\n\n\n삭제됨\n\n머리통 터지는 커리큘럼을 심플하게 다이어트 시키기 위해 ‘필수 지정 독서물(required readings)’ 들 중 단 하나만 남기고 나머진 무자비하게 청소 삭제해 버림",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-8",
+    "href": "CHANGELOG.html#section-8",
+    "title": "변경 이력 (Change Log)",
+    "section": "[7.0.1] 2017-03-11",
+    "text": "[7.0.1] 2017-03-11\n\n변경됨\n\n죽어버린 브래드필드(Bradfield) 사제 컴퓨터 공학 가이드 웹페이지의 연결 링크 파이프 수리 패치 완료\n\n\n\n추가됨\n\n미적분학(Calculus One) 코스 하단에 수많은 에러타(오류들) 수정표 보고서와 코스 공략 진도 권장 가이드 링크들의 노트 구문 투척\n부록(extras) 영역에 선택적 엑스트라 강좌들 구겨 넣기:\n\n길버트 스트랭의 선형대수 렉처\nUC 버클리 출신의 ‘컴퓨터 프로그램의 구조와 해석 (Structure and Interpretation of Computer Programs)’\n\n부록(extras) 영역에 선택적 엑스트라 독서본 책 구겨 넣기:\n\n밴 로이(Van Roy)의 역작 ‘고급 프로그래밍 (advanced programming)’ 개론서\nP&H 님의 컴퓨터 구조학 (computer architecture) 서적\n스키에나(Skiena)의 무서운 알고리즘(algorithms) 해설서\n길버트 스트랭(Strang) 성님의 선형대수학 교본\n데이터베이스 매니지먼트 시스템(Database Management Systems) 책자\n타르(Tarr)가 지은 나만의 ‘도메인 특화 언어(Domain-specific language)’ 창조 비법서\n수많은 구루 저자들이 쓴 분산 시스템(distributed systems) 성서 파편 모음집들",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-9",
+    "href": "CHANGELOG.html#section-9",
+    "title": "변경 이력 (Change Log)",
+    "section": "[7.0] 2017-03-09",
+    "text": "[7.0] 2017-03-09\n프로그램 아키텍처 전반의 지각 변동 및 완벽 오버홀(Complete overhaul) 가동\n\n변경됨\n\n산만하던 기여자들의 행동 수칙 지침(contributor guidelines) 가이드를 보기 좋게 청소해 별도의 파일로 완벽히 떼어 내 격리시킴\n수십 개로 난도질해 흩뿌려져 있던 과목 카테고리들을, 무수히 많은 주제를 포용하는 단 4개의 거대한 기둥(4개 과목 풀) 체재로 대통합 흡수 통폐합 시행\n사방에 널렸던 free-books.md와 paid-books.md 종이 쪼가리들을 하나의 거대한 readings.md 책자로 묶어 물리적 컴파일 결합\nfree-courses.md와 paid-courses.md 파편 쪼가리들을 courses.md 본체 합체 통폐합 달성\n구닥다리 쓸모없던 “How to Code” 놈을 처형하고 새롭고 강렬한 “How to Code” (소프트웨어 개발 마이크로 마스터즈 과정 코스)로 위대한 세대교체 달성\n프린스턴 알고리즘(Princeton Algorithms) 형님을 대체 과정 부록방(alternative courses)으로 퇴출시키고, 스탠퍼드 알고리즘(Stanford Algorithms) 놈을 메인 무대로 끌고 옴\n\n\n\n추가됨\n\n모든 코스 수강생들이 피를 보지 않게끔 각 과목 앞치마에 선수 과목 (prerequisites) 필수 요건 꼬리표 강력 부착 명시 지시\n학구열 불태우기: 코스/주제별 필수 요구 조건과 프로젝트 과제 필수 달성 목표 사항(Requirements) 기준 확립 통지\n하스켈(Haskell), 프롤로그(Prolog), 운영체제(Operating Systems) 필수 독서 지정 지침서 추가\n코스 신설: Dan Grossman 형님의 프로그래밍 언어들 (Programming Languages)\n코스 신설: 맨땅 헤딩 창조물 ‘낸드에서 테트리스까지(From Nand to Tetris)’ 투입\n선택 과목 개방: 병렬 프로그래밍 입문 (Intro to Parallel Programming)\n선택 과목 개방: 완벽을 위한 LAFF 프로그래밍 (LAFF: Programming for Correctness)\n선택 과목 개방: 수학적 사고 입문 (Introduction to Mathematical Thinking)\n선택 과목 개방: 공포의 전자기학 (Electricity and Magnetism)\n선택 과목 개방: MIT발 연산 기초 논리 망치 (MIT’s Computation Structures)\n선택 과목 개방: 악몽의 다변수 미적분학 (Multivariable Calculus)\n선택 과목 개방: 운영체제 갈아 넣기 (ops-class.org)\n선택 과목 개방: 오토마타 기계 이론 (Automata Theory)\n선택 과목 개방: 논리학 입문 (Introduction to Logic)\n선택 과목 개방: 연산 기하학 (Computational Geometry)\n선택 과목 개방: 정형 개념 분석 (Formal Concept Analysis)\n선택 과목 개방: 인간의 게임 이론 (Game Theory)\n선택 전문화 심화 루트 (Elective specializations) 테크트리 추가 신설:\n\n로보틱스 (Robotics)\n데이터 씹어먹기 (Data Mining)\n거대한 빅 데이터 (Big Data)\n사물 지능 인터넷 (Internet of Things)\n클라우드 컴퓨팅 (Cloud Computing)\n풀스택 웹 대마왕 (Full Stack Web Development)\n데이터 사이언스 (Data Science)\n\n구루 프로급(Pro spec) 전문화 강제 훈련 코스들 신설:\n\nR로 소프트웨어 마스터링하기 (Mastering Software Development in R)\n인공지능 엔지니어 조기 육성 (Artificial Intelligence Engineer)\n머신 러닝 장인 육성 (Machine Learning Engineer)\n사이버보안 특공대 (Cybersecurity)\n안드로이드 노예 개발자 (Android Developer)\n\n\n\n\n삭제됨\n\n폐허가 된 시체 링크들(dead links)과 트렌드에 폐기된 고기능 쓰레기 강좌들 전면 소각 청소\n피로도만 올리던 과목당 개별 미니 프로젝트 억지 필수 요구 조항 (per-course project requirement) 족쇄 파기\n처형 대상 강좌: Java로 객체 지향 프로그래밍 하기 (Object-Oriented Programming in Java)\n처형 대상 강좌: 스칼라(Scala)로 짓는 함수형 프로그래밍 (Functional Programming in Scala)\n처형 대상 강좌: 컴퓨터 구조학 (Computer Architecture) (다만 추모의 의미로 하단 주석 footnotes 한 줄로는 목숨 유지시킴)\n처형 대상 강좌: 이론 컴퓨터 수학 입문 (Intro to Theoretical Computer Science)\n처형 대상 강좌: 소프트웨어 설계 공정과 애자일 신앙 (Software Processes and Agile Practices)\n처형 대상 강좌: 운영 체제 깎고 시스템 프로그래밍하기 (Operating Systems & System Programming)\n처형 대상 강좌: 사이버보안 세상 입문 (Introduction to Cyber Security)\n처형 대상 강좌: 병렬 컴퓨터 구조론 및 프로그래밍 (Parallel Computer Architecture and Programming)\n처형 대상 강좌: 모바일쟁이를 위한 UX 디자인 기초 (UX Design for Mobile Developers)",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-10",
+    "href": "CHANGELOG.html#section-10",
+    "title": "변경 이력 (Change Log)",
+    "section": "[6.0] 2016-10-09",
+    "text": "[6.0] 2016-10-09\n\n변경됨\n\n그 미친 ‘미적분학 1(Calculus One)’ 지뢰밭을 ‘컴퓨터 논리 수학 입문(Mathematics for Computer Science)’ 보다 아예 앞단이자 교차 병행 과목으로 멱살 잡아다 끌어올려 배치시켜 버림\n“과목들 수강 순서 규정 (Order of the classes)” 단락의 설명을 사람이 읽을 수 있도록 세련되게 치장 재건축함\n\n\n\n추가됨\n\n새로운 OSSU 제국 버전에 맞춘 삐까번쩍한 대문 Trello 투명 보드 개국 선포\n초심자용 “이 미친 가이드를 조종하는 법(How to use this guide)” 매뉴얼 어귀 안에 “어떻게 내 학습 노하우 진행도를 증명할 것인가(How to track and show your progress)” 가이드 단락 전격 신설 추가\n대망의 거대 과제 모음 PROJECTS.md 선언문 파일 탄생\n커리큘럼 곳곳의 찢어져 있던 잔여 프로젝트 섹션 내용물들을 이 신생 PROJECTS.md 몸통 안으로 모두 영혼 복제 이식 완료\n\n\n\n삭제됨\n\n더 이상 쓸 데 없어진 “다음 나아갈 목표치 (Next Goals)” 오지라퍼 단락 강제 삭제형 집행\n버려져 썩어가던 원조 OSSU 웹 앱 링크(OSSU web app)의 흔적조차 모조리 지워버림",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-11",
+    "href": "CHANGELOG.html#section-11",
+    "title": "변경 이력 (Change Log)",
+    "section": "[5.1.0] 2016-08-20",
+    "text": "[5.1.0] 2016-08-20\n컴퓨터 논리 과학 이과 수학의 끝판왕 코스를 최신 기통으로 엔진 업그레이드 조치:\n\n변경됨\n\n타깃 섹션: 수학 코어 (이산 수학 - Discrete Math)\n\n‘컴퓨터 과학도를 위한 수학 (Mathematics for Computer Science)’ 폼체인지",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-12",
+    "href": "CHANGELOG.html#section-12",
+    "title": "변경 이력 (Change Log)",
+    "section": "[5.0.0] 2016-08-20",
+    "text": "[5.0.0] 2016-08-20\n썩은 코어 하나를 도려낸 탓에 아래 연쇄 업데이트 파동 발생:\n\n삭제됨\n\n타깃 섹션: 자연어 유린기 (Natural Language Processing)\n\n‘자연어 처리기 본체 (Natural Language Processing)’ 적폐 코스 폭파 삭제\n\n\n\n\n추가됨\n\n타깃 섹션: 자연어 유린기 (Natural Language Processing)\n\n그 자리에 대체재인 ‘자연어 처리의 세계 입문 (Introduction to Natural Language Processing)’ 신규 엔진 부품 탑재",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-13",
+    "href": "CHANGELOG.html#section-13",
+    "title": "변경 이력 (Change Log)",
+    "section": "[4.1.0] 2016-08-05",
+    "text": "[4.1.0] 2016-08-05\nCoursera 저 악랄한 돈벌레 플랫폼의 지형도 개편 도발로 인해, 아래와 같이 보수 공사 강제 진행: ### 해결됨 - 타깃 섹션: 거대 데이터 판 엎기 (Big Data) - ‘빅 데이터 입문 (Introduction to Big Data)’ 주소선 추적 복구 완료",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-14",
+    "href": "CHANGELOG.html#section-14",
+    "title": "변경 이력 (Change Log)",
+    "section": "[4.0.0] 2016-07-30",
+    "text": "[4.0.0] 2016-07-30\nCoursera의 2차 플랫폼 구조 개편 학살로 인해 당사가 입은 피해 보수 내역:\n\n삭제됨\n\n타깃 섹션: 이론 수학 증명 (Theory)\n\n‘오토마타 (Automata)’ 학살당함\n\n타깃 섹션: 수학 (선형 대수 결계 - Linear Algebra)\n\n‘매트릭스 찢어발기기: 컴퓨터를 조종하는 선형 대수 (Coding the Matrix: Linear Algebra through Computer Science Applications)’ 학살당함\n\n타깃 섹션: 병렬 연산 가동기 (Parallel Computing)\n\n‘이종 잡종 병렬 프로그래밍 (Heterogeneous Parallel Programming)’ 학살당함\n\n타깃 섹션: 자연어 뜯어먹기 (Natural Language Processing)\n\n‘자연어 본체 (Natural Language Processing)’ 학살당함\n\n\n\n\n해결됨\n\n타깃 섹션: 컴퓨터 거미줄 네트워킹 (Computer Networks)\n\n‘컴퓨터 네트워크 망 (Computer Networks)’ 고아된 링크 복원\n\n타깃 섹션: 코드 번역기 컴파일러 (Compilers)\n\n‘컴파일러 본체 (Compilers)’ 고아된 링크 복원\n\n\n\n\n추가됨\n\n타깃 섹션: 이론 수학 증명 (Theory)\n\n‘이론 컴퓨터 시스템 과학 입문로 (Intro to Theoretical Computer Science)’ 신규 파이프 개통\n\n타깃 섹션: 수학 (선형 대수 결계 - Linear Algebra)\n\n‘선형 대수 지옥 - 베이스캠프부터 프론티어 최전선까지 (Linear Algebra - Foundations to Frontiers)’ 신규 개통\n\n타깃 섹션: 병렬 연산 가동기 (Parallel Computing)\n\n‘병렬 컴퓨터 코어 구조론과 프로그래밍 삽질 (Parallel Computer Architecture and Programming)’ 신규 개통\n\n타깃 섹션: 자연어 뜯어먹기 (Natural Language Processing)\n\n‘자연 언어 해체 머신 프로세싱 (Natural Language Processing)’ 새로운 주소지로 입주 세팅 완",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-15",
+    "href": "CHANGELOG.html#section-15",
+    "title": "변경 이력 (Change Log)",
+    "section": "[3.0.0] 2016-05-04",
+    "text": "[3.0.0] 2016-05-04\n\n삭제됨\n\n타깃 섹션: 컴퓨터 공학 신병 입문 (Introduction to Computer Science):\n\n‘파이썬을 휘두르는 컴퓨터 공학과 프로그래밍 찍먹 (Introduction to Computer Science and Programming Using Python)’ 방출\n‘초초 밑바닥 낸드 소자부터 고상한 테트리스까지 (From Nand to Tetris - Part 1)’ 방출\n\n\n\n\n추가됨\n\n타깃 섹션: 컴퓨터 공학 신병 입문 (Introduction to Computer Science):\n\n하버드발 자존심 ‘에센스 컴퓨터 입문 - CS50 (Introduction to Computer Science - CS50)’ 황제 스카웃 등극",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-16",
+    "href": "CHANGELOG.html#section-16",
+    "title": "변경 이력 (Change Log)",
+    "section": "[2.0.1] 2016-04-04",
+    "text": "[2.0.1] 2016-04-04\n\n해결됨\n\n이제 오합지졸 수강생분들은 저희가 손수 다이아몬드급으로 직조해 놓은 OSSU 커스텀 웹 앱 포털(web app)에 로그인해 수강 증명을 등록하시기 바랍니다.",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-17",
+    "href": "CHANGELOG.html#section-17",
+    "title": "변경 이력 (Change Log)",
+    "section": "[2.0.0] 2016-03-17",
+    "text": "[2.0.0] 2016-03-17\n\n해결됨\n\n프로그램 아키텍처 디자인 섹션(Program Design section) 밑에 널브러져 있던 이질적 코스들의 촌스러운 이름 장부와 불량 링크들을 무자비하게 교정 타격함\n\n\n\n삭제됨\n\n극대노 대규모 학살 방출 리스트:\n컴퓨터 신병 기초 (Introduction to Computer Science):\n\n‘컴퓨터 베이직 입문 (Introduction to Computer Science)’\n‘컴퓨터적 알고리즘 마인드 탑재와 데이터 과학 훑기 (Introduction to Computational Thinking and Data Science)’\n\n알고리즘 (Algorithms)\n\n‘알고리즘 분해 분석론 (Analysis of Algorithms)’\n\n프로그래밍 관념 철학 (Programming Paradigms)\n\n‘리액티브 역동적 프로그래밍의 실체 (Principles of Reactive Programming)’\n\n미적분학 (Math - Calculus)\n\n‘초절정 다변수 미적분 계산기 (Multivariable Calculus)’\n\n소프트웨어 뼈대 조립 아키텍처 (Software Architecture):\n\n‘웹 구사 어플리케이션 아키텍처 본질들 (Web Application Architectures)’\n\n소프트웨어 공장 엔지니어링 (Software Engineering):\n\n‘루비 온 레일즈 찍먹과 애자일 숭배론 - 기초편 (Agile Development Using Ruby on Rails - Basics)’\n‘루비 온 레일즈 뼛속까지 파먹고 애자일 숭배론 - 심화편 (Agile Development Using Ruby on Rails - Advanced)’\n‘스타트업 영웅 엔지니어링 짓 (Startup Engineering)’\n\n컴퓨터 하드웨어 아키텍처 (Computer Architecture):\n\n‘하드웨어와 소프트웨어가 만나는 중간 계층 다리 (The Hardware/Software Interface)’\n\n운영 뇌 체제 (Operating Systems):\n\n‘운영 체제 갈아 넣는 엔지니어링 짓 (Operating System Engineering)’\n\n컴퓨터 거미줄 망 네트워킹 (Computer Networks):\n\n‘컴퓨터 전산 망 네트워킹 도화선 입문 (Introduction to Computer Networking)’\n\n암호화 매직 (Cryptography):\n\n‘응용 실전 스텔스 암호학 (Applied Cryptography)’\n\n\n은밀한 알림(ps): 이렇게 빗자루질당한 쓸모없어진 강좌 귀신들은 모조리 부록방에 포장되어 엑스트라 부록관 링크(extras) 묘지에 매장 조치되었습니다.",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-18",
+    "href": "CHANGELOG.html#section-18",
+    "title": "변경 이력 (Change Log)",
+    "section": "[1.3.12] 2016-03-17",
+    "text": "[1.3.12] 2016-03-17\n\n추가됨\n\n협동 안내 지침(How to collaborate): 여분 강좌 링크 조공품들을 부록방(extras section)에 던져넣는 예법 헌장 조문 추가",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-19",
+    "href": "CHANGELOG.html#section-19",
+    "title": "변경 이력 (Change Log)",
+    "section": "[1.3.11] 2016-03-06",
+    "text": "[1.3.11] 2016-03-06\n\n해결됨\n\n낸드부터 테트리스 지옥(Nand to Tetris) 강의: 구질구질한 네이밍과 url 세탁\nUC 버클리표 애자일 숭배론 개발기(UC Berkeley Agile development): 네이밍과 url 세탁\n스페셜라이제이션(특화 강좌 묶음) 심연으로 통하는 단축 터널 다이렉트 링크 공사 완",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-20",
+    "href": "CHANGELOG.html#section-20",
+    "title": "변경 이력 (Change Log)",
+    "section": "[1.3.10] 2016-03-06",
+    "text": "[1.3.10] 2016-03-06\n\n해결됨\n\n’체계적 프로그램 설계 마스터리 2부 (Systematic Program Design Part 2)’로 향하는 썩은 나루터 링크 선로 교체 보수공사",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-21",
+    "href": "CHANGELOG.html#section-21",
+    "title": "변경 이력 (Change Log)",
+    "section": "[1.3.9] 2015-11-09",
+    "text": "[1.3.9] 2015-11-09\n\n해결됨\n\n자연어 해체 처리반 (Natural Language Processing) 강좌로 가는 진짜 오리지널 정석 주소 링크망으로 추적 수정",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-22",
+    "href": "CHANGELOG.html#section-22",
+    "title": "변경 이력 (Change Log)",
+    "section": "[1.3.8] 2015-11-07",
+    "text": "[1.3.8] 2015-11-07\n\n추가됨\n\n이리 치이고 저리 치일 동지들을 위해 무한한 레퍼런스가 창고처럼 쌓인 “프로젝트 제안/추천 목록 (Project Suggestions)” 구조선 섹션 거점 추가 파밍 완료",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-23",
+    "href": "CHANGELOG.html#section-23",
+    "title": "변경 이력 (Change Log)",
+    "section": "[1.3.7] 2015-11-01",
+    "text": "[1.3.7] 2015-11-01\n\n삭제됨\n\n더럽혀지던 project.md 파일을 부숴버리고, 온전하게 짐을 싸서 통째로 help(지원용 부속) 리포지토리 망으로 격리 이주 추방 시킴",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-24",
+    "href": "CHANGELOG.html#section-24",
+    "title": "변경 이력 (Change Log)",
+    "section": "[1.3.6] 2015-10-22",
+    "text": "[1.3.6] 2015-10-22\n\n추가됨\n\n따끈따끈하게 포장된 따끈한 최신 엔진 버전의 “CS 162 지옥, 운영 체제 및 뇌 시스템 프로그래밍 파먹기(Operating Systems and System Programming)” 코스 납품 입고 완료",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-25",
+    "href": "CHANGELOG.html#section-25",
+    "title": "변경 이력 (Change Log)",
+    "section": "[1.2.6] 2015-10-19",
+    "text": "[1.2.6] 2015-10-19\n\n추가됨\n\nAwesome 영웅들 리스트 보드 직행 고속 배지/단축 포털 하이퍼링크 문신 새김",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-26",
+    "href": "CHANGELOG.html#section-26",
+    "title": "변경 이력 (Change Log)",
+    "section": "[1.2.5] 2015-10-16",
+    "text": "[1.2.5] 2015-10-16\n\n해결됨\n\n명패 이름이 병신 같던 불량 섹션 네이밍들의 각을 바로잡고 이쁘장하게 광택 나는 하이퍼링크 초칠 교정 마감",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-27",
+    "href": "CHANGELOG.html#section-27",
+    "title": "변경 이력 (Change Log)",
+    "section": "[1.2.4] 2015-10-14",
+    "text": "[1.2.4] 2015-10-14\n\n삭제됨\n\n거슬리는 ‘대중적 약속 서약 (public commitment)’ 웅앵웅 인용구 문구 오글거려서 찢어버림",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-28",
+    "href": "CHANGELOG.html#section-28",
+    "title": "변경 이력 (Change Log)",
+    "section": "[1.2.3] 2015-10-12",
+    "text": "[1.2.3] 2015-10-12\n\n변경됨\n\n선수 과목 무기고 (prerequisite section)를 똥 멍청이도 단박에 이해할 수 있게끔 크리스탈 클리어한 텍스트로 무지막지하게 해체 및 재조립 패치함",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-29",
+    "href": "CHANGELOG.html#section-29",
+    "title": "변경 이력 (Change Log)",
+    "section": "[1.2.2] 2015-10-12",
+    "text": "[1.2.2] 2015-10-12\n\n해결됨\n\n호구 학생들의 코스 수강 등록 이슈 창구를 위한, 튼튼하고 어여쁜 핫라인 신규 파이프 링크 배관 설치 공사 완",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-30",
+    "href": "CHANGELOG.html#section-30",
+    "title": "변경 이력 (Change Log)",
+    "section": "[1.2.1] 2015-10-11",
+    "text": "[1.2.1] 2015-10-11\n\n추가됨\n\n선수 필수 지식 감옥방(prerequisite section) 안에 전 세계의 근간인 “Git - 개초보를 위한 옹알이 단순 바이블 가이드 (Git - the simple guide)” 구원 아티클 전격 이식",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-31",
+    "href": "CHANGELOG.html#section-31",
+    "title": "변경 이력 (Change Log)",
+    "section": "[1.1.1] 2015-10-11",
+    "text": "[1.1.1] 2015-10-11\n\n해결됨\n\n치명적 타이핑 어그로 버그타파 (Fix typos):\n\n무식하게스리 MOOC이란 말 자체가 뒤에 Course(C)가 붙은 “거대 공개 온라인 코스(Massive Open Online Course)”라는 뜻인데 거기에 또 ‘MOOC 강좌’ 따위로 역겹게 중복해서 쓰던 문법 파괴 첩어들 싹 다 도려냄\n“레알 현실 문제(real problem)” 란게 도대체 뭔지 애매했던 문맥을 상세하게 늘려 풀어 설명함\n작지만 개빡치는 미세 문법 및 워딩 어색충 버그들 일망타진",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-32",
+    "href": "CHANGELOG.html#section-32",
+    "title": "변경 이력 (Change Log)",
+    "section": "[1.1.0] 2015-10-08",
+    "text": "[1.1.0] 2015-10-08\n\n추가됨\n\n당신의 차가운 뇌를 달구기 위한 뇌 예열 동기 부여 & 맨몸 육체 가동 준비 운동장 섹션 (의무 아님 선택형 자원 optional resources) 개장\n\n자극 포르노 아티클판: 당신의 한계 돌파를 위한 MIT 챌린지 썰 (Article: MIT Challenge)\n코스 도장 깨기판: 멍청한 뇌를 학습형 뇌로 바꾸는 “학습법 자체를 학습하는 스킬 (Learning How to Learn)” 코스 유치",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-33",
+    "href": "CHANGELOG.html#section-33",
+    "title": "변경 이력 (Change Log)",
+    "section": "[1.0.0] 2015-10-08",
+    "text": "[1.0.0] 2015-10-08\n대망의 전 세계 구원을 위한 완벽무결 마그나 카르타 1.0 컴공 마스터 커리큘럼 성서 버전 천하 제1 배포 (Release of the first complete version)",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>변경 이력 (Change Log)</span>"
+    ]
+  },
+  {
+    "objectID": "CONTRIBUTING.html",
+    "href": "CONTRIBUTING.html",
+    "title": "커리큘럼 변경하기 (Changing the curriculum)",
+    "section": "",
+    "text": "비핵심적인 변경 (Non-substantive changes)\nOSSU는 수많은 기여자 여러분이 만들어주신 변화 덕분에 끊임없이 발전하고 있습니다. 여러분의 뒤를 이을 수많은 학생들을 어떻게 도울 수 있는지 자세한 내용을 아래에서 확인해 보세요.\n강좌의 URL 주소가 변경되었거나, 철자/문법 오류 수정 등 커리큘럼의 뼈대와 무관한 비핵심적인 업데이트를 하고 싶으시다면, 발견하신 오류들을 수정하여 풀 리퀘스트(pull request)를 보내주시기 바랍니다. 풀 리퀘스트를 한 번도 해본 적이 없으시다면, 이 가이드가 전체 과정을 친절하게 안내해 드릴 것입니다.",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>커리큘럼 변경하기 (Changing the curriculum)</span>"
+    ]
+  },
+  {
+    "objectID": "CONTRIBUTING.html#핵심적인-변경-substantive-changes",
+    "href": "CONTRIBUTING.html#핵심적인-변경-substantive-changes",
+    "title": "커리큘럼 변경하기 (Changing the curriculum)",
+    "section": "핵심적인 변경 (Substantive changes)",
+    "text": "핵심적인 변경 (Substantive changes)\n커리큘럼에 대해 특정적이고 핵심적인 비판, 즉 코스의 진행 방향이나 컨텐츠 구성에 관한 문제점들을 건의하고 싶으시다면 이슈 열기(open an issue)를 통해 논의를 시작하는 것이 적절합니다. 문제점을 지적하는 것 자체는 언제나 환영받지만, 그것이 성공적인 커리큘럼 변경으로 이어지기 위해서는 자연히 그 문제를 어떻게 고칠 것인지에 대한 계획도 반드시 함께 요구됩니다.\nOSSU의 커리큘럼 가이드라인은 여기(CURRICULAR_GUIDELINES.md)에 명시되어 있습니다. 커리큘럼에 대한 성공적인 비판은 언제나 “OSSU가 이 가이드라인의 어느 부분을 준수하는 데 실패하고 있는지”를 정확히 짚어냅니다. 이런 좋은 비판의 예시는 다음과 같습니다:\n\nOSSU가 커리큘럼 가이드라인 상으론 분명 ‘선택(elective)’ 과정에 불과한 강좌를 ‘필수(required)’ 과정으로 분류해 놓은 경우.\n커리큘럼 가이드라인에서 필수로 이수해야 한다고 명시한 주제를 다루는 강좌가 OSSU 내에 누락되어 있는 경우.\n훨씬 더 적은 수의 강좌로도 충분한데, 똑같은 주제를 중복해서 가르치는 여러 강좌들을 OSSU가 나열해 놓은 경우.\n어떤 주제를 가르치기 위해 OSSU가 특정 강좌를 추천하고 있지만, 그보다 훨씬 압도적으로 훌륭한 퀄리티로 동일 주제를 가르치는 다른 강좌가 이 세상에 존재한다는 것을 발견한 경우.",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>커리큘럼 변경하기 (Changing the curriculum)</span>"
+    ]
+  },
+  {
+    "objectID": "CONTRIBUTING.html#다른-기여-방법들-other-ways-to-contribute",
+    "href": "CONTRIBUTING.html#다른-기여-방법들-other-ways-to-contribute",
+    "title": "커리큘럼 변경하기 (Changing the curriculum)",
+    "section": "다른 기여 방법들 (Other ways to contribute)",
+    "text": "다른 기여 방법들 (Other ways to contribute)\n\n이슈에 응답하기 (Responding to Issues)\n이슈(Issue) 탭은 단순히 유저들의 건의 사항이 쌓이는 곳 이상을 의미합니다. 이슈가 일 처리되기 위해선 적극적인 커뮤니티 멤버들의 제안을 읽고 피드백을 주고받는 과정이 필수적입니다. 심지어 이슈나 커멘트에 달아주는 단순한 이모지(소셜) 반응 버튼 하나조차도 커뮤니티를 살찌우는 데 큰 도움이 됩니다.\n\n\n다른 학생들과 교류하기 (Engaging with other students)\n열성적인 동료들이 함께할 때 학습 효과는 극대화됩니다. 당신 역시 OSSU에 막 발을 들인 뉴비들에게 그런 소중한 동료가 되어줄 수 있습니다. 디스코드에서 새로 들어온 신규 인원이 글을 올린다면 반갑게 말을 걸고 질문을 던져보세요. 당신과 진도가 비슷한 동기(cohort) 그룹이 모의하는 것을 본다면, 언제든 그 스터디 그룹에 합류하십시오. 이런 작은 친목 행위들 하나하나가 여러분 자신을 포함한 모두를 위해 이 OSSU 프로그램을 더욱 유대감 강한 조직으로 만들 것입니다.",
+    "crumbs": [
+      "부록",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>커리큘럼 변경하기 (Changing the curriculum)</span>"
+    ]
+  }
+]

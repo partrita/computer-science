@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="fkt">
+
+<title>computer-science</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./FAQ.html" rel="next">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-title">오픈 소스 소사이어티 대학교 (OSSU)</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">computer-science</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">오픈 소스 소사이어티 대학교 (OSSU)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">General Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./FAQ.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">자주 묻는 질문 (FAQ)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./HELP.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">도움받기</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CURRICULAR_GUIDELINES.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">커리큘럼 가이드라인</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Course Pages</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coursepages/intro-cs/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬을 활용한 컴퓨터 과학 및 프로그래밍 입문</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coursepages/intro-programming/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로그래밍 입문 (Introduction to Programming)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coursepages/ostep/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">운영 체제: 세 가지의 쉬운 측면 (Operating Systems: Three Easy Pieces)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coursepages/ostep/Project-1B-initial-xv6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로젝트 1B (Project 1B)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coursepages/ostep/Project-2A-processes-shell.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로젝트 2A (Project 2A)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coursepages/ostep/Scheduling-xv6-lottery.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">모든 감사를 </span></a><a href="https://github.com/palladian1">palladian</a> 님께 전합니다
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coursepages/ostep/vm-xv6-intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">xv6 가상 메모리의 공포 속으로 (Intro To xv6 Virtual Memory)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./coursepages/spd/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">체계적인 프로그램 설계 (Systematic Program Design)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Extras</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./extras/courses.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./extras/other_curricula.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">타 커리큘럼 소개 (Other curricula)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./extras/puzzles-practice-plods.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컴퓨터 공학 - 퍼즐 조각 풀기, 실전 연습기 (Computer Science - Puzzles, Practice and Plods)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./extras/readings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">부록</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CHANGELOG.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">변경 이력 (Change Log)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CONTRIBUTING.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">커리큘럼 변경하기 (Changing the curriculum)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#목차" id="toc-목차" class="nav-link active" data-scroll-target="#목차">목차</a></li>
+  <li><a href="#요약" id="toc-요약" class="nav-link" data-scroll-target="#요약">요약</a></li>
+  <li><a href="#커뮤니티" id="toc-커뮤니티" class="nav-link" data-scroll-target="#커뮤니티">커뮤니티</a></li>
+  <li><a href="#커리큘럼" id="toc-커리큘럼" class="nav-link" data-scroll-target="#커리큘럼">커리큘럼</a>
+  <ul class="collapse">
+  <li><a href="#선수-지식" id="toc-선수-지식" class="nav-link" data-scroll-target="#선수-지식">선수 지식</a></li>
+  <li><a href="#intro-cs-cs-입문" id="toc-intro-cs-cs-입문" class="nav-link" data-scroll-target="#intro-cs-cs-입문">Intro CS (CS 입문)</a></li>
+  <li><a href="#core-cs-cs-핵심" id="toc-core-cs-cs-핵심" class="nav-link" data-scroll-target="#core-cs-cs-핵심">Core CS (CS 핵심)</a>
+  <ul class="collapse">
+  <li><a href="#핵심-프로그래밍" id="toc-핵심-프로그래밍" class="nav-link" data-scroll-target="#핵심-프로그래밍">핵심 프로그래밍</a></li>
+  <li><a href="#핵심-수학" id="toc-핵심-수학" class="nav-link" data-scroll-target="#핵심-수학">핵심 수학</a></li>
+  <li><a href="#cs-도구" id="toc-cs-도구" class="nav-link" data-scroll-target="#cs-도구">CS 도구</a></li>
+  <li><a href="#핵심-시스템" id="toc-핵심-시스템" class="nav-link" data-scroll-target="#핵심-시스템">핵심 시스템</a></li>
+  <li><a href="#핵심-이론" id="toc-핵심-이론" class="nav-link" data-scroll-target="#핵심-이론">핵심 이론</a></li>
+  <li><a href="#핵심-보안" id="toc-핵심-보안" class="nav-link" data-scroll-target="#핵심-보안">핵심 보안</a></li>
+  <li><a href="#핵심-애플리케이션" id="toc-핵심-애플리케이션" class="nav-link" data-scroll-target="#핵심-애플리케이션">핵심 애플리케이션</a></li>
+  <li><a href="#핵심-윤리" id="toc-핵심-윤리" class="nav-link" data-scroll-target="#핵심-윤리">핵심 윤리</a></li>
+  </ul></li>
+  <li><a href="#advanced-cs-cs-심화" id="toc-advanced-cs-cs-심화" class="nav-link" data-scroll-target="#advanced-cs-cs-심화">Advanced CS (CS 심화)</a>
+  <ul class="collapse">
+  <li><a href="#고급-프로그래밍" id="toc-고급-프로그래밍" class="nav-link" data-scroll-target="#고급-프로그래밍">고급 프로그래밍</a></li>
+  <li><a href="#고급-시스템" id="toc-고급-시스템" class="nav-link" data-scroll-target="#고급-시스템">고급 시스템</a></li>
+  <li><a href="#고급-이론" id="toc-고급-이론" class="nav-link" data-scroll-target="#고급-이론">고급 이론</a></li>
+  <li><a href="#고급-정보-보안" id="toc-고급-정보-보안" class="nav-link" data-scroll-target="#고급-정보-보안">고급 정보 보안</a></li>
+  <li><a href="#고급-수학" id="toc-고급-수학" class="nav-link" data-scroll-target="#고급-수학">고급 수학</a></li>
+  </ul></li>
+  <li><a href="#최종-프로젝트" id="toc-최종-프로젝트" class="nav-link" data-scroll-target="#최종-프로젝트">최종 프로젝트</a></li>
+  <li><a href="#축하합니다" id="toc-축하합니다" class="nav-link" data-scroll-target="#축하합니다">축하합니다</a></li>
+  </ul></li>
+  <li><a href="#행동-강령" id="toc-행동-강령" class="nav-link" data-scroll-target="#행동-강령">행동 강령</a>
+  <ul class="collapse">
+  <li><a href="#진행-상황을-공유하는-방법" id="toc-진행-상황을-공유하는-방법" class="nav-link" data-scroll-target="#진행-상황을-공유하는-방법">진행 상황을 공유하는 방법</a></li>
+  </ul></li>
+  <li><a href="#팀" id="toc-팀" class="nav-link" data-scroll-target="#팀">팀</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">computer-science</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>fkt </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div data-align="center" style="text-align: center">
+<img src="images/ossu-logo.webp" alt="Open Source Society logo">
+<h3 class="anchored">
+Open Source Society University
+</h3>
+<p>
+컴퓨터 과학 무료 독학 교육 커리큘럼!
+</p>
+<p>
+<a href="https://github.com/sindresorhus/awesome"> <img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg"></a> <a href="https://github.com/ossu/computer-science"> <img alt="Open Source Society University - Computer Science" src="https://img.shields.io/badge/OSSU-computer--science-blue.svg"></a>
+</p>
+</div>
+<section id="목차" class="level1">
+<h1>목차</h1>
+<ul>
+<li><a href="#요약">요약</a></li>
+<li><a href="#커뮤니티">커뮤니티</a></li>
+<li><a href="#커리큘럼">커리큘럼</a></li>
+<li><a href="#행동-강령">행동 강령</a></li>
+<li><a href="#팀">팀</a></li>
+</ul>
+</section>
+<section id="요약" class="level1">
+<h1>요약</h1>
+<p>OSSU 커리큘럼은 온라인 자료를 활용한 <strong>완벽한 컴퓨터 과학 교육</strong>입니다. 단순히 직업 훈련이나 전문성 개발만을 위한 것이 아닙니다. 이 커리큘럼은 모든 컴퓨팅 분야의 기본이 되는 개념에 대해 <em>다방면으로</em> 탄탄한 기초를 원하며, 전 세계 학습자 커뮤니티의 지원을 받으면서 스스로 이 교육을 이수할 수 있는 규율, 의지, 그리고 (가장 중요한!) 좋은 습관을 가진 사람들을 위한 것입니다.</p>
+<p>이 과정은 교양(비 CS) 요구 사항을 제외한 학부 컴퓨터 과학 전공의 학위 요구 사항에 맞춰 설계되었습니다. 이 커리큘럼을 따르는 대부분의 사람들은 이미 CS 분야 이외의 다른 교육을 받았다고 가정하기 때문입니다. 강좌 자체는 하버드, 프린스턴, MIT 등에서 제공하는 세계 최고 수준의 강의들이며, 다음 기준을 충족하도록 특별히 선별되었습니다.</p>
+<p><strong>강좌 기준</strong>: - 수강 등록이 열려 있어야 합니다. - 정기적으로 진행되어야 합니다(이상적으로는 자기 주도 형식이거나, 그렇지 않으면 1년에 여러 번 진행). - 교육 자료와 교육학적 원칙에서 전반적으로 높은 품질을 유지해야 합니다. - <a href="./CURRICULAR_GUIDELINES.html">CS 2013</a>: 학부 컴퓨터 과학 학위 프로그램을 위한 커리큘럼 가이드라인의 커리큘럼 표준을 충족해야 합니다.</p>
+<p>위의 기준을 충족하는 강좌가 없으면, 책으로 대체하여 수업을 보완합니다. 커리큘럼에 완벽하게 맞지는 않지만 양질의 강좌나 책이 있는 경우에는 <a href="./extras/courses.html">extras/courses</a> 또는 <a href="./extras/readings.html">extras/readings</a>에 포함됩니다.</p>
+<p><strong>구성</strong>. 커리큘럼은 다음과 같이 설계되었습니다: - <em>Intro CS(입문 CS)</em>: 학생들이 CS를 시도해보고 자신에게 맞는지 확인할 수 있습니다. - <em>Core CS(핵심 CS)</em>: 컴퓨터 과학 커리큘럼의 처음 3년에 대략 해당하며, 모든 전공자가 들어야 하는 필수 수업을 수강합니다. - <em>Advanced CS(심화 CS)</em>: 컴퓨터 과학 커리큘럼의 마지막 연도에 대략 해당하며, 학생의 관심사에 따라 선택 과목을 수강합니다. - <em>Final Project(최종 프로젝트)</em>: 학생들이 지식을 검증, 통합, 전시하고 전 세계 동료들의 평가를 받기 위한 프로젝트입니다.</p>
+<p><strong>기간</strong>. 신중하게 계획하고 주당 약 20시간을 투자한다면 약 2년 안에 완료할 수 있습니다. 수강생은 <a href="https://docs.google.com/spreadsheets/d/1y2kMsIg9VaHMVmw35x_aH1hpty3V-ZMuV2jA13P_Cgo/copy">이 스프레드시트</a>를 사용하여 완료 예정일을 예측해볼 수 있습니다. 사본을 만든 후 <code>Timeline</code> 시트에 시작 날짜와 예상 주당 시간을 입력하세요. 강의를 수강하며 실제 강의 완료 날짜를 <code>Curriculum Data</code> 시트에 입력하면 업데이트된 예상 완료일을 얻을 수 있습니다.</p>
+<blockquote class="blockquote">
+<p><strong>경고:</strong> 스프레드시트는 이 커리큘럼을 완료하는 데 필요한 시간을 추정하는 유용한 도구이지만, 항상 최신 커리큘럼을 반영하고 있는 것은 아닐 수 있습니다. 수강할 강좌를 확인하려면 반드시 <a href="https://cs.ossu.dev">OSSU CS 웹사이트</a>나 <a href="https://github.com/ossu/computer-science">GitHub 저장소</a>를 확인하세요.</p>
+</blockquote>
+<p><strong>비용</strong>. 모든 온라인 강의 자료는 무료이거나 거의 무료로 이용할 수 있습니다. 단, 일부 강좌에서는 채점을 받기 위해 과제/시험/프로젝트 제출 시 비용을 청구할 수도 있습니다. <a href="https://www.coursera.support/s/article/209819033-Apply-for-Financial-Aid-or-a-Scholarship?language=en_US">Coursera</a>와 <a href="https://courses.edx.org/financial-assistance/">edX</a> 모두 재정 지원(Financial aid)을 제공하고 있다는 점을 참고하세요.</p>
+<p>자신의 시간과 예산에 맞춰 비용을 얼마나 투자할지 자유롭게 결정하세요. 하지만 성공은 돈으로 살 수 없다는 점만 기억해 주세요!</p>
+<p><strong>과정</strong>. 수강생들은 커리큘럼을 혼자서 또는 그룹으로, 순서대로 혹은 순서에 상관없이 진행할 수 있습니다. - 이미 학습한 내용이라고 확신하는 경우를 제외하고는 Core CS의 모든 강의를 수강하는 것을 권장합니다. - 단순함을 위해, 과정(특히 Core CS)을 위에서 아래로 순서대로 진행하는 것을 권장합니다. 일부 학생들은 일/주간에 다루는 자료에 다양성을 주기 위해 여러 과목을 동시에 공부하기도 합니다. 인기 있는 방법은 입문 과정과 수리 과정을 병행하는 것입니다. 수강 과목의 선수 지식이 명시되어 있으니, 자신이 해당 강의를 들을 준비가 되었는지 판단하는 데 참고하세요. - Advanced CS에 있는 강의들은 선택 과목입니다. 전문가가 되고 싶은 분야(예: 고급 프로그래밍)를 하나 골라서 해당 주제 아래의 모든 강의를 들으세요. 커스텀 주제를 직접 구상할 수도 있으며, Discord 커뮤니티에서 계획하신 주제에 대한 피드백을 받을 수 있습니다.</p>
+<p><strong>콘텐츠 정책</strong>. 공개적으로 자신의 과제물을 자랑할 계획이라면 허용된 파일들만 공유하셔야 합니다. 각 과정의 시작 부분에서 서명하신 <em>행동 강령을 준수</em>해 주세요!</p>
+<p><strong><a href="./CONTRIBUTING.html">기여하는 방법(How to contribute)</a></strong></p>
+<p><strong><a href="./HELP.html">도움받기(Getting help)</a></strong> (자주 묻는 질문 및 채팅방 관련 안내)</p>
+</section>
+<section id="커뮤니티" class="level1">
+<h1>커뮤니티</h1>
+<ul>
+<li>Discord 서버가 있습니다! <a href="https://discord.gg/wuytwK5s9h"><img src="https://img.shields.io/discord/744385009028431943.svg?label=&amp;logo=discord&amp;logoColor=ffffff&amp;color=7389D8&amp;labelColor=6A7EC2" class="img-fluid" alt="Discord"></a> OSSU 학생들과 소통하기 위해 이 곳을 가장 먼저 들러주세요. 지금 바로 자신을 소개해 보는 건 어떨까요? <a href="https://discord.gg/wuytwK5s9h">OSSU Discord 가입하기</a></li>
+<li>GitHub Issues를 통해서도 소통하실 수 있습니다. 강의에 문제가 있거나 커리큘럼에 수정이 필요한 경우 이곳에서 대화를 시작할 수 있습니다. 자세한 내용은 <a href="./CONTRIBUTING.html">여기</a>에서 읽어보세요.</li>
+<li>귀하의 <a href="https://www.linkedin.com/school/11272443/">Linkedin</a> 프로필에 <strong>Open Source Society University</strong>를 추가하세요!</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>경고:</strong> OSSU를 검색하다 보면 일부 타사/더 이상 유지 보수되지 않거나 오래된 자료들을 찾을 수 있습니다. 이를 무시하시길 바라며 오직 <a href="https://cs.ossu.dev">OSSU CS 웹사이트</a>나 <a href="https://github.com/ossu/computer-science">OSSU CS Github 저장소</a>만을 이용하시기를 권장합니다. 알려진 오래된 자료는 다음과 같습니다:</p>
+<ul>
+<li>유지 보수되지 않고 중단된 firebase 앱. <a href="./FAQ.html#why-is-the-firebase-ossu-app-different-or-broken">FAQ</a>에서 자세히 읽어보세요.</li>
+<li>유지 보수되지 않고 중단된 trello 보드</li>
+<li>타사 notion 템플릿</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="커리큘럼" class="level1">
+<h1>커리큘럼</h1>
+<ul>
+<li><a href="#선수-지식">선수 지식</a></li>
+<li><a href="#intro-cs-cs-입문">Intro CS (CS 입문)</a></li>
+<li><a href="#core-cs-cs-핵심">Core CS (CS 핵심)</a>
+<ul>
+<li><a href="#핵심-프로그래밍">핵심 프로그래밍</a></li>
+<li><a href="#핵심-수학">핵심 수학</a></li>
+<li><a href="#cs-도구">CS 도구</a></li>
+<li><a href="#핵심-시스템">핵심 시스템</a></li>
+<li><a href="#핵심-이론">핵심 이론</a></li>
+<li><a href="#핵심-보안">핵심 보안</a></li>
+<li><a href="#핵심-애플리케이션">핵심 애플리케이션</a></li>
+<li><a href="#핵심-윤리">핵심 윤리</a></li>
+</ul></li>
+<li><a href="#advanced-cs-cs-심화">Advanced CS (CS 심화)</a>
+<ul>
+<li><a href="#고급-프로그래밍">고급 프로그래밍</a></li>
+<li><a href="#고급-시스템">고급 시스템</a></li>
+<li><a href="#고급-이론">고급 이론</a></li>
+<li><a href="#고급-정보-보안">고급 정보 보안</a></li>
+<li><a href="#고급-수학">고급 수학</a></li>
+</ul></li>
+<li><a href="#최종-프로젝트">최종 프로젝트</a></li>
+</ul>
+<hr>
+<section id="선수-지식" class="level2">
+<h2 class="anchored" data-anchor-id="선수-지식">선수 지식</h2>
+<ul>
+<li><a href="#core-cs-cs-핵심">Core CS</a>는 대수학, 기하학, 미적분학의 기초(pre-calculus)를 포함하여 학생이 이미 <a href="https://ossu.dev/precollege-math">고등학교 수학</a> 과정을 수강했다고 가정합니다.</li>
+<li><a href="#advanced-cs-cs-심화">Advanced CS</a>는 학생이 이미 Core CS 전체를 수강했고, 어떤 선택 과목을 들을지 스스로 결정할 수 있을 만큼 충분한 지식이 있다고 가정합니다.</li>
+<li>참고로 <a href="#고급-시스템">고급 시스템(Advanced systems)</a>은 고등학교 AP 물리학 수준의 기초 물리학 강의를 수강했다고 가정합니다.</li>
+</ul>
+</section>
+<section id="intro-cs-cs-입문" class="level2">
+<h2 class="anchored" data-anchor-id="intro-cs-cs-입문">Intro CS (CS 입문)</h2>
+<p>이 과정은 여러분을 컴퓨터 과학과 프로그래밍이라는 세계로 안내할 것입니다. 앞으로 배우게 될 학문에 대한 첫인상을 제공합니다. 강의를 다 듣고 더 깊이 파고들고 싶다면 컴퓨터 과학이 여러분의 적성에 딱 맞을 것입니다!</p>
+<p><strong>주요 내용</strong>: <code>연산(computation)</code> <code>명령형 프로그래밍(imperative programming)</code> <code>기본 자료구조와 알고리즘</code> <code>그 외</code></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">강좌</th>
+<th style="text-align: center;">기간</th>
+<th style="text-align: center;">학습량</th>
+<th style="text-align: center;">선수 지식</th>
+<th style="text-align: center;">토론 시간</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="./coursepages/intro-cs/README.html">파이썬을 활용한 컴퓨터 과학 및 프로그래밍 입문</a></td>
+<td style="text-align: center;">14주</td>
+<td style="text-align: center;">주 6-10시간</td>
+<td style="text-align: center;"><a href="https://ossu.dev/precollege-math">고등학교 대수학</a></td>
+<td style="text-align: center;"><a href="https://discord.gg/jvchSm9">채팅방</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="core-cs-cs-핵심" class="level2">
+<h2 class="anchored" data-anchor-id="core-cs-cs-핵심">Core CS (CS 핵심)</h2>
+<p>별도로 표기된 경우를 제외하고는 Core CS 아래의 모든 공고된 강의 내용은 <strong>필수 과정</strong>입니다.</p>
+<section id="핵심-프로그래밍" class="level3">
+<h3 class="anchored" data-anchor-id="핵심-프로그래밍">핵심 프로그래밍</h3>
+<p><strong>주요 내용</strong>: <code>함수형 프로그래밍</code> <code>테스트를 고려한 설계</code> <code>프로그램 요구사항</code> <code>공통 디자인 패턴</code> <code>단위 테스트</code> <code>객체 지향 설계</code> <code>정적 타입 지정</code> <code>동적 타입 지정</code> <code>ML 계열 언어 (Standard ML을 통해)</code> <code>Lisp 계열 언어 (Racket을 통해)</code> <code>Ruby</code> <code>그 외</code></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">강좌</th>
+<th style="text-align: center;">기간</th>
+<th style="text-align: center;">학습량</th>
+<th style="text-align: center;">선수 지식</th>
+<th style="text-align: center;">토론 시간</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="./coursepages/spd/README.html">체계적인 프로그램 설계(Systematic Program Design)</a></td>
+<td style="text-align: center;">13주</td>
+<td style="text-align: center;">주 8-10시간</td>
+<td style="text-align: center;">없음</td>
+<td style="text-align: center;">채팅: <a href="https://discord.gg/RfqAmGJ">파트 1</a> / <a href="https://discord.gg/kczJzpm">파트 2</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://course.ccs.neu.edu/cs2510sp22/index.html">클래스 기반 프로그램 설계(Class-based Program Design)</a></td>
+<td style="text-align: center;">13주</td>
+<td style="text-align: center;">주 5-10시간</td>
+<td style="text-align: center;">Systematic Program Design, 고등학교 수학</td>
+<td style="text-align: center;"><a href="https://discord.com/channels/744385009028431943/891411727294562314">채팅방</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://courses.cs.washington.edu/courses/cse341/19sp/#lectures">프로그래밍 언어(Programming Languages)</a></td>
+<td style="text-align: center;">11주</td>
+<td style="text-align: center;">주 4-8시간</td>
+<td style="text-align: center;">Systematic Program Design</td>
+<td style="text-align: center;"><a href="https://discord.gg/8BkJtXN">채팅방</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://course.ccs.neu.edu/cs3500f19/">객체 지향 설계(Object-Oriented Design)</a></td>
+<td style="text-align: center;">13주</td>
+<td style="text-align: center;">주 5-10시간</td>
+<td style="text-align: center;">Class Based Program Design</td>
+<td style="text-align: center;"><a href="https://discord.com/channels/744385009028431943/891412022120579103">채팅방</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.coursera.org/learn/software-architecture">소프트웨어 아키텍처(Software Architecture)</a></td>
+<td style="text-align: center;">4주</td>
+<td style="text-align: center;">주 2-5시간</td>
+<td style="text-align: center;">Object Oriented Design</td>
+<td style="text-align: center;"><a href="https://discord.com/channels/744385009028431943/891412169638432788">채팅방</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="핵심-수학" class="level3">
+<h3 class="anchored" data-anchor-id="핵심-수학">핵심 수학</h3>
+<p>이산 수학(CS 수학)은 사전 필수 지식이자 알고리즘 및 자료 구조 연구와 밀접하게 연관되어 있습니다. 미적분학은 이산 수학을 준비할 수 있게 도우며 수학적 성숙도를 향상시킬 수 있도록 도와줍니다.</p>
+<p><strong>주요 내용</strong>: <code>이산 수학</code> <code>수학적 증명</code> <code>기초 통계학</code> <code>빅오(O) 표기법</code> <code>이산 확률</code> <code>그 외</code></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">강좌</th>
+<th style="text-align: center;">기간</th>
+<th style="text-align: center;">학습량</th>
+<th style="text-align: center;">비고</th>
+<th style="text-align: center;">선수 지식</th>
+<th style="text-align: center;">토론 시간</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://openlearninglibrary.mit.edu/courses/course-v1:MITx+18.01.1x+2T2019/about">미적분학 1A: 미분(Calculus 1A: Differentiation)</a> (<a href="https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/index.htm">대체</a>)</td>
+<td style="text-align: center;">13주</td>
+<td style="text-align: center;">주 6-10시간</td>
+<td style="text-align: center;">대체 강의는 이 강의와 이어서 진행할 2개의 강의를 포함합니다.</td>
+<td style="text-align: center;"><a href="https://ossu.dev/precollege-math">고등학교 수학</a></td>
+<td style="text-align: center;"><a href="https://discord.gg/mPCt45F">채팅방</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://openlearninglibrary.mit.edu/courses/course-v1:MITx+18.01.2x+3T2019/about">미적분학 1B: 적분(Calculus 1B: Integration)</a></td>
+<td style="text-align: center;">13주</td>
+<td style="text-align: center;">주 5-10시간</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Calculus 1A</td>
+<td style="text-align: center;"><a href="https://discord.gg/sddAsZg">채팅방</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://openlearninglibrary.mit.edu/courses/course-v1:MITx+18.01.3x+1T2020/about">미적분학 1C: 좌표계 및 무한급수(Calculus 1C: Coordinate Systems &amp; Infinite Series)</a></td>
+<td style="text-align: center;">6주</td>
+<td style="text-align: center;">주 5-10시간</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Calculus 1B</td>
+<td style="text-align: center;"><a href="https://discord.gg/FNEcNNq">채팅방</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/about">컴퓨터 과학을 위한 수학(Mathematics for Computer Science)</a> (<a href="https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/">대체</a>)</td>
+<td style="text-align: center;">13주</td>
+<td style="text-align: center;">주 5시간</td>
+<td style="text-align: center;"><a href="https://github.com/spamegg1/Math-for-CS-solutions">2015/2019 문제풀이</a> <a href="https://github.com/frevib/mit-cs-math-6042-fall-2010-problems">2010 문제풀이</a> <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2005/assignments/">2005 문제풀이</a>.</td>
+<td style="text-align: center;">Calculus 1C</td>
+<td style="text-align: center;"><a href="https://discord.gg/EuTzNbF">채팅방</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cs-도구" class="level3">
+<h3 class="anchored" data-anchor-id="cs-도구">CS 도구</h3>
+<p>이론에 대한 이해도 중요하지만 결국 프로그램을 만들어야 합니다. 프로그래밍 과정을 더 쉽게 만들어주는 다양한 도구들이 널리 쓰이고 있습니다. 이 과정을 이수하여 향후 프로그램 작성을 더욱 원활하게 진행하세요.</p>
+<p><strong>주요 내용</strong>: <code>터미널 및 셸 스크립팅</code> <code>vim</code> <code>명령줄 통합 환경</code> <code>버전 관리</code> <code>그 외</code></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">강좌</th>
+<th style="text-align: center;">기간</th>
+<th style="text-align: center;">학습량</th>
+<th style="text-align: center;">선수 지식</th>
+<th style="text-align: center;">토론 시간</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://missing.csail.mit.edu/">CS 교육에서 놓친 한 학기(The Missing Semester of Your CS Education)</a></td>
+<td style="text-align: center;">2주</td>
+<td style="text-align: center;">주 12시간</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><a href="https://discord.gg/5FvKycS">채팅방</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="핵심-시스템" class="level3">
+<h3 class="anchored" data-anchor-id="핵심-시스템">핵심 시스템</h3>
+<p><strong>주요 내용</strong>: <code>절차적 프로그래밍</code> <code>수동 메모리 관리</code> <code>불 대수</code> <code>논리 게이트</code> <code>메모리</code> <code>컴퓨터 아키텍처</code> <code>어셈블리</code> <code>기계어</code> <code>가상 머신</code> <code>고급 언어</code> <code>컴파일러</code> <code>운영 체제</code> <code>네트워크 프로토콜</code> <code>그 외</code></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">강좌</th>
+<th style="text-align: center;">기간</th>
+<th style="text-align: center;">학습량</th>
+<th style="text-align: center;">부가 자료/과제</th>
+<th style="text-align: center;">선수 지식</th>
+<th style="text-align: center;">토론 시간</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.coursera.org/learn/build-a-computer">기초부터 현대 컴퓨터 구축하기: 낸드에서 테트리스까지 (Nand to Tetris Part 1)</a> (<a href="https://www.nand2tetris.org/">대체</a>)</td>
+<td style="text-align: center;">6주</td>
+<td style="text-align: center;">주 7-13시간</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">C 유사 프로그래밍 언어</td>
+<td style="text-align: center;"><a href="https://discord.gg/vxB2DRV">채팅방</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.coursera.org/learn/nand2tetris2">기초부터 현대 컴퓨터 구축하기: 낸드에서 테트리스까지 파트 2(Nand to Tetris Part II )</a></td>
+<td style="text-align: center;">6주</td>
+<td style="text-align: center;">주 12-18시간</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><a href="https://user-images.githubusercontent.com/2046800/35426340-f6ce6358-026a-11e8-8bbb-4e95ac36b1d7.png">이 프로그래밍 언어 중 하나</a>, Nand to Tetris Part 1</td>
+<td style="text-align: center;"><a href="https://discord.gg/AsUXcPu">채팅방</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="./coursepages/ostep/README.html">운영 체제: 세 가지 쉬운 조각(Operating Systems: Three Easy Pieces)</a></td>
+<td style="text-align: center;">10-12주</td>
+<td style="text-align: center;">주 6-10시간</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Nand to Tetris Part II</td>
+<td style="text-align: center;"><a href="https://discord.gg/wZNgpep">채팅방</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="http://gaia.cs.umass.edu/kurose_ross/online_lectures.htm">컴퓨터 네트워킹: 하향식 접근(Computer Networking: a Top-Down Approach)</a></td>
+<td style="text-align: center;">8주</td>
+<td style="text-align: center;">주 4–12시간</td>
+<td style="text-align: center;"><a href="http://gaia.cs.umass.edu/kurose_ross/wireshark.php">Wireshark 연구소</a></td>
+<td style="text-align: center;">대수학, 확률, 기본 CS</td>
+<td style="text-align: center;"><a href="https://discord.gg/MJ9YXyV">채팅방</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="핵심-이론" class="level3">
+<h3 class="anchored" data-anchor-id="핵심-이론">핵심 이론</h3>
+<p><strong>주요 내용</strong>: <code>분할 정복</code> <code>정렬 및 탐색</code> <code>무작위 알고리즘</code> <code>그래프 탐색</code> <code>최단 경로</code> <code>자료 구조</code> <code>탐욕 알고리즘</code> <code>최소 신장 트리</code> <code>동적 프로그래밍</code> <code>NP 완전성</code> <code>그 외</code></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">강좌</th>
+<th style="text-align: center;">기간</th>
+<th style="text-align: center;">학습량</th>
+<th style="text-align: center;">선수 지식</th>
+<th style="text-align: center;">토론 시간</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.edx.org/learn/algorithms/stanford-university-algorithms-design-and-analysis-part-1">알고리즘: 설계 및 분석 파트 1</a> (<a href="https://www.algorithmsilluminated.org/">대체</a>)</td>
+<td style="text-align: center;">8주</td>
+<td style="text-align: center;">주 4-8시간</td>
+<td style="text-align: center;">프로그래밍 언어 1가지 이상, Mathematics for Computer Science</td>
+<td style="text-align: center;"><a href="https://discord.gg/mKRS7tY">채팅방</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.edx.org/learn/algorithms/stanford-university-algorithms-design-and-analysis-part-2">알고리즘: 설계 및 분석 파트 2</a></td>
+<td style="text-align: center;">8주</td>
+<td style="text-align: center;">주 4-8시간</td>
+<td style="text-align: center;">알고리즘 파트 1</td>
+<td style="text-align: center;"><a href="https://discord.gg/Qstqe4t">채팅방</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="핵심-보안" class="level3">
+<h3 class="anchored" data-anchor-id="핵심-보안">핵심 보안</h3>
+<p><strong>주요 내용</strong> <code>기밀성, 무결성, 가용성 (CIA 삼원칙)</code> <code>보안 설계</code> <code>방어적 프로그래밍</code> <code>위협 및 공격</code> <code>네트워크 보안</code> <code>암호학</code> <code>그 외</code></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">강좌</th>
+<th style="text-align: center;">기간</th>
+<th style="text-align: center;">학습량</th>
+<th style="text-align: center;">선수 지식</th>
+<th style="text-align: center;">토론 시간</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.edx.org/learn/cybersecurity/rochester-institute-of-technology-cybersecurity-fundamentals">사이버보안 기초(Cybersecurity Fundamentals)</a></td>
+<td style="text-align: center;">8주</td>
+<td style="text-align: center;">주 10-12시간</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><a href="https://discord.gg/XdY3AwTFK4">채팅방</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.coursera.org/learn/secure-coding-principles">안전한 코딩의 원칙(Principles of Secure Coding)</a></td>
+<td style="text-align: center;">4주</td>
+<td style="text-align: center;">주 4시간</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><a href="https://discord.gg/5gMdeSK">채팅방</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.coursera.org/learn/identifying-security-vulnerabilities">보안 취약점 식별(Identifying Security Vulnerabilities)</a></td>
+<td style="text-align: center;">4주</td>
+<td style="text-align: center;">주 4시간</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><a href="https://discord.gg/V78MjUS">채팅방</a></td>
+</tr>
+</tbody>
+</table>
+<p>다음 중 <strong>하나</strong>를 선택하세요:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">강좌</th>
+<th style="text-align: center;">기간</th>
+<th style="text-align: center;">학습량</th>
+<th style="text-align: center;">선수 지식</th>
+<th style="text-align: center;">토론 시간</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.coursera.org/learn/identifying-security-vulnerabilities-c-programming">C/C++ 프로그래밍에서 보안 취약점 식별</a></td>
+<td style="text-align: center;">4주</td>
+<td style="text-align: center;">주 5시간</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><a href="https://discord.gg/Vbxce7A">채팅방</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.coursera.org/learn/exploiting-securing-vulnerabilities-java-applications">Java 애플리케이션 보안 취약점 식별 및 보안</a></td>
+<td style="text-align: center;">4주</td>
+<td style="text-align: center;">주 5시간</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><a href="https://discord.gg/QxC22rR">채팅방</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="핵심-애플리케이션" class="level3">
+<h3 class="anchored" data-anchor-id="핵심-애플리케이션">핵심 애플리케이션</h3>
+<p><strong>주요 내용</strong>: <code>애자일(Agile) 방법론</code> <code>REST</code> <code>소프트웨어 사양(specifications)</code> <code>리팩토링(refactoring)</code> <code>관계형 데이터베이스</code> <code>트랜잭션(transaction) 처리</code> <code>데이터 모델링</code> <code>인경 신경망</code> <code>지도 학습(supervised learning)</code> <code>비지도 학습(unsupervised learning)</code> <code>OpenGL</code> <code>레이 트레이싱(ray tracing)</code> <code>그 외</code></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">강좌</th>
+<th style="text-align: center;">기간</th>
+<th style="text-align: center;">학습량</th>
+<th style="text-align: center;">선수 지식</th>
+<th style="text-align: center;">토론 시간</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.edx.org/learn/databases/stanford-university-databases-modeling-and-theory">데이터베이스: 모델링 및 이론</a></td>
+<td style="text-align: center;">2주</td>
+<td style="text-align: center;">주 10시간</td>
+<td style="text-align: center;">핵심 프로그래밍</td>
+<td style="text-align: center;"><a href="https://discord.gg/pMFqNf4">채팅방</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.edx.org/learn/relational-databases/stanford-university-databases-relational-databases-and-sql">데이터베이스: 관계형 데이터베이스 및 SQL</a></td>
+<td style="text-align: center;">2주</td>
+<td style="text-align: center;">주 10시간</td>
+<td style="text-align: center;">핵심 프로그래밍</td>
+<td style="text-align: center;"><a href="https://discord.gg/P8SPPyF">채팅방</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.edx.org/learn/relational-databases/stanford-university-databases-semistructured-data">데이터베이스: 반정형(Semistructured) 데이터</a></td>
+<td style="text-align: center;">2주</td>
+<td style="text-align: center;">주 10시간</td>
+<td style="text-align: center;">핵심 프로그래밍</td>
+<td style="text-align: center;"><a href="https://discord.gg/duCJ3GN">채팅방</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.deeplearning.ai/courses/machine-learning-specialization/">기계 학습(Machine Learning)</a></td>
+<td style="text-align: center;">11주</td>
+<td style="text-align: center;">주 9시간</td>
+<td style="text-align: center;">기초 프로그래밍</td>
+<td style="text-align: center;"><a href="https://discord.gg/NcXHDjy">채팅방</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.edx.org/learn/computer-graphics/the-university-of-california-san-diego-computer-graphics">컴퓨터 그래픽스(Computer Graphics)</a> (<a href="https://cseweb.ucsd.edu/~viscomp/classes/cse167/wi22/schedule.html">대체</a>)</td>
+<td style="text-align: center;">6주</td>
+<td style="text-align: center;">주 12시간</td>
+<td style="text-align: center;">C++ 또는 Java, <a href="https://ossu.dev/precollege-math/coursepages/precalculus">기초 선형대수학</a></td>
+<td style="text-align: center;"><a href="https://discord.gg/68WqMNV">채팅방</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.edx.org/learn/software-engineering/university-of-british-columbia-software-engineering-introduction">소프트웨어 엔지니어링 개론(Software Engineering: Introduction)</a> (<a href="https://github.com/ubccpsc/310/blob/main/resources/README.md">대체</a>)</td>
+<td style="text-align: center;">6주</td>
+<td style="text-align: center;">주 8-10시간</td>
+<td style="text-align: center;">핵심 프로그래밍 및 <a href="./FAQ.html#why-require-experience-with-a-sizable-project-before-the-Software-Engineering-courses">규모 있는 프로젝트 경험</a></td>
+<td style="text-align: center;"><a href="https://discord.gg/5Qtcwtz">채팅방</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="핵심-윤리" class="level3">
+<h3 class="anchored" data-anchor-id="핵심-윤리">핵심 윤리</h3>
+<p><strong>주요 내용</strong>: <code>사회적 맥락(Social Context)</code> <code>분석 도구(Analytical Tools)</code> <code>직업 윤리(Professional Ethics)</code> <code>지식재산권(Intellectual Property)</code> <code>프라이버시와 시민의 자유(Privacy and Civil Liberties)</code> <code>그 외</code></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">강좌</th>
+<th style="text-align: center;">기간</th>
+<th style="text-align: center;">학습량</th>
+<th style="text-align: center;">선수 지식</th>
+<th style="text-align: center;">토론 시간</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.coursera.org/learn/ethics-technology-engineering">기술과 엔지니어링의 윤리(Ethics, Technology and Engineering)</a></td>
+<td style="text-align: center;">9주</td>
+<td style="text-align: center;">주 2시간</td>
+<td style="text-align: center;">없음</td>
+<td style="text-align: center;"><a href="https://discord.gg/6ttjPmzZbe">채팅방</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.coursera.org/learn/introduction-intellectual-property">지식 재산권 개론(Introduction to Intellectual Property)</a></td>
+<td style="text-align: center;">4주</td>
+<td style="text-align: center;">주 2시간</td>
+<td style="text-align: center;">없음</td>
+<td style="text-align: center;"><a href="https://discord.gg/YbuERswpAK">채팅방</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.coursera.org/learn/northeastern-data-privacy">데이터 프라이버시 기초(Data Privacy Fundamentals)</a></td>
+<td style="text-align: center;">3주</td>
+<td style="text-align: center;">주 3시간</td>
+<td style="text-align: center;">없음</td>
+<td style="text-align: center;"><a href="https://discord.gg/64J34ajNBd">채팅방</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="advanced-cs-cs-심화" class="level2">
+<h2 class="anchored" data-anchor-id="advanced-cs-cs-심화">Advanced CS (CS 심화)</h2>
+<p>Core CS의 <strong>모든 필수 과정</strong>을 마친 후, 관심사에 따라 Advanced CS에서 원하는 과정을 수강할 수 있습니다. 한 세부 항목의 모든 과정을 이수해야 하는 것은 아닙니다. 다만 자신이 희망하는 특정 분야와 관련된 강의는 <em>전부</em> 수강할 것을 권장합니다.</p>
+<section id="고급-프로그래밍" class="level3">
+<h3 class="anchored" data-anchor-id="고급-프로그래밍">고급 프로그래밍</h3>
+<p><strong>주요 내용</strong>: <code>디버깅 이론 및 실습</code> <code>목표 지향형 프로그래밍</code> <code>병렬 컴퓨팅</code> <code>객체 지향 분석 및 설계</code> <code>UML</code> <code>대규모 소프트웨어 아키텍처 및 설계</code> <code>그 외</code></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">강좌</th>
+<th style="text-align: center;">기간</th>
+<th style="text-align: center;">학습량</th>
+<th style="text-align: center;">선수 지식</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.coursera.org/learn/scala-parallel-programming">병렬 프로그래밍(Parallel Programming)</a></td>
+<td style="text-align: center;">4주</td>
+<td style="text-align: center;">주 6-8시간</td>
+<td style="text-align: center;">Scala 프로그래밍</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.edx.org/learn/computer-science/stanford-university-compilers">컴파일러(Compilers)</a></td>
+<td style="text-align: center;">9주</td>
+<td style="text-align: center;">주 6-8시간</td>
+<td style="text-align: center;">없음</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.seas.upenn.edu/~cis194/fall16/">하스켈 입문(Introduction to Haskell)</a></td>
+<td style="text-align: center;">14주</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.let.rug.nl/bos/lpn//lpnpage.php?pageid=online">프롤로그 완전 정복!(Learn Prolog Now!)</a> (<a href="https://github.com/ossu/computer-science/files/6085884/lpn.pdf">대체</a>)*</td>
+<td style="text-align: center;">12주</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.youtube.com/playlist?list=PLAwxTw4SYaPkxK63TiT88oEe-AIBhr96A">소프트웨어 디버깅(Software Debugging)</a></td>
+<td style="text-align: center;">8주</td>
+<td style="text-align: center;">주 6시간</td>
+<td style="text-align: center;">파이썬, 객체지향 프로그래밍</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.youtube.com/playlist?list=PLAwxTw4SYaPkWVHeC_8aSIbSxE_NXI76g">소프트웨어 테스팅(Software Testing)</a></td>
+<td style="text-align: center;">4주</td>
+<td style="text-align: center;">주 6시간</td>
+<td style="text-align: center;">파이썬, 기본적인 프로그래밍 경험</td>
+</tr>
+</tbody>
+</table>
+<p>(*) Blackburn, Bos, Striegnitz 저서 (<a href="https://github.com/LearnPrologNow/lpn">저작물 출처</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC 라이선스</a>로 배포됨)</p>
+</section>
+<section id="고급-시스템" class="level3">
+<h3 class="anchored" data-anchor-id="고급-시스템">고급 시스템</h3>
+<p><strong>주요 내용</strong>: <code>디지털 신호(digital signaling)</code> <code>조합 논리회로(combinational logic)</code> <code>CMOS 기술</code> <code>순차 논리회로(sequential logic)</code> <code>상태 머신(finite state machines)</code> <code>프로세서 명령어 집합</code> <code>캐시(caches)</code> <code>파이프라이닝(pipelining)</code> <code>가상화(virtualization)</code> <code>병렬 처리(parallel processing)</code> <code>가상 메모리</code> <code>동기화 프리미티브(synchronization primitives)</code> <code>시스템 호출 인터페이스</code> <code>그 외</code></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">강좌</th>
+<th style="text-align: center;">기간</th>
+<th style="text-align: center;">학습량</th>
+<th style="text-align: center;">선수 지식</th>
+<th style="text-align: center;">비고</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://learning.edx.org/course/course-v1:MITx+6.004.1x_3+3T2016">계산 구조 1: 디지털 회로(Computation Structures 1: Digital Circuits)</a> <a href="https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/">대체 1</a> <a href="https://ocw.mit.edu/courses/6-004-computation-structures-spring-2009/">대체 2</a></td>
+<td style="text-align: center;">10주</td>
+<td style="text-align: center;">주 6시간</td>
+<td style="text-align: center;"><a href="https://www.coursera.org/learn/nand2tetris2">Nand2Tetris II</a></td>
+<td style="text-align: center;">대체 링크는 전체 3과목을 포함합니다.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://learning.edx.org/course/course-v1:MITx+6.004.2x+3T2015">계산 구조 2: 컴퓨터 아키텍처(Computation Structures 2: Computer Architecture)</a></td>
+<td style="text-align: center;">10주</td>
+<td style="text-align: center;">주 6시간</td>
+<td style="text-align: center;">계산 구조 1</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://learning.edx.org/course/course-v1:MITx+6.004.3x_2+1T2017">계산 구조 3: 컴퓨터 구조(Computation Structures 3: Computer Organization)</a></td>
+<td style="text-align: center;">10주</td>
+<td style="text-align: center;">주 6시간</td>
+<td style="text-align: center;">계산 구조 2</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="고급-이론" class="level3">
+<h3 class="anchored" data-anchor-id="고급-이론">고급 이론</h3>
+<p><strong>주요 내용</strong>: <code>형식 언어(formal languages)</code> <code>튜링 머신(Turing machines)</code> <code>계산 가능성(computability)</code> <code>이벤트 중심 동시성(event-driven concurrency)</code> <code>오토마타(automata)</code> <code>분산 공유 메모리(distributed shared memory)</code> <code>합의 알고리즘(consensus algorithms)</code> <code>상태 기계 복제(state machine replication)</code> <code>계산 기하학 이론(computational geometry theory)</code> <code>명제 논리(propositional logic)</code> <code>관계 논리(relational logic)</code> <code>허브랜드 논리(Herbrand logic)</code> <code>게임 트리(game trees)</code> <code>그 외</code></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">강좌</th>
+<th style="text-align: center;">기간</th>
+<th style="text-align: center;">학습량</th>
+<th style="text-align: center;">선수 지식</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/">계산 이론(Theory of Computation)</a> (<a href="https://www.youtube.com/playlist?list=PLEE7DF8F5E0203A56">대체</a>)</td>
+<td style="text-align: center;">13주</td>
+<td style="text-align: center;">주 10시간</td>
+<td style="text-align: center;"><a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/about">Mathematics for Computer Science</a>, 논리고학, 알고리즘</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.edx.org/learn/geometry/tsinghua-university-ji-suan-ji-he-computational-geometry">계산 기하학(Computational Geometry)</a></td>
+<td style="text-align: center;">16주</td>
+<td style="text-align: center;">주 8시간</td>
+<td style="text-align: center;">알고리즘, C++</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.coursera.org/learn/game-theory-1">게임 이론(Game Theory)</a></td>
+<td style="text-align: center;">8주</td>
+<td style="text-align: center;">주 3시간</td>
+<td style="text-align: center;">수학적 사고, 확률, 미적분학</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="고급-정보-보안" class="level3">
+<h3 class="anchored" data-anchor-id="고급-정보-보안">고급 정보 보안</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">강좌</th>
+<th style="text-align: center;">기간</th>
+<th style="text-align: center;">학습량</th>
+<th style="text-align: center;">선수 지식</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.edx.org/learn/computer-security/ku-leuven-web-security-fundamentals">웹 보안 입문(Web Security Fundamentals)</a></td>
+<td style="text-align: center;">5주</td>
+<td style="text-align: center;">주 4-6시간</td>
+<td style="text-align: center;">기본 웹 기술 이해</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.coursera.org/learn/security-governance-compliance">보안 거버넌스 및 규정 준수(Security Governance &amp; Compliance)</a></td>
+<td style="text-align: center;">3주</td>
+<td style="text-align: center;">주 3시간</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.coursera.org/learn/digital-forensics-concepts">디지털 포렌식 개념(Digital Forensics Concepts)</a></td>
+<td style="text-align: center;">3주</td>
+<td style="text-align: center;">주 2-3시간</td>
+<td style="text-align: center;">핵심 보안</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.edx.org/learn/software-development/the-linux-foundation-secure-software-development-requirements-design-and-reuse">안전한 소프트웨어 개발: 요구사항, 설계 및 재사용(Secure Software Development)</a></td>
+<td style="text-align: center;">7주</td>
+<td style="text-align: center;">주 1-2시간</td>
+<td style="text-align: center;">핵심 프로그래밍 및 핵심 보안</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.edx.org/learn/software-development/the-linux-foundation-secure-software-development-implementation">안전한 소프트웨어 개발: 구현(Secure Software Development: Implementation)</a></td>
+<td style="text-align: center;">7주</td>
+<td style="text-align: center;">주 1-2시간</td>
+<td style="text-align: center;">안전한 소프트웨어 개발: 요구사항, 설계 및 재사용</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.edx.org/learn/software-engineering/the-linux-foundation-secure-software-development-verification-and-more-specialized-topics">안전한 소프트웨어 개발: 검증 및 세부 주제(Secure Software Development: Verification and More Specialized Topics)</a></td>
+<td style="text-align: center;">7주</td>
+<td style="text-align: center;">주 1-2시간</td>
+<td style="text-align: center;">안전한 소프트웨어 개발: 구현</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="고급-수학" class="level3">
+<h3 class="anchored" data-anchor-id="고급-수학">고급 수학</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">강좌</th>
+<th style="text-align: center;">기간</th>
+<th style="text-align: center;">학습량</th>
+<th style="text-align: center;">선수 지식</th>
+<th style="text-align: center;">토론 시간</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">선형 대수학의 본질(Essence of Linear Algebra)</a></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><a href="https://ossu.dev/precollege-math">고등학교 수학</a></td>
+<td style="text-align: center;"><a href="https://discord.gg/m6wHbP6">채팅방</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/">선형 대수학(Linear Algebra)</a></td>
+<td style="text-align: center;">14주</td>
+<td style="text-align: center;">주 12시간</td>
+<td style="text-align: center;">동시 수강 권장: 선형 대수학의 본질</td>
+<td style="text-align: center;"><a href="https://discord.gg/k7nSWJH">채팅방</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://ocw.mit.edu/courses/mathematics/18-335j-introduction-to-numerical-methods-spring-2019/index.htm">수치 계산 입문(Introduction to Numerical Methods)</a></td>
+<td style="text-align: center;">14주</td>
+<td style="text-align: center;">주 12시간</td>
+<td style="text-align: center;"><a href="https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/">선형 대수학</a></td>
+<td style="text-align: center;"><a href="https://discord.gg/FNEcNNq">채팅방</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://forallx.openlogicproject.org/">형식 논리학 서론(Introduction to Formal Logic)</a></td>
+<td style="text-align: center;">10주</td>
+<td style="text-align: center;">주 4-8시간</td>
+<td style="text-align: center;"><a href="https://www.youtube.com/playlist?list=PL5KkMZvBpo5AH_5GpxMiryJT6Dkj32H6N">집합론 (Set Theory)</a></td>
+<td style="text-align: center;"><a href="https://discord.gg/MbM2Gg5">채팅방</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://stat110.hsites.harvard.edu/">확률론(Probability)</a></td>
+<td style="text-align: center;">15주</td>
+<td style="text-align: center;">주 5-10시간</td>
+<td style="text-align: center;"><a href="https://www.edx.org/course/calculus-1b-integration">미적분학 1B (Differentiation and Integration)</a></td>
+<td style="text-align: center;"><a href="https://discord.gg/UVjs9BU">채팅방</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="최종-프로젝트" class="level2">
+<h2 class="anchored" data-anchor-id="최종-프로젝트">최종 프로젝트</h2>
+<p>무언가를 배우는 과정에는 반드시 실행이 필요합니다. 학습했던 모든 과정의 과제와 실습은 실생활의 문제들을 해결하는 방법을 터득하기 위해 주어졌을 뿐입니다.</p>
+<p>Core CS와 여러분의 관심 분야에 맞춘 Advanced CS 과정들을 마쳤다면 여러분이 배운 지식으로 어떤 문제들을 해결할 수 있는지 파악하고 응용해 보세요. 완전하게 새로운 프로젝트를 만들거나 기존에 있던 다른 프로그램/도구의 코드를 개선하셔도 좋습니다.</p>
+<p>프로젝트 구상에 도움이 필요하시다면 다음 소개된 프로젝트 실습/가이드라인 강좌를 권장합니다. (수강 과정을 무사히 통과하신 분이라면 다음 소개된 목록 중에 자신의 흥미와 관련된 것이 무엇인지 찾으실 수 있을 것입니다):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">강좌</th>
+<th style="text-align: center;">기간</th>
+<th style="text-align: center;">학습량</th>
+<th style="text-align: center;">선수 지식</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://fullstackopen.com/en/">풀스택 오픈(Fullstack Open)</a></td>
+<td style="text-align: center;">12주</td>
+<td style="text-align: center;">주 15시간</td>
+<td style="text-align: center;">프로그래밍</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://modernrobotics.northwestern.edu">현대 로봇 공학(Modern Robotics)</a></td>
+<td style="text-align: center;">26주</td>
+<td style="text-align: center;">주 2-5시간</td>
+<td style="text-align: center;">1학년 수준 기초 물리학, 선형대수학, 미적분학, <a href="https://www.khanacademy.org/math/differential-equations">선형 상미분방정식</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.coursera.org/specializations/data-mining">데이터 마이닝 (Data Mining Specialization)</a></td>
+<td style="text-align: center;">30주</td>
+<td style="text-align: center;">주 2-5시간</td>
+<td style="text-align: center;">기계 학습 (Machine Learning)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.coursera.org/specializations/big-data">빅 데이터 (Big Data Specialization)</a></td>
+<td style="text-align: center;">30주</td>
+<td style="text-align: center;">주 3-5시간</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.coursera.org/specializations/internet-of-things">사물 인터넷 (Internet of Things Specialization)</a></td>
+<td style="text-align: center;">30주</td>
+<td style="text-align: center;">주 1-5시간</td>
+<td style="text-align: center;">심화 프로그래밍 (Strong programming)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.coursera.org/specializations/cloud-computing">클라우드 컴퓨팅 (Cloud Computing Specialization)</a></td>
+<td style="text-align: center;">30주</td>
+<td style="text-align: center;">주 2-6시간</td>
+<td style="text-align: center;">C++ 프로그래밍</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.coursera.org/specializations/jhu-data-science">데이터 과학 (Data Science Specialization)</a></td>
+<td style="text-align: center;">43주</td>
+<td style="text-align: center;">주 1-6시간</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://www.coursera.org/specializations/scala">스칼라 함수형 프로그래밍 (Functional Programming in Scala)</a></td>
+<td style="text-align: center;">29주</td>
+<td style="text-align: center;">주 4-5시간</td>
+<td style="text-align: center;">코딩 경력 1년 이상</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.coursera.org/specializations/game-design-and-development">유니티 게임 설계 및 개발 (Game Design and Development with Unity 2020)</a></td>
+<td style="text-align: center;">6개월</td>
+<td style="text-align: center;">주 5시간</td>
+<td style="text-align: center;">프로그래밍, 인터랙티브(interactive) 설계 지식</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="축하합니다" class="level2">
+<h2 class="anchored" data-anchor-id="축하합니다">축하합니다</h2>
+<p>여태까지 배운 커리큘럼 과정을 완수한 여러분은, 컴퓨터 과학 학사 학위 수준의 지식을 모두 습득하셨습니다. 진심으로 축하합니다!</p>
+<p>이제 배운 것들을 활용해 볼 시간입니다. 아래 나열된 가능성 모두에 도전하셔도 좋습니다:</p>
+<ul>
+<li>소프트웨어 개발자 취업 준비!</li>
+<li>더 많은 실력을 갈고닦고 싶다면 개발자를 위한 <a href="./extras/readings.html">고전 필독서</a> 목록을 확인해 보세요.</li>
+<li>지역 개발자 모임에 참석해 보세요. (예: <a href="https://www.meetup.com/">meetup.com</a>)</li>
+<li>세계적으로 떠오르는 새로운 소프트웨어 기술 동향을 파악해 보세요:
+<ul>
+<li>얼랭(Erlang) 가상 머신에 기반해 탄생한 웹 함수형 프로그래밍 언어 <a href="https://elixir-lang.org/">엘릭서(Elixir)</a>를 통해 <strong>행위자 모델(actor model)</strong>을 탐구해 보세요!</li>
+<li>가비지 컬렉터 없이 멀티 스레드 제어와 메모리 주소값 할당의 안전을 제공하는 시스템 프로그래밍 언어 <a href="https://www.rust-lang.org/">러스트(Rust)</a>를 통해 <strong>소유권 차용 및 수명(borrowing and lifetimes)</strong>을 탐구해 보세요!</li>
+<li>타입 기반 개발을 완벽하게 지원하는 하스켈(Haskell)에서 영감을 받은 언어 <a href="https://www.idris-lang.org/">이드리스(Idris)</a>를 통해 <strong>종속성 타입 시스템(dependent type systems)</strong>을 탐구해 보세요.</li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/keep-learning.webp" class="img-fluid figure-img"></p>
+<figcaption>keep learning</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="행동-강령" class="level1">
+<h1>행동 강령</h1>
+<p><a href="https://github.com/ossu/code-of-conduct">OSSU의 행동 강령(code of conduct)을 확인해주세요</a>.</p>
+<section id="진행-상황을-공유하는-방법" class="level2">
+<h2 class="anchored" data-anchor-id="진행-상황을-공유하는-방법">진행 상황을 공유하는 방법</h2>
+<p>이 <a href="https://github.com/ossu/computer-science">GitHub 저장소</a>를 여러분의 계정으로 <a href="https://www.freecodecamp.org/news/how-to-fork-a-github-repository/">포크(Fork)</a>하고 진도에 맞춰 완료한 내용은 ✅로 표기해 보세요. 이것이 여러분만의 작고 소중한 <a href="https://en.wikipedia.org/wiki/Kanban_board">칸반(Kanban) 보드</a>가 되리라 믿습니다. 동시에 어떤 다른 방법보다 직관적이고 시간을 절약해 줄 것입니다. (절약된 시간을 모두 강의를 듣는데 집중하세요!)</p>
+</section>
+</section>
+<section id="팀" class="level1">
+<h1>팀</h1>
+<ul>
+<li><strong><a href="https://github.com/ericdouglas">Eric Douglas</a></strong>: OSSU 설립자</li>
+<li><strong><a href="https://github.com/joshmhanson">Josh Hanson</a></strong>: 수석 기술 유지 보수 관리자</li>
+<li><strong><a href="https://github.com/waciumawanjohi">Waciuma Wanjohi</a></strong>: 수석 학사 유지 보수 관리자</li>
+<li><strong><a href="https://github.com/ossu/computer-science/graphs/contributors">기여자들</a></strong></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./FAQ.html" class="pagination-link" aria-label="자주 묻는 질문 (FAQ)">
+        <span class="nav-page-text"><span class="chapter-title">자주 묻는 질문 (FAQ)</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

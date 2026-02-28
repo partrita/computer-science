@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>프로젝트 2A (Project 2A) – computer-science</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../coursepages/ostep/Scheduling-xv6-lottery.html" rel="next">
+<link href="../../coursepages/ostep/Project-1B-initial-xv6.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-3778d3e438078121318a23701f9f68bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../coursepages/intro-cs/README.html">Course Pages</a></li><li class="breadcrumb-item"><a href="../../coursepages/ostep/Project-2A-processes-shell.html"><span class="chapter-title">프로젝트 2A (Project 2A)</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">computer-science</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">오픈 소스 소사이어티 대학교 (OSSU)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">General Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../FAQ.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">자주 묻는 질문 (FAQ)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../HELP.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">도움받기</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../CURRICULAR_GUIDELINES.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">커리큘럼 가이드라인</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Course Pages</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../coursepages/intro-cs/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">파이썬을 활용한 컴퓨터 과학 및 프로그래밍 입문</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../coursepages/intro-programming/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로그래밍 입문 (Introduction to Programming)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../coursepages/ostep/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">운영 체제: 세 가지의 쉬운 측면 (Operating Systems: Three Easy Pieces)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../coursepages/ostep/Project-1B-initial-xv6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">프로젝트 1B (Project 1B)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../coursepages/ostep/Project-2A-processes-shell.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">프로젝트 2A (Project 2A)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../coursepages/ostep/Scheduling-xv6-lottery.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">모든 감사를 </span></a><a href="https://github.com/palladian1">palladian</a> 님께 전합니다
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../coursepages/ostep/vm-xv6-intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">xv6 가상 메모리의 공포 속으로 (Intro To xv6 Virtual Memory)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../coursepages/spd/README.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">체계적인 프로그램 설계 (Systematic Program Design)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Extras</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../extras/courses.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컴퓨터 과학 - 훌륭한 강좌들 (Computer Science - Great Courses)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../extras/other_curricula.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">타 커리큘럼 소개 (Other curricula)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../extras/puzzles-practice-plods.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컴퓨터 공학 - 퍼즐 조각 풀기, 실전 연습기 (Computer Science - Puzzles, Practice and Plods)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../extras/readings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">컴퓨터 과학 - 위대한 독서 목록 (Computer Science - Great Readings)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">부록</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../CHANGELOG.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">변경 이력 (Change Log)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../CONTRIBUTING.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">커리큘럼 변경하기 (Changing the curriculum)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#모든-감사를-palladian-님께-전합니다" id="toc-모든-감사를-palladian-님께-전합니다" class="nav-link active" data-scroll-target="#모든-감사를-palladian-님께-전합니다">모든 감사를 Palladian 님께 전합니다</a></li>
+  <li><a href="#치트-팁-tips" id="toc-치트-팁-tips" class="nav-link" data-scroll-target="#치트-팁-tips">치트 팁 (Tips)</a></li>
+  <li><a href="#메모리-장난질의-치명적-함정과-지뢰들-memory-management-traps-and-pitfalls" id="toc-메모리-장난질의-치명적-함정과-지뢰들-memory-management-traps-and-pitfalls" class="nav-link" data-scroll-target="#메모리-장난질의-치명적-함정과-지뢰들-memory-management-traps-and-pitfalls">메모리 장난질의 치명적 함정과 지뢰들 (Memory Management Traps and Pitfalls)</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../coursepages/intro-cs/README.html">Course Pages</a></li><li class="breadcrumb-item"><a href="../../coursepages/ostep/Project-2A-processes-shell.html"><span class="chapter-title">프로젝트 2A (Project 2A)</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">프로젝트 2A (Project 2A)</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="모든-감사를-palladian-님께-전합니다" class="level3">
+<h3 class="anchored" data-anchor-id="모든-감사를-palladian-님께-전합니다">모든 감사를 <a href="https://github.com/palladian1/">Palladian</a> 님께 전합니다</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="">상호작용성 모드 (Interactive mode)</label></li>
+<li><label><input type="checkbox" checked="">일괄 처리 모드 (Batch mode)</label></li>
+<li><label><input type="checkbox" checked="">exit (종료 커맨드)</label></li>
+<li><label><input type="checkbox" checked="">cd (경로 이동 커맨드)</label></li>
+<li><label><input type="checkbox" checked="">path (환경 경로 조회/설정 커맨드)</label></li>
+<li><label><input type="checkbox" checked="">리다이렉션 (Redirection)</label></li>
+<li><label><input type="checkbox" checked="">병렬 처리 커맨드 (Parallel commands)</label></li>
+</ul>
+</section>
+<section id="치트-팁-tips" class="level3">
+<h3 class="anchored" data-anchor-id="치트-팁-tips">치트 팁 (Tips)</h3>
+<ul>
+<li>유닉스 셸과 관련된 토론 3번 비디오를 꼭 시청하십시오.</li>
+<li>OSTEP 교재의 챕터 5를 정독하십시오.</li>
+<li>첫 시작은 아주 초라하게 구현하세요: 프롬프트를 띄우고 사용자가 <code>exit</code>를 입력하면 얌전히 종료되는, 오직 한 가지 기능만 가진 껍데기 셸부터 짜는 겁니다. 그다음 <code>cd</code> 기능을 덧붙이고, 그 뒤 <code>path</code> 기능을 얹으세요. 그다음에야 비로소 <code>execv</code>를 통한 일반 커맨드 실행 로직을 넣고, 이어서 일괄 처리(batch) 모드, 리다이렉션, 마지막으로 병렬 처리 로직 순으로 하나하나 층을 쌓아 올리며 접근하세요.</li>
+<li>테스트 스크립트 봇들은 대부분 일괄 처리 모드와 리다이렉션 방식을 통해 점검을 수행할 테니, 여러분이 이 기능들을 구현해내기 전까지는 여러분 스스로가 셸을 수동으로 두들겨보며 눈으로 테스트해야만 합니다.</li>
+<li><code>path</code> 커맨드를 짤 때는, 시스템의 절대 경로와 상대 경로 모두를 포용할 수 있게 설계해야만 합니다 (예: <code>path tests</code>와 같이 상대적인 것이든 <code>path /usr/bin</code>같이 절대적인 것이든 다 소화해야 합니다).</li>
+<li>에러 로그들을 정교하게 타이밍 맞춰 뿌리는 작업은 꽤나 골치 아픕니다. 초기엔 일단 합당해 보이는 모든 틈새마다 닥치는 대로 대충 에러 메시지를 발사하게 짠 뒤, 테스트 스크립트를 돌려 피드백을 맞아가며 정답 에러 로그가 터져야 할 바로 그 정확한 임계점에만 에러 코드가 나오도록 코드를 깎아내가시면 됩니다. 만일 <code>i</code>번 테스트를 돌리는 중이라면, <code>tests/i.err</code>와 <code>tests/i.rc</code>를 까보면 셸이 몇 번의 에러를 뱉어내야 하는지 정답이 다 적혀 있습니다. 이를 눈으로 여러분의 산출물인 <code>tests-out/i.err</code>, <code>tests-out/i.rc</code>와 쉴 새 없이 스캔하며 대조해 보면 됩니다.</li>
+<li>테스트 3번을 돌리던 중, 테스트 봇은 <code>ls: cannot access ...</code> 꼴을 간절히 바라마지 않는데 여러분의 셸은 영양가 없이 길게 <code>/bin/ls: cannot access ...</code> 나 <code>/usr/bin/ls: cannot access ...</code> 같이 지저분하게 출력해서 퇴짜를 맞는다면, 여러분의 냅킨만 한 $PATH 환경 변수의 선두 자리에 억지로 <code>/bin</code> 을 처박아 보세요. 그래도 약발이 안 먹힌다면, 그냥 쿨하게 <code>tests/3.err</code> 원본 정답 파일 텍스트 자체를 여러분 시스템이 내뿜는 로그 모양새와 일치되도록 뜯어고쳐 버리세요. 애초에 시스템 구동부의 출력 모양새는 <code>ls</code> 나 <code>execv</code> 자체 시스템 소스를 갈아엎지 않는 이상 제어가 안 되는 불가항력이므로, 기능의 정신만 제대로 동작하고 있다면 이런 자질구레한 텍스트 따위로 인한 불합격은 그냥 조작해 무시하고 지나가도 대세에 전혀 지장 없습니다.</li>
+<li>저 역시도 시스템 세팅 덕에 테스트 통과를 위해서 <code>/tests/3.pre</code> 내용 안에 강제로 <code>/bin/ls</code> 경로 사용을 지시하도록 파일을 뜯어고쳐야만 했습니다. 이게 영 찝찝하시다면 아예 시스템 셸 <code>.profile</code> 이나 <code>.bashrc</code> 자체에 <code>export PATH="/bin:$PATH"</code> 구문 한 줄을 처박아 두시면 만사형통입니다.</li>
+</ul>
+</section>
+<section id="메모리-장난질의-치명적-함정과-지뢰들-memory-management-traps-and-pitfalls" class="level3">
+<h3 class="anchored" data-anchor-id="메모리-장난질의-치명적-함정과-지뢰들-memory-management-traps-and-pitfalls">메모리 장난질의 치명적 함정과 지뢰들 (Memory Management Traps and Pitfalls)</h3>
+<ul>
+<li>이 미션은 아주 손금 보듯 투명하게 뻔한 삽질을 유도합니다. 생명주기가 끝나면 아스라지게 사라져버릴 스택(stack) 메모리 안의 변수를 가리키는 위험천만한 포인터를 무심결에 만들도록 유혹하며, 그 즉시 무자비한 자비 없는 세그먼테이션 폴트(segmentation fault) 크래시로 당신을 응징할 것입니다. 포인터로 어떤 문자열을 건들고 싶다면 그 문자열 덩어리가 스택 따위가 아니라 반드시 든든한 힙(heap) 공간에 이쁘게 할당된 놈인지 목숨 걸고 확인하십시오.</li>
+<li>이 피의 조언에도 불구하고 기어코 스택에 있는 문자열 따위를 당겨 써야겠다면, 반드시 힙 공간에 새롭게 할당한 문자열 방앗간을 마련하고 거기로 <code>strcpy()</code>, <code>strncpy()</code>, <code>strcat()</code>, <code>strncat()</code> 일꾼들을 시켜 안전하게 알맹이만 복사해 넘겨 써야 합니다.</li>
+<li>오직 크기가 견고하게 명확히 확정된 문자열 조합에 대해서만 <code>strcpy()</code>와 <code>strcat()</code> 을 쓰도록 허락합니다. 이때 복사를 받을 그릇 공간 사이즈가 원본 문자열을 모두 토해내고도 마감재 역할인 <code>\0</code> 하나가 들어갈 여유 공간 한 칸을 더 남겨둘 크기인지 반드시 셈하십시오.</li>
+<li><code>strncpy()</code>와 <code>strncat()</code> 에 한해, 파라미터 <code>n</code> 값이 <code>\0</code> 문자가 탑승하기에 충분히 큰 크기를 보장하는지 두 번 보고, 아니면 수동으로 강제로 끄트머리에 구겨 넣으십시오.</li>
+<li>쥐도 새도 모르게 쓰고 또 쓰는 좀비, 즉 ‘해제 후 사용 (use-after-frees)’ 버그 사태를 경계하십시오, 이 악마는 특히 <code>path</code> 개발 중 지독하게 엿을 먹일 것입니다.</li>
+<li><code>getline()</code>이나 <code>strdup()</code> 등을 거쳐 만들어진 문자열 잔해물들은 전부 깨끗하게 해제(<code>free</code>)하여 치우십시오. 다만 한 번 해제한 놈을 또 날려 보내려 드는 이중-해제(double-frees)의 바보짓은 경계하십시오, 예컨대 이미 저세상으로 증발시킨 문자열 부스러기 파편들을 한 번 더 증발시키려는 미치광이 짓 말입니다.</li>
+<li>C 라이브러리의 함수 중 <code>strtok()</code> 같은 함정 픽은 무조건 기피하십시오; 애초에 스레드 세이프(thread-safe)라고는 눈 씻고도 찾아볼 수 없는 악마입니다. 대타로 무조건 <code>strsep()</code>을 기용하십시오.</li>
+<li><code>strsep()</code>을 꺼내 든 순간, 조각나기 전의 원본 문자열 포인터 사본을 따로 주머니에 고이 보관해야만 나중에 메모리 해제(free)가 가능해집니다. 왜냐하면 <code>strsep()</code> 이놈은 자르면서 원본 포인터 위치를 마구 변형시키고 파괴해 놓기 때문입니다. 그 오염된 포인터를 들고 메모리를 해제하려 들면 귀하의 페이지 테이블 뚝배기가 깨져버릴 것입니다.</li>
+<li>당연하게도 <code>strsep(&amp;buf, delim)</code>을 때린 직후엔, <code>buf</code> 놈이 <code>NULL</code> 빈 껍데기가 되어있는 건 아닌지 확인 전까진 절대 해제시켜 작동하려 들지 마십시오.</li>
+<li>C를 짜는 일반론적 진리: 당신이 혹여 특정 함수 지붕 아래서 데이터를 위해 메모리를 할당(allocate)받아 냈다면, 쓴 뒤 해제(free)하는 짓 역시 무조건 그 함수 지붕 아래서 책임을 져야 합니다. 만약 코드를 예쁘게 만든답시고 특정 <code>create_xxx</code> 같은 껍데기 함수에서 메모리를 띄웠다면 반드시 짝꿍으로 그 오물들을 치울 <code>destroy_xxx</code> 해제 전담 함수도 구비시켜야 합니다. 즉 띄움과 던짐의 층위 격차는 항상 평행해야 하며, 이 철칙이 메모리 지뢰를 안 밟을 가장 핵심 방탄복이라는 뜻입니다.</li>
+<li><code>malloc</code>, <code>calloc</code>, 혹은 <code>realloc</code> 부류들을 호출해 냈을 땐 뒤이어 반드시 반환값이 재수없게 <code>NULL</code>은 아닌지 색출하십시오.</li>
+<li>포인터 나열이 들어간 배열체 따위를 생산할 심산이라면 빈 찌꺼기 포인터 값이 침범하는 걸 차단하기 위해 <code>malloc</code> 대신 <code>calloc</code>을 쓰는 걸 추천합니다.</li>
+<li>여담으로 <code>update_path</code> 로직 안에서 골치 아팠던 일을 전해보자면: 수많은 테스트 스크립트들이 <code>path /bin /usr/bin</code> 요딴 식으로 멀쩡하게 들어오는데 갑자기 튀는 놈 딱 하나가 <code>path tests</code> 이따위로 경로를 박아 넣는 패악질을 쳤습니다. 그래서 전 화끈하게 꼼수를 부려: 텍스트 시작 꼬리말이 무조건 슬래시(/)부터 시작하면 ‘그래 넌 절대경로구나’ 치고 원본 그대로 밀어 넣어 복사해 버리고, 그게 아니라면 ‘어 이놈 상대경로구나’ 판단하여 문자열 앞대가리에 무조건 <code>./</code> 두 마디를 때려 박아 강제로 정돈해 버렸습니다.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../coursepages/ostep/Project-1B-initial-xv6.html" class="pagination-link" aria-label="프로젝트 1B (Project 1B)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">프로젝트 1B (Project 1B)</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../coursepages/ostep/Scheduling-xv6-lottery.html" class="pagination-link" aria-label="모든 감사를 [palladian](https://github.com/palladian1) 님께 전합니다">
+        <span class="nav-page-text"><span class="chapter-title">모든 감사를 </span></span></a><a href="https://github.com/palladian1">palladian</a> 님께 전합니다 <i class="bi bi-arrow-right-short"></i>
+      
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
