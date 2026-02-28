@@ -39,4 +39,4 @@ format:
     theme:
       - cosmo
       - brand
-  number-sections: false
+    number-sections: false
