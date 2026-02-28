@@ -1,0 +1,42 @@
+project:
+  type: book
+
+book:
+  title: "computer-science"
+  author: "fkt"
+  chapters:
+    - index.qmd
+    - part: "General Information"
+      chapters:
+        - FAQ.md
+        - HELP.md
+        - CURRICULAR_GUIDELINES.md
+    - part: "Course Pages"
+      chapters:
+        - coursepages/intro-cs/README.md
+        - coursepages/intro-programming/README.md
+        - coursepages/ostep/README.md
+        - coursepages/ostep/Project-1B-initial-xv6.md
+        - coursepages/ostep/Project-2A-processes-shell.md
+        - coursepages/ostep/Scheduling-xv6-lottery.md
+        - coursepages/ostep/vm-xv6-intro.md
+        - coursepages/spd/README.md
+    - part: "Extras"
+      chapters:
+        - extras/courses.md
+        - extras/other_curricula.md
+        - extras/puzzles-practice-plods.md
+        - extras/readings.md
+    - part: "부록"
+      chapters:
+        - CHANGELOG.md
+        - CONTRIBUTING.md
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  number-sections: false
